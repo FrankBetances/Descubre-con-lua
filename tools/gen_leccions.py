@@ -409,7 +409,11 @@ def revisar(saida):
                     if f"«{p['en']}»" not in dias:
                         fallos.append(f"{l['id']}: «{p['en']}» no sale en ninguna actividad")
                     k = norm(p["en"])
-                    if donde.get(k, curso) != curso:
+                    # O-20261126-5: la palabra sencilla que vuelve de otra edad
+                    # (tools/vocab_idade.py) no cuenta como nueva dos veces.
+                    import vocab_idade as VI  # noqa: E402
+                    volve = k in {norm(v[0]) for t_ in VI.SUBST.values() for v in t_.values()}
+                    if donde.get(k, curso) != curso and not volve:
                         fallos.append(f"«{p['en']}»: nueva en {donde[k]} y en {curso}")
                     donde.setdefault(k, curso)
     return fallos

@@ -4593,23 +4593,23 @@
      "lamina": "pal_raincoat"
     },
     "palabraMaior": {
-     "en": "Showery",
-     "gl": "De chuvascos",
-     "es": "De chubascos",
-     "lamina": "pal_showery"
+     "en": "Rainy",
+     "gl": "Chuvioso",
+     "es": "Lluvioso",
+     "lamina": "pal_rainy"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 2 (3-4 anos e 4-5 anos)",
      "es": "Reto de hermanos · Semana 2 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («A padiola») dille «Showery» e «Raincoat» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («La camilla») dice «Showery» y «Raincoat» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («A padiola») dille «Rainy» e «Raincoat» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («La camilla») dice «Rainy» y «Raincoat» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Raincoat, and Showery!",
+    "fraseEn": "Raincoat, and Rainy!",
     "fraseSignificado": {
-     "gl": "Chuvasqueiro e De chuvascos.",
-     "es": "Chubasquero y De chubascos."
+     "gl": "Chuvasqueiro e Chuvioso.",
+     "es": "Chubasquero y Lluvioso."
     }
    },
    {
@@ -4687,23 +4687,23 @@
      "lamina": "pal_here_you_go"
     },
     "palabraMaior": {
-     "en": "Showery",
-     "gl": "De chuvascos",
-     "es": "De chubascos",
-     "lamina": "pal_showery"
+     "en": "Rainy",
+     "gl": "Chuvioso",
+     "es": "Lluvioso",
+     "lamina": "pal_rainy"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 4 (3-4 anos e 4-5 anos)",
      "es": "Reto de hermanos · Semana 4 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («A padiola») dille «Showery» e «Here you go» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («La camilla») dice «Showery» y «Here you go» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («A padiola») dille «Rainy» e «Here you go» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («La camilla») dice «Rainy» y «Here you go» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Here you go, and Showery!",
+    "fraseEn": "Here you go, and Rainy!",
     "fraseSignificado": {
-     "gl": "Toma e De chuvascos.",
-     "es": "Toma y De chubascos."
+     "gl": "Toma e Chuvioso.",
+     "es": "Toma y Lluvioso."
     }
    },
    {
@@ -4781,23 +4781,23 @@
      "lamina": "pal_mask"
     },
     "palabraMaior": {
-     "en": "Sneak",
-     "gl": "Andar ás agachadas",
-     "es": "Andar a hurtadillas",
-     "lamina": "pal_sneak"
+     "en": "Peek",
+     "gl": "Asomar a cabeza",
+     "es": "Asomarse",
+     "lamina": "pal_peek"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 2 (3-4 anos e 4-5 anos)",
      "es": "Reto de hermanos · Semana 2 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («Facemos lama») dille «Sneak» e «Mask» a quen vai en 3-4 anos («O xeo no zume»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («Hacemos barro») dice «Sneak» y «Mask» a quien va en 3-4 años («El hielo en el zumo»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («Facemos lama») dille «Peek» e «Mask» a quen vai en 3-4 anos («O xeo no zume»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («Hacemos barro») dice «Peek» y «Mask» a quien va en 3-4 años («El hielo en el zumo»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Mask, and Sneak!",
+    "fraseEn": "Mask, and Peek!",
     "fraseSignificado": {
-     "gl": "Máscara e Andar ás agachadas.",
-     "es": "Máscara y Andar a hurtadillas."
+     "gl": "Máscara e Asomar a cabeza.",
+     "es": "Máscara y Asomarse."
     }
    },
    {
@@ -5486,23 +5486,23 @@
      "lamina": "pal_row"
     },
     "palabraMaior": {
-     "en": "Mussel raft",
-     "gl": "Batea",
-     "es": "Batea",
-     "lamina": "pal_mussel_raft"
+     "en": "Mussel",
+     "gl": "Mexillón",
+     "es": "Mejillón",
+     "lamina": "pal_mussel"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 1 (3-4 anos e 4-5 anos)",
      "es": "Reto de hermanos · Semana 1 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Mussel raft» e «Row» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Mussel raft» y «Row» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Mussel» e «Row» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Mussel» y «Row» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Row, and Mussel raft!",
+    "fraseEn": "Row, and Mussel!",
     "fraseSignificado": {
-     "gl": "Remar e Batea.",
-     "es": "Remar y Batea."
+     "gl": "Remar e Mexillón.",
+     "es": "Remar y Mejillón."
     }
    },
    {
@@ -5533,23 +5533,23 @@
      "lamina": "pal_pal_shell"
     },
     "palabraMaior": {
-     "en": "Rushing",
-     "gl": "Rápido e forte",
-     "es": "Rápido y fuerte",
-     "lamina": "pal_rushing"
+     "en": "Fast",
+     "gl": "Rápido",
+     "es": "Rápido",
+     "lamina": "pal_fast"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 2 (3-4 anos e 4-5 anos)",
      "es": "Reto de hermanos · Semana 2 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Rushing» e «Shell» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Rushing» y «Shell» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Fast» e «Shell» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Fast» y «Shell» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Shell, and Rushing!",
+    "fraseEn": "Shell, and Fast!",
     "fraseSignificado": {
-     "gl": "Cuncha e Rápido e forte.",
-     "es": "Concha y Rápido y fuerte."
+     "gl": "Cuncha e Rápido.",
+     "es": "Concha y Rápido."
     }
    },
    {
@@ -6099,23 +6099,23 @@
      "lamina": "pal_bola"
     },
     "palabraMaior": {
-     "en": "Command",
-     "gl": "Orde",
-     "es": "Orden",
-     "lamina": "pal_command"
+     "en": "Round",
+     "gl": "Redondo, redonda",
+     "es": "Redondo, redonda",
+     "lamina": "pal_round"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 2 (4-5 anos e 5-6 anos)",
      "es": "Reto de hermanos · Semana 2 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («A bolboreta igual») dille «Command» e «Curl into a ball» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («La mariposa igual») dice «Command» y «Curl into a ball» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («A bolboreta igual») dille «Round» e «Curl into a ball» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («La mariposa igual») dice «Round» y «Curl into a ball» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Curl into a ball, and Command!",
+    "fraseEn": "Curl into a ball, and Round!",
     "fraseSignificado": {
-     "gl": "Facerse unha bóla e Orde.",
-     "es": "Hacerse una bola y Orden."
+     "gl": "Facerse unha bóla e Redondo, redonda.",
+     "es": "Hacerse una bola y Redondo, redonda."
     }
    },
    {
@@ -6146,23 +6146,23 @@
      "lamina": "pal_dance"
     },
     "palabraMaior": {
-     "en": "Mateo, find a round cold chestnut",
-     "gl": "Mateo, busca unha castaña redonda e fría",
-     "es": "Mateo, busca una castaña redonda y fría",
-     "lamina": "pal_mateo_round_cold_chestnut"
+     "en": "Turn",
+     "gl": "Quenda",
+     "es": "Turno",
+     "lamina": "pal_turn"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 3 (4-5 anos e 5-6 anos)",
      "es": "Reto de hermanos · Semana 3 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («A bolboreta igual») dille «Mateo, find a round cold chestnut» e «Dance» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («La mariposa igual») dice «Mateo, find a round cold chestnut» y «Dance» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («A bolboreta igual») dille «Turn» e «Dance» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («La mariposa igual») dice «Turn» y «Dance» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Dance, and Mateo, find a round cold chestnut!",
+    "fraseEn": "Dance, and Turn!",
     "fraseSignificado": {
-     "gl": "Bailar e Mateo, busca unha castaña redonda e fría.",
-     "es": "Bailar y Mateo, busca una castaña redonda y fría."
+     "gl": "Bailar e Quenda.",
+     "es": "Bailar y Turno."
     }
    },
    {
@@ -6469,29 +6469,29 @@
      }
     },
     "palabraMenor": {
-     "en": "Showery",
-     "gl": "De chuvascos",
-     "es": "De chubascos",
-     "lamina": "pal_showery"
+     "en": "Rainy",
+     "gl": "Chuvioso",
+     "es": "Lluvioso",
+     "lamina": "pal_rainy"
     },
     "palabraMaior": {
-     "en": "Balance beam",
-     "gl": "Barra de equilibrio",
-     "es": "Barra de equilibrio",
-     "lamina": "pal_balance_beam"
+     "en": "Bench",
+     "gl": "Banco",
+     "es": "Banco",
+     "lamina": "pal_bench"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 2 (4-5 anos e 5-6 anos)",
      "es": "Reto de hermanos · Semana 2 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «Balance beam» e «Showery» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «Balance beam» y «Showery» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «Bench» e «Rainy» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «Bench» y «Rainy» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Showery, and Balance beam!",
+    "fraseEn": "Rainy, and Bench!",
     "fraseSignificado": {
-     "gl": "De chuvascos e Barra de equilibrio.",
-     "es": "De chubascos y Barra de equilibrio."
+     "gl": "Chuvioso e Banco.",
+     "es": "Lluvioso y Banco."
     }
    },
    {
@@ -6563,10 +6563,10 @@
      }
     },
     "palabraMenor": {
-     "en": "Showery",
-     "gl": "De chuvascos",
-     "es": "De chubascos",
-     "lamina": "pal_showery"
+     "en": "Rainy",
+     "gl": "Chuvioso",
+     "es": "Lluvioso",
+     "lamina": "pal_rainy"
     },
     "palabraMaior": {
      "en": "If it's hot, we play with water",
@@ -6579,13 +6579,13 @@
      "es": "Reto de hermanos · Semana 4 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «If it's hot, we play with water» e «Showery» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «If it's hot, we play with water» y «Showery» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «If it's hot, we play with water» e «Rainy» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «If it's hot, we play with water» y «Rainy» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Showery, and If it's hot, we play with water!",
+    "fraseEn": "Rainy, and If it's hot, we play with water!",
     "fraseSignificado": {
-     "gl": "De chuvascos e Se vai calor, xogamos con auga.",
-     "es": "De chubascos y Si hace calor, jugamos con agua."
+     "gl": "Chuvioso e Se vai calor, xogamos con auga.",
+     "es": "Lluvioso y Si hace calor, jugamos con agua."
     }
    },
    {
@@ -6657,10 +6657,10 @@
      }
     },
     "palabraMenor": {
-     "en": "Sneak",
-     "gl": "Andar ás agachadas",
-     "es": "Andar a hurtadillas",
-     "lamina": "pal_sneak"
+     "en": "Peek",
+     "gl": "Asomar a cabeza",
+     "es": "Asomarse",
+     "lamina": "pal_peek"
     },
     "palabraMaior": {
      "en": "Copy my movements",
@@ -6673,13 +6673,13 @@
      "es": "Reto de hermanos · Semana 2 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («Avións de papel») dille «Copy my movements» e «Sneak» a quen vai en 4-5 anos («Facemos lama»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («Aviones de papel») dice «Copy my movements» y «Sneak» a quien va en 4-5 años («Hacemos barro»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («Avións de papel») dille «Copy my movements» e «Peek» a quen vai en 4-5 anos («Facemos lama»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («Aviones de papel») dice «Copy my movements» y «Peek» a quien va en 4-5 años («Hacemos barro»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Sneak, and Copy my movements!",
+    "fraseEn": "Peek, and Copy my movements!",
     "fraseSignificado": {
-     "gl": "Andar ás agachadas e Copia os meus movementos.",
-     "es": "Andar a hurtadillas y Copia mis movimientos."
+     "gl": "Asomar a cabeza e Copia os meus movementos.",
+     "es": "Asomarse y Copia mis movimientos."
     }
    },
    {
@@ -6945,23 +6945,23 @@
      "lamina": "pal_windy"
     },
     "palabraMaior": {
-     "en": "journey",
-     "gl": "viaxe",
-     "es": "viaje",
-     "lamina": "pal_journey"
+     "en": "Holiday",
+     "gl": "Vacacións",
+     "es": "Vacaciones",
+     "lamina": "pal_holiday"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 4 (4-5 anos e 5-6 anos)",
      "es": "Reto de hermanos · Semana 4 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («O mapa do tesouro») dille «journey» e «windy» a quen vai en 4-5 anos («O muíño de vento»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («El mapa del tesoro») dice «journey» y «windy» a quien va en 4-5 años («El molinillo de viento»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («O mapa do tesouro») dille «Holiday» e «windy» a quen vai en 4-5 anos («O muíño de vento»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («El mapa del tesoro») dice «Holiday» y «windy» a quien va en 4-5 años («El molinillo de viento»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "windy, and journey!",
+    "fraseEn": "windy, and Holiday!",
     "fraseSignificado": {
-     "gl": "con vento e viaxe.",
-     "es": "con viento y viaje."
+     "gl": "con vento e Vacacións.",
+     "es": "con viento y Vacaciones."
     }
    },
    {
@@ -7362,10 +7362,10 @@
      }
     },
     "palabraMenor": {
-     "en": "Mussel raft",
-     "gl": "Batea",
-     "es": "Batea",
-     "lamina": "pal_mussel_raft"
+     "en": "Mussel",
+     "gl": "Mexillón",
+     "es": "Mejillón",
+     "lamina": "pal_mussel"
     },
     "palabraMaior": {
      "en": "Basket",
@@ -7378,13 +7378,13 @@
      "es": "Reto de hermanos · Semana 1 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («A frauta do tren») dille «Basket» e «Mussel raft» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («La flauta del tren») dice «Basket» y «Mussel raft» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («A frauta do tren») dille «Basket» e «Mussel» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («La flauta del tren») dice «Basket» y «Mussel» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Mussel raft, and Basket!",
+    "fraseEn": "Mussel, and Basket!",
     "fraseSignificado": {
-     "gl": "Batea e Cesto.",
-     "es": "Batea y Cesta."
+     "gl": "Mexillón e Cesto.",
+     "es": "Mejillón y Cesta."
     }
    },
    {
@@ -7409,10 +7409,10 @@
      }
     },
     "palabraMenor": {
-     "en": "Rushing",
-     "gl": "Rápido e forte",
-     "es": "Rápido y fuerte",
-     "lamina": "pal_rushing"
+     "en": "Fast",
+     "gl": "Rápido",
+     "es": "Rápido",
+     "lamina": "pal_fast"
     },
     "palabraMaior": {
      "en": "Look, a shell!",
@@ -7425,13 +7425,13 @@
      "es": "Reto de hermanos · Semana 2 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («A frauta do tren») dille «Look, a shell!» e «Rushing» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («La flauta del tren») dice «Look, a shell!» y «Rushing» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («A frauta do tren») dille «Look, a shell!» e «Fast» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («La flauta del tren») dice «Look, a shell!» y «Fast» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Rushing, and Look, a shell!",
+    "fraseEn": "Fast, and Look, a shell!",
     "fraseSignificado": {
-     "gl": "Rápido e forte e Mira, unha cuncha.",
-     "es": "Rápido y fuerte y ¡Mira, una concha."
+     "gl": "Rápido e Mira, unha cuncha.",
+     "es": "Rápido y ¡Mira, una concha."
     }
    },
    {

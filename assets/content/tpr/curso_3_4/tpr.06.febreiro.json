@@ -612,7 +612,8 @@
             "gl": "Balancear os brazos coma colgados dunha póla",
             "es": "Balancear los brazos como colgados de una rama"
           },
-          "lamina": "pal_swing"
+          "lamina": "pal_swing",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.febreiro.s3.slither",

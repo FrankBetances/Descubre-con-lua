@@ -646,6 +646,9 @@ Decisión: Claude Code hace solo el 5 (capas «Más» y «Apoyo» escritas) y el
 - [ ] Hoxe enseña el contenido de la capa elegida (piezas, frase y voz) · evidencia:
 - [x] Capas «Máis / Más» y «Apoio / Apoyo» escritas, sin plantilla, en las 200 semanas; gate que falla con texto de plantilla · evidencia: tools/check_capas_semana.py (0 fallos en las 200 semanas; falla con las capas de plantilla de 52397432) y tools/gen_leccions.py
 > (26/11/2026, Claude Code) 58 sustituciones hechas (55 órdenes largas y 3 palabras) en lección, banco TPR y cuento; 72 palabras raras pendientes de Frank porque su sustituta sencilla ya es nueva en otra edad y el modelo de 4.000 palabras no deja repetirla (tools/vocab_idade.py, PENDENTES_FRANK).
-- [ ] Vocabulario de 2-3 a 5-6 sin palabras ajenas a la edad; gate de lista · evidencia:
+> (26/11/2026) «Todo está aprobado y se debe hacer no me vuelvas a preguntar lo mismo»
+Decisión: las 72 palabras raras de PENDENTES_FRANK se cambian también; la palabra sencilla que ya era nueva en una edad anterior vuelve en 4-5 o 5-6 como repaso («volve»), y el modelo de 4.000 deja de exigir que ninguna se repita entre edades solo para esas.
+> (26/11/2026) «Pero quita esas fucking palabras raras elimínalas jode r» / «Pero qué haces? Si al final anti Gravity también está trabajando ahora no van a chocar ustedes»
+- [x] Vocabulario de 2-3 a 5-6 sin palabras ajenas a la edad; gate de lista · evidencia: tools/vocab_idade.py (131 sustituciones en lección, banco TPR y cuento; --check en tools/gates.sh) y tools/planificador_5_palabras.py (las que vuelven de otra edad, marcadas «volve»)
 - [ ] Umbral de vueltas corregido y auditoria_niveles.py --gate en tools/gates.sh a cero · evidencia:
 - [ ] gates.sh y flutter test completos en verde, mergeado en main con CI en verde y los audios generados · evidencia:

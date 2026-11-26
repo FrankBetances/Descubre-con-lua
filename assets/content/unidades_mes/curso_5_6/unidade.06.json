@@ -304,10 +304,10 @@
       }
     ],
     "reactivarCasa": {
-      "en": "blend",
+      "en": "Mix",
       "texto": {
-        "gl": "Noutro momento do día, sen avisar, volve dicir «blend», a palabra do mes pasado, sinalándoa.",
-        "es": "En otro momento del día, sin avisar, vuelve a decir «blend», la palabra del mes pasado, señalándola."
+        "gl": "Noutro momento do día, sen avisar, volve dicir «Mix», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «Mix», la palabra del mes pasado, señalándola."
       }
     }
   },

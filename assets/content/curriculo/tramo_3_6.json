@@ -79,10 +79,10 @@
           "tier": 2
         },
         {
-          "en": "steady",
+          "en": "Still",
           "ipa": "/ˈstɛdi/",
-          "gl": "firme",
-          "es": "firme",
+          "gl": "Quieto",
+          "es": "Quieto",
           "tier": 2
         },
         {
@@ -93,10 +93,10 @@
           "tier": 2
         },
         {
-          "en": "rebuild",
+          "en": "Build",
           "ipa": "/riˈbɪld/",
-          "gl": "reconstruír",
-          "es": "reconstruir",
+          "gl": "Construír",
+          "es": "Construir",
           "tier": 2
         }
       ],
@@ -579,10 +579,10 @@
           "tier": 2
         },
         {
-          "en": "examine",
+          "en": "Listen",
           "ipa": "/ɪɡˈzæmɪn/",
-          "gl": "examinar",
-          "es": "examinar",
+          "gl": "Escoitar",
+          "es": "Escuchar",
           "tier": 2
         },
         {
@@ -593,10 +593,10 @@
           "tier": 2
         },
         {
-          "en": "temperature",
+          "en": "Gloves",
           "ipa": "/ˈtɛmpərətʃɚ/",
-          "gl": "temperatura",
-          "es": "temperatura",
+          "gl": "Luvas",
+          "es": "Guantes",
           "tier": 2
         }
       ],
@@ -825,17 +825,17 @@
           "tier": 2
         },
         {
-          "en": "splashy",
+          "en": "Slippery",
           "ipa": "/ˈsplæʃi/",
-          "gl": "que salpica",
-          "es": "que salpica",
+          "gl": "Esvaradío",
+          "es": "Resbaladizo",
           "tier": 2
         },
         {
-          "en": "protect",
+          "en": "Share",
           "ipa": "/prəˈtɛkt/",
-          "gl": "protexer",
-          "es": "proteger",
+          "gl": "Compartir",
+          "es": "Compartir",
           "tier": 2
         }
       ],
@@ -1048,17 +1048,17 @@
           "tier": 2
         },
         {
-          "en": "creative",
+          "en": "Colourful",
           "ipa": "/kriˈeɪtɪv/",
-          "gl": "creativo",
-          "es": "creativo",
+          "gl": "Colorido",
+          "es": "Colorido",
           "tier": 2
         },
         {
-          "en": "blend",
+          "en": "Mix",
           "ipa": "/blɛnd/",
-          "gl": "mesturar",
-          "es": "mezclar",
+          "gl": "Mesturar",
+          "es": "Mezclar",
           "tier": 2
         },
         {
@@ -1279,24 +1279,24 @@
           "tier": 1
         },
         {
-          "en": "journey",
+          "en": "Holiday",
           "ipa": "/ˈdʒɝni/",
-          "gl": "viaxe",
-          "es": "viaje",
+          "gl": "Vacacións",
+          "es": "Vacaciones",
           "tier": 2
         },
         {
-          "en": "destination",
+          "en": "Beach",
           "ipa": "/ˌdɛstəˈneɪʃən/",
-          "gl": "destino",
-          "es": "destino",
+          "gl": "Praia",
+          "es": "Playa",
           "tier": 2
         },
         {
-          "en": "passport",
+          "en": "Hold on",
           "ipa": "/ˈpæsˌpɔrt/",
-          "gl": "pasaporte",
-          "es": "pasaporte",
+          "gl": "Agárrate",
+          "es": "Agárrate",
           "tier": 2
         },
         {
@@ -1307,10 +1307,10 @@
           "tier": 2
         },
         {
-          "en": "explore",
+          "en": "Discover",
           "ipa": "/ɪkˈsplɔr/",
-          "gl": "explorar",
-          "es": "explorar",
+          "gl": "Descubrir",
+          "es": "Descubrir",
           "tier": 2
         },
         {

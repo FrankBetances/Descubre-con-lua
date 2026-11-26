@@ -308,10 +308,10 @@
       }
     ],
     "reactivarCasa": {
-      "en": "destination",
+      "en": "Beach",
       "texto": {
-        "gl": "Noutro momento do día, sen avisar, volve dicir «destination», a palabra do mes pasado, sinalándoa.",
-        "es": "En otro momento del día, sin avisar, vuelve a decir «destination», la palabra del mes pasado, señalándola."
+        "gl": "Noutro momento do día, sen avisar, volve dicir «Beach», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «Beach», la palabra del mes pasado, señalándola."
       }
     }
   },

@@ -14,15 +14,16 @@
       "palabras": [
         {
           "id": "5_6.setembro.s1.vote",
-          "en": "Vote",
-          "gl": "Voto",
-          "es": "Voto",
+          "en": "Pick",
+          "gl": "Escoller",
+          "es": "Elegir",
           "tprAction": {
-            "gl": "Levantar a man para votar",
-            "es": "Levantar la mano para votar"
+            "gl": "Sinala ou colle o que nomeas: escoller.",
+            "es": "Señala o coge lo que nombras: elegir."
           },
           "category": "noun",
-          "lamina": "pal_pal_vote"
+          "lamina": "pal_pick",
+          "volve": "curso_3_4"
         },
         {
           "id": "5_6.setembro.s1.ballot-box",

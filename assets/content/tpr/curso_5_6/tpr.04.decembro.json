@@ -347,15 +347,16 @@
         },
         {
           "id": "5_6.decembro.s2.stargaze",
-          "en": "Stargaze",
-          "gl": "Mirar as estrelas",
-          "es": "Mirar las estrellas",
+          "en": "Look up",
+          "gl": "Mirar arriba",
+          "es": "Mirar arriba",
           "tprAction": {
-            "gl": "Deitarse e mirar arriba",
-            "es": "Tumbarse y mirar arriba"
+            "gl": "Sinala ou colle o que nomeas: mirar arriba.",
+            "es": "Señala o coge lo que nombras: mirar arriba."
           },
           "category": "verb",
-          "lamina": "pal_stargaze"
+          "lamina": "pal_look_up",
+          "volve": "curso_3_4"
         },
         {
           "id": "5_6.decembro.s2.connect-the-dots",

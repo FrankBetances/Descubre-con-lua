@@ -342,7 +342,8 @@
             "gl": "Camiñar en fila coma pola rúa",
             "es": "Caminar en fila como por la calle"
           },
-          "lamina": "pal_street"
+          "lamina": "pal_street",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.xaneiro.s2.stomp",

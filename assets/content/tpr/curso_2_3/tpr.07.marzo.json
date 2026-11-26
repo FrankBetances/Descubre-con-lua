@@ -14,15 +14,15 @@
       "palabras": [
         {
           "id": "2_3.marzo.s1.oval",
-          "en": "Oval",
-          "gl": "Óvalo",
-          "es": "Óvalo",
+          "en": "Square",
+          "gl": "Cadrado",
+          "es": "Cuadrado",
           "tprAction": {
-            "gl": "Debuxar un óvalo no aire",
-            "es": "Dibujar un óvalo en el aire"
+            "gl": "Sinala ou colle o que nomeas: cadrado.",
+            "es": "Señala o coge lo que nombras: cuadrado."
           },
           "category": "noun",
-          "lamina": "pal_oval"
+          "lamina": "pal_square"
         },
         {
           "id": "2_3.marzo.s1.rectangle",
@@ -505,27 +505,27 @@
       "palabras": [
         {
           "id": "2_3.marzo.s3.cube",
-          "en": "Cube",
-          "gl": "Cubo",
-          "es": "Cubo",
+          "en": "Triangle",
+          "gl": "Triángulo",
+          "es": "Triángulo",
           "tprAction": {
-            "gl": "Facer un cubo coas mans",
-            "es": "Hacer un cubo con las manos"
+            "gl": "Sinala ou colle o que nomeas: triángulo.",
+            "es": "Señala o coge lo que nombras: triángulo."
           },
           "category": "noun",
-          "lamina": "pal_cube"
+          "lamina": "pal_triangle"
         },
         {
           "id": "2_3.marzo.s3.sphere",
-          "en": "Sphere",
-          "gl": "Esfera",
-          "es": "Esfera",
+          "en": "Star",
+          "gl": "Estrela",
+          "es": "Estrella",
           "tprAction": {
-            "gl": "Rodar unha bóla imaxinaria",
-            "es": "Rodar una bola imaginaria"
+            "gl": "Sinala ou colle o que nomeas: estrela.",
+            "es": "Señala o coge lo que nombras: estrella."
           },
           "category": "noun",
-          "lamina": "pal_sphere"
+          "lamina": "pal_star"
         },
         {
           "id": "2_3.marzo.s3.pyramid",

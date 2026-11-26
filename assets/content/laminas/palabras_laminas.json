@@ -26183,6 +26183,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "rumble": {
+   "clave": "pal_thunder",
+   "orixe": "reutilizada",
+   "porque": "«Rumble» é o ronco do trono: a mesma lámina ca «thunder» (O-20261126-5).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_thunder.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "rumbly bus": {
    "clave": "pal_rumbly_bus",
    "orixe": "composta",

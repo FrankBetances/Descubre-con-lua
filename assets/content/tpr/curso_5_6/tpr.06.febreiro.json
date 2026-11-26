@@ -252,15 +252,16 @@
       "palabras": [
         {
           "id": "5_6.febreiro.s2.director",
-          "en": "Director",
-          "gl": "Director",
-          "es": "Director",
+          "en": "Crown",
+          "gl": "Coroa",
+          "es": "Corona",
           "tprAction": {
-            "gl": "Dar unha palmada de claqueta",
-            "es": "Dar una palmada de claqueta"
+            "gl": "Sinala ou colle o que nomeas: coroa.",
+            "es": "Señala o coge lo que nombras: corona."
           },
           "category": "noun",
-          "lamina": "pal_director"
+          "lamina": "pal_crown",
+          "volve": "curso_3_4"
         },
         {
           "id": "5_6.febreiro.s2.clapperboard",

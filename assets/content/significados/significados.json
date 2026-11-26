@@ -1,7 +1,63 @@
 {
+ "A chestnut! Furry squirrel!": {
+  "gl": "Unha castaña! Esquío peludo!",
+  "es": "¡Una castaña! ¡Ardilla peluda!"
+ },
+ "A fox! A furry fox!": {
+  "gl": "Un raposo! Un raposo peludo!",
+  "es": "¡Un zorro! ¡Un zorro peludo!"
+ },
+ "A hungry wolf… tired!": {
+  "gl": "Un lobo con fame… canso!",
+  "es": "¡Un lobo hambriento… cansado!"
+ },
+ "A shiny sun! Stretch, stretch!": {
+  "gl": "Un sol brillante! Estírate, estírate!",
+  "es": "¡Un sol brillante! ¡Estírate, estírate!"
+ },
  "Climb, squirrel! Quick, quick squirrel!": {
   "gl": "Sobe, esquío! Esquío rápido, rápido!",
   "es": "¡Sube, ardilla! ¡Ardilla rápida, rápida!"
+ },
+ "Dark! A green snake… slithering!": {
+  "gl": "Escuro! Unha serpe verde… arrastrándose!",
+  "es": "¡Oscuro! Una serpiente verde… ¡reptando!"
+ },
+ "Dark… tired… horses!": {
+  "gl": "Escuros… cansos… cabalos!",
+  "es": "¡Oscuros… cansados… caballos!"
+ },
+ "Here! A shiny light!": {
+  "gl": "Aquí! Unha luz brillante!",
+  "es": "¡Aquí! ¡Una luz brillante!"
+ },
+ "Oh no! The chestnut rolls, bumpy!": {
+  "gl": "Ai, non! A castaña rola, con baches!",
+  "es": "¡Oh, no! ¡La castaña rueda, con baches!"
+ },
+ "Salty sea… sleep, fish.": {
+  "gl": "Mar salgado… durme, peixe.",
+  "es": "Mar salado… duerme, pez."
+ },
+ "Statue! Tired… arms up!": {
+  "gl": "Estatua! Cansa… brazos arriba!",
+  "es": "¡Estatua! Cansada… ¡brazos arriba!"
+ },
+ "The sea! Sunny sea!": {
+  "gl": "O mar! Mar soleado!",
+  "es": "¡El mar! ¡Mar soleado!"
+ },
+ "The tree! An awake squirrel!": {
+  "gl": "A árbore! Un esquío esperto!",
+  "es": "¡El árbol! ¡Una ardilla despierta!"
+ },
+ "Waves! Fast waves!": {
+  "gl": "Ondas! Ondas rápidas!",
+  "es": "¡Olas! ¡Olas rápidas!"
+ },
+ "We peek across the bridge!": {
+  "gl": "Asomámonos pola ponte!",
+  "es": "¡Nos asomamos por el puente!"
  },
  "_doc": "Significado en gallego y castellano de cada frase en inglés que no trae el suyo en su propio contenido. Lo dice el doble toque de BotonEscuchar (F7), con voz.",
  "significados": {

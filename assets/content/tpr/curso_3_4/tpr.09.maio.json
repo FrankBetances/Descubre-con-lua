@@ -70,7 +70,8 @@
             "gl": "Soprar burbullas imaxinarias e tocalas cun dedo",
             "es": "Soplar burbujas imaginarias y tocarlas con un dedo"
           },
-          "lamina": "pal_bubbles"
+          "lamina": "pal_bubbles",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.maio.s1.sink",
@@ -331,7 +332,8 @@
             "gl": "Peitear o pelo cun peite imaxinario",
             "es": "Peinarse con un peine imaginario"
           },
-          "lamina": "pal_comb"
+          "lamina": "pal_comb",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.maio.s2.toothbrush",

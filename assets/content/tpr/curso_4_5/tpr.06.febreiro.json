@@ -14,15 +14,16 @@
       "palabras": [
         {
           "id": "4_5.febreiro.s1.stage",
-          "en": "Stage",
-          "gl": "Escenario",
-          "es": "Escenario",
+          "en": "Puppet",
+          "gl": "Monicreque",
+          "es": "Títere",
           "tprAction": {
-            "gl": "Subir a un escenario imaxinario",
-            "es": "Subir a un escenario imaginario"
+            "gl": "Sinala ou colle o que nomeas: monicreque.",
+            "es": "Señala o coge lo que nombras: títere."
           },
           "category": "noun",
-          "lamina": "pal_stage"
+          "lamina": "pal_puppet",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.febreiro.s1.audience",
@@ -178,15 +179,16 @@
         },
         {
           "id": "4_5.febreiro.s1.mysterious",
-          "en": "Mysterious",
-          "gl": "Misterioso",
-          "es": "Misterioso",
+          "en": "Dark",
+          "gl": "Escuro",
+          "es": "Oscuro",
           "tprAction": {
-            "gl": "Camiñar amodo e mirar aos lados",
-            "es": "Caminar despacio y mirar a los lados"
+            "gl": "Sinala ou colle o que nomeas: escuro.",
+            "es": "Señala o coge lo que nombras: oscuro."
           },
           "category": "adjective",
-          "lamina": "pal_mysterious"
+          "lamina": "pal_dark",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.febreiro.s1.theatrical",
@@ -257,15 +259,16 @@
       "palabras": [
         {
           "id": "4_5.febreiro.s2.knight",
-          "en": "Knight",
-          "gl": "Cabaleiro",
-          "es": "Caballero",
+          "en": "King",
+          "gl": "Rei",
+          "es": "Rey",
           "tprAction": {
-            "gl": "Suxeitar un escudo imaxinario",
-            "es": "Sostener un escudo imaginario"
+            "gl": "Sinala ou colle o que nomeas: rei.",
+            "es": "Señala o coge lo que nombras: rey."
           },
           "category": "noun",
-          "lamina": "pal_knight"
+          "lamina": "pal_king",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.febreiro.s2.princess",

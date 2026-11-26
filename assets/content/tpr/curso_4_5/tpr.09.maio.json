@@ -399,15 +399,16 @@
         },
         {
           "id": "4_5.maio.s2.rushing",
-          "en": "Rushing",
-          "gl": "Rápido e forte",
-          "es": "Rápido y fuerte",
+          "en": "Fast",
+          "gl": "Rápido",
+          "es": "Rápido",
           "tprAction": {
-            "gl": "Mover as mans moi rápido",
-            "es": "Mover las manos muy rápido"
+            "gl": "Sinala ou colle o que nomeas: rápido.",
+            "es": "Señala o coge lo que nombras: rápido."
           },
           "category": "adjective",
-          "lamina": "pal_rushing"
+          "lamina": "pal_fast",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.maio.s2.trickling",
@@ -586,15 +587,16 @@
         },
         {
           "id": "4_5.maio.s3.evaporate",
-          "en": "Evaporate",
-          "gl": "Evaporarse",
-          "es": "Evaporarse",
+          "en": "Melt",
+          "gl": "Derreter",
+          "es": "Derretir",
           "tprAction": {
-            "gl": "Subir amodo coma vapor",
-            "es": "Subir despacio como vapor"
+            "gl": "Sinala ou colle o que nomeas: derreter.",
+            "es": "Señala o coge lo que nombras: derretir."
           },
           "category": "verb",
-          "lamina": "pal_evaporate"
+          "lamina": "pal_melt",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.maio.s3.condense",
@@ -646,15 +648,16 @@
         },
         {
           "id": "4_5.maio.s3.rainy-season",
-          "en": "Showery",
-          "gl": "De chuvascos",
-          "es": "De chubascos",
+          "en": "Rainy",
+          "gl": "Chuvioso",
+          "es": "Lluvioso",
           "tprAction": {
-            "gl": "Mover os dedos coma choiva",
-            "es": "Mover los dedos como lluvia"
+            "gl": "Sinala ou colle o que nomeas: chuvioso.",
+            "es": "Señala o coge lo que nombras: lluvioso."
           },
           "category": "adjective",
-          "lamina": "pal_showery"
+          "lamina": "pal_rainy",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.maio.s3.humid",

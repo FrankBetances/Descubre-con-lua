@@ -14,15 +14,15 @@
       "palabras": [
         {
           "id": "2_3.abril.s1.meadow",
-          "en": "Meadow",
-          "gl": "Prado",
-          "es": "Prado",
+          "en": "Grass",
+          "gl": "Herba",
+          "es": "Hierba",
           "tprAction": {
-            "gl": "Abrir os brazos no prado",
-            "es": "Abrir los brazos en el prado"
+            "gl": "Sinala ou colle o que nomeas: herba.",
+            "es": "Señala o coge lo que nombras: hierba."
           },
           "category": "noun",
-          "lamina": "pal_meadow"
+          "lamina": "pal_grass"
         },
         {
           "id": "2_3.abril.s1.dandelion",
@@ -263,15 +263,16 @@
       "palabras": [
         {
           "id": "2_3.abril.s2.blackbird",
-          "en": "Blackbird",
-          "gl": "Merlo",
-          "es": "Mirlo",
+          "en": "Robin",
+          "gl": "Paporrubio",
+          "es": "Petirrojo",
           "tprAction": {
-            "gl": "Asubiar coma un merlo",
-            "es": "Silbar como un mirlo"
+            "gl": "Sinala ou colle o que nomeas: paporrubio.",
+            "es": "Señala o coge lo que nombras: petirrojo."
           },
           "category": "noun",
-          "lamina": "pal_blackbird"
+          "lamina": "pal_robin",
+          "volve": "curso_0_2"
         },
         {
           "id": "2_3.abril.s2.swallow",
@@ -522,15 +523,15 @@
         },
         {
           "id": "2_3.abril.s3.library",
-          "en": "Library",
-          "gl": "Biblioteca",
-          "es": "Biblioteca",
+          "en": "Book",
+          "gl": "Libro",
+          "es": "Libro",
           "tprAction": {
-            "gl": "Pasar un libro amodo",
-            "es": "Pasar un libro despacio"
+            "gl": "Sinala ou colle o que nomeas: libro.",
+            "es": "Señala o coge lo que nombras: libro."
           },
           "category": "noun",
-          "lamina": "pal_library"
+          "lamina": "pal_book"
         },
         {
           "id": "2_3.abril.s3.quiet-corner",

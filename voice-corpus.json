@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-11-26T14:42:58Z",
- "entries": 41552,
+ "generatedAt": "2026-11-26T15:17:47Z",
+ "entries": 41403,
  "byStyle": {
   "child": 735,
-  "slow": 6762,
-  "tutor": 34055
+  "slow": 6722,
+  "tutor": 33946
  },
  "byLang": {
-  "en": 18694,
-  "es": 11428,
-  "gl": 11430
+  "en": 18635,
+  "es": 11382,
+  "gl": 11386
  },
  "corpus": [
   {
@@ -253,6 +253,15 @@
    "text": "Blend two filters for a colorful glow on the wall.",
    "speech": "Blend two filters for a colorful glow on the wall.",
    "source": "escoita/curso_5_6/2/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_0b89a5d9_23",
+   "lang": "en",
+   "style": "child",
+   "text": "Here you go, and Rainy!",
+   "speech": "Here you go, and Rainy!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/en",
    "pack": false
   },
   {
@@ -571,12 +580,12 @@
    "pack": false
   },
   {
-   "id": "en_child_17b46aa7_22",
+   "id": "en_child_183af33e_43",
    "lang": "en",
    "style": "child",
-   "text": "Raincoat, and Showery!",
-   "speech": "Raincoat, and Showery!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/en",
+   "text": "Rainy, and If it's hot, we play with water!",
+   "speech": "Rainy, and If it's hot, we play with water!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/en",
    "pack": false
   },
   {
@@ -967,6 +976,15 @@
    "pack": false
   },
   {
+   "id": "en_child_23fbd41f_20",
+   "lang": "en",
+   "style": "child",
+   "text": "Raincoat, and Rainy!",
+   "speech": "Raincoat, and Rainy!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/en",
+   "pack": false
+  },
+  {
    "id": "en_child_246eaa85_27",
    "lang": "en",
    "style": "child",
@@ -1189,15 +1207,6 @@
    "text": "Why does the pinwheel spin?",
    "speech": "Why does the pinwheel spin?",
    "source": "escoita/curso_4_5/7/pensamiento/explica",
-   "pack": false
-  },
-  {
-   "id": "en_child_2c8b648e_19",
-   "lang": "en",
-   "style": "child",
-   "text": "windy, and journey!",
-   "speech": "windy, and journey!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/en",
    "pack": false
   },
   {
@@ -1894,6 +1903,24 @@
    "pack": false
   },
   {
+   "id": "en_child_43af10f3_16",
+   "lang": "en",
+   "style": "child",
+   "text": "Dance, and Turn!",
+   "speech": "Dance, and Turn!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/en",
+   "pack": false
+  },
+  {
+   "id": "en_child_43eb2211_28",
+   "lang": "en",
+   "style": "child",
+   "text": "Curl into a ball, and Round!",
+   "speech": "Curl into a ball, and Round!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/en",
+   "pack": false
+  },
+  {
    "id": "en_child_441f7552_30",
    "lang": "en",
    "style": "child",
@@ -2353,6 +2380,15 @@
    "pack": false
   },
   {
+   "id": "en_child_56526616_19",
+   "lang": "en",
+   "style": "child",
+   "text": "windy, and Holiday!",
+   "speech": "windy, and Holiday!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/en",
+   "pack": false
+  },
+  {
    "id": "en_child_5680677a_54",
    "lang": "en",
    "style": "child",
@@ -2479,12 +2515,12 @@
    "pack": false
   },
   {
-   "id": "en_child_598154b6_29",
+   "id": "en_child_598da82b_16",
    "lang": "en",
    "style": "child",
-   "text": "Sneak, and Copy my movements!",
-   "speech": "Sneak, and Copy my movements!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/en",
+   "text": "Shell, and Fast!",
+   "speech": "Shell, and Fast!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/en",
    "pack": false
   },
   {
@@ -2584,6 +2620,15 @@
    "text": "Tap the hard dry crust on top.",
    "speech": "Tap the hard dry crust on top.",
    "source": "escoita/curso_2_3/5/crust/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_5d301c3c_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Mask, and Peek!",
+   "speech": "Mask, and Peek!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/en",
    "pack": false
   },
   {
@@ -2746,6 +2791,15 @@
    "text": "Why do the three sheets sound different?",
    "speech": "Why do the three sheets sound different?",
    "source": "escoita/curso_5_6/5/pensamiento/explica",
+   "pack": false
+  },
+  {
+   "id": "en_child_65056eaf_28",
+   "lang": "en",
+   "style": "child",
+   "text": "Peek, and Copy my movements!",
+   "speech": "Peek, and Copy my movements!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/en",
    "pack": false
   },
   {
@@ -4162,24 +4216,6 @@
    "pack": false
   },
   {
-   "id": "en_child_9fb9930b_21",
-   "lang": "en",
-   "style": "child",
-   "text": "Row, and Mussel raft!",
-   "speech": "Row, and Mussel raft!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/en",
-   "pack": false
-  },
-  {
-   "id": "en_child_a08d28cc_45",
-   "lang": "en",
-   "style": "child",
-   "text": "Dance, and Mateo, find a round cold chestnut!",
-   "speech": "Dance, and Mateo, find a round cold chestnut!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/en",
-   "pack": false
-  },
-  {
    "id": "en_child_a0bf263c_33",
    "lang": "en",
    "style": "child",
@@ -4294,15 +4330,6 @@
    "text": "High tower!",
    "speech": "High tower!",
    "source": "escoita/ar/ra_curso_2_3_m08/ev/S3.ESFERA_ARRIBA",
-   "pack": false
-  },
-  {
-   "id": "en_child_a534c001_26",
-   "lang": "en",
-   "style": "child",
-   "text": "Showery, and Balance beam!",
-   "speech": "Showery, and Balance beam!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/en",
    "pack": false
   },
   {
@@ -4675,30 +4702,12 @@
    "pack": false
   },
   {
-   "id": "en_child_b4d63a0f_19",
-   "lang": "en",
-   "style": "child",
-   "text": "Shell, and Rushing!",
-   "speech": "Shell, and Rushing!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/en",
-   "pack": false
-  },
-  {
    "id": "en_child_b4f25906_38",
    "lang": "en",
    "style": "child",
    "text": "We build a tall tower with big blocks.",
    "speech": "We build a tall tower with big blocks.",
    "source": "escoita/curso_3_4/1/modelo/2",
-   "pack": false
-  },
-  {
-   "id": "en_child_b55623f9_24",
-   "lang": "en",
-   "style": "child",
-   "text": "Mussel raft, and Basket!",
-   "speech": "Mussel raft, and Basket!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/en",
    "pack": false
   },
   {
@@ -4735,6 +4744,15 @@
    "text": "Show me the suitcase",
    "speech": "Show me the suitcase",
    "source": "nivel/curso_5_6/c5_6_p2_2/en",
+   "pack": false
+  },
+  {
+   "id": "en_child_b695e77c_19",
+   "lang": "en",
+   "style": "child",
+   "text": "Mussel, and Basket!",
+   "speech": "Mussel, and Basket!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/en",
    "pack": false
   },
   {
@@ -5368,15 +5386,6 @@
    "pack": false
   },
   {
-   "id": "en_child_cd51b626_45",
-   "lang": "en",
-   "style": "child",
-   "text": "Showery, and If it's hot, we play with water!",
-   "speech": "Showery, and If it's hot, we play with water!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/en",
-   "pack": false
-  },
-  {
    "id": "en_child_cd859be6_32",
    "lang": "en",
    "style": "child",
@@ -5872,15 +5881,6 @@
    "pack": false
   },
   {
-   "id": "en_child_e460d8f9_27",
-   "lang": "en",
-   "style": "child",
-   "text": "Rushing, and Look, a shell!",
-   "speech": "Rushing, and Look, a shell!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/en",
-   "pack": false
-  },
-  {
    "id": "en_child_e48cd213_33",
    "lang": "en",
    "style": "child",
@@ -6022,15 +6022,6 @@
    "text": "Bright colors",
    "speech": "Bright colors",
    "source": "nivel/curso_5_6/c5_6_p5_2/en",
-   "pack": false
-  },
-  {
-   "id": "en_child_eb383429_16",
-   "lang": "en",
-   "style": "child",
-   "text": "Mask, and Sneak!",
-   "speech": "Mask, and Sneak!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/en",
    "pack": false
   },
   {
@@ -6205,15 +6196,6 @@
    "pack": false
   },
   {
-   "id": "en_child_f002b81e_30",
-   "lang": "en",
-   "style": "child",
-   "text": "Curl into a ball, and Command!",
-   "speech": "Curl into a ball, and Command!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/en",
-   "pack": false
-  },
-  {
    "id": "en_child_f004c32b_46",
    "lang": "en",
    "style": "child",
@@ -6229,15 +6211,6 @@
    "text": "Pull, and Tap-tap!",
    "speech": "Pull, and Tap tap!",
    "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s33/en",
-   "pack": false
-  },
-  {
-   "id": "en_child_f21182b1_25",
-   "lang": "en",
-   "style": "child",
-   "text": "Here you go, and Showery!",
-   "speech": "Here you go, and Showery!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/en",
    "pack": false
   },
   {
@@ -6274,6 +6247,15 @@
    "text": "Compare the short trail and the long trail.",
    "speech": "Compare the short trail and the long trail.",
    "source": "escoita/curso_5_6/7/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_f472a23c_17",
+   "lang": "en",
+   "style": "child",
+   "text": "Rainy, and Bench!",
+   "speech": "Rainy, and Bench!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/en",
    "pack": false
   },
   {
@@ -6382,6 +6364,15 @@
    "text": "Heavy side down!",
    "speech": "Heavy side down!",
    "source": "escoita/ar/ra_curso_2_3_m05/ev/S5.INCLINA_IZQ",
+   "pack": false
+  },
+  {
+   "id": "en_child_f6da6a0c_16",
+   "lang": "en",
+   "style": "child",
+   "text": "Row, and Mussel!",
+   "speech": "Row, and Mussel!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/en",
    "pack": false
   },
   {
@@ -6517,6 +6508,15 @@
    "text": "Cold, warm, cold, and Polar bear!",
    "speech": "Cold, warm, cold, and Polar bear!",
    "source": "nivel/irmans/curso_0_2__curso_2_3/reto_irmans.curso_0_2.curso_2_3.s23/en",
+   "pack": false
+  },
+  {
+   "id": "en_child_fb4eaf77_24",
+   "lang": "en",
+   "style": "child",
+   "text": "Fast, and Look, a shell!",
+   "speech": "Fast, and Look, a shell!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/en",
    "pack": false
   },
   {
@@ -7443,7 +7443,7 @@
    "style": "slow",
    "text": "Bubbles",
    "speech": "Bubbles",
-   "source": "tpr.3_4.maio/s1/3_4.maio.s1.bubbles",
+   "source": "tpr.2_3.maio/s1/2_3.maio.s1.soap-pump",
    "pack": false
   },
   {
@@ -8509,15 +8509,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_08a8bb8d_6",
-   "lang": "en",
-   "style": "slow",
-   "text": "Stroll",
-   "speech": "Stroll",
-   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.stroll",
-   "pack": false
-  },
-  {
    "id": "en_slow_08b9f53d_6",
    "lang": "en",
    "style": "slow",
@@ -9262,6 +9253,15 @@
    "text": "instance",
    "speech": "instance",
    "source": "corpus/1466/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_0b89a5d9_23",
+   "lang": "en",
+   "style": "slow",
+   "text": "Here you go, and Rainy!",
+   "speech": "Here you go, and Rainy!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/en/slow",
    "pack": false
   },
   {
@@ -12100,15 +12100,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_17b46aa7_22",
-   "lang": "en",
-   "style": "slow",
-   "text": "Raincoat, and Showery!",
-   "speech": "Raincoat, and Showery!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/en/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_17b48355_5",
    "lang": "en",
    "style": "slow",
@@ -12241,6 +12232,15 @@
    "text": "regret",
    "speech": "regret",
    "source": "corpus/2772/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_183af33e_43",
+   "lang": "en",
+   "style": "slow",
+   "text": "Rainy, and If it's hot, we play with water!",
+   "speech": "Rainy, and If it's hot, we play with water!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/en/slow",
    "pack": false
   },
   {
@@ -12883,15 +12883,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_1b2f8433_8",
-   "lang": "en",
-   "style": "slow",
-   "text": "Symmetry",
-   "speech": "Symmetry",
-   "source": "tpr.5_6.marzo/s2/5_6.marzo.s2.symmetry",
-   "pack": false
-  },
-  {
    "id": "en_slow_1b2fd8b4_7",
    "lang": "en",
    "style": "slow",
@@ -13114,15 +13105,6 @@
    "text": "Trail",
    "speech": "Trail",
    "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.trail",
-   "pack": false
-  },
-  {
-   "id": "en_slow_1c1fecab_6",
-   "lang": "en",
-   "style": "slow",
-   "text": "Walrus",
-   "speech": "Walrus",
-   "source": "tpr.2_3.febreiro/s3/2_3.febreiro.s3.walrus",
    "pack": false
   },
   {
@@ -14656,15 +14638,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_222da338_6",
-   "lang": "en",
-   "style": "slow",
-   "text": "Sphere",
-   "speech": "Sphere",
-   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.sphere",
-   "pack": false
-  },
-  {
    "id": "en_slow_22522dbe_32",
    "lang": "en",
    "style": "slow",
@@ -15013,6 +14986,15 @@
    "text": "Wiggly",
    "speech": "Wiggly",
    "source": "tpr.0_2.outubro/s4/0_2.outubro.s4.wiggly",
+   "pack": false
+  },
+  {
+   "id": "en_slow_23fbd41f_20",
+   "lang": "en",
+   "style": "slow",
+   "text": "Raincoat, and Rainy!",
+   "speech": "Raincoat, and Rainy!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/en/slow",
    "pack": false
   },
   {
@@ -16146,7 +16128,7 @@
    "style": "slow",
    "text": "Book",
    "speech": "Book",
-   "source": "tpr.3_4.setembro/s2/3_4.setembro.s2.book",
+   "source": "tpr.2_3.abril/s3/2_3.abril.s3.library",
    "pack": false
   },
   {
@@ -16942,15 +16924,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_2b8b1459_9",
-   "lang": "en",
-   "style": "slow",
-   "text": "Driftwood",
-   "speech": "Driftwood",
-   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.driftwood",
-   "pack": false
-  },
-  {
    "id": "en_slow_2b9d3bb8_6",
    "lang": "en",
    "style": "slow",
@@ -17119,15 +17092,6 @@
    "text": "Travel",
    "speech": "Travel",
    "source": "tpr.3_4.xuno/s4/3_4.xuno.s4.travel",
-   "pack": false
-  },
-  {
-   "id": "en_slow_2c8b648e_19",
-   "lang": "en",
-   "style": "slow",
-   "text": "windy, and journey!",
-   "speech": "windy, and journey!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/en/slow",
    "pack": false
   },
   {
@@ -17506,15 +17470,6 @@
    "text": "Hamster",
    "speech": "Hamster",
    "source": "tpr.3_4.febreiro/s1/3_4.febreiro.s1.hamster",
-   "pack": false
-  },
-  {
-   "id": "en_slow_2e160bcd_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "Stage",
-   "speech": "Stage",
-   "source": "tpr.4_5.febreiro/s1/4_5.febreiro.s1.stage",
    "pack": false
   },
   {
@@ -17986,15 +17941,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_2fc2f2c9_3",
-   "lang": "en",
-   "style": "slow",
-   "text": "Sly",
-   "speech": "Sly",
-   "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.sly",
-   "pack": false
-  },
-  {
    "id": "en_slow_2fc941c2_6",
    "lang": "en",
    "style": "slow",
@@ -18181,15 +18127,6 @@
    "text": "band",
    "speech": "band",
    "source": "corpus/1070/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_3096936a_7",
-   "lang": "en",
-   "style": "slow",
-   "text": "Kneecap",
-   "speech": "Kneecap",
-   "source": "tpr.2_3.outubro/s1/2_3.outubro.s1.kneecap",
    "pack": false
   },
   {
@@ -19009,15 +18946,6 @@
    "text": "pound",
    "speech": "pound",
    "source": "corpus/644/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_3414a0a0_6",
-   "lang": "en",
-   "style": "slow",
-   "text": "Meadow",
-   "speech": "Meadow",
-   "source": "tpr.2_3.abril/s1/2_3.abril.s1.meadow",
    "pack": false
   },
   {
@@ -21901,15 +21829,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_415e10fe_9",
-   "lang": "en",
-   "style": "slow",
-   "text": "Evaporate",
-   "speech": "Evaporate",
-   "source": "tpr.4_5.maio/s3/4_5.maio.s3.evaporate",
-   "pack": false
-  },
-  {
    "id": "en_slow_416559fa_9",
    "lang": "en",
    "style": "slow",
@@ -22459,6 +22378,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_43af10f3_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "Dance, and Turn!",
+   "speech": "Dance, and Turn!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_43b27471_6",
    "lang": "en",
    "style": "slow",
@@ -22528,6 +22456,15 @@
    "text": "subjective",
    "speech": "subjective",
    "source": "corpus/3881/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_43eb2211_28",
+   "lang": "en",
+   "style": "slow",
+   "text": "Curl into a ball, and Round!",
+   "speech": "Curl into a ball, and Round!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/en/slow",
    "pack": false
   },
   {
@@ -25438,15 +25375,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_4f7043f4_8",
-   "lang": "en",
-   "style": "slow",
-   "text": "Stargaze",
-   "speech": "Stargaze",
-   "source": "tpr.5_6.decembro/s2/5_6.decembro.s2.stargaze",
-   "pack": false
-  },
-  {
    "id": "en_slow_4f7aba56_6",
    "lang": "en",
    "style": "slow",
@@ -25861,15 +25789,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_51343662_14",
-   "lang": "en",
-   "style": "slow",
-   "text": "Merry-go-round",
-   "speech": "Merry go round",
-   "source": "tpr.2_3.outubro/s2/2_3.outubro.s2.merry-go-round",
-   "pack": false
-  },
-  {
    "id": "en_slow_51366e59_5",
    "lang": "en",
    "style": "slow",
@@ -25893,7 +25812,7 @@
    "style": "slow",
    "text": "Star",
    "speech": "Star",
-   "source": "tpr.3_4.decembro/s2/3_4.decembro.s2.star",
+   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.sphere",
    "pack": false
   },
   {
@@ -27004,6 +26923,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_56526616_19",
+   "lang": "en",
+   "style": "slow",
+   "text": "windy, and Holiday!",
+   "speech": "windy, and Holiday!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_566a6fc1_5",
    "lang": "en",
    "style": "slow",
@@ -27202,15 +27130,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_57517168_8",
-   "lang": "en",
-   "style": "slow",
-   "text": "creative",
-   "speech": "creative",
-   "source": "curriculo/T3.U5.1/vocabulario",
-   "pack": false
-  },
-  {
    "id": "en_slow_5763f49f_7",
    "lang": "en",
    "style": "slow",
@@ -27369,7 +27288,7 @@
    "style": "slow",
    "text": "Grass",
    "speech": "Grass",
-   "source": "tpr.3_4.abril/s4/3_4.abril.s4.grass",
+   "source": "tpr.2_3.abril/s1/2_3.abril.s1.meadow",
    "pack": false
   },
   {
@@ -27814,15 +27733,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_598154b6_29",
-   "lang": "en",
-   "style": "slow",
-   "text": "Sneak, and Copy my movements!",
-   "speech": "Sneak, and Copy my movements!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/en/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_59859d1a_7",
    "lang": "en",
    "style": "slow",
@@ -27838,6 +27748,15 @@
    "text": "hostage",
    "speech": "hostage",
    "source": "corpus/3480/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_598da82b_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "Shell, and Fast!",
+   "speech": "Shell, and Fast!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/en/slow",
    "pack": false
   },
   {
@@ -28017,7 +27936,7 @@
    "style": "slow",
    "text": "Swing",
    "speech": "Swing",
-   "source": "tpr.3_4.febreiro/s3/3_4.febreiro.s3.swing",
+   "source": "tpr.2_3.outubro/s2/2_3.outubro.s2.merry-go-round",
    "pack": false
   },
   {
@@ -28741,6 +28660,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_5d301c3c_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Mask, and Peek!",
+   "speech": "Mask, and Peek!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_5d32b073_4",
    "lang": "en",
    "style": "slow",
@@ -28800,7 +28728,7 @@
    "style": "slow",
    "text": "Hop",
    "speech": "Hop",
-   "source": "tpr.3_4.outubro/s4/3_4.outubro.s4.hop",
+   "source": "tpr.2_3.decembro/s1/2_3.decembro.s1.jump-in",
    "pack": false
   },
   {
@@ -28828,15 +28756,6 @@
    "text": "heritage",
    "speech": "heritage",
    "source": "corpus/2469/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_5d7eca99_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "Alert",
-   "speech": "Alert",
-   "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.alert",
    "pack": false
   },
   {
@@ -29485,15 +29404,6 @@
    "text": "dial",
    "speech": "dial",
    "source": "corpus/3280/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_604808e3_8",
-   "lang": "en",
-   "style": "slow",
-   "text": "passport",
-   "speech": "passport",
-   "source": "curriculo/T3.U5.2/vocabulario",
    "pack": false
   },
   {
@@ -30334,15 +30244,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_63d2e5e0_9",
-   "lang": "en",
-   "style": "slow",
-   "text": "Underpass",
-   "speech": "Underpass",
-   "source": "tpr.4_5.xaneiro/s2/4_5.xaneiro.s2.tunnel-under",
-   "pack": false
-  },
-  {
    "id": "en_slow_63e1d819_4",
    "lang": "en",
    "style": "slow",
@@ -30619,6 +30520,15 @@
    "text": "album",
    "speech": "album",
    "source": "corpus/2041/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_65056eaf_28",
+   "lang": "en",
+   "style": "slow",
+   "text": "Peek, and Copy my movements!",
+   "speech": "Peek, and Copy my movements!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/en/slow",
    "pack": false
   },
   {
@@ -33412,15 +33322,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_71b38b56_7",
-   "lang": "en",
-   "style": "slow",
-   "text": "Showery",
-   "speech": "Showery",
-   "source": "tpr.4_5.maio/s3/4_5.maio.s3.rainy-season",
-   "pack": false
-  },
-  {
    "id": "en_slow_71c67fc5_3",
    "lang": "en",
    "style": "slow",
@@ -33579,7 +33480,7 @@
    "style": "slow",
    "text": "Starfish",
    "speech": "Starfish",
-   "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.starfish",
+   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.sea-glass",
    "pack": false
   },
   {
@@ -36207,16 +36108,7 @@
    "style": "slow",
    "text": "Comb",
    "speech": "Comb",
-   "source": "tpr.3_4.maio/s2/3_4.maio.s2.comb",
-   "pack": false
-  },
-  {
-   "id": "en_slow_7e809e90_7",
-   "lang": "en",
-   "style": "slow",
-   "text": "rebuild",
-   "speech": "rebuild",
-   "source": "curriculo/T3.U3.1/vocabulario",
+   "source": "tpr.2_3.maio/s2/2_3.maio.s2.brush-head",
    "pack": false
   },
   {
@@ -37090,15 +36982,6 @@
    "text": "navigate",
    "speech": "navigate",
    "source": "corpus/3624/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_82fa0d53_4",
-   "lang": "en",
-   "style": "slow",
-   "text": "Fair",
-   "speech": "Fair",
-   "source": "tpr.4_5.setembro/s1/4_5.setembro.s1.fair",
    "pack": false
   },
   {
@@ -39222,7 +39105,7 @@
    "style": "slow",
    "text": "Spin",
    "speech": "Spin",
-   "source": "tpr.3_4.marzo/s2/3_4.marzo.s2.spin",
+   "source": "tpr.2_3.novembro/s2/2_3.novembro.s2.blow-away",
    "pack": false
   },
   {
@@ -39843,7 +39726,7 @@
    "style": "slow",
    "text": "Stick",
    "speech": "Stick",
-   "source": "tpr.3_4.marzo/s1/3_4.marzo.s1.stick",
+   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.driftwood",
    "pack": false
   },
   {
@@ -44059,15 +43942,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_9fb9930b_21",
-   "lang": "en",
-   "style": "slow",
-   "text": "Row, and Mussel raft!",
-   "speech": "Row, and Mussel raft!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/en/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_9fc14b2d_13",
    "lang": "en",
    "style": "slow",
@@ -44164,15 +44038,6 @@
    "text": "tribute",
    "speech": "tribute",
    "source": "corpus/3941/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_a08d28cc_45",
-   "lang": "en",
-   "style": "slow",
-   "text": "Dance, and Mateo, find a round cold chestnut!",
-   "speech": "Dance, and Mateo, find a round cold chestnut!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/en/slow",
    "pack": false
   },
   {
@@ -44275,15 +44140,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_a109bcea_10",
-   "lang": "en",
-   "style": "slow",
-   "text": "Motionless",
-   "speech": "Motionless",
-   "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.motionless",
-   "pack": false
-  },
-  {
    "id": "en_slow_a123b764_6",
    "lang": "en",
    "style": "slow",
@@ -44380,15 +44236,6 @@
    "text": "Blueprint",
    "speech": "Blueprint",
    "source": "tpr.4_5.setembro/s2/4_5.setembro.s2.blueprint",
-   "pack": false
-  },
-  {
-   "id": "en_slow_a16dc167_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "Sneak",
-   "speech": "Sneak",
-   "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.sneak",
    "pack": false
   },
   {
@@ -45184,15 +45031,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_a4aeaceb_10",
-   "lang": "en",
-   "style": "slow",
-   "text": "Mysterious",
-   "speech": "Mysterious",
-   "source": "tpr.4_5.febreiro/s1/4_5.febreiro.s1.mysterious",
-   "pack": false
-  },
-  {
    "id": "en_slow_a4af99dd_7",
    "lang": "en",
    "style": "slow",
@@ -45316,15 +45154,6 @@
    "text": "abort",
    "speech": "abort",
    "source": "corpus/2002/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_a534c001_26",
-   "lang": "en",
-   "style": "slow",
-   "text": "Showery, and Balance beam!",
-   "speech": "Showery, and Balance beam!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/en/slow",
    "pack": false
   },
   {
@@ -45490,15 +45319,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_a5c3e054_11",
-   "lang": "en",
-   "style": "slow",
-   "text": "Investigate",
-   "speech": "Investigate",
-   "source": "tpr.5_6.novembro/s3/5_6.novembro.s3.investigate",
-   "pack": false
-  },
-  {
    "id": "en_slow_a5c6702a_5",
    "lang": "en",
    "style": "slow",
@@ -45640,15 +45460,6 @@
    "text": "Leaf",
    "speech": "Leaf",
    "source": "tpr.3_4.novembro/s1/3_4.novembro.s1.leaf",
-   "pack": false
-  },
-  {
-   "id": "en_slow_a67719cd_7",
-   "lang": "en",
-   "style": "slow",
-   "text": "splashy",
-   "speech": "splashy",
-   "source": "curriculo/T3.U4.2/vocabulario",
    "pack": false
   },
   {
@@ -45976,15 +45787,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_a7e60af7_9",
-   "lang": "en",
-   "style": "slow",
-   "text": "Blackbird",
-   "speech": "Blackbird",
-   "source": "tpr.2_3.abril/s2/2_3.abril.s2.blackbird",
-   "pack": false
-  },
-  {
    "id": "en_slow_a7f88d8d_8",
    "lang": "en",
    "style": "slow",
@@ -46126,15 +45928,6 @@
    "text": "simultaneous",
    "speech": "simultaneous",
    "source": "corpus/2855/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_a8532270_7",
-   "lang": "en",
-   "style": "slow",
-   "text": "Library",
-   "speech": "Library",
-   "source": "tpr.2_3.abril/s3/2_3.abril.s3.library",
    "pack": false
   },
   {
@@ -48919,15 +48712,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_b391d9be_6",
-   "lang": "en",
-   "style": "slow",
-   "text": "Sturdy",
-   "speech": "Sturdy",
-   "source": "tpr.4_5.setembro/s2/4_5.setembro.s2.sturdy",
-   "pack": false
-  },
-  {
    "id": "en_slow_b397b1d8_4",
    "lang": "en",
    "style": "slow",
@@ -49270,15 +49054,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_b4d63a0f_19",
-   "lang": "en",
-   "style": "slow",
-   "text": "Shell, and Rushing!",
-   "speech": "Shell, and Rushing!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/en/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_b4db8b42_3",
    "lang": "en",
    "style": "slow",
@@ -49414,30 +49189,12 @@
    "pack": false
   },
   {
-   "id": "en_slow_b55623f9_24",
-   "lang": "en",
-   "style": "slow",
-   "text": "Mussel raft, and Basket!",
-   "speech": "Mussel raft, and Basket!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/en/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_b567c124_6",
    "lang": "en",
    "style": "slow",
    "text": "across",
    "speech": "across",
    "source": "corpus/7/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_b56927e1_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "Sieve",
-   "speech": "Sieve",
-   "source": "tpr.2_3.maio/s3/2_3.maio.s3.sieve",
    "pack": false
   },
   {
@@ -49726,6 +49483,15 @@
    "text": "laugh",
    "speech": "laugh",
    "source": "corpus/462/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_b695e77c_19",
+   "lang": "en",
+   "style": "slow",
+   "text": "Mussel, and Basket!",
+   "speech": "Mussel, and Basket!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/en/slow",
    "pack": false
   },
   {
@@ -50260,15 +50026,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_b8d650b7_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "Tread",
-   "speech": "Tread",
-   "source": "tpr.2_3.novembro/s3/2_3.novembro.s3.tread",
-   "pack": false
-  },
-  {
    "id": "en_slow_b8e70c1d_5",
    "lang": "en",
    "style": "slow",
@@ -50365,15 +50122,6 @@
    "text": "shove",
    "speech": "shove",
    "source": "corpus/1824/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_b93785f0_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "Steep",
-   "speech": "Steep",
-   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.steep",
    "pack": false
   },
   {
@@ -51246,7 +50994,7 @@
    "style": "slow",
    "text": "Street",
    "speech": "Street",
-   "source": "tpr.3_4.xaneiro/s2/3_4.xaneiro.s2.street",
+   "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.pavement",
    "pack": false
   },
   {
@@ -52069,15 +51817,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_bfa18bda_8",
-   "lang": "en",
-   "style": "slow",
-   "text": "Downhill",
-   "speech": "Downhill",
-   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.downhill",
-   "pack": false
-  },
-  {
    "id": "en_slow_bfb99ae4_33",
    "lang": "en",
    "style": "slow",
@@ -52317,7 +52056,7 @@
    "style": "slow",
    "text": "March",
    "speech": "March",
-   "source": "tpr.3_4.outubro/s4/3_4.outubro.s4.march",
+   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.stroll",
    "pack": false
   },
   {
@@ -54373,15 +54112,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_c819c675_4",
-   "lang": "en",
-   "style": "slow",
-   "text": "Oval",
-   "speech": "Oval",
-   "source": "tpr.2_3.marzo/s1/2_3.marzo.s1.oval",
-   "pack": false
-  },
-  {
    "id": "en_slow_c844b948_9",
    "lang": "en",
    "style": "slow",
@@ -54828,7 +54558,7 @@
    "style": "slow",
    "text": "Park",
    "speech": "Park",
-   "source": "tpr.3_4.abril/s4/3_4.abril.s4.park",
+   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.race-track",
    "pack": false
   },
   {
@@ -55300,15 +55030,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_ccd8a325_7",
-   "lang": "en",
-   "style": "slow",
-   "text": "Rushing",
-   "speech": "Rushing",
-   "source": "tpr.4_5.maio/s2/4_5.maio.s2.rushing",
-   "pack": false
-  },
-  {
    "id": "en_slow_ccec6102_12",
    "lang": "en",
    "style": "slow",
@@ -55396,15 +55117,6 @@
    "text": "duty",
    "speech": "duty",
    "source": "corpus/1307/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_cd17325c_6",
-   "lang": "en",
-   "style": "slow",
-   "text": "Knight",
-   "speech": "Knight",
-   "source": "tpr.4_5.febreiro/s2/4_5.febreiro.s2.knight",
    "pack": false
   },
   {
@@ -55498,15 +55210,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_cd51b626_45",
-   "lang": "en",
-   "style": "slow",
-   "text": "Showery, and If it's hot, we play with water!",
-   "speech": "Showery, and If it's hot, we play with water!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/en/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_cd5b16e7_3",
    "lang": "en",
    "style": "slow",
@@ -55531,15 +55234,6 @@
    "text": "harsh",
    "speech": "harsh",
    "source": "corpus/2463/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_cd68e641_8",
-   "lang": "en",
-   "style": "slow",
-   "text": "Director",
-   "speech": "Director",
-   "source": "tpr.5_6.febreiro/s2/5_6.febreiro.s2.director",
    "pack": false
   },
   {
@@ -58108,15 +57802,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_d87e4307_9",
-   "lang": "en",
-   "style": "slow",
-   "text": "Brightest",
-   "speech": "Brightest",
-   "source": "tpr.4_5.decembro/s3/4_5.decembro.s3.brightest",
-   "pack": false
-  },
-  {
    "id": "en_slow_d89e10c8_26",
    "lang": "en",
    "style": "slow",
@@ -60489,7 +60174,7 @@
    "style": "slow",
    "text": "Bucket",
    "speech": "Bucket",
-   "source": "tpr.3_4.xuno/s2/3_4.xuno.s2.bucket",
+   "source": "tpr.2_3.maio/s3/2_3.maio.s3.water-table",
    "pack": false
   },
   {
@@ -60706,15 +60391,6 @@
    "text": "Pour the water slowly without spilling.",
    "speech": "Pour the water slowly without spilling.",
    "source": "escoita/curso_3_4/8/pour/frase/slow",
-   "pack": false
-  },
-  {
-   "id": "en_slow_e460d8f9_27",
-   "lang": "en",
-   "style": "slow",
-   "text": "Rushing, and Look, a shell!",
-   "speech": "Rushing, and Look, a shell!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/en/slow",
    "pack": false
   },
   {
@@ -61011,7 +60687,7 @@
    "style": "slow",
    "text": "Triangle",
    "speech": "Triangle",
-   "source": "tpr.3_4.marzo/s2/3_4.marzo.s2.triangle",
+   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.cube",
    "pack": false
   },
   {
@@ -61825,15 +61501,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_e8e0b58f_7",
-   "lang": "en",
-   "style": "slow",
-   "text": "Seabird",
-   "speech": "Seabird",
-   "source": "tpr.4_5.abril/s1/4_5.abril.s1.seabird",
-   "pack": false
-  },
-  {
    "id": "en_slow_e8e87d47_5",
    "lang": "en",
    "style": "slow",
@@ -62482,15 +62149,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_eb383429_16",
-   "lang": "en",
-   "style": "slow",
-   "text": "Mask, and Sneak!",
-   "speech": "Mask, and Sneak!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/en/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_eb3c4ab9_7",
    "lang": "en",
    "style": "slow",
@@ -62587,15 +62245,6 @@
    "text": "Why does the spoon flip your face?",
    "speech": "Why does the spoon flip your face?",
    "source": "escoita/curso_3_4/10/pensamiento/explica/slow",
-   "pack": false
-  },
-  {
-   "id": "en_slow_ebae1a35_4",
-   "lang": "en",
-   "style": "slow",
-   "text": "Vote",
-   "speech": "Vote",
-   "source": "tpr.5_6.setembro/s1/5_6.setembro.s1.vote",
    "pack": false
   },
   {
@@ -63166,15 +62815,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_ee388640_4",
-   "lang": "en",
-   "style": "slow",
-   "text": "Cube",
-   "speech": "Cube",
-   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.cube",
-   "pack": false
-  },
-  {
    "id": "en_slow_ee391c35_20",
    "lang": "en",
    "style": "slow",
@@ -63562,15 +63202,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_f002b81e_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "Curl into a ball, and Command!",
-   "speech": "Curl into a ball, and Command!",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/en/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_f004c32b_46",
    "lang": "en",
    "style": "slow",
@@ -63796,15 +63427,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_f14b4327_8",
-   "lang": "en",
-   "style": "slow",
-   "text": "Pavement",
-   "speech": "Pavement",
-   "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.pavement",
-   "pack": false
-  },
-  {
    "id": "en_slow_f1535a9f_4",
    "lang": "en",
    "style": "slow",
@@ -63864,7 +63486,7 @@
    "style": "slow",
    "text": "Sunny",
    "speech": "Sunny",
-   "source": "tpr.3_4.abril/s1/3_4.abril.s1.sunny",
+   "source": "tpr.2_3.xuno/s1/2_3.xuno.s1.calm-sea",
    "pack": false
   },
   {
@@ -63973,15 +63595,6 @@
    "text": "Swim",
    "speech": "Swim",
    "source": "tpr.3_4.xuno/s1/3_4.xuno.s1.swim",
-   "pack": false
-  },
-  {
-   "id": "en_slow_f21182b1_25",
-   "lang": "en",
-   "style": "slow",
-   "text": "Here you go, and Showery!",
-   "speech": "Here you go, and Showery!",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/en/slow",
    "pack": false
   },
   {
@@ -64305,7 +63918,7 @@
    "style": "slow",
    "text": "Whale",
    "speech": "Whale",
-   "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.whale",
+   "source": "tpr.2_3.febreiro/s3/2_3.febreiro.s3.walrus",
    "pack": false
   },
   {
@@ -64495,6 +64108,15 @@
    "text": "cancer",
    "speech": "cancer",
    "source": "corpus/2111/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_f472a23c_17",
+   "lang": "en",
+   "style": "slow",
+   "text": "Rainy, and Bench!",
+   "speech": "Rainy, and Bench!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/en/slow",
    "pack": false
   },
   {
@@ -65215,6 +64837,15 @@
    "text": "Heavy side down!",
    "speech": "Heavy side down!",
    "source": "escoita/ar/ra_curso_2_3_m05/ev/S5.INCLINA_IZQ/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_f6da6a0c_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "Row, and Mussel!",
+   "speech": "Row, and Mussel!",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/en/slow",
    "pack": false
   },
   {
@@ -66105,7 +65736,7 @@
    "style": "slow",
    "text": "Square",
    "speech": "Square",
-   "source": "tpr.3_4.marzo/s2/3_4.marzo.s2.square",
+   "source": "tpr.2_3.marzo/s1/2_3.marzo.s1.oval",
    "pack": false
   },
   {
@@ -66232,6 +65863,15 @@
    "text": "Cold, warm, cold, and Polar bear!",
    "speech": "Cold, warm, cold, and Polar bear!",
    "source": "nivel/irmans/curso_0_2__curso_2_3/reto_irmans.curso_0_2.curso_2_3.s23/en/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_fb4eaf77_24",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fast, and Look, a shell!",
+   "speech": "Fast, and Look, a shell!",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/en/slow",
    "pack": false
   },
   {
@@ -67158,7 +66798,7 @@
    "style": "slow",
    "text": "Slide",
    "speech": "Slide",
-   "source": "tpr.3_4.decembro/s1/3_4.decembro.s1.slide",
+   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.finish-line",
    "pack": false
   },
   {
@@ -71545,15 +71185,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_0a903727_10",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Brush head",
-   "speech": "Brush head",
-   "source": "tpr.2_3.maio/s2/2_3.maio.s2.brush-head",
-   "pack": false
-  },
-  {
    "id": "en_tutor_0a9282d8_48",
    "lang": "en",
    "style": "tutor",
@@ -75334,6 +74965,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_13fcce99_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Here! A shiny light!",
+   "speech": "Here! A shiny light!",
+   "source": "registro/frase.lua.5_6.04.4",
+   "pack": false
+  },
+  {
    "id": "en_tutor_13ff4ae4_8",
    "lang": "en",
    "style": "tutor",
@@ -75907,15 +75547,6 @@
    "text": "What color is your coat?",
    "speech": "What color is your coat?",
    "source": "microcuento.curso_5_6.01/1/triada.achegar",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_153d8ccf_10",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Race track",
-   "speech": "Race track",
-   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.race-track",
    "pack": false
   },
   {
@@ -78088,15 +77719,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_1a9769a9_18",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The sea! Calm sea!",
-   "speech": "The sea! Calm sea!",
-   "source": "registro/frase.lua.2_3.10.1",
-   "pack": false
-  },
-  {
    "id": "en_tutor_1aa3472d_11",
    "lang": "en",
    "style": "tutor",
@@ -79165,15 +78787,6 @@
    "text": "Yes, the little fish! A little blue fish!",
    "speech": "Yes, the little fish! A little blue fish!",
    "source": "microcuento.curso_2_3.10/2/recast.sinala",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_1dc8e4d7_7",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Roll up",
-   "speech": "Roll up",
-   "source": "tpr.2_3.setembro/s3/2_3.setembro.s3.roll-up",
    "pack": false
   },
   {
@@ -82903,6 +82516,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_27d47501_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A chestnut! Furry squirrel!",
+   "speech": "A chestnut! Furry squirrel!",
+   "source": "registro/frase.lua.4_5.02.4",
+   "pack": false
+  },
+  {
    "id": "en_tutor_27e3d920_67",
    "lang": "en",
    "style": "tutor",
@@ -85225,15 +84847,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_2dd4e63c_7",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Jump in",
-   "speech": "Jump in",
-   "source": "tpr.2_3.decembro/s1/2_3.decembro.s1.jump-in",
-   "pack": false
-  },
-  {
    "id": "en_tutor_2dd8aaf4_29",
    "lang": "en",
    "style": "tutor",
@@ -86131,15 +85744,6 @@
    "text": "One peg, two pegs",
    "speech": "One peg, two pegs",
    "source": "tpr.2_3.maio/s4/2_3.maio.s4.one-peg-two-pegs",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_301d55da_28",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The tree! An alert squirrel!",
-   "speech": "The tree! An alert squirrel!",
-   "source": "registro/frase.lua.4_5.02.1",
    "pack": false
   },
   {
@@ -89869,15 +89473,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_3a3849bd_27",
-   "lang": "en",
-   "style": "tutor",
-   "text": "We sneak across the bridge!",
-   "speech": "We sneak across the bridge!",
-   "source": "registro/frase.lua.4_5.06.2",
-   "pack": false
-  },
-  {
    "id": "en_tutor_3a3a0190_43",
    "lang": "en",
    "style": "tutor",
@@ -91012,15 +90607,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_3d506dc8_12",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Frozen solid",
-   "speech": "Frozen solid",
-   "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.frozen-solid",
-   "pack": false
-  },
-  {
    "id": "en_tutor_3d51db26_15",
    "lang": "en",
    "style": "tutor",
@@ -91153,15 +90739,6 @@
    "text": "Tie up",
    "speech": "Tie up",
    "source": "tpr.2_3.xaneiro/s4/2_3.xaneiro.s4.tie-up",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_3db9d68d_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "A hungry wolf… motionless!",
-   "speech": "A hungry wolf… motionless!",
-   "source": "registro/frase.lua.4_5.08.3",
    "pack": false
   },
   {
@@ -92395,6 +91972,15 @@
    "text": "Yes, leaf! Where is the big leaf?",
    "speech": "Yes, leaf! Where is the big leaf?",
    "source": "biblioteca/HIS-024",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_40bed32f_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Waves! Fast waves!",
+   "speech": "Waves! Fast waves!",
+   "source": "registro/frase.lua.4_5.10.2",
    "pack": false
   },
   {
@@ -96997,15 +96583,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_4d08a04f_14",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Primary school",
-   "speech": "Primary school",
-   "source": "tpr.5_6.xuno/s2/5_6.xuno.s2.primary-school",
-   "pack": false
-  },
-  {
    "id": "en_tutor_4d0eccea_12",
    "lang": "en",
    "style": "tutor",
@@ -99616,15 +99193,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_539e9f8f_21",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Waves! Rushing waves!",
-   "speech": "Waves! Rushing waves!",
-   "source": "registro/frase.lua.4_5.10.2",
-   "pack": false
-  },
-  {
    "id": "en_tutor_53a4177f_52",
    "lang": "en",
    "style": "tutor",
@@ -100936,15 +100504,6 @@
    "text": "Loop the string around your finger.",
    "speech": "Loop the string around your finger.",
    "source": "corpus/3574/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_5715afb5_9",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Pour down",
-   "speech": "Pour down",
-   "source": "tpr.2_3.decembro/s2/2_3.decembro.s2.pour-down",
    "pack": false
   },
   {
@@ -103186,15 +102745,6 @@
    "text": "line up",
    "speech": "line up",
    "source": "english/colocacion/col-41/fullCollocation",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_5ced4b7c_36",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The brightest sun! Stretch, stretch!",
-   "speech": "The brightest sun! Stretch, stretch!",
-   "source": "registro/frase.lua.4_5.04.4",
    "pack": false
   },
   {
@@ -108382,6 +107932,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_695aa88a_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dark… tired… horses!",
+   "speech": "Dark… tired… horses!",
+   "source": "registro/frase.lua.4_5.06.3",
+   "pack": false
+  },
+  {
    "id": "en_tutor_695df32b_32",
    "lang": "en",
    "style": "tutor",
@@ -109450,15 +109009,6 @@
    "text": "Is the shadow short now?",
    "speech": "Is the shadow short now?",
    "source": "gramatica/curso_3_4/1",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_6c3efae4_9",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Soap pump",
-   "speech": "Soap pump",
-   "source": "tpr.2_3.maio/s1/2_3.maio.s1.soap-pump",
    "pack": false
   },
   {
@@ -111646,15 +111196,6 @@
    "text": "Rock and sing",
    "speech": "Rock and sing",
    "source": "tpr.0_2.decembro/s4/0_2.decembro.s4.rock-and-sing",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_713ef49a_32",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Statue! Motionless and dramatic!",
-   "speech": "Statue! Motionless and dramatic!",
-   "source": "registro/frase.lua.5_6.06.3",
    "pack": false
   },
   {
@@ -115105,15 +114646,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_793fcdbd_9",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Blow away",
-   "speech": "Blow away",
-   "source": "tpr.2_3.novembro/s2/2_3.novembro.s2.blow-away",
-   "pack": false
-  },
-  {
    "id": "en_tutor_7940b3f2_9",
    "lang": "en",
    "style": "tutor",
@@ -116617,15 +116149,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_7d3602e0_11",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Memory lane",
-   "speech": "Memory lane",
-   "source": "tpr.5_6.xuno/s1/5_6.xuno.s1.memory-lane",
-   "pack": false
-  },
-  {
    "id": "en_tutor_7d38cd9d_44",
    "lang": "en",
    "style": "tutor",
@@ -117010,15 +116533,6 @@
    "text": "Everybody stand up!",
    "speech": "Everybody stand up!",
    "source": "asamblea.primeiro_ciclo.setembro.2_3_anos/fase/3/cmd/cmd.setembro.2_3.01/ingles",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_7e5b2825_9",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Rope line",
-   "speech": "Rope line",
-   "source": "tpr.4_5.xuno/s1/4_5.xuno.s1.rope-line",
    "pack": false
   },
   {
@@ -122710,15 +122224,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_8bcb6678_9",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Sea glass",
-   "speech": "Sea glass",
-   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.sea-glass",
-   "pack": false
-  },
-  {
    "id": "en_tutor_8bcf6cd3_47",
    "lang": "en",
    "style": "tutor",
@@ -123490,6 +122995,15 @@
    "text": "We must protect the environment.",
    "speech": "We must protect the environment.",
    "source": "corpus/1331/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_8db5a977_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Statue! Tired… arms up!",
+   "speech": "Statue! Tired… arms up!",
+   "source": "registro/frase.lua.5_6.06.3",
    "pack": false
   },
   {
@@ -125635,15 +125149,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_93241579_10",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Gull chick",
-   "speech": "Gull chick",
-   "source": "tpr.4_5.abril/s2/4_5.abril.s2.gull-chick",
-   "pack": false
-  },
-  {
    "id": "en_tutor_93276762_39",
    "lang": "en",
    "style": "tutor",
@@ -127441,15 +126946,6 @@
    "text": "The state of the beach after the storm will appal you.",
    "speech": "The state of the beach after the storm will appal you.",
    "source": "corpus/3042/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_977dca5c_11",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Finish line",
-   "speech": "Finish line",
-   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.finish-line",
    "pack": false
   },
   {
@@ -130621,6 +130117,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9f5a49b5_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A shiny sun! Stretch, stretch!",
+   "speech": "A shiny sun! Stretch, stretch!",
+   "source": "registro/frase.lua.4_5.04.4",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9f610cf1_36",
    "lang": "en",
    "style": "tutor",
@@ -132895,15 +132400,6 @@
    "text": "Can you make a tired face like the sheep? Ahhh!",
    "speech": "Can you make a tired face like the sheep? Ahhh!",
    "source": "biblioteca/HIS-014",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_a53ba159_27",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Deep blue sea… sleep, fish.",
-   "speech": "Deep blue sea… sleep, fish.",
-   "source": "registro/frase.lua.4_5.10.4",
    "pack": false
   },
   {
@@ -137209,15 +136705,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_b09c7b2b_11",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Mussel raft",
-   "speech": "Mussel raft",
-   "source": "tpr.4_5.xuno/s1/4_5.xuno.s1.mussel-raft",
-   "pack": false
-  },
-  {
    "id": "en_tutor_b09ee445_31",
    "lang": "en",
    "style": "tutor",
@@ -139126,6 +138613,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b592957c_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Salty sea… sleep, fish.",
+   "speech": "Salty sea… sleep, fish.",
+   "source": "registro/frase.lua.4_5.10.4",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b593832d_43",
    "lang": "en",
    "style": "tutor",
@@ -139231,6 +138727,15 @@
    "text": "What sort of music do you like?",
    "speech": "What sort of music do you like?",
    "source": "corpus/789/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b5f34e7a_7",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tidy up",
+   "speech": "Tidy up",
+   "source": "tpr.2_3.setembro/s3/2_3.setembro.s3.roll-up",
    "pack": false
   },
   {
@@ -140401,15 +139906,6 @@
    "text": "Freeze immediately",
    "speech": "Freeze immediately",
    "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.freeze-immediately",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_b9501035_9",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Deep blue",
-   "speech": "Deep blue",
-   "source": "tpr.4_5.abril/s3/4_5.abril.s3.deep-blue",
    "pack": false
   },
   {
@@ -145525,15 +145021,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_c5ab54bc_10",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Photo book",
-   "speech": "Photo book",
-   "source": "tpr.4_5.xuno/s2/4_5.xuno.s2.photo-book",
-   "pack": false
-  },
-  {
    "id": "en_tutor_c5b4fb9e_23",
    "lang": "en",
    "style": "tutor",
@@ -148099,6 +147586,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_cc06aa7b_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Oh no! The chestnut rolls, bumpy!",
+   "speech": "Oh no! The chestnut rolls, bumpy!",
+   "source": "registro/frase.lua.4_5.03.2",
+   "pack": false
+  },
+  {
    "id": "en_tutor_cc0a4217_35",
    "lang": "en",
    "style": "tutor",
@@ -150286,6 +149782,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_d15803a0_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A hungry wolf… tired!",
+   "speech": "A hungry wolf… tired!",
+   "source": "registro/frase.lua.4_5.08.3",
+   "pack": false
+  },
+  {
    "id": "en_tutor_d163faa5_10",
    "lang": "en",
    "style": "tutor",
@@ -151150,15 +150655,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_d30a0489_8",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Calm sea",
-   "speech": "Calm sea",
-   "source": "tpr.2_3.xuno/s1/2_3.xuno.s1.calm-sea",
-   "pack": false
-  },
-  {
    "id": "en_tutor_d30dc5fa_42",
    "lang": "en",
    "style": "tutor",
@@ -151390,15 +150886,6 @@
    "text": "Two languages? Lucky you!",
    "speech": "Two languages? Lucky you!",
    "source": "academy.bilinguismo_y_cultura.01/luaEn",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_d3b27257_17",
-   "lang": "en",
-   "style": "tutor",
-   "text": "A fox! A sly fox!",
-   "speech": "A fox! A sly fox!",
-   "source": "registro/frase.lua.4_5.06.1",
    "pack": false
   },
   {
@@ -155848,6 +155335,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_df7f5050_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dark! A green snake… slithering!",
+   "speech": "Dark! A green snake… slithering!",
+   "source": "registro/frase.lua.5_6.08.2",
+   "pack": false
+  },
+  {
    "id": "en_tutor_df822c17_61",
    "lang": "en",
    "style": "tutor",
@@ -157828,15 +157324,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_e4a78ad9_15",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Fishing village",
-   "speech": "Fishing village",
-   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.fishing-village",
-   "pack": false
-  },
-  {
    "id": "en_tutor_e4add897_30",
    "lang": "en",
    "style": "tutor",
@@ -158413,15 +157900,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_e66ebb8b_35",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Oh no! The chestnut rolls downhill!",
-   "speech": "Oh no! The chestnut rolls downhill!",
-   "source": "registro/frase.lua.4_5.03.2",
-   "pack": false
-  },
-  {
    "id": "en_tutor_e67b6302_12",
    "lang": "en",
    "style": "tutor",
@@ -158818,15 +158296,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_e7f27614_11",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Water table",
-   "speech": "Water table",
-   "source": "tpr.2_3.maio/s3/2_3.maio.s3.water-table",
-   "pack": false
-  },
-  {
    "id": "en_tutor_e7f4ea5f_33",
    "lang": "en",
    "style": "tutor",
@@ -158914,6 +158383,15 @@
    "text": "Stay here while I get the ball.",
    "speech": "Stay here while I get the ball.",
    "source": "corpus/807/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_e8261b55_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A fox! A furry fox!",
+   "speech": "A fox! A furry fox!",
+   "source": "registro/frase.lua.4_5.06.1",
    "pack": false
   },
   {
@@ -159166,6 +158644,15 @@
    "text": "Reach up",
    "speech": "Reach up",
    "source": "tpr.0_2.abril/s1/0_2.abril.s1.reach-up",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_e8c9876b_28",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The tree! An awake squirrel!",
+   "speech": "The tree! An awake squirrel!",
+   "source": "registro/frase.lua.4_5.02.1",
    "pack": false
   },
   {
@@ -163246,15 +162733,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_f32ce4ac_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Here! The brightest light!",
-   "speech": "Here! The brightest light!",
-   "source": "registro/frase.lua.5_6.04.4",
-   "pack": false
-  },
-  {
    "id": "en_tutor_f32efa7d_8",
    "lang": "en",
    "style": "tutor",
@@ -163279,6 +162757,15 @@
    "text": "Carnival Freeze!",
    "speech": "Carnival Freeze!",
    "source": "asamblea.primeiro_ciclo.febreiro.2_3_anos/fase/3/cmd/cmd.febreiro.2_3.03/ingles",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f33ab4d5_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The sea! Sunny sea!",
+   "speech": "The sea! Sunny sea!",
+   "source": "registro/frase.lua.2_3.10.1",
    "pack": false
   },
   {
@@ -164695,6 +164182,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_f6ed1db6_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We peek across the bridge!",
+   "speech": "We peek across the bridge!",
+   "source": "registro/frase.lua.4_5.06.2",
+   "pack": false
+  },
+  {
    "id": "en_tutor_f6edf836_36",
    "lang": "en",
    "style": "tutor",
@@ -166108,15 +165604,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_fa82c05d_31",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Mysterious… motionless… horses!",
-   "speech": "Mysterious… motionless… horses!",
-   "source": "registro/frase.lua.4_5.06.3",
-   "pack": false
-  },
-  {
    "id": "en_tutor_fa82dfac_27",
    "lang": "en",
    "style": "tutor",
@@ -166789,15 +166276,6 @@
    "text": "Nobody was in the classroom.",
    "speech": "Nobody was in the classroom.",
    "source": "corpus/567/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_fc9865f2_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Mysterious! A green snake… slithering!",
-   "speech": "Mysterious! A green snake… slithering!",
-   "source": "registro/frase.lua.5_6.08.2",
    "pack": false
   },
   {
@@ -168166,15 +167644,6 @@
    "text": "Tap thumb to each fingertip",
    "speech": "Tap thumb to each fingertip",
    "source": "lamina/emocions_corp_165/tpr",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_ffc63773_25",
-   "lang": "en",
-   "style": "tutor",
-   "text": "A chestnut! Sly squirrel!",
-   "speech": "A chestnut! Sly squirrel!",
-   "source": "registro/frase.lua.4_5.02.4",
    "pack": false
   },
   {
@@ -170760,7 +170229,7 @@
    "style": "tutor",
    "text": "Peine",
    "speech": "Peine",
-   "source": "tpr.3_4.maio/s2/3_4.maio.s2.comb/significado",
+   "source": "tpr.2_3.maio/s2/2_3.maio.s2.brush-head/significado",
    "pack": true
   },
   {
@@ -171565,15 +171034,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_075ef7b8_14",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Cristal de mar",
-   "speech": "Cristal de mar",
-   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.sea-glass/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_0768b45a_15",
    "lang": "es",
    "style": "tutor",
@@ -172006,15 +171466,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_08641e89_25",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Concha y Rápido y fuerte.",
-   "speech": "Concha y Rápido y fuerte.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/sig",
-   "pack": false
-  },
-  {
    "id": "es_tutor_086c3624_63",
    "lang": "es",
    "style": "tutor",
@@ -172022,15 +171473,6 @@
    "speech": "Pisa fuerte en la nieve y Baila libre mientras canta el tambor.",
    "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s15/sig",
    "pack": false
-  },
-  {
-   "id": "es_tutor_086cd37d_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Acera",
-   "speech": "Acera",
-   "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.pavement/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_086db224_221",
@@ -172450,6 +171892,24 @@
    "speech": "¿Tú tienes sueño por la noche?",
    "source": "biblioteca/HIS-040/significado",
    "pack": false
+  },
+  {
+   "id": "es_tutor_09550d64_168",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 4-5 años («Hacemos barro») dice «Peek» y «Mask» a quien va en 3-4 años («El hielo en el zumo»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 4-5 años («Hacemos barro») dice «Peek» y «Mask» a quien va en 3-4 años («El hielo en el zumo»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/instrucion",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_095cb29b_10",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Con baches",
+   "speech": "Con baches",
+   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.downhill/significado",
+   "pack": true
   },
   {
    "id": "es_tutor_095cc78b_37",
@@ -174369,15 +173829,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_0df9fc24_189",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «Balance beam» y «Showery» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «Balance beam» y «Showery» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/instrucion",
-   "pack": false
-  },
-  {
    "id": "es_tutor_0dff79c8_46",
    "lang": "es",
    "style": "tutor",
@@ -175287,15 +174738,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_10a163cc_191",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 5-6 años («La mariposa igual») dice «Command» y «Curl into a ball» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 5-6 años («La mariposa igual») dice «Command» y «Curl into a ball» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/instrucion",
-   "pack": false
-  },
-  {
    "id": "es_tutor_10ae7a54_63",
    "lang": "es",
    "style": "tutor",
@@ -175392,15 +174834,6 @@
    "text": "Mesa",
    "speech": "Mesa",
    "source": "tpr.3_4.setembro/s2/3_4.setembro.s2.table/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_10e460d5_10",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Misterioso",
-   "speech": "Misterioso",
-   "source": "tpr.4_5.febreiro/s1/4_5.febreiro.s1.mysterious/significado",
    "pack": true
   },
   {
@@ -177303,15 +176736,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_156853f9_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Morsa",
-   "speech": "Morsa",
-   "source": "tpr.2_3.febreiro/s3/2_3.febreiro.s3.walrus/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_1570a2a0_20",
    "lang": "es",
    "style": "tutor",
@@ -177454,6 +176878,15 @@
    "speech": "Salir",
    "source": "tpr.4_5.xaneiro/s3/4_5.xaneiro.s3.depart/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_15da8e49_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Máscara y Asomarse.",
+   "speech": "Máscara y Asomarse.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_15e123ff_33",
@@ -178473,15 +177906,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_18d54557_12",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Cuesta abajo",
-   "speech": "Cuesta abajo",
-   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.downhill/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_18e5de97_23",
    "lang": "es",
    "style": "tutor",
@@ -178551,15 +177975,6 @@
    "text": "Nariz con nariz",
    "speech": "Nariz con nariz",
    "source": "tpr.0_2.outubro/s1/0_2.outubro.s1.nose-to-nose/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_19083e98_13",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Saltar dentro",
-   "speech": "Saltar dentro",
-   "source": "tpr.2_3.decembro/s1/2_3.decembro.s1.jump-in/significado",
    "pack": true
   },
   {
@@ -178839,15 +178254,6 @@
    "text": "Mira: el perro se sienta. Una pata arriba. ¡Espérame!",
    "speech": "Mira: el perro se sienta. Una pata arriba. ¡Espérame!",
    "source": "biblioteca/HIS-071/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_19a3f7af_20",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Toma y De chubascos.",
-   "speech": "Toma y De chubascos.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/sig",
    "pack": false
   },
   {
@@ -179274,6 +178680,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_1a97928b_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Concha y Rápido.",
+   "speech": "Concha y Rápido.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1a9ac544_83",
    "lang": "es",
    "style": "tutor",
@@ -179652,15 +179067,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_1b82133d_6",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Esfera",
-   "speech": "Esfera",
-   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.sphere/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_1b884918_43",
    "lang": "es",
    "style": "tutor",
@@ -179766,15 +179172,6 @@
    "text": "¡Come, osito! ¡Qué manzana tan rica! ¡Hop, hop!",
    "speech": "¡Come, osito! ¡Qué manzana tan rica! ¡Hop, hop!",
    "source": "biblioteca/HIS-028/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_1bc24015_36",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Rápido y fuerte y ¡Mira, una concha.",
-   "speech": "Rápido y fuerte y ¡Mira, una concha.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/sig",
    "pack": false
   },
   {
@@ -180201,15 +179598,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_1cdb6b39_11",
-   "lang": "es",
-   "style": "tutor",
-   "text": "reconstruir",
-   "speech": "reconstruir",
-   "source": "curriculo/T3.U3.1/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_1cdee4e9_41",
    "lang": "es",
    "style": "tutor",
@@ -180244,15 +179632,6 @@
    "speech": "¡Sí, un abrigo! Un abrigo verde y un sombrero marrón.",
    "source": "biblioteca/HIS-079/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_1d08147c_18",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Cabeza del cepillo",
-   "speech": "Cabeza del cepillo",
-   "source": "tpr.2_3.maio/s2/2_3.maio.s2.brush-head/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_1d119fbb_33",
@@ -180738,6 +180117,15 @@
    "text": "En el experimento «Pum grande, pum pequeño» (distinguir intensidad del sonido), da un toque suave en la mesa y otro fuerte y mira si elige «Quiet».",
    "speech": "En el experimento «Pum grande, pum pequeño» (distinguir intensidad del sonido), da un toque suave en la mesa y otro fuerte y mira si elige «Quiet».",
    "source": "nivel/curso_2_3/c2_3_p3_3/instrucion",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1e1343dd_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lluvioso y Si hace calor, jugamos con agua.",
+   "speech": "Lluvioso y Si hace calor, jugamos con agua.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/sig",
    "pack": false
   },
   {
@@ -182474,6 +181862,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_228dce6b_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Chubasquero y Lluvioso.",
+   "speech": "Chubasquero y Lluvioso.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_2293b092_24",
    "lang": "es",
    "style": "tutor",
@@ -182672,6 +182069,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_22ec651c_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Imagen",
+   "speech": "Imagen",
+   "source": "tpr.5_6.xuno/s1/5_6.xuno.s1.memory-lane/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_22ecf0b9_85",
    "lang": "es",
    "style": "tutor",
@@ -182804,6 +182210,15 @@
    "text": "Ficha",
    "speech": "Ficha",
    "source": "tpr.4_5.febreiro/s3/4_5.febreiro.s3.counter/significado",
+   "pack": true
+  },
+  {
+   "id": "es_tutor_231b0b6d_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Columpio",
+   "speech": "Columpio",
+   "source": "tpr.2_3.outubro/s2/2_3.outubro.s2.merry-go-round/significado",
    "pack": true
   },
   {
@@ -184046,15 +183461,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_26826f28_17",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Cuerda de cultivo",
-   "speech": "Cuerda de cultivo",
-   "source": "tpr.4_5.xuno/s1/4_5.xuno.s1.rope-line/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_268bace2_40",
    "lang": "es",
    "style": "tutor",
@@ -184080,15 +183486,6 @@
    "speech": "¡Pon una cara divertida y estatua!",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_26998468_6",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Alerta",
-   "speech": "Alerta",
-   "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.alert/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_269a1ca9_18",
@@ -185048,15 +184445,6 @@
    "speech": "La naranja baja rápido.",
    "source": "gramatica/curso_3_4/11/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_2899afde_6",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Rótula",
-   "speech": "Rótula",
-   "source": "tpr.2_3.outubro/s1/2_3.outubro.s1.kneecap/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_289a267d_10",
@@ -186038,15 +185426,6 @@
    "speech": "Pausa para beber",
    "source": "tpr.4_5.setembro/s3/4_5.setembro.s3.water-break/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_2b10d0f9_25",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Hacerse una bola y Orden.",
-   "speech": "Hacerse una bola y Orden.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/sig",
-   "pack": false
   },
   {
    "id": "es_tutor_2b10f49d_7",
@@ -187381,6 +186760,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_2f080558_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Peludo",
+   "speech": "Peludo",
+   "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.sly/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_2f19a380_23",
    "lang": "es",
    "style": "tutor",
@@ -188533,15 +187921,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_32298b0b_8",
-   "lang": "es",
-   "style": "tutor",
-   "text": "proteger",
-   "speech": "proteger",
-   "source": "curriculo/T3.U4.2/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_322a14c8_12",
    "lang": "es",
    "style": "tutor",
@@ -188683,6 +188062,15 @@
    "text": "La tercera orden, en el regazo",
    "speech": "La tercera orden, en el regazo",
    "source": "progresion.primeiro_ciclo.0_2/s2/d1/foco",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_328b3064_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Agárrate",
+   "speech": "Agárrate",
+   "source": "curriculo/T3.U5.2/vocabulario/significado",
    "pack": false
   },
   {
@@ -189061,6 +188449,15 @@
    "text": "ocho",
    "speech": "ocho",
    "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_334d7a27_172",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 4-5 años («La camilla») dice «Rainy» y «Raincoat» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 4-5 años («La camilla») dice «Rainy» y «Raincoat» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/instrucion",
    "pack": false
   },
   {
@@ -189730,6 +189127,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_34c7dcf8_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cansado",
+   "speech": "Cansado",
+   "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.motionless/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_34c99459_31",
    "lang": "es",
    "style": "tutor",
@@ -189847,15 +189253,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_35149dcd_20",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Dosificador de jabón",
-   "speech": "Dosificador de jabón",
-   "source": "tpr.2_3.maio/s1/2_3.maio.s1.soap-pump/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_35161574_31",
    "lang": "es",
    "style": "tutor",
@@ -189928,6 +189325,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_353937f5_177",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 5-6 años («La mariposa igual») dice «Turn» y «Dance» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 5-6 años («La mariposa igual») dice «Turn» y «Dance» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_353f2fd6_10",
    "lang": "es",
    "style": "tutor",
@@ -189991,15 +189397,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_35762fd2_15",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Rápido y fuerte",
-   "speech": "Rápido y fuerte",
-   "source": "tpr.4_5.maio/s2/4_5.maio.s2.rushing/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_357a9f44_22",
    "lang": "es",
    "style": "tutor",
@@ -190025,15 +189422,6 @@
    "speech": "El círculo acogedor en la asamblea",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_359018c0_16",
-   "lang": "es",
-   "style": "tutor",
-   "text": "El más brillante",
-   "speech": "El más brillante",
-   "source": "tpr.4_5.decembro/s3/4_5.decembro.s3.brightest/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_359e9f10_53",
@@ -190216,6 +189604,15 @@
    "text": "El vaso vacío suena agudo.",
    "speech": "El vaso vacío suena agudo.",
    "source": "gramatica/curso_3_4/5/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_35eac8b4_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mejillón y Cesta.",
+   "speech": "Mejillón y Cesta.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/sig",
    "pack": false
   },
   {
@@ -192289,15 +191686,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_3af909c5_186",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Rushing» y «Shell» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Rushing» y «Shell» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/instrucion",
-   "pack": false
-  },
-  {
    "id": "es_tutor_3afb63f4_11",
    "lang": "es",
    "style": "tutor",
@@ -192748,15 +192136,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_3c311c66_47",
-   "lang": "es",
-   "style": "tutor",
-   "text": "De chubascos y Si hace calor, jugamos con agua.",
-   "speech": "De chubascos y Si hace calor, jugamos con agua.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/sig",
-   "pack": false
-  },
-  {
    "id": "es_tutor_3c323208_7",
    "lang": "es",
    "style": "tutor",
@@ -192781,15 +192160,6 @@
    "text": "¡Sí! ¡El bebé! El bebé está durmiendo. ¡Chis!",
    "speech": "¡Sí! ¡El bebé! El bebé está durmiendo. ¡Chis!",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_3c3b255b_49",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Bailar y Mateo, busca una castaña redonda y fría.",
-   "speech": "Bailar y Mateo, busca una castaña redonda y fría.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/sig",
    "pack": false
   },
   {
@@ -193297,15 +192667,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_3d4255da_35",
-   "lang": "es",
-   "style": "tutor",
-   "text": "De chubascos y Barra de equilibrio.",
-   "speech": "De chubascos y Barra de equilibrio.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/sig",
-   "pack": false
-  },
-  {
    "id": "es_tutor_3d434477_33",
    "lang": "es",
    "style": "tutor",
@@ -193600,15 +192961,6 @@
    "text": "Morder",
    "speech": "Morder",
    "source": "tpr.3_4.marzo/s3/3_4.marzo.s3.bite/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_3dff1c30_9",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Caballero",
-   "speech": "Caballero",
-   "source": "tpr.4_5.febreiro/s2/4_5.febreiro.s2.knight/significado",
    "pack": true
   },
   {
@@ -194356,6 +193708,15 @@
    "text": "¡Roto! Sí, el puente está roto.",
    "speech": "¡Roto! Sí, el puente está roto.",
    "source": "biblioteca/HIS-056/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_400558f1_183",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Fast» y «Shell» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Fast» y «Shell» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/instrucion",
    "pack": false
   },
   {
@@ -195898,15 +195259,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_4368387c_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "firme",
-   "speech": "firme",
-   "source": "curriculo/T3.U3.1/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_436c1c9e_40",
    "lang": "es",
    "style": "tutor",
@@ -197401,15 +196753,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_46ed7661_7",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Colador",
-   "speech": "Colador",
-   "source": "tpr.2_3.maio/s3/2_3.maio.s3.sieve/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_46ee7413_20",
    "lang": "es",
    "style": "tutor",
@@ -197532,7 +196875,7 @@
    "style": "tutor",
    "text": "Recoger",
    "speech": "Recoger",
-   "source": "tpr.3_4.novembro/s1/3_4.novembro.s1.pick-up/significado",
+   "source": "tpr.2_3.setembro/s3/2_3.setembro.s3.roll-up/significado",
    "pack": true
   },
   {
@@ -198157,6 +197500,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_4874b132_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soleado",
+   "speech": "Soleado",
+   "source": "tpr.2_3.xuno/s1/2_3.xuno.s1.calm-sea/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_487507c7_36",
    "lang": "es",
    "style": "tutor",
@@ -198684,7 +198036,7 @@
    "style": "tutor",
    "text": "Marchar",
    "speech": "Marchar",
-   "source": "tpr.3_4.outubro/s4/3_4.outubro.s4.march/significado",
+   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.stroll/significado",
    "pack": true
   },
   {
@@ -198695,15 +198047,6 @@
    "speech": "Y · Amarillo brillante",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_49dc8ac9_19",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Mirar las estrellas",
-   "speech": "Mirar las estrellas",
-   "source": "tpr.5_6.decembro/s2/5_6.decembro.s2.stargaze/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_49dd014a_44",
@@ -199507,15 +198850,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_4ba765a9_11",
-   "lang": "es",
-   "style": "tutor",
-   "text": "que salpica",
-   "speech": "que salpica",
-   "source": "curriculo/T3.U4.2/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_4ba86c00_50",
    "lang": "es",
    "style": "tutor",
@@ -200191,15 +199525,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_4d8aa9d8_12",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Mesa de agua",
-   "speech": "Mesa de agua",
-   "source": "tpr.2_3.maio/s3/2_3.maio.s3.water-table/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_4d8b3c20_25",
    "lang": "es",
    "style": "tutor",
@@ -200673,7 +199998,7 @@
    "style": "tutor",
    "text": "Triángulo",
    "speech": "Triángulo",
-   "source": "tpr.3_4.marzo/s2/3_4.marzo.s2.triangle/significado",
+   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.cube/significado",
    "pack": true
   },
   {
@@ -201046,6 +200371,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_4f6dd0d9_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Bailar y Turno.",
+   "speech": "Bailar y Turno.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4f796503_44",
    "lang": "es",
    "style": "tutor",
@@ -201062,15 +200396,6 @@
    "speech": "Intercambio de rol entre los dos miembros de la pareja.",
    "source": "asamblea.segundo_ciclo.febreiro.6_infantil/fase/3/cmd/cmd.febreiro.6i.02/accionFisica",
    "pack": false
-  },
-  {
-   "id": "es_tutor_4f904d29_23",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Camino de los recuerdos",
-   "speech": "Camino de los recuerdos",
-   "source": "tpr.5_6.xuno/s1/5_6.xuno.s1.memory-lane/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_4f91524c_14",
@@ -201757,15 +201082,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_515167f6_8",
-   "lang": "es",
-   "style": "tutor",
-   "text": "creativo",
-   "speech": "creativo",
-   "source": "curriculo/T3.U5.1/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_5152649c_70",
    "lang": "es",
    "style": "tutor",
@@ -201826,6 +201142,15 @@
    "text": "¿Puedes abrazar como Lúa? ¡Un abrazo calentito!",
    "speech": "¿Puedes abrazar como Lúa? ¡Un abrazo calentito!",
    "source": "biblioteca/HIS-030/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5166bf1f_180",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «Bench» y «Rainy» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «Bench» y «Rainy» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/instrucion",
    "pack": false
   },
   {
@@ -203593,15 +202918,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_566f9486_13",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Paso inferior",
-   "speech": "Paso inferior",
-   "source": "tpr.4_5.xaneiro/s2/4_5.xaneiro.s2.tunnel-under/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_5682f286_27",
    "lang": "es",
    "style": "tutor",
@@ -203791,21 +203107,21 @@
    "pack": true
   },
   {
-   "id": "es_tutor_570c230f_6",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Astuto",
-   "speech": "Astuto",
-   "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.sly/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_571b9dd7_69",
    "lang": "es",
    "style": "tutor",
    "text": "Niebla imperceptible sobre el dorso de las manos, con cadencia suave.",
    "speech": "Niebla imperceptible sobre el dorso de las manos, con cadencia suave.",
    "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/2/consigna",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_57272ebe_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Colorido",
+   "speech": "Colorido",
+   "source": "curriculo/T3.U5.1/vocabulario/significado",
    "pack": false
   },
   {
@@ -204709,15 +204025,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_598429f9_16",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Pollo de gaviota",
-   "speech": "Pollo de gaviota",
-   "source": "tpr.4_5.abril/s2/4_5.abril.s2.gull-chick/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_59888d4b_24",
    "lang": "es",
    "style": "tutor",
@@ -204832,15 +204139,6 @@
    "text": "Abuela",
    "speech": "Abuela",
    "source": "tpr.3_4.setembro/s3/3_4.setembro.s3.grandma/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_59c29dc5_14",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Aldea marinera",
-   "speech": "Aldea marinera",
-   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.fishing-village/significado",
    "pack": true
   },
   {
@@ -205942,15 +205240,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_5cacf130_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Justo",
-   "speech": "Justo",
-   "source": "tpr.4_5.setembro/s1/4_5.setembro.s1.fair/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_5cae41f1_43",
    "lang": "es",
    "style": "tutor",
@@ -206500,6 +205789,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_5dec1827_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Remar y Mejillón.",
+   "speech": "Remar y Mejillón.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5ded2e91_33",
    "lang": "es",
    "style": "tutor",
@@ -206947,15 +206245,6 @@
    "text": "Cruzar caminando",
    "speech": "Cruzar caminando",
    "source": "tpr.4_5.xaneiro/s2/4_5.xaneiro.s2.walk-across/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_5f0ef7a5_14",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Libro de fotos",
-   "speech": "Libro de fotos",
-   "source": "tpr.4_5.xuno/s2/4_5.xuno.s2.photo-book/significado",
    "pack": true
   },
   {
@@ -208440,15 +207729,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_62b3b6cf_17",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Llover a cántaros",
-   "speech": "Llover a cántaros",
-   "source": "tpr.2_3.decembro/s2/2_3.decembro.s2.pour-down/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_62b7c079_16",
    "lang": "es",
    "style": "tutor",
@@ -208599,15 +207879,6 @@
    "text": "Agarrarse",
    "speech": "Agarrarse",
    "source": "tpr.2_3.novembro/s2/2_3.novembro.s2.hold-on/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_633b6bec_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Pisar",
-   "speech": "Pisar",
-   "source": "tpr.2_3.novembro/s3/2_3.novembro.s3.tread/significado",
    "pack": true
   },
   {
@@ -210942,15 +210213,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_68b5702b_174",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 4-5 años («La camilla») dice «Showery» y «Raincoat» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 4-5 años («La camilla») dice «Showery» y «Raincoat» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/instrucion",
-   "pack": false
-  },
-  {
    "id": "es_tutor_68c4abca_51",
    "lang": "es",
    "style": "tutor",
@@ -212493,15 +211755,6 @@
    "speech": "¿Puedes coger al pajarito, como Lúa?",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_6cb49d17_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Prado",
-   "speech": "Prado",
-   "source": "tpr.2_3.abril/s1/2_3.abril.s1.meadow/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_6cb9e9f6_26",
@@ -214390,7 +213643,7 @@
    "style": "tutor",
    "text": "Burbujas",
    "speech": "Burbujas",
-   "source": "tpr.3_4.maio/s1/3_4.maio.s1.bubbles/significado",
+   "source": "tpr.2_3.maio/s1/2_3.maio.s1.soap-pump/significado",
    "pack": true
   },
   {
@@ -214544,15 +213797,6 @@
    "text": "¡Sí, un conejito blanco pequeño!",
    "speech": "¡Sí, un conejito blanco pequeño!",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_716b0f18_14",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Remar y Batea.",
-   "speech": "Remar y Batea.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/sig",
    "pack": false
   },
   {
@@ -215065,6 +214309,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_727cf61a_178",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 5-6 años («Aviones de papel») dice «Copy my movements» y «Peek» a quien va en 4-5 años («Hacemos barro»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 5-6 años («Aviones de papel») dice «Copy my movements» y «Peek» a quien va en 4-5 años («Hacemos barro»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_72893c75_24",
    "lang": "es",
    "style": "tutor",
@@ -215107,15 +214360,6 @@
    "text": "¿Tierra seca o barro pegajoso?",
    "speech": "¿Tierra seca o barro pegajoso?",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_72951cba_188",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 5-6 años («La flauta del tren») dice «Basket» y «Mussel raft» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 5-6 años («La flauta del tren») dice «Basket» y «Mussel raft» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/instrucion",
    "pack": false
   },
   {
@@ -215505,6 +214749,15 @@
    "speech": "Grueso",
    "source": "tpr.2_3.decembro/s3/2_3.decembro.s3.chunky/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_738c60bd_206",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «If it's hot, we play with water» y «Rainy» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «If it's hot, we play with water» y «Rainy» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_739f9838_27",
@@ -216902,30 +216155,21 @@
    "pack": true
   },
   {
+   "id": "es_tutor_7704c5b5_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Rápido y ¡Mira, una concha.",
+   "speech": "Rápido y ¡Mira, una concha.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_77201e43_40",
    "lang": "es",
    "style": "tutor",
    "text": "¡Sí, en la caja! ¡Buenas noches, pelota!",
    "speech": "¡Sí, en la caja! ¡Buenas noches, pelota!",
    "source": "biblioteca/HIS-051/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_77269e83_14",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Batea y Cesta.",
-   "speech": "Batea y Cesta.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/sig",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_77271309_179",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 5-6 años («Aviones de papel») dice «Copy my movements» y «Sneak» a quien va en 4-5 años («Hacemos barro»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 5-6 años («Aviones de papel») dice «Copy my movements» y «Sneak» a quien va en 4-5 años («Hacemos barro»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/instrucion",
    "pack": false
   },
   {
@@ -217069,7 +216313,7 @@
    "style": "tutor",
    "text": "explorar",
    "speech": "explorar",
-   "source": "curriculo/T3.U5.2/vocabulario/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -217538,6 +216782,15 @@
    "text": "Bajo el mar",
    "speech": "Bajo el mar",
    "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.under-the-sea/significado",
+   "pack": true
+  },
+  {
+   "id": "es_tutor_78b3bf25_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sólido",
+   "speech": "Sólido",
+   "source": "tpr.4_5.setembro/s2/4_5.setembro.s2.sturdy/significado",
    "pack": true
   },
   {
@@ -219481,15 +218734,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_7d8025e3_10",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Resistente",
-   "speech": "Resistente",
-   "source": "tpr.4_5.setembro/s2/4_5.setembro.s2.sturdy/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_7d89b9db_11",
    "lang": "es",
    "style": "tutor",
@@ -219850,15 +219094,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_7e5f25df_10",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Investigar",
-   "speech": "Investigar",
-   "source": "tpr.5_6.novembro/s3/5_6.novembro.s3.investigate/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_7e5f587d_5",
    "lang": "es",
    "style": "tutor",
@@ -220144,15 +219379,6 @@
    "text": "Mirada al espejo",
    "speech": "Mirada al espejo",
    "source": "tpr.2_3.maio/s1/2_3.maio.s1.mirror-check/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_7f0ccb60_18",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Congelado del todo",
-   "speech": "Congelado del todo",
-   "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.frozen-solid/significado",
    "pack": true
   },
   {
@@ -220714,15 +219940,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_8099389a_30",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Máscara y Andar a hurtadillas.",
-   "speech": "Máscara y Andar a hurtadillas.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/sig",
-   "pack": false
-  },
-  {
    "id": "es_tutor_809b0a9f_14",
    "lang": "es",
    "style": "tutor",
@@ -220876,6 +220093,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_80ec23bf_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Salado",
+   "speech": "Salado",
+   "source": "tpr.4_5.abril/s3/4_5.abril.s3.deep-blue/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_80f96175_8",
    "lang": "es",
    "style": "tutor",
@@ -220900,6 +220126,15 @@
    "text": "¡El mar! ¡El mar azul de la playa!",
    "speech": "¡El mar! ¡El mar azul de la playa!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_8108fd13_189",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 5-6 años («La mariposa igual») dice «Round» y «Curl into a ball» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 5-6 años («La mariposa igual») dice «Round» y «Curl into a ball» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/instrucion",
    "pack": false
   },
   {
@@ -223036,6 +222271,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_86779e3c_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toma y Lluvioso.",
+   "speech": "Toma y Lluvioso.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8681850d_5",
    "lang": "es",
    "style": "tutor",
@@ -224017,15 +223261,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_891d0af1_10",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Evaporarse",
-   "speech": "Evaporarse",
-   "source": "tpr.4_5.maio/s3/4_5.maio.s3.evaporate/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_891d9412_24",
    "lang": "es",
    "style": "tutor",
@@ -224114,15 +223349,6 @@
    "speech": "¡Hazlo bajar rodando!",
    "source": "nivel/curso_3_4/c3_4_p1_3/sig",
    "pack": false
-  },
-  {
-   "id": "es_tutor_897ed70c_18",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Madera a la deriva",
-   "speech": "Madera a la deriva",
-   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.driftwood/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_89820186_6",
@@ -224491,15 +223717,6 @@
    "text": "Parpadear",
    "speech": "Parpadear",
    "source": "tpr.3_4.outubro/s2/3_4.outubro.s2.blink/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_8a7646e9_6",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Pasear",
-   "speech": "Pasear",
-   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.stroll/significado",
    "pack": true
   },
   {
@@ -225880,15 +225097,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_8de1c485_19",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Andar a hurtadillas",
-   "speech": "Andar a hurtadillas",
-   "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.sneak/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_8de37950_40",
    "lang": "es",
    "style": "tutor",
@@ -226372,15 +225580,6 @@
    "text": "Misión",
    "speech": "Misión",
    "source": "tpr.5_6.setembro/s2/5_6.setembro.s2.mission/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_8f4c244c_13",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Mar tranquilo",
-   "speech": "Mar tranquilo",
-   "source": "tpr.2_3.xuno/s1/2_3.xuno.s1.calm-sea/significado",
    "pack": true
   },
   {
@@ -227483,6 +226682,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_91bbd208_10",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Con hierba",
+   "speech": "Con hierba",
+   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.steep/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_91c37ca1_54",
    "lang": "es",
    "style": "tutor",
@@ -227778,15 +226986,6 @@
    "speech": "¿Te gusta una toalla grande después del baño?",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_927efcd6_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Mirlo",
-   "speech": "Mirlo",
-   "source": "tpr.2_3.abril/s2/2_3.abril.s2.blackbird/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_92817673_41",
@@ -230003,15 +229202,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_97c63a85_12",
-   "lang": "es",
-   "style": "tutor",
-   "text": "De chubascos",
-   "speech": "De chubascos",
-   "source": "tpr.4_5.maio/s3/4_5.maio.s3.rainy-season/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_97c9eb31_28",
    "lang": "es",
    "style": "tutor",
@@ -231974,15 +231164,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_9cd24c74_13",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Azul profundo",
-   "speech": "Azul profundo",
-   "source": "tpr.4_5.abril/s3/4_5.abril.s3.deep-blue/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_9cd7b5f2_19",
    "lang": "es",
    "style": "tutor",
@@ -232190,21 +231371,12 @@
    "pack": false
   },
   {
-   "id": "es_tutor_9d49dd13_7",
-   "lang": "es",
-   "style": "tutor",
-   "text": "destino",
-   "speech": "destino",
-   "source": "curriculo/T3.U5.2/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_9d4d674c_8",
    "lang": "es",
    "style": "tutor",
    "text": "Cuadrado",
    "speech": "Cuadrado",
-   "source": "tpr.3_4.marzo/s2/3_4.marzo.s2.square/significado",
+   "source": "tpr.2_3.marzo/s1/2_3.marzo.s1.oval/significado",
    "pack": true
   },
   {
@@ -232358,6 +231530,15 @@
    "text": "Risita",
    "speech": "Risita",
    "source": "tpr.0_2.setembro/s3/0_2.setembro.s3.giggle/significado",
+   "pack": true
+  },
+  {
+   "id": "es_tutor_9db59005_12",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pisar fuerte",
+   "speech": "Pisar fuerte",
+   "source": "tpr.2_3.novembro/s3/2_3.novembro.s3.tread/significado",
    "pack": true
   },
   {
@@ -232901,6 +232082,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9ec51822_9",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Despierto",
+   "speech": "Despierto",
+   "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.alert/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_9eceb011_30",
    "lang": "es",
    "style": "tutor",
@@ -233088,15 +232278,6 @@
    "speech": "Ajustar las manos al tamaño es una respuesta al tamaño, y llega mucho antes que la palabra. Verla es más fiable que preguntar, porque no depende de que sepa decirlo.",
    "source": "aula.matematicas.01/afirmaciones/afirmacion_02/explicacion",
    "pack": false
-  },
-  {
-   "id": "es_tutor_9f60edb9_7",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Tiovivo",
-   "speech": "Tiovivo",
-   "source": "tpr.2_3.outubro/s2/2_3.outubro.s2.merry-go-round/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_9f6efa5e_13",
@@ -235615,6 +234796,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a5bb5560_183",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Mussel» y «Row» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Mussel» y «Row» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a5ceacde_25",
    "lang": "es",
    "style": "tutor",
@@ -235757,15 +234947,6 @@
    "speech": "Caricia suave. ¡Barriga suave, calentita y dulce!",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_a613136a_9",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Escenario",
-   "speech": "Escenario",
-   "source": "tpr.4_5.febreiro/s1/4_5.febreiro.s1.stage/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_a61530cf_41",
@@ -237001,15 +236182,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_a8e46ee6_17",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Pista de carreras",
-   "speech": "Pista de carreras",
-   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.race-track/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_a8ea83c8_69",
    "lang": "es",
    "style": "tutor",
@@ -237206,6 +236378,15 @@
    "speech": "Con cuidado",
    "source": "tpr.3_4.xaneiro/s3/3_4.xaneiro.s3.careful/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_a976fa89_183",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 5-6 años («La flauta del tren») dice «Basket» y «Mussel» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 5-6 años («La flauta del tren») dice «Basket» y «Mussel» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_a97da7ee_13",
@@ -237557,6 +236738,15 @@
    "speech": "¡Aquí está!",
    "source": "tpr.3_4.novembro/s2/3_4.novembro.s2.here-it-is/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_aa5eaffb_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "con viento y Vacaciones.",
+   "speech": "con viento y Vacaciones.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_aa62cf53_35",
@@ -239248,15 +238438,6 @@
    "text": "¡Abre los ojos y mira!",
    "speech": "¡Abre los ojos y mira!",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_ae8796d7_177",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 4-5 años («La camilla») dice «Showery» y «Here you go» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 4-5 años («La camilla») dice «Showery» y «Here you go» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/instrucion",
    "pack": false
   },
   {
@@ -241165,15 +240346,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_b2aa7cbc_180",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 5-6 años («El mapa del tesoro») dice «journey» y «windy» a quien va en 4-5 años («El molinillo de viento»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 5-6 años («El mapa del tesoro») dice «journey» y «windy» a quien va en 4-5 años («El molinillo de viento»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/instrucion",
-   "pack": false
-  },
-  {
    "id": "es_tutor_b2affe56_41",
    "lang": "es",
    "style": "tutor",
@@ -241534,15 +240706,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_b397553a_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "viaje",
-   "speech": "viaje",
-   "source": "curriculo/T3.U5.2/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_b39cb1f9_37",
    "lang": "es",
    "style": "tutor",
@@ -241864,6 +241027,15 @@
    "text": "Haz rodar la botella por sus piernas.",
    "speech": "Haz rodar la botella por sus piernas.",
    "source": "asamblea.primeiro_ciclo.marzo.0_2_anos/fase/2/consigna",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b45aa890_180",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 5-6 años («El mapa del tesoro») dice «Holiday» y «windy» a quien va en 4-5 años («El molinillo de viento»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 5-6 años («El mapa del tesoro») dice «Holiday» y «windy» a quien va en 4-5 años («El molinillo de viento»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/instrucion",
    "pack": false
   },
   {
@@ -242288,6 +241460,15 @@
    "speech": "Dobla el morro para que el avión blanco planee lejos.",
    "source": "significados/significado",
    "pack": false
+  },
+  {
+   "id": "es_tutor_b535d578_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Derretir",
+   "speech": "Derretir",
+   "source": "tpr.4_5.maio/s3/4_5.maio.s3.evaporate/significado",
+   "pack": true
   },
   {
    "id": "es_tutor_b53fc99f_29",
@@ -242953,7 +242134,7 @@
    "style": "tutor",
    "text": "Calle",
    "speech": "Calle",
-   "source": "tpr.3_4.xaneiro/s2/3_4.xaneiro.s2.street/significado",
+   "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.pavement/significado",
    "pack": true
   },
   {
@@ -244046,6 +243227,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_b9818b8c_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El cole de mayores",
+   "speech": "El cole de mayores",
+   "source": "tpr.5_6.xuno/s2/5_6.xuno.s2.primary-school/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_b981c401_41",
    "lang": "es",
    "style": "tutor",
@@ -244088,6 +243278,15 @@
    "text": "¿Tú te estiras cuando te despiertas?",
    "speech": "¿Tú te estiras cuando te despiertas?",
    "source": "biblioteca/HIS-047/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b98e040b_11",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Resbaladizo",
+   "speech": "Resbaladizo",
+   "source": "curriculo/T3.U4.2/vocabulario/significado",
    "pack": false
   },
   {
@@ -246494,6 +245693,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_bf97cec2_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Asomarse y Copia mis movimientos.",
+   "speech": "Asomarse y Copia mis movimientos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_bfb5f6f1_6",
    "lang": "es",
    "style": "tutor",
@@ -246508,7 +245716,7 @@
    "style": "tutor",
    "text": "Hierba",
    "speech": "Hierba",
-   "source": "tpr.3_4.abril/s4/3_4.abril.s4.grass/significado",
+   "source": "tpr.2_3.abril/s1/2_3.abril.s1.meadow/significado",
    "pack": true
   },
   {
@@ -247662,15 +246870,6 @@
    "speech": "Coloca los dos tiestos y formula la condicional sin señalar.",
    "source": "asamblea.segundo_ciclo.marzo.6_infantil/fase/3/cmd/cmd.marzo.6i.03/modeladoDocente",
    "pack": false
-  },
-  {
-   "id": "es_tutor_c2ddc338_20",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Llevárselo el viento",
-   "speech": "Llevárselo el viento",
-   "source": "tpr.2_3.novembro/s2/2_3.novembro.s2.blow-away/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_c2e4609a_110",
@@ -249347,15 +248546,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_c71ca184_9",
-   "lang": "es",
-   "style": "tutor",
-   "text": "pasaporte",
-   "speech": "pasaporte",
-   "source": "curriculo/T3.U5.2/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_c71d6880_20",
    "lang": "es",
    "style": "tutor",
@@ -250243,7 +249433,7 @@
    "style": "tutor",
    "text": "Parque",
    "speech": "Parque",
-   "source": "tpr.3_4.abril/s4/3_4.abril.s4.park/significado",
+   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.race-track/significado",
    "pack": true
   },
   {
@@ -251084,15 +250274,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_cb03a019_10",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Biblioteca",
-   "speech": "Biblioteca",
-   "source": "tpr.2_3.abril/s3/2_3.abril.s3.library/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_cb05a217_7",
    "lang": "es",
    "style": "tutor",
@@ -251144,6 +250325,15 @@
    "text": "Recuento de palitos",
    "speech": "Recuento de palitos",
    "source": "tpr.5_6.novembro/s2/5_6.novembro.s2.tally/significado",
+   "pack": true
+  },
+  {
+   "id": "es_tutor_cb278207_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tobogán",
+   "speech": "Tobogán",
+   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.finish-line/significado",
    "pack": true
   },
   {
@@ -252074,24 +251264,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_cd68e641_8",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Director",
-   "speech": "Director",
-   "source": "tpr.5_6.febreiro/s2/5_6.febreiro.s2.director/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_cd6ab7b4_206",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 5-6 años («La mariposa igual») dice «Mateo, find a round cold chestnut» y «Dance» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 5-6 años («La mariposa igual») dice «Mateo, find a round cold chestnut» y «Dance» a quien va en 4-5 años («Dos patas, cuatro patas»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/instrucion",
-   "pack": false
-  },
-  {
    "id": "es_tutor_cd6d5f46_10",
    "lang": "es",
    "style": "tutor",
@@ -252431,15 +251603,6 @@
    "text": "Serpenteante",
    "speech": "Serpenteante",
    "source": "tpr.4_5.maio/s4/4_5.maio.s4.winding/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_ce34141a_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Óvalo",
-   "speech": "Óvalo",
-   "source": "tpr.2_3.marzo/s1/2_3.marzo.s1.oval/significado",
    "pack": true
   },
   {
@@ -252830,15 +251993,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_cf21a6f2_8",
-   "lang": "es",
-   "style": "tutor",
-   "text": "examinar",
-   "speech": "examinar",
-   "source": "curriculo/T3.U4.1/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_cf24b387_251",
    "lang": "es",
    "style": "tutor",
@@ -253150,6 +252304,15 @@
    "text": "Coloca dos objetos a cada lado y ayuda al niño o a la niña a señalar cuál mira Lúa.",
    "speech": "Coloca dos objetos a cada lado y ayuda al niño o a la niña a señalar cuál mira Lúa.",
    "source": "escoita/ar/ra_curso_4_5_m03/guia",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_cfe869fb_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hacerse una bola y Redondo, redonda.",
+   "speech": "Hacerse una bola y Redondo, redonda.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/sig",
    "pack": false
   },
   {
@@ -254481,7 +253644,7 @@
    "style": "tutor",
    "text": "Brincar",
    "speech": "Brincar",
-   "source": "tpr.3_4.febreiro/s4/3_4.febreiro.s4.leap/significado",
+   "source": "tpr.2_3.decembro/s1/2_3.decembro.s1.jump-in/significado",
    "pack": true
   },
   {
@@ -254904,7 +254067,7 @@
    "style": "tutor",
    "text": "Estrella",
    "speech": "Estrella",
-   "source": "tpr.3_4.decembro/s2/3_4.decembro.s2.star/significado",
+   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.sphere/significado",
    "pack": true
   },
   {
@@ -255081,15 +254244,6 @@
    "text": "Frota las manos mojadas.",
    "speech": "Frota las manos mojadas.",
    "source": "gramatica/curso_0_2/4/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_d5427255_208",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «If it's hot, we play with water» y «Showery» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «If it's hot, we play with water» y «Showery» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/instrucion",
    "pack": false
   },
   {
@@ -255732,15 +254886,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_d6c88467_44",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Andar a hurtadillas y Copia mis movimientos.",
-   "speech": "Andar a hurtadillas y Copia mis movimientos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/sig",
-   "pack": false
-  },
-  {
    "id": "es_tutor_d6c98a7f_7",
    "lang": "es",
    "style": "tutor",
@@ -255883,15 +255028,6 @@
    "speech": "bolígrafo",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_d737de79_19",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Colegio de Primaria",
-   "speech": "Colegio de Primaria",
-   "source": "tpr.5_6.xuno/s2/5_6.xuno.s2.primary-school/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_d73b327f_14",
@@ -256152,15 +255288,6 @@
    "text": "Balancín",
    "speech": "Balancín",
    "source": "tpr.0_2.febreiro/s2/0_2.febreiro.s2.seesaw/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_d7f6568d_7",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Inmóvil",
-   "speech": "Inmóvil",
-   "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.motionless/significado",
    "pack": true
   },
   {
@@ -257204,7 +256331,7 @@
    "style": "tutor",
    "text": "Plic, plic",
    "speech": "Plic, plic",
-   "source": "tpr.3_4.abril/s1/3_4.abril.s1.tap-tap/significado",
+   "source": "tpr.2_3.decembro/s2/2_3.decembro.s2.pour-down/significado",
    "pack": true
   },
   {
@@ -257241,15 +256368,6 @@
    "text": "¡Sí, han desaparecido! Las zanahorias de papel han desaparecido.",
    "speech": "¡Sí, han desaparecido! Las zanahorias de papel han desaparecido.",
    "source": "biblioteca/HIS-090/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_db367839_169",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 4-5 años («Hacemos barro») dice «Sneak» y «Mask» a quien va en 3-4 años («El hielo en el zumo»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 4-5 años («Hacemos barro») dice «Sneak» y «Mask» a quien va en 3-4 años («El hielo en el zumo»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/instrucion",
    "pack": false
   },
   {
@@ -257818,6 +256936,15 @@
    "speech": "Liebre",
    "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.hare/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_dcc0a56a_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lluvioso y Banco.",
+   "speech": "Lluvioso y Banco.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_dcc3abec_17",
@@ -258756,15 +257883,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_df5cdde0_27",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Chubasquero y De chubascos.",
-   "speech": "Chubasquero y De chubascos.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/sig",
-   "pack": false
-  },
-  {
    "id": "es_tutor_df666724_15",
    "lang": "es",
    "style": "tutor",
@@ -258772,6 +257890,15 @@
    "speech": "Cruzar la calle",
    "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.cross-the-road/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_df6a87a3_175",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 4-5 años («La camilla») dice «Rainy» y «Here you go» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 4-5 años («La camilla») dice «Rainy» y «Here you go» a quien va en 3-4 años («La sombra de la torre»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_df722c04_39",
@@ -259701,15 +258828,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_e1e1afa1_10",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Ave marina",
-   "speech": "Ave marina",
-   "source": "tpr.4_5.abril/s1/4_5.abril.s1.seabird/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_e1e992bd_31",
    "lang": "es",
    "style": "tutor",
@@ -259735,15 +258853,6 @@
    "speech": "Basura",
    "source": "tpr.4_5.abril/s4/4_5.abril.s4.litter/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_e1fa503d_188",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Mussel raft» y «Row» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Mussel raft» y «Row» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/instrucion",
-   "pack": false
   },
   {
    "id": "es_tutor_e2010ef3_34",
@@ -260934,15 +260043,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_e52b3c89_192",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Quien va en 5-6 años («La flauta del tren») dice «Look, a shell!» y «Rushing» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "speech": "Quien va en 5-6 años («La flauta del tren») dice «Look, a shell!» y «Rushing» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/instrucion",
-   "pack": false
-  },
-  {
    "id": "es_tutor_e52edec7_201",
    "lang": "es",
    "style": "tutor",
@@ -261247,15 +260347,6 @@
    "speech": "Hundirse",
    "source": "tpr.4_5.maio/s1/4_5.maio.s1.sink-down/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_e5f2a2e9_11",
-   "lang": "es",
-   "style": "tutor",
-   "text": "temperatura",
-   "speech": "temperatura",
-   "source": "curriculo/T3.U4.1/vocabulario/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_e5fb3b90_43",
@@ -261620,15 +260711,6 @@
    "text": "Superhéroe",
    "speech": "Superhéroe",
    "source": "tpr.4_5.febreiro/s2/4_5.febreiro.s2.superhero/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_e6f0f9ec_8",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Empinado",
-   "speech": "Empinado",
-   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.steep/significado",
    "pack": true
   },
   {
@@ -262222,7 +261304,7 @@
    "style": "tutor",
    "text": "Estrella de mar",
    "speech": "Estrella de mar",
-   "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.starfish/significado",
+   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.sea-glass/significado",
    "pack": true
   },
   {
@@ -262460,15 +261542,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_e903ecfb_8",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Simetría",
-   "speech": "Simetría",
-   "source": "tpr.5_6.marzo/s2/5_6.marzo.s2.symmetry/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_e915cc4d_5",
    "lang": "es",
    "style": "tutor",
@@ -262600,7 +261673,7 @@
    "style": "tutor",
    "text": "Libro",
    "speech": "Libro",
-   "source": "tpr.3_4.setembro/s2/3_4.setembro.s2.book/significado",
+   "source": "tpr.2_3.abril/s3/2_3.abril.s3.library/significado",
    "pack": true
   },
   {
@@ -264413,6 +263486,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_ee2c51e7_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Palo",
+   "speech": "Palo",
+   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.driftwood/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_ee30fa64_51",
    "lang": "es",
    "style": "tutor",
@@ -264778,15 +263860,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_ef02e482_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Batea",
-   "speech": "Batea",
-   "source": "tpr.4_5.xuno/s1/4_5.xuno.s1.mussel-raft/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_ef0503c8_7",
    "lang": "es",
    "style": "tutor",
@@ -265067,7 +264140,7 @@
    "style": "tutor",
    "text": "mezclar",
    "speech": "mezclar",
-   "source": "curriculo/T3.U5.1/vocabulario/significado",
+   "source": "escoita/curso_4_5/6/mix/significado",
    "pack": false
   },
   {
@@ -265780,15 +264853,6 @@
    "speech": "Llama a tu amigo: ¡ven a ayudarnos!",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_f1ae23a7_4",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Voto",
-   "speech": "Voto",
-   "source": "tpr.5_6.setembro/s1/5_6.setembro.s1.vote/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_f1b2eeb7_18",
@@ -267731,7 +266795,7 @@
    "style": "tutor",
    "text": "Ballena",
    "speech": "Ballena",
-   "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.whale/significado",
+   "source": "tpr.2_3.febreiro/s3/2_3.febreiro.s3.walrus/significado",
    "pack": true
   },
   {
@@ -268379,7 +267443,7 @@
    "style": "tutor",
    "text": "Cubo",
    "speech": "Cubo",
-   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.cube/significado",
+   "source": "tpr.2_3.maio/s3/2_3.maio.s3.water-table/significado",
    "pack": true
   },
   {
@@ -268435,15 +267499,6 @@
    "speech": "¡El plato está vacío! Un plato lleno... ¡munch, crunch!",
    "source": "biblioteca/HIS-065/significado",
    "pack": false
-  },
-  {
-   "id": "es_tutor_f8805852_13",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Línea de meta",
-   "speech": "Línea de meta",
-   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.finish-line/significado",
-   "pack": true
   },
   {
    "id": "es_tutor_f887bb90_13",
@@ -269760,15 +268815,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_fbedb94a_19",
-   "lang": "es",
-   "style": "tutor",
-   "text": "con viento y viaje.",
-   "speech": "con viento y viaje.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/sig",
-   "pack": false
-  },
-  {
    "id": "es_tutor_fbfab75c_17",
    "lang": "es",
    "style": "tutor",
@@ -270046,6 +269092,15 @@
    "speech": "Al lado",
    "source": "tpr.4_5.xaneiro/s2/4_5.xaneiro.s2.beside/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_fcb1dd89_189",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Quien va en 5-6 años («La flauta del tren») dice «Look, a shell!» y «Fast» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "speech": "Quien va en 5-6 años («La flauta del tren») dice «Look, a shell!» y «Fast» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_fcbd5842_6",
@@ -270651,15 +269706,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_fddcb8ba_8",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Enrollar",
-   "speech": "Enrollar",
-   "source": "tpr.2_3.setembro/s3/2_3.setembro.s3.roll-up/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_fdea5416_7",
    "lang": "es",
    "style": "tutor",
@@ -271143,6 +270189,15 @@
    "text": "Piernas",
    "speech": "Piernas",
    "source": "tpr.3_4.outubro/s3/3_4.outubro.s3.legs/significado",
+   "pack": true
+  },
+  {
+   "id": "es_tutor_ff137dbc_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lluvioso",
+   "speech": "Lluvioso",
+   "source": "tpr.4_5.maio/s3/4_5.maio.s3.rainy-season/significado",
    "pack": true
   },
   {
@@ -272244,6 +271299,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_01518b26_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Salgado",
+   "speech": "Salgado",
+   "source": "tpr.4_5.abril/s3/4_5.abril.s3.deep-blue/significado",
+   "pack": true
+  },
+  {
    "id": "gl_tutor_0154dc95_6",
    "lang": "gl",
    "style": "tutor",
@@ -272341,15 +271405,6 @@
    "speech": "Onde está a abella pequena? Toca as súas listas amarelas!",
    "source": "biblioteca/HIS-098/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_01a25c91_12",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "De chuvascos",
-   "speech": "De chuvascos",
-   "source": "tpr.4_5.maio/s3/4_5.maio.s3.rainy-season/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_01ae138d_12",
@@ -274422,6 +273477,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_06998876_185",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 5-6 anos («A bolboreta igual») dille «Round» e «Curl into a ball» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 5-6 anos («A bolboreta igual») dille «Round» e «Curl into a ball» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0699896f_39",
    "lang": "gl",
    "style": "tutor",
@@ -274599,15 +273663,6 @@
    "text": "Onde está a maleta vermella? Tócaa!",
    "speech": "Onde está a maleta vermella? Tócaa!",
    "source": "biblioteca/HIS-096/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_07034fbd_165",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 4-5 anos («A padiola») dille «Showery» e «Raincoat» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 4-5 anos («A padiola») dille «Showery» e «Raincoat» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/instrucion",
    "pack": false
   },
   {
@@ -274815,15 +273870,6 @@
    "text": "Salpicar arredor",
    "speech": "Salpicar arredor",
    "source": "tpr.2_3.decembro/s1/2_3.decembro.s1.splash-around/significado",
-   "pack": true
-  },
-  {
-   "id": "gl_tutor_075ef7b8_14",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Cristal de mar",
-   "speech": "Cristal de mar",
-   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.sea-glass/significado",
    "pack": true
   },
   {
@@ -275070,15 +274116,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_08097d53_18",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "con vento e viaxe.",
-   "speech": "con vento e viaxe.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/sig",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_08135709_34",
    "lang": "gl",
    "style": "tutor",
@@ -275306,15 +274343,6 @@
    "text": "Mira isto! A caracola estaba debaixo da rocha. Grazas, polbo! Splash, splash!",
    "speech": "Mira isto! A caracola estaba debaixo da rocha. Grazas, polbo! Splash, splash!",
    "source": "biblioteca/HIS-006/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_089d01ab_168",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 4-5 anos («A padiola») dille «Showery» e «Here you go» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 4-5 anos («A padiola») dille «Showery» e «Here you go» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/instrucion",
    "pack": false
   },
   {
@@ -275642,6 +274670,24 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_095cb29b_10",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Con baches",
+   "speech": "Con baches",
+   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.downhill/significado",
+   "pack": true
+  },
+  {
+   "id": "gl_tutor_0961351c_175",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 5-6 anos («A frauta do tren») dille «Basket» e «Mussel» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 5-6 anos («A frauta do tren») dille «Basket» e «Mussel» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_09726180_42",
    "lang": "gl",
    "style": "tutor",
@@ -275802,6 +274848,15 @@
    "speech": "Cucú, xa te vexo!",
    "source": "tpr.0_2.outubro/s3/0_2.outubro.s3.peekaboo-i-see-you/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_09dafd36_172",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 5-6 anos («Avións de papel») dille «Copy my movements» e «Peek» a quen vai en 4-5 anos («Facemos lama»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 5-6 anos («Avións de papel») dille «Copy my movements» e «Peek» a quen vai en 4-5 anos («Facemos lama»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_09dde8de_31",
@@ -276605,15 +275660,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_0c2cfc27_35",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Rápido e forte e Mira, unha cuncha.",
-   "speech": "Rápido e forte e Mira, unha cuncha.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/sig",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_0c3238f7_9",
    "lang": "gl",
    "style": "tutor",
@@ -276659,15 +275705,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_0c4930b3_18",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Pista de carreiras",
-   "speech": "Pista de carreiras",
-   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.race-track/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_0c4cf51c_7",
    "lang": "gl",
    "style": "tutor",
@@ -276711,15 +275748,6 @@
    "speech": "Mira! Lúa abraza o patiño! Auga no patiño! Chap!",
    "source": "biblioteca/HIS-011/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_0c6ad5c1_12",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Costa abaixo",
-   "speech": "Costa abaixo",
-   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.downhill/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_0c71d593_8",
@@ -278630,15 +277658,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_10e460d5_10",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Misterioso",
-   "speech": "Misterioso",
-   "source": "tpr.4_5.febreiro/s1/4_5.febreiro.s1.mysterious/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_10e61d17_199",
    "lang": "gl",
    "style": "tutor",
@@ -279242,15 +278261,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_1238b489_175",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Rushing» e «Shell» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Rushing» e «Shell» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/instrucion",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_1241b741_15",
    "lang": "gl",
    "style": "tutor",
@@ -279258,6 +278268,15 @@
    "speech": "Cores primarias",
    "source": "tpr.5_6.marzo/s4/5_6.marzo.s4.primary-colours/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_1244ecd1_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chuvasqueiro e Chuvioso.",
+   "speech": "Chuvasqueiro e Chuvioso.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_1245c2f2_51",
@@ -280652,15 +279671,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_156853f9_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Morsa",
-   "speech": "Morsa",
-   "source": "tpr.2_3.febreiro/s3/2_3.febreiro.s3.walrus/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_156c3995_45",
    "lang": "gl",
    "style": "tutor",
@@ -281669,15 +280679,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_17f096a6_17",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Cabeza do cepillo",
-   "speech": "Cabeza do cepillo",
-   "source": "tpr.2_3.maio/s2/2_3.maio.s2.brush-head/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_17f51aed_18",
    "lang": "gl",
    "style": "tutor",
@@ -282107,15 +281108,6 @@
    "text": "Nariz con nariz",
    "speech": "Nariz con nariz",
    "source": "tpr.0_2.outubro/s1/0_2.outubro.s1.nose-to-nose/significado",
-   "pack": true
-  },
-  {
-   "id": "gl_tutor_19083e98_13",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Saltar dentro",
-   "speech": "Saltar dentro",
-   "source": "tpr.2_3.decembro/s1/2_3.decembro.s1.jump-in/significado",
    "pack": true
   },
   {
@@ -282830,15 +281822,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_1ac54bf1_176",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «Balance beam» e «Showery» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «Balance beam» e «Showery» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/instrucion",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_1ac81842_4",
    "lang": "gl",
    "style": "tutor",
@@ -283226,15 +282209,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_1b82133d_6",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Esfera",
-   "speech": "Esfera",
-   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.sphere/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_1b84f264_159",
    "lang": "gl",
    "style": "tutor",
@@ -283530,6 +282504,15 @@
    "speech": "Mira pola nosa fiestra. Chove hoxe ou vai sol?",
    "source": "biblioteca/HIS-076/significado",
    "pack": false
+  },
+  {
+   "id": "gl_tutor_1c5fb85b_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chuvioso",
+   "speech": "Chuvioso",
+   "source": "tpr.4_5.maio/s3/4_5.maio.s3.rainy-season/significado",
+   "pack": true
   },
   {
    "id": "gl_tutor_1c60f484_4",
@@ -284261,6 +283244,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_1e13ea31_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esperto",
+   "speech": "Esperto",
+   "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.alert/significado",
+   "pack": true
+  },
+  {
    "id": "gl_tutor_1e142c78_28",
    "lang": "gl",
    "style": "tutor",
@@ -284312,6 +283304,15 @@
    "text": "Si, un chubasqueiro amarelo!",
    "speech": "Si, un chubasqueiro amarelo!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_1e33388b_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Facerse unha bóla e Redondo, redonda.",
+   "speech": "Facerse unha bóla e Redondo, redonda.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/sig",
    "pack": false
   },
   {
@@ -285806,6 +284807,15 @@
    "text": "Caricias no torso e susurro prosódico ata que baixe o ritmo.",
    "speech": "Caricias no torso e susurro prosódico ata que baixe o ritmo.",
    "source": "asamblea.primeiro_ciclo.setembro.0_2_anos/fase/4/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_224a7f06_167",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «Bench» e «Rainy» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «Bench» e «Rainy» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/instrucion",
    "pack": false
   },
   {
@@ -288343,15 +287353,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_2899afde_6",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Rótula",
-   "speech": "Rótula",
-   "source": "tpr.2_3.outubro/s1/2_3.outubro.s1.kneecap/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_289e200d_35",
    "lang": "gl",
    "style": "tutor",
@@ -288564,7 +287565,7 @@
    "style": "tutor",
    "text": "Peite",
    "speech": "Peite",
-   "source": "tpr.3_4.maio/s2/3_4.maio.s2.comb/significado",
+   "source": "tpr.2_3.maio/s2/2_3.maio.s2.brush-head/significado",
    "pack": true
   },
   {
@@ -290188,6 +289189,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_2cd41e75_163",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 4-5 anos («A padiola») dille «Rainy» e «Raincoat» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 4-5 anos («A padiola») dille «Rainy» e «Raincoat» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2cd6d3e7_7",
    "lang": "gl",
    "style": "tutor",
@@ -291196,6 +290206,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_2f080558_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Peludo",
+   "speech": "Peludo",
+   "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.sly/significado",
+   "pack": true
+  },
+  {
    "id": "gl_tutor_2f0ace40_6",
    "lang": "gl",
    "style": "tutor",
@@ -291869,15 +290888,6 @@
    "speech": "Que fas na casa cando fóra hai treboada?",
    "source": "biblioteca/HIS-083/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_30c7366f_16",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Corda de cultivo",
-   "speech": "Corda de cultivo",
-   "source": "tpr.4_5.xuno/s1/4_5.xuno.s1.rope-line/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_30c8097f_5",
@@ -292699,6 +291709,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_328b3064_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agárrate",
+   "speech": "Agárrate",
+   "source": "curriculo/T3.U5.2/vocabulario/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3295e2cd_29",
    "lang": "gl",
    "style": "tutor",
@@ -293084,15 +292103,6 @@
    "speech": "Cando soe o temporizador, cambiamos",
    "source": "tpr.5_6.setembro/s4/5_6.setembro.s4.when-the-timer-rings-we-swap/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_33a8e9dd_11",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "reconstruír",
-   "speech": "reconstruír",
-   "source": "curriculo/T3.U3.1/vocabulario/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_33a93d1d_8",
@@ -295111,15 +294121,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_3823deb1_14",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Batea e Cesto.",
-   "speech": "Batea e Cesto.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/sig",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_3826a02e_44",
    "lang": "gl",
    "style": "tutor",
@@ -295408,15 +294409,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_3915685f_46",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "De chuvascos e Se vai calor, xogamos con auga.",
-   "speech": "De chuvascos e Se vai calor, xogamos con auga.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/sig",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_391c4c89_56",
    "lang": "gl",
    "style": "tutor",
@@ -295505,15 +294497,6 @@
    "speech": "Si, unha pelota! A pelota está na auga!",
    "source": "biblioteca/HIS-052/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_39584a30_19",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Camiño dos recordos",
-   "speech": "Camiño dos recordos",
-   "source": "tpr.5_6.xuno/s1/5_6.xuno.s1.memory-lane/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_395a0058_180",
@@ -297064,6 +296047,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_3db9d3c3_9",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esvaradío",
+   "speech": "Esvaradío",
+   "source": "curriculo/T3.U4.2/vocabulario/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3dc02297_17",
    "lang": "gl",
    "style": "tutor",
@@ -298599,21 +297591,12 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_41976ab3_16",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "O máis brillante",
-   "speech": "O máis brillante",
-   "source": "tpr.4_5.decembro/s3/4_5.decembro.s3.brightest/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_41aa2f6f_7",
    "lang": "gl",
    "style": "tutor",
    "text": "Cadrado",
    "speech": "Cadrado",
-   "source": "tpr.3_4.marzo/s2/3_4.marzo.s2.square/significado",
+   "source": "tpr.2_3.marzo/s1/2_3.marzo.s1.oval/significado",
    "pack": true
   },
   {
@@ -299397,15 +298380,6 @@
    "text": "Durme coma Lúa! Chis...",
    "speech": "Durme coma Lúa! Chis...",
    "source": "biblioteca/HIS-045/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_4368387c_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "firme",
-   "speech": "firme",
-   "source": "curriculo/T3.U3.1/vocabulario/significado",
    "pack": false
   },
   {
@@ -301448,6 +300422,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_4874b132_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Soleado",
+   "speech": "Soleado",
+   "source": "tpr.2_3.xuno/s1/2_3.xuno.s1.calm-sea/significado",
+   "pack": true
+  },
+  {
    "id": "gl_tutor_487b2782_47",
    "lang": "gl",
    "style": "tutor",
@@ -301562,6 +300545,15 @@
    "text": "Meixelas gordiñas",
    "speech": "Meixelas gordiñas",
    "source": "tpr.0_2.outubro/s1/0_2.outubro.s1.chubby-cheeks/significado",
+   "pack": true
+  },
+  {
+   "id": "gl_tutor_48dd3035_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Imaxe",
+   "speech": "Imaxe",
+   "source": "tpr.5_6.xuno/s1/5_6.xuno.s1.memory-lane/significado",
    "pack": true
   },
   {
@@ -301975,7 +300967,7 @@
    "style": "tutor",
    "text": "Marchar",
    "speech": "Marchar",
-   "source": "tpr.3_4.outubro/s4/3_4.outubro.s4.march/significado",
+   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.stroll/significado",
    "pack": true
   },
   {
@@ -302678,15 +301670,6 @@
    "text": "Desprazamento polo chan con brazada alternada de peito.",
    "speech": "Desprazamento polo chan con brazada alternada de peito.",
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/fase/3/cmd/cmd.xuno.4i.02/accionFisica",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_4ba765a9_11",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "que salpica",
-   "speech": "que salpica",
-   "source": "curriculo/T3.U4.2/vocabulario/significado",
    "pack": false
   },
   {
@@ -303937,7 +302920,7 @@
    "style": "tutor",
    "text": "Triángulo",
    "speech": "Triángulo",
-   "source": "tpr.3_4.marzo/s2/3_4.marzo.s2.triangle/significado",
+   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.cube/significado",
    "pack": true
   },
   {
@@ -304191,15 +303174,6 @@
    "speech": "Si, can! Un can contento!",
    "source": "biblioteca/HIS-041/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_4f6b1d26_18",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Andar ás agachadas",
-   "speech": "Andar ás agachadas",
-   "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.sneak/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_4f6de626_31",
@@ -304625,6 +303599,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_5088731b_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Asomar a cabeza e Copia os meus movementos.",
+   "speech": "Asomar a cabeza e Copia os meus movementos.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_508c5c06_20",
    "lang": "gl",
    "style": "tutor",
@@ -304712,6 +303695,15 @@
    "text": "Os xoguetes van á súa casa, dentro da caixa. Que facemos?",
    "speech": "Os xoguetes van á súa casa, dentro da caixa. Que facemos?",
    "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_50b35494_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mexillón e Cesto.",
+   "speech": "Mexillón e Cesto.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/sig",
    "pack": false
   },
   {
@@ -304973,15 +303965,6 @@
    "text": "grande",
    "speech": "grande",
    "source": "curriculo/T2.U2/vocabulario/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_515167f6_8",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "creativo",
-   "speech": "creativo",
-   "source": "curriculo/T3.U5.1/vocabulario/significado",
    "pack": false
   },
   {
@@ -305657,6 +304640,15 @@
    "text": "Ponte o abrigo.",
    "speech": "Ponte o abrigo.",
    "source": "gramatica/punto/32/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_52e901e3_166",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 4-5 anos («A padiola») dille «Rainy» e «Here you go» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 4-5 anos («A padiola») dille «Rainy» e «Here you go» a quen vai en 3-4 anos («A sombra da torre»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/instrucion",
    "pack": false
   },
   {
@@ -307226,15 +306218,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_566f9486_13",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Paso inferior",
-   "speech": "Paso inferior",
-   "source": "tpr.4_5.xaneiro/s2/4_5.xaneiro.s2.tunnel-under/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_5675888d_105",
    "lang": "gl",
    "style": "tutor",
@@ -307442,15 +306425,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_570c230f_6",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Astuto",
-   "speech": "Astuto",
-   "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.sly/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_570e6742_47",
    "lang": "gl",
    "style": "tutor",
@@ -307502,6 +306476,15 @@
    "text": "Paro aquí e non chego. Que frecha cambiamos?",
    "speech": "Paro aquí e non chego. Que frecha cambiamos?",
    "source": "steam/I5-LOGICA-001/hogar/experimenta/pistaN1",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_57272ebe_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Colorido",
+   "speech": "Colorido",
+   "source": "curriculo/T3.U5.1/vocabulario/significado",
    "pack": false
   },
   {
@@ -308028,15 +307011,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_586f727b_9",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Beirarrúa",
-   "speech": "Beirarrúa",
-   "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.pavement/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_587332f8_26",
    "lang": "gl",
    "style": "tutor",
@@ -308510,6 +307484,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_59916d45_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Remar e Mexillón.",
+   "speech": "Remar e Mexillón.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_59918889_11",
    "lang": "gl",
    "style": "tutor",
@@ -308769,15 +307752,6 @@
    "speech": "Come pan quente.",
    "source": "gramatica/curso_0_2/1/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_5a18cffc_12",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Mesa de auga",
-   "speech": "Mesa de auga",
-   "source": "tpr.2_3.maio/s3/2_3.maio.s3.water-table/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_5a216c13_5",
@@ -309776,15 +308750,6 @@
    "text": "Papá",
    "speech": "Papá",
    "source": "tpr.3_4.setembro/s3/3_4.setembro.s3.daddy/significado",
-   "pack": true
-  },
-  {
-   "id": "gl_tutor_5c6665cf_20",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Dosificador de xabón",
-   "speech": "Dosificador de xabón",
-   "source": "tpr.2_3.maio/s1/2_3.maio.s1.soap-pump/significado",
    "pack": true
   },
   {
@@ -310884,15 +309849,6 @@
    "speech": "Quen vai en 2-3 anos («Pum grande, pum pequeno») dille «Loud bells! Shake fast!» e «Eye» a quen vai en 0-2 anos («Follas ao trasluz»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
    "source": "nivel/irmans/curso_0_2__curso_2_3/reto_irmans.curso_0_2.curso_2_3.s13/instrucion",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_5f0ef7a5_14",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Libro de fotos",
-   "speech": "Libro de fotos",
-   "source": "tpr.4_5.xuno/s2/4_5.xuno.s2.photo-book/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_5f12b1dd_55",
@@ -312160,15 +311116,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_6212724e_46",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Andar ás agachadas e Copia os meus movementos.",
-   "speech": "Andar ás agachadas e Copia os meus movementos.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/sig",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_62129c9c_27",
    "lang": "gl",
    "style": "tutor",
@@ -312664,15 +311611,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_633b6bec_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Pisar",
-   "speech": "Pisar",
-   "source": "tpr.2_3.novembro/s3/2_3.novembro.s3.tread/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_633e2111_71",
    "lang": "gl",
    "style": "tutor",
@@ -313156,15 +312094,6 @@
    "text": "ollo",
    "speech": "ollo",
    "source": "escoita/valeria_gl",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_64babc6a_8",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "protexer",
-   "speech": "protexer",
-   "source": "curriculo/T3.U4.2/vocabulario/significado",
    "pack": false
   },
   {
@@ -314302,15 +313231,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_676a3f83_187",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 5-6 anos («A bolboreta igual») dille «Command» e «Curl into a ball» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 5-6 anos («A bolboreta igual») dille «Command» e «Curl into a ball» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/instrucion",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_676b2f16_6",
    "lang": "gl",
    "style": "tutor",
@@ -315130,6 +314050,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_6993279a_9",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Randeeira",
+   "speech": "Randeeira",
+   "source": "tpr.2_3.outubro/s2/2_3.outubro.s2.merry-go-round/significado",
+   "pack": true
+  },
+  {
    "id": "gl_tutor_6998e72e_33",
    "lang": "gl",
    "style": "tutor",
@@ -315209,15 +314138,6 @@
    "speech": "Árbitro",
    "source": "tpr.4_5.febreiro/s3/4_5.febreiro.s3.referee/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_69eb839d_25",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Facerse unha bóla e Orde.",
-   "speech": "Facerse unha bóla e Orde.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s10/sig",
-   "pack": false
   },
   {
    "id": "gl_tutor_69efb93c_25",
@@ -315724,15 +314644,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_6b58a0d7_17",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Mirar as estrelas",
-   "speech": "Mirar as estrelas",
-   "source": "tpr.5_6.decembro/s2/5_6.decembro.s2.stargaze/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_6b69299f_18",
    "lang": "gl",
    "style": "tutor",
@@ -315976,6 +314887,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_6bfc4e3c_10",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Paporrubio",
+   "speech": "Paporrubio",
+   "source": "tpr.2_3.abril/s2/2_3.abril.s2.blackbird/significado",
+   "pack": true
+  },
+  {
    "id": "gl_tutor_6c0b70c2_53",
    "lang": "gl",
    "style": "tutor",
@@ -316217,15 +315137,6 @@
    "speech": "Onde están os círculos vermellos? Toca un círculo vermello!",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_6cb49d17_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Prado",
-   "speech": "Prado",
-   "source": "tpr.2_3.abril/s1/2_3.abril.s1.meadow/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_6cba360a_16",
@@ -316678,15 +315589,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_6dbe2edf_6",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Coador",
-   "speech": "Coador",
-   "source": "tpr.2_3.maio/s3/2_3.maio.s3.sieve/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_6dbe47ba_58",
    "lang": "gl",
    "style": "tutor",
@@ -317106,7 +316008,7 @@
    "style": "tutor",
    "text": "Estrela",
    "speech": "Estrela",
-   "source": "tpr.3_4.decembro/s2/3_4.decembro.s2.star/significado",
+   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.sphere/significado",
    "pack": true
   },
   {
@@ -317695,6 +316597,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_702f5e94_173",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 5-6 anos («A bolboreta igual») dille «Turn» e «Dance» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 5-6 anos («A bolboreta igual») dille «Turn» e «Dance» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_70455ab9_9",
    "lang": "gl",
    "style": "tutor",
@@ -317747,6 +316658,15 @@
    "speech": "Podes regar as plantas? Inclina a regadeira… rega!",
    "source": "significados/significado",
    "pack": false
+  },
+  {
+   "id": "gl_tutor_70764d7d_9",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Con herba",
+   "speech": "Con herba",
+   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.steep/significado",
+   "pack": true
   },
   {
    "id": "gl_tutor_7078e28d_25",
@@ -319653,6 +318573,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_7522d6df_157",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 4-5 anos («Facemos lama») dille «Peek» e «Mask» a quen vai en 3-4 anos («O xeo no zume»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 4-5 anos («Facemos lama») dille «Peek» e «Mask» a quen vai en 3-4 anos («O xeo no zume»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_75270d13_47",
    "lang": "gl",
    "style": "tutor",
@@ -319865,7 +318794,7 @@
    "style": "tutor",
    "text": "Estrela de mar",
    "speech": "Estrela de mar",
-   "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.starfish/significado",
+   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.sea-glass/significado",
    "pack": true
   },
   {
@@ -320648,7 +319577,7 @@
    "style": "tutor",
    "text": "explorar",
    "speech": "explorar",
-   "source": "curriculo/T3.U5.2/vocabulario/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -320850,15 +319779,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_7833dc0b_15",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Aldea mariñeira",
-   "speech": "Aldea mariñeira",
-   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.fishing-village/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_783bff00_38",
    "lang": "gl",
    "style": "tutor",
@@ -320866,15 +319786,6 @@
    "speech": "Onde está agora a folla grande? Tócaa!",
    "source": "biblioteca/HIS-024/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_78430429_10",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Azul fondo",
-   "speech": "Azul fondo",
-   "source": "tpr.4_5.abril/s3/4_5.abril.s3.deep-blue/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_78470eab_33",
@@ -321018,6 +319929,15 @@
    "text": "Cinta métrica",
    "speech": "Cinta métrica",
    "source": "tpr.4_5.decembro/s2/4_5.decembro.s2.tape-measure/significado",
+   "pack": true
+  },
+  {
+   "id": "gl_tutor_78b3bf25_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sólido",
+   "speech": "Sólido",
+   "source": "tpr.4_5.setembro/s2/4_5.setembro.s2.sturdy/significado",
    "pack": true
   },
   {
@@ -322182,15 +321102,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_7b3f85a9_29",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Máscara e Andar ás agachadas.",
-   "speech": "Máscara e Andar ás agachadas.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/sig",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_7b550ae7_4",
    "lang": "gl",
    "style": "tutor",
@@ -322360,15 +321271,6 @@
    "speech": "Mans quentes",
    "source": "tpr.0_2.outubro/s2/0_2.outubro.s2.warm-hands/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_7bc8299b_202",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 5-6 anos («A bolboreta igual») dille «Mateo, find a round cold chestnut» e «Dance» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 5-6 anos («A bolboreta igual») dille «Mateo, find a round cold chestnut» e «Dance» a quen vai en 4-5 anos («Dúas patas, catro patas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/instrucion",
-   "pack": false
   },
   {
    "id": "gl_tutor_7bcfef56_41",
@@ -323109,15 +322011,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_7d8025e3_10",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Resistente",
-   "speech": "Resistente",
-   "source": "tpr.4_5.setembro/s2/4_5.setembro.s2.sturdy/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_7d89b9db_11",
    "lang": "gl",
    "style": "tutor",
@@ -323406,15 +322299,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_7e5f25df_10",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Investigar",
-   "speech": "Investigar",
-   "source": "tpr.5_6.novembro/s3/5_6.novembro.s3.investigate/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_7e5f587d_5",
    "lang": "gl",
    "style": "tutor",
@@ -323439,6 +322323,15 @@
    "text": "Tómate o teu tempo para tomar unha boa decisión.",
    "speech": "Tómate o teu tempo para tomar unha boa decisión.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_7e81d2fa_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Rápido e Mira, unha cuncha.",
+   "speech": "Rápido e Mira, unha cuncha.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/sig",
    "pack": false
   },
   {
@@ -324023,7 +322916,7 @@
    "style": "tutor",
    "text": "mesturar",
    "speech": "mesturar",
-   "source": "curriculo/T3.U5.1/vocabulario/significado",
+   "source": "escoita/curso_4_5/6/mix/significado",
    "pack": false
   },
   {
@@ -325953,15 +324846,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_85658662_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Merlo",
-   "speech": "Merlo",
-   "source": "tpr.2_3.abril/s2/2_3.abril.s2.blackbird/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_8565d4e0_13",
    "lang": "gl",
    "style": "tutor",
@@ -326013,6 +324897,15 @@
    "text": "deixar caer",
    "speech": "deixar caer",
    "source": "curriculo/T2.U2/vocabulario/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_85806a70_181",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 5-6 anos («A frauta do tren») dille «Look, a shell!» e «Fast» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 5-6 anos («A frauta do tren») dille «Look, a shell!» e «Fast» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/instrucion",
    "pack": false
   },
   {
@@ -326753,6 +325646,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_8780be6d_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bailar e Quenda.",
+   "speech": "Bailar e Quenda.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_87836aa5_19",
    "lang": "gl",
    "style": "tutor",
@@ -327406,15 +326308,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_891d0af1_10",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Evaporarse",
-   "speech": "Evaporarse",
-   "source": "tpr.4_5.maio/s3/4_5.maio.s3.evaporate/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_891d953d_5",
    "lang": "gl",
    "style": "tutor",
@@ -327883,15 +326776,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_8a1430a4_7",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Enrolar",
-   "speech": "Enrolar",
-   "source": "tpr.2_3.setembro/s3/2_3.setembro.s3.roll-up/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_8a1da57d_11",
    "lang": "gl",
    "style": "tutor",
@@ -328052,15 +326936,6 @@
    "speech": "Isto é unha pera.",
    "source": "escoita/valeria_gl",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_8a7646e9_6",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Pasear",
-   "speech": "Pasear",
-   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.stroll/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_8a79b6a2_34",
@@ -328771,6 +327646,15 @@
    "text": "Camiñar é mellor ca conducir para ir preto",
    "speech": "Camiñar é mellor ca conducir para ir preto",
    "source": "tpr.5_6.abril/s3/5_6.abril.s3.walking-is-better-than-driving-for-short-trips/significado",
+   "pack": true
+  },
+  {
+   "id": "gl_tutor_8c420457_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Canso",
+   "speech": "Canso",
+   "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.motionless/significado",
    "pack": true
   },
   {
@@ -330172,15 +329056,6 @@
    "speech": "Toca o abrigo, o sombreiro e as botas de Lúa: un, dous, tres!",
    "source": "biblioteca/HIS-079/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_8f4c244c_13",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Mar tranquilo",
-   "speech": "Mar tranquilo",
-   "source": "tpr.2_3.xuno/s1/2_3.xuno.s1.calm-sea/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_8f4ffdf5_20",
@@ -334378,15 +333253,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_994de939_180",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 5-6 anos («A frauta do tren») dille «Basket» e «Mussel raft» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 5-6 anos («A frauta do tren») dille «Basket» e «Mussel raft» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s37/instrucion",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_99528baf_54",
    "lang": "gl",
    "style": "tutor",
@@ -334839,6 +333705,15 @@
    "text": "Papel pegañento! Folla amarela, folla marrón!",
    "speech": "Papel pegañento! Folla amarela, folla marrón!",
    "source": "biblioteca/HIS-091/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_9a69784b_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chuvioso e Banco.",
+   "speech": "Chuvioso e Banco.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/sig",
    "pack": false
   },
   {
@@ -335571,15 +334446,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_9c6df01a_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Xusto",
-   "speech": "Xusto",
-   "source": "tpr.4_5.setembro/s1/4_5.setembro.s1.fair/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_9c7395d1_32",
    "lang": "gl",
    "style": "tutor",
@@ -336039,15 +334905,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_9d49dd13_7",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "destino",
-   "speech": "destino",
-   "source": "curriculo/T3.U5.2/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_9d4ffff3_67",
    "lang": "gl",
    "style": "tutor",
@@ -336090,15 +334947,6 @@
    "text": "pluma",
    "speech": "pluma",
    "source": "escoita/valeria_gl",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_9d6c4b1d_177",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Mussel raft» e «Row» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Mussel raft» e «Row» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/instrucion",
    "pack": false
   },
   {
@@ -336930,15 +335778,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_9f74a37c_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "viaxe",
-   "speech": "viaxe",
-   "source": "curriculo/T3.U5.2/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_9f7715e4_108",
    "lang": "gl",
    "style": "tutor",
@@ -337269,7 +336108,7 @@
    "style": "tutor",
    "text": "Herba",
    "speech": "Herba",
-   "source": "tpr.3_4.abril/s4/3_4.abril.s4.grass/significado",
+   "source": "tpr.2_3.abril/s1/2_3.abril.s1.meadow/significado",
    "pack": true
   },
   {
@@ -338043,7 +336882,7 @@
    "style": "tutor",
    "text": "Balde",
    "speech": "Balde",
-   "source": "tpr.3_4.xuno/s2/3_4.xuno.s2.bucket/significado",
+   "source": "tpr.2_3.maio/s3/2_3.maio.s3.water-table/significado",
    "pack": true
   },
   {
@@ -339396,15 +338235,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_a613136a_9",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Escenario",
-   "speech": "Escenario",
-   "source": "tpr.4_5.febreiro/s1/4_5.febreiro.s1.stage/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_a61d92eb_17",
    "lang": "gl",
    "style": "tutor",
@@ -339430,15 +338260,6 @@
    "speech": "Colgar tirantes nos ombreiros",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_a62d5be4_8",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Carrusel",
-   "speech": "Carrusel",
-   "source": "tpr.2_3.outubro/s2/2_3.outubro.s2.merry-go-round/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_a62e6dc5_28",
@@ -341133,6 +339954,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_aa793d58_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Máscara e Asomar a cabeza.",
+   "speech": "Máscara e Asomar a cabeza.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_aa8734ef_38",
    "lang": "gl",
    "style": "tutor",
@@ -342128,7 +340958,7 @@
    "style": "tutor",
    "text": "Burbullas",
    "speech": "Burbullas",
-   "source": "tpr.3_4.maio/s1/3_4.maio.s1.bubbles/significado",
+   "source": "tpr.2_3.maio/s1/2_3.maio.s1.soap-pump/significado",
    "pack": true
   },
   {
@@ -342237,6 +341067,15 @@
    "text": "Moverse coa corrente",
    "speech": "Moverse coa corrente",
    "source": "tpr.4_5.abril/s3/4_5.abril.s3.sway-with-the-current/significado",
+   "pack": true
+  },
+  {
+   "id": "gl_tutor_ad17b3cc_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Derreter",
+   "speech": "Derreter",
+   "source": "tpr.4_5.maio/s3/4_5.maio.s3.evaporate/significado",
    "pack": true
   },
   {
@@ -342552,15 +341391,6 @@
    "text": "O meu vaso arriba!",
    "speech": "O meu vaso arriba!",
    "source": "gramatica/curso_3_4/9/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_adedaa5c_14",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Remar e Batea.",
-   "speech": "Remar e Batea.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/sig",
    "pack": false
   },
   {
@@ -343311,15 +342141,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_b00da780_24",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Cuncha e Rápido e forte.",
-   "speech": "Cuncha e Rápido e forte.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/sig",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_b012e429_16",
    "lang": "gl",
    "style": "tutor",
@@ -343815,6 +342636,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_b13ec68d_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "con vento e Vacacións.",
+   "speech": "con vento e Vacacións.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b144e10f_92",
    "lang": "gl",
    "style": "tutor",
@@ -344101,6 +342931,15 @@
    "speech": "Todos xuntos e Présa, que o tren marcha.",
    "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s36/sig",
    "pack": false
+  },
+  {
+   "id": "gl_tutor_b1f5f073_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Asomar a cabeza",
+   "speech": "Asomar a cabeza",
+   "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.sneak/significado",
+   "pack": true
   },
   {
    "id": "gl_tutor_b1f757be_125",
@@ -345786,15 +344625,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_b60d66da_35",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "De chuvascos e Barra de equilibrio.",
-   "speech": "De chuvascos e Barra de equilibrio.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s18/sig",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_b60e139e_8",
    "lang": "gl",
    "style": "tutor",
@@ -346304,7 +345134,7 @@
    "style": "tutor",
    "text": "Rúa",
    "speech": "Rúa",
-   "source": "tpr.3_4.xaneiro/s2/3_4.xaneiro.s2.street/significado",
+   "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.pavement/significado",
    "pack": true
   },
   {
@@ -347145,15 +345975,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_b9504a91_14",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Rápido e forte",
-   "speech": "Rápido e forte",
-   "source": "tpr.4_5.maio/s2/4_5.maio.s2.rushing/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_b9559535_7",
    "lang": "gl",
    "style": "tutor",
@@ -347888,6 +346709,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_bb416f8c_169",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 5-6 anos («O mapa do tesouro») dille «Holiday» e «windy» a quen vai en 4-5 anos («O muíño de vento»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 5-6 anos («O mapa do tesouro») dille «Holiday» e «windy» a quen vai en 4-5 anos («O muíño de vento»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bb47ff99_43",
    "lang": "gl",
    "style": "tutor",
@@ -348390,15 +347220,6 @@
    "speech": "Unha flor! Unha flor grande e brillante!",
    "source": "significados/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_bcaeeec1_7",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Inmóbil",
-   "speech": "Inmóbil",
-   "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.motionless/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_bcb4ec52_37",
@@ -351826,15 +350647,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_c61906b3_173",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 5-6 anos («Avións de papel») dille «Copy my movements» e «Sneak» a quen vai en 4-5 anos («Facemos lama»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 5-6 anos («Avións de papel») dille «Copy my movements» e «Sneak» a quen vai en 4-5 anos («Facemos lama»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s22/instrucion",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_c61b894a_11",
    "lang": "gl",
    "style": "tutor",
@@ -352321,15 +351133,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_c71ca184_9",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "pasaporte",
-   "speech": "pasaporte",
-   "source": "curriculo/T3.U5.2/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_c71d2a69_46",
    "lang": "gl",
    "style": "tutor",
@@ -352696,15 +351499,6 @@
    "text": "Podes brincar e parar rápido? Hop, hop, alto!",
    "speech": "Podes brincar e parar rápido? Hop, hop, alto!",
    "source": "biblioteca/HIS-093/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_c82de680_195",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «If it's hot, we play with water» e «Showery» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «If it's hot, we play with water» e «Showery» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/instrucion",
    "pack": false
   },
   {
@@ -353172,7 +351966,7 @@
    "style": "tutor",
    "text": "Parque",
    "speech": "Parque",
-   "source": "tpr.3_4.abril/s4/3_4.abril.s4.park/significado",
+   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.race-track/significado",
    "pack": true
   },
   {
@@ -353721,7 +352515,7 @@
    "style": "tutor",
    "text": "Balea",
    "speech": "Balea",
-   "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.whale/significado",
+   "source": "tpr.2_3.febreiro/s3/2_3.febreiro.s3.walrus/significado",
    "pack": true
   },
   {
@@ -353919,15 +352713,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_cb03a019_10",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Biblioteca",
-   "speech": "Biblioteca",
-   "source": "tpr.2_3.abril/s3/2_3.abril.s3.library/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_cb05a217_7",
    "lang": "gl",
    "style": "tutor",
@@ -354007,6 +352792,15 @@
    "speech": "Pesada! Lixeira!",
    "source": "steam/STEAM-2_3-04/significado",
    "pack": false
+  },
+  {
+   "id": "gl_tutor_cb278207_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tobogán",
+   "speech": "Tobogán",
+   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.finish-line/significado",
+   "pack": true
   },
   {
    "id": "gl_tutor_cb2c9d42_39",
@@ -354936,15 +353730,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_cd68e641_8",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Director",
-   "speech": "Director",
-   "source": "tpr.5_6.febreiro/s2/5_6.febreiro.s2.director/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_cd738e86_14",
    "lang": "gl",
    "style": "tutor",
@@ -355051,15 +353836,6 @@
    "speech": "Chuvia e logo sol",
    "source": "tpr.3_4.abril/s1/3_4.abril.s1.rain-then-sun/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_cdb87f0e_158",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 4-5 anos («Facemos lama») dille «Sneak» e «Mask» a quen vai en 3-4 anos («O xeo no zume»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 4-5 anos («Facemos lama») dille «Sneak» e «Mask» a quen vai en 3-4 anos («O xeo no zume»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s22/instrucion",
-   "pack": false
   },
   {
    "id": "gl_tutor_cdd3d69b_65",
@@ -355203,15 +353979,6 @@
    "text": "Serpenteante",
    "speech": "Serpenteante",
    "source": "tpr.4_5.maio/s4/4_5.maio.s4.winding/significado",
-   "pack": true
-  },
-  {
-   "id": "gl_tutor_ce34141a_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Óvalo",
-   "speech": "Óvalo",
-   "source": "tpr.2_3.marzo/s1/2_3.marzo.s1.oval/significado",
    "pack": true
   },
   {
@@ -355512,15 +354279,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_cf21a6f2_8",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "examinar",
-   "speech": "examinar",
-   "source": "curriculo/T3.U4.1/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_cf24cf7c_86",
    "lang": "gl",
    "style": "tutor",
@@ -355636,6 +354394,15 @@
    "speech": "Mira, o sol. Os caracois van para a casa. Amodo... adeus.",
    "source": "biblioteca/HIS-080/significado",
    "pack": false
+  },
+  {
+   "id": "gl_tutor_cf5b1a0d_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pau",
+   "speech": "Pau",
+   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.driftwood/significado",
+   "pack": true
   },
   {
    "id": "gl_tutor_cf642d50_33",
@@ -356140,15 +354907,6 @@
    "speech": "Toc, toc! Tap! Que hai na cesta?",
    "source": "biblioteca/HIS-064/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_d05b6bd6_10",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Ave mariña",
-   "speech": "Ave mariña",
-   "source": "tpr.4_5.abril/s1/4_5.abril.s1.seabird/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_d0615e87_15",
@@ -356907,15 +355665,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_d2348660_12",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Liña de meta",
-   "speech": "Liña de meta",
-   "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.finish-line/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_d235f18e_27",
    "lang": "gl",
    "style": "tutor",
@@ -356931,6 +355680,15 @@
    "text": "Onde está a miña culler? Shhh... mira isto!",
    "speech": "Onde está a miña culler? Shhh... mira isto!",
    "source": "biblioteca/HIS-063/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_d23ac0ff_172",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Fast» e «Shell» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Fast» e «Shell» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/instrucion",
    "pack": false
   },
   {
@@ -357470,7 +356228,7 @@
    "style": "tutor",
    "text": "Brincar",
    "speech": "Brincar",
-   "source": "tpr.3_4.febreiro/s4/3_4.febreiro.s4.leap/significado",
+   "source": "tpr.2_3.decembro/s1/2_3.decembro.s1.jump-in/significado",
    "pack": true
   },
   {
@@ -357633,15 +356391,6 @@
    "text": "Unha pedra pesada.",
    "speech": "Unha pedra pesada.",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_d3f0af1b_28",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Chuvasqueiro e De chuvascos.",
-   "speech": "Chuvasqueiro e De chuvascos.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s18/sig",
    "pack": false
   },
   {
@@ -358111,6 +356860,15 @@
    "speech": "Correr cos dedos polas pernas",
    "source": "significados/significado",
    "pack": false
+  },
+  {
+   "id": "gl_tutor_d53f284b_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A escola dos maiores",
+   "speech": "A escola dos maiores",
+   "source": "tpr.5_6.xuno/s2/5_6.xuno.s2.primary-school/significado",
+   "pack": true
   },
   {
    "id": "gl_tutor_d53f9698_11",
@@ -359058,15 +357816,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_d7c41444_17",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Madeira de deriva",
-   "speech": "Madeira de deriva",
-   "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.driftwood/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_d7c48709_30",
    "lang": "gl",
    "style": "tutor",
@@ -359262,15 +358011,6 @@
    "text": "Agochado",
    "speech": "Agochado",
    "source": "tpr.0_2.febreiro/s3/0_2.febreiro.s3.hidden-away/significado",
-   "pack": true
-  },
-  {
-   "id": "gl_tutor_d859ab01_15",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Pito de gaivota",
-   "speech": "Pito de gaivota",
-   "source": "tpr.4_5.abril/s2/4_5.abril.s2.gull-chick/significado",
    "pack": true
   },
   {
@@ -360278,7 +359018,7 @@
    "style": "tutor",
    "text": "Plic, plic",
    "speech": "Plic, plic",
-   "source": "tpr.3_4.abril/s1/3_4.abril.s1.tap-tap/significado",
+   "source": "tpr.2_3.decembro/s2/2_3.decembro.s2.pour-down/significado",
    "pack": true
   },
   {
@@ -360795,15 +359535,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_dcaaef48_18",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Escola de Primaria",
-   "speech": "Escola de Primaria",
-   "source": "tpr.5_6.xuno/s2/5_6.xuno.s2.primary-school/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_dcabcdda_18",
    "lang": "gl",
    "style": "tutor",
@@ -361054,6 +359785,15 @@
    "speech": "Si, durmir! É de noite, a durmir!",
    "source": "biblioteca/HIS-003/significado",
    "pack": false
+  },
+  {
+   "id": "gl_tutor_dd4d6cd5_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Recoller",
+   "speech": "Recoller",
+   "source": "tpr.2_3.setembro/s3/2_3.setembro.s3.roll-up/significado",
+   "pack": true
   },
   {
    "id": "gl_tutor_dd594c34_13",
@@ -361936,15 +360676,6 @@
    "speech": "Con delicadeza! Si, Lúa lava o can con delicadeza.",
    "source": "biblioteca/HIS-073/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_df5a1c31_9",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Cabaleiro",
-   "speech": "Cabaleiro",
-   "source": "tpr.4_5.febreiro/s2/4_5.febreiro.s2.knight/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_df6646ce_41",
@@ -364494,15 +363225,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_e5f2a2e9_11",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "temperatura",
-   "speech": "temperatura",
-   "source": "curriculo/T3.U4.1/vocabulario/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_e5f9dae2_55",
    "lang": "gl",
    "style": "tutor",
@@ -364997,15 +363719,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_e6f0f9ec_8",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Empinado",
-   "speech": "Empinado",
-   "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.steep/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_e6f4e351_17",
    "lang": "gl",
    "style": "tutor",
@@ -365157,15 +363870,6 @@
    "speech": "Triturar",
    "source": "tpr.2_3.marzo/s2/2_3.marzo.s2.blend/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_e7492ac4_184",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 5-6 anos («A frauta do tren») dille «Look, a shell!» e «Rushing» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 5-6 anos («A frauta do tren») dille «Look, a shell!» e «Rushing» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s38/instrucion",
-   "pack": false
   },
   {
    "id": "gl_tutor_e74aafe1_19",
@@ -365915,15 +364619,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_e903ecfb_8",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Simetría",
-   "speech": "Simetría",
-   "source": "tpr.5_6.marzo/s2/5_6.marzo.s2.symmetry/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_e90801d5_65",
    "lang": "gl",
    "style": "tutor",
@@ -366046,7 +364741,7 @@
    "style": "tutor",
    "text": "Libro",
    "speech": "Libro",
-   "source": "tpr.3_4.setembro/s2/3_4.setembro.s2.book/significado",
+   "source": "tpr.2_3.abril/s3/2_3.abril.s3.library/significado",
    "pack": true
   },
   {
@@ -368111,15 +366806,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_ef02e482_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Batea",
-   "speech": "Batea",
-   "source": "tpr.4_5.xuno/s1/4_5.xuno.s1.mussel-raft/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_ef05f7f7_33",
    "lang": "gl",
    "style": "tutor",
@@ -368397,6 +367083,15 @@
    "speech": "Copia os meus movementos",
    "source": "tpr.5_6.marzo/s2/5_6.marzo.s2.copy-my-movements/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_efb770c8_193",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «If it's hot, we play with water» e «Rainy» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «If it's hot, we play with water» e «Rainy» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_efbd4d1e_45",
@@ -369209,15 +367904,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_f16aefcf_17",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Conxelado de todo",
-   "speech": "Conxelado de todo",
-   "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.frozen-solid/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_f170562c_26",
    "lang": "gl",
    "style": "tutor",
@@ -369362,24 +368048,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_f1ae23a7_4",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Voto",
-   "speech": "Voto",
-   "source": "tpr.5_6.setembro/s1/5_6.setembro.s1.vote/significado",
-   "pack": true
-  },
-  {
-   "id": "gl_tutor_f1af7dae_17",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Chover a cántaros",
-   "speech": "Chover a cántaros",
-   "source": "tpr.2_3.decembro/s2/2_3.decembro.s2.pour-down/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_f1bb4d09_16",
    "lang": "gl",
    "style": "tutor",
@@ -369440,6 +368108,15 @@
    "text": "O ourizo esperta: estátua e faite unha bóla!",
    "speech": "O ourizo esperta: estátua e faite unha bóla!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f1ea6eb9_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cuncha e Rápido.",
+   "speech": "Cuncha e Rápido.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s38/sig",
    "pack": false
   },
   {
@@ -369953,6 +368630,15 @@
    "text": "Boas noites, granxa. Boas noites, maleta. Shhh...",
    "speech": "Boas noites, granxa. Boas noites, maleta. Shhh...",
    "source": "biblioteca/HIS-097/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f3239dcd_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toma e Chuvioso.",
+   "speech": "Toma e Chuvioso.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/sig",
    "pack": false
   },
   {
@@ -370709,15 +369395,6 @@
    "text": "Todo o mundo de pé! Ola!",
    "speech": "Todo o mundo de pé! Ola!",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_f502773f_20",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Toma e De chuvascos.",
-   "speech": "Toma e De chuvascos.",
-   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s20/sig",
    "pack": false
   },
   {
@@ -371792,15 +370469,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_f7be7352_13",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Levar o vento",
-   "speech": "Levar o vento",
-   "source": "tpr.2_3.novembro/s2/2_3.novembro.s2.blow-away/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_f7c59d76_49",
    "lang": "gl",
    "style": "tutor",
@@ -372071,15 +370739,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_f83895fe_4",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Cubo",
-   "speech": "Cubo",
-   "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.cube/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_f83910c3_53",
    "lang": "gl",
    "style": "tutor",
@@ -372168,6 +370827,15 @@
    "speech": "Cando me enfado, respiro amodo",
    "source": "tpr.5_6.maio/s1/5_6.maio.s1.when-i-feel-angry-i-breathe-slowly/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_f8938d9e_172",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Mussel» e «Row» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "speech": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Mussel» e «Row» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+   "source": "nivel/irmans/curso_3_4__curso_4_5/reto_irmans.curso_3_4.curso_4_5.s37/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_f89b39d9_16",
@@ -372827,6 +371495,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_fa275ce9_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chuvioso e Se vai calor, xogamos con auga.",
+   "speech": "Chuvioso e Se vai calor, xogamos con auga.",
+   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s20/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_fa2e020f_22",
    "lang": "gl",
    "style": "tutor",
@@ -373022,15 +371699,6 @@
    "text": "Podes escribir coma Lúa? Lapis na libreta... tap, tap... listo!",
    "speech": "Podes escribir coma Lúa? Lapis na libreta... tap, tap... listo!",
    "source": "biblioteca/HIS-066/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_fa9f5ca4_169",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Quen vai en 5-6 anos («O mapa do tesouro») dille «journey» e «windy» a quen vai en 4-5 anos («O muíño de vento»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "speech": "Quen vai en 5-6 anos («O mapa do tesouro») dille «journey» e «windy» a quen vai en 4-5 anos («O muíño de vento»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s28/instrucion",
    "pack": false
   },
   {
@@ -374715,15 +373383,6 @@
    "speech": "Arando",
    "source": "tpr.0_2.marzo/s4/0_2.marzo.s4.blueberry/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_ff651d27_50",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Bailar e Mateo, busca unha castaña redonda e fría.",
-   "speech": "Bailar e Mateo, busca unha castaña redonda e fría.",
-   "source": "nivel/irmans/curso_4_5__curso_5_6/reto_irmans.curso_4_5.curso_5_6.s11/sig",
-   "pack": false
   },
   {
    "id": "gl_tutor_ff7609cd_30",

@@ -24,7 +24,7 @@
       "rain",
       "boots",
       "muddy",
-      "splashy"
+      "Slippery"
     ],
     "fraseLua": {
       "en": "When it rains, we need boots!",
@@ -331,7 +331,7 @@
     "palabrasDiana": [
       "windy",
       "coat",
-      "protect"
+      "Share"
     ],
     "fraseLua": {
       "en": "It is windy! My coat will protect you!",
@@ -2174,7 +2174,7 @@
     "palabrasDiana": [
       "stormy",
       "windy",
-      "protect"
+      "Share"
     ],
     "fraseLua": {
       "en": "It is stormy up there! The shell will protect you!",
@@ -3401,7 +3401,7 @@
     },
     "palabrasDiana": [
       "paint",
-      "blend",
+      "Mix",
       "bright"
     ],
     "fraseLua": {
@@ -4016,7 +4016,7 @@
     "palabrasDiana": [
       "draw",
       "smooth",
-      "creative"
+      "Colourful"
     ],
     "fraseLua": {
       "en": "It is fair to share! Let's draw together!",
@@ -5550,8 +5550,8 @@
     },
     "palabrasDiana": [
       "map",
-      "explore",
-      "destination"
+      "Discover",
+      "Beach"
     ],
     "fraseLua": {
       "en": "Let's explore! The map shows our destination!",
@@ -5857,7 +5857,7 @@
     },
     "palabrasDiana": [
       "map",
-      "journey",
+      "Holiday",
       "arrive"
     ],
     "fraseLua": {
@@ -6164,8 +6164,8 @@
     },
     "palabrasDiana": [
       "suitcase",
-      "passport",
-      "journey"
+      "Hold on",
+      "Holiday"
     ],
     "fraseLua": {
       "en": "Stretch up high! My passport is on top!",
@@ -6778,7 +6778,7 @@
     },
     "palabrasDiana": [
       "plane",
-      "destination",
+      "Beach",
       "arrive"
     ],
     "fraseLua": {
@@ -7084,7 +7084,7 @@
       }
     },
     "palabrasDiana": [
-      "explore",
+      "Discover",
       "dangerous",
       "map"
     ],
@@ -7392,8 +7392,8 @@
     },
     "palabrasDiana": [
       "ticket",
-      "journey",
-      "destination"
+      "Holiday",
+      "Beach"
     ],
     "fraseLua": {
       "en": "Hop, hop, stop! May I see your ticket?",

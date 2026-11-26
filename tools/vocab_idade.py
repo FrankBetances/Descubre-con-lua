@@ -53,7 +53,7 @@ PROPOSTAS: dict[str, dict[str, tuple[str, str, str]]] = {
         "Pour down": ("Pitter-patter", "Plic, plic", "Plic, plic"),
         "Pull on": ("Wear", "Levar posto", "Llevar puesto"),
         "Pavement": ("Street", "Rúa", "Calle"),
-        "Walrus": ("Penguin", "Pingüín", "Pingüino"),
+        "Walrus": ("Whale", "Balea", "Ballena"),
         "Oval": ("Square", "Cadrado", "Cuadrado"),
         "Cube": ("Triangle", "Triángulo", "Triángulo"),
         "Sphere": ("Star", "Estrela", "Estrella"),
@@ -140,6 +140,7 @@ PROPOSTAS: dict[str, dict[str, tuple[str, str, str]]] = {
     },
     "curso_5_6": {
         "Vote": ("Pick", "Escoller", "Elegir"),
+        "Command": ("Turn", "Quenda", "Turno"),
         "Responsible": ("Tidy", "Ordenado", "Ordenado"),
         "creative": ("Colourful", "Colorido", "Colorido"),
         "Investigate": ("Search", "Buscar", "Buscar"),
@@ -260,7 +261,10 @@ PENDENTES_FRANK = {
     ('curso_5_6', 'Primary school'),
 }
 
-SUBST = {c: {o: v for o, v in t.items() if (c, o) not in PENDENTES_FRANK} for c, t in PROPOSTAS.items()}
+# Frank, 26/11/2026: «Todo está aprobado y se debe hacer». Se aplican todas;
+# la palabra que ya era nueva en otra edad vuelve aquí como repaso («volve»).
+SUBST = PROPOSTAS
+ORDE_CURSOS = ["curso_0_2", "curso_2_3", "curso_3_4", "curso_4_5", "curso_5_6"]
 
 # Palabras o expresiones que el gate considera ajenas a la edad (las viejas).
 ALLEAS = {c: set(t) for c, t in SUBST.items()}
@@ -409,6 +413,28 @@ def lamina_orde(mapa: dict) -> dict:
     return novas
 
 
+def marcar_volve() -> None:
+    """En el banco TPR, la palabra que ya era nueva en una edad anterior lleva
+    «volve»: la edad de la que vuelve. tools/planificador_5_palabras.py la
+    cuenta como repaso, no como nueva otra vez."""
+    vistas: dict[str, str] = {}
+    for curso in ORDE_CURSOS:
+        for f in sorted((C / "tpr" / curso).glob("tpr.*.json")):
+            t_ = f.read_text(encoding="utf-8")
+            j = json.loads(t_)
+            for s in j.get("semanas", []):
+                for w in s["palabras"]:
+                    k = norm(w["en"])
+                    if k in vistas and vistas[k] != curso:
+                        w["volve"] = vistas[k]
+                    else:
+                        w.pop("volve", None)
+                        vistas.setdefault(k, curso)
+            novo = json.dumps(j, ensure_ascii=False, indent=2) + "\n"
+            if novo != t_:
+                f.write_text(novo, encoding="utf-8")
+
+
 def ficheiros(curso: str):
     yield from sorted((C / "tpr" / curso).glob("*.json"))
     yield from sorted((C / "unidades_mes" / curso).glob("*.json"))
@@ -488,6 +514,7 @@ def main() -> int:
     if "--aplicar" in sys.argv:
         aplicar(True)
         vocab_clave_dos_contos()
+        marcar_volve()
         print("Aplicado. Agora: python3 tools/gen_leccions.py e o resto da cadea.")
         return 0
     restos = aplicar(False)

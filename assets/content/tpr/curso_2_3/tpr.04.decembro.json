@@ -98,15 +98,15 @@
         },
         {
           "id": "2_3.decembro.s1.jump-in",
-          "en": "Jump in",
-          "gl": "Saltar dentro",
-          "es": "Saltar dentro",
+          "en": "Hop",
+          "gl": "Brincar",
+          "es": "Brincar",
           "tprAction": {
-            "gl": "Saltar dentro da poza",
-            "es": "Saltar dentro del charco"
+            "gl": "Sinala ou colle o que nomeas: brincar.",
+            "es": "Señala o coge lo que nombras: brincar."
           },
           "category": "verb",
-          "lamina": "pal_jump_in"
+          "lamina": "pal_hop"
         },
         {
           "id": "2_3.decembro.s1.jump-out",
@@ -347,15 +347,16 @@
         },
         {
           "id": "2_3.decembro.s2.pour-down",
-          "en": "Pour down",
-          "gl": "Chover a cántaros",
-          "es": "Llover a cántaros",
+          "en": "Pitter-patter",
+          "gl": "Plic, plic",
+          "es": "Plic, plic",
           "tprAction": {
-            "gl": "Baixar os brazos rápido",
-            "es": "Bajar los brazos rápido"
+            "gl": "Sinala ou colle o que nomeas: plic, plic.",
+            "es": "Señala o coge lo que nombras: plic, plic."
           },
           "category": "verb",
-          "lamina": "pal_pour_down"
+          "lamina": "pal_pitter_patter",
+          "volve": "curso_0_2"
         },
         {
           "id": "2_3.decembro.s2.rumble",
@@ -366,7 +367,8 @@
             "gl": "Facer «brrum» coa voz",
             "es": "Hacer «brrum» con la voz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_thunder"
         },
         {
           "id": "2_3.decembro.s2.flash",

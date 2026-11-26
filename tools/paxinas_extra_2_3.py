@@ -54,8 +54,8 @@ PAXINAS = {
                      "Paula sacude las manos para secarlas: “Shake dry”."),
     "conto_077_s1": ("No mar, Noel ve ondas suaves, “Gentle waves”, e despois ondas xigantes: “Giant waves!”.",
                      "En el mar, Noel ve olas suaves, “Gentle waves”, y después olas gigantes: “Giant waves!”."),
-    "conto_078_s2": ("Duarte imaxina: “Swim like a little fish!”. Hoxe o mar está tranquilo, “Calm sea”.",
-                     "Duarte imagina: “Swim like a little fish!”. Hoy el mar está tranquilo, “Calm sea”."),
+    "conto_078_s2": ("Duarte imaxina: “Swim like a little fish!”. Hoxe o mar está tranquilo, “Sunny”.",
+                     "Duarte imagina: “Swim like a little fish!”. Hoy el mar está tranquilo, “Sunny”."),
     "conto_079_s3": ("Rut despide o caramuxo coa man: “Wave goodbye”.",
                      "Rut despide al caracol con la mano: “Wave goodbye”."),
 }

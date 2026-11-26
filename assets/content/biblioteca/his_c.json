@@ -330,7 +330,7 @@
     "palabrasDiana": [
       "push",
       "tall",
-      "steady",
+      "Still",
       "fall"
     ],
     "fraseLua": {
@@ -1561,7 +1561,7 @@
       "train",
       "broken",
       "block",
-      "rebuild"
+      "Build"
     ],
     "fraseLua": {
       "en": "The bridge is broken! My turn, your turn: we rebuild!",
@@ -1869,7 +1869,7 @@
       "tall",
       "push",
       "fall",
-      "rebuild"
+      "Build"
     ],
     "fraseLua": {
       "en": "I push and it falls! Shhh... we rebuild.",
@@ -2483,8 +2483,8 @@
     },
     "palabrasDiana": [
       "push",
-      "steady",
-      "rebuild",
+      "Still",
+      "Build",
       "fall"
     ],
     "fraseLua": {
@@ -2792,7 +2792,7 @@
     "palabrasDiana": [
       "cup",
       "tall",
-      "steady",
+      "Still",
       "fall"
     ],
     "fraseLua": {
@@ -3407,8 +3407,8 @@
     },
     "palabrasDiana": [
       "broken",
-      "rebuild",
-      "steady",
+      "Build",
+      "Still",
       "fall"
     ],
     "fraseLua": {
@@ -6485,7 +6485,7 @@
     },
     "palabrasDiana": [
       "cat",
-      "examine",
+      "Listen",
       "gentle",
       "healthy"
     ],
@@ -7100,7 +7100,7 @@
     },
     "palabrasDiana": [
       "cat",
-      "temperature",
+      "Gloves",
       "gentle"
     ],
     "fraseLua": {
@@ -7408,7 +7408,7 @@
     "palabrasDiana": [
       "cat",
       "bandage",
-      "examine",
+      "Listen",
       "leg"
     ],
     "fraseLua": {

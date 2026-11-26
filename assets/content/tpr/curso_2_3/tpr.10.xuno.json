@@ -181,15 +181,15 @@
         },
         {
           "id": "2_3.xuno.s1.calm-sea",
-          "en": "Calm sea",
-          "gl": "Mar tranquilo",
-          "es": "Mar tranquilo",
+          "en": "Sunny",
+          "gl": "Soleado",
+          "es": "Soleado",
           "tprAction": {
-            "gl": "Pasar a man plana",
-            "es": "Pasar la mano plana"
+            "gl": "Sinala ou colle o que nomeas: soleado.",
+            "es": "Señala o coge lo que nombras: soleado."
           },
           "category": "adjective",
-          "lamina": "pal_calm_sea"
+          "lamina": "pal_sunny"
         },
         {
           "id": "2_3.xuno.s1.sailing-along",
@@ -508,27 +508,27 @@
       "palabras": [
         {
           "id": "2_3.xuno.s3.sea-glass",
-          "en": "Sea glass",
-          "gl": "Cristal de mar",
-          "es": "Cristal de mar",
+          "en": "Starfish",
+          "gl": "Estrela de mar",
+          "es": "Estrella de mar",
           "tprAction": {
-            "gl": "Mirar un cristal á luz",
-            "es": "Mirar un cristal a la luz"
+            "gl": "Sinala ou colle o que nomeas: estrela de mar.",
+            "es": "Señala o coge lo que nombras: estrella de mar."
           },
           "category": "noun",
-          "lamina": "pal_sea_glass"
+          "lamina": "pal_starfish"
         },
         {
           "id": "2_3.xuno.s3.driftwood",
-          "en": "Driftwood",
-          "gl": "Madeira de deriva",
-          "es": "Madera a la deriva",
+          "en": "Stick",
+          "gl": "Pau",
+          "es": "Palo",
           "tprAction": {
-            "gl": "Coller un pau da praia",
-            "es": "Coger un palo de la playa"
+            "gl": "Sinala ou colle o que nomeas: pau.",
+            "es": "Señala o coge lo que nombras: palo."
           },
           "category": "noun",
-          "lamina": "pal_driftwood"
+          "lamina": "pal_stick"
         },
         {
           "id": "2_3.xuno.s3.cockle",

@@ -250,15 +250,16 @@
       "palabras": [
         {
           "id": "5_6.xaneiro.s2.fishing-village",
-          "en": "Fishing village",
-          "gl": "Aldea mariñeira",
-          "es": "Aldea marinera",
+          "en": "Harbour",
+          "gl": "Porto",
+          "es": "Puerto",
           "tprAction": {
-            "gl": "Tirar dunha rede",
-            "es": "Tirar de una red"
+            "gl": "Sinala ou colle o que nomeas: porto.",
+            "es": "Señala o coge lo que nombras: puerto."
           },
           "category": "noun",
-          "lamina": "pal_fishing_village"
+          "lamina": "pal_harbour",
+          "volve": "curso_2_3"
         },
         {
           "id": "5_6.xaneiro.s2.fortress",
