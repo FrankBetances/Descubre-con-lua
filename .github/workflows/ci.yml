@@ -87,10 +87,10 @@ jobs:
       BUILD_NUMBER: ${{ github.run_number }}
       # Cuántas copias de CADA artefacto sobreviven a este run. Es lo que fija el
       # suelo de almacenamiento del repositorio. En repositorio PÚBLICO el
-      # almacenamiento es gratis; en PRIVADO la cuota es de toda la cuenta. Con 2
-      # quedan el run actual y el anterior, el mínimo para poder volver atrás si
-      # el último sale malo.
-      KEEP_ARTIFACTS_PER_NAME: 2
+      # almacenamiento es gratis; en PRIVADO la cuota es de toda la cuenta. Con 1
+      # queda solo el build del último run: Frank quiere una única versión con
+      # todo (O-20261126-9, 26/11/2026).
+      KEEP_ARTIFACTS_PER_NAME: 1
       # El mapa de R8 se guarda MÁS HONDO que el APK y el AAB porque su valor es
       # histórico: sirve para leer una traza de un build que ya no es el último,
       # que es justo el caso que se da. Es texto, no 100 MB como el APK.

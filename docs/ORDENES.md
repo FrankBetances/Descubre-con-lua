@@ -686,3 +686,14 @@ Estado: cumplida
 Fuente: CLAUDE.md (R-FRANK, reglas con freno)
 
 - [x] La regla escrita en CLAUDE.md y el fallo en docs/FALLOS.md con su guarda · evidencia: CLAUDE.md (R-RESPONDER) y docs/FALLOS.md (F-20261126-8)
+
+## O-20261126-9 · Un único build con todos los arreglos y todos los artefactos
+Estado: abierta
+> (26/11/2026) «Te he ordenado que solo exista un solo wil con todo arreglado uno único que tenga todo con todos los artefactos y todos los arreglos, una única cosa, todo arreglado ya»
+> (26/11/2026) «Tumba todo» / «Lanza uno nuevo con todos los arreglos»
+Fuente: .github/workflows/ci.yml (KEEP_ARTIFACTS_PER_NAME y el paso «Retirar artefactos de runs anteriores») y la lista de runs de Gates en GitHub Actions
+Reparto: Claude Code.
+
+- [ ] Un solo run de Gates en marcha, sobre el último main con todos los arreglos (P8.42 y P8.43); los demás cancelados · evidencia:
+- [ ] Ese run sale en verde y deja una sola copia de cada artefacto (APK, AAB): KEEP_ARTIFACTS_PER_NAME a 1 · evidencia:
+
