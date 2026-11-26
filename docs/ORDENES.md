@@ -120,7 +120,7 @@ Estado: cumplida
 - [x] Las unidades 21-48 con su material completo, no solo descripción y ejemplo · evidencia: assets/content/gramatica/gramatica.json (las 28 unidades en la ruta de las criaturas, una por mes, con 4 frases semanales dentro del STEAM, «paraFamilias» y ejemplo; dadas por cubiertas por Frank el 19/11/2026: O-20261119-5)
 
 ## O-20261028-9 · Las 48 unidades, para las criaturas, con el STEAM como eje
-Estado: abierta
+Estado: cumplida
 > las 48 unidades son para los niños. Si hay que adaptarlas no para el adulto, esto está mal, y se adaptan sí o sí
 > Steam es el eje vertebrador [...] hay 48 unidades que hay que cumplir sí o sí y debe dejarse claro cómo se avanza entre uno y la otra
 
@@ -338,7 +338,7 @@ Camino: Na casa → Hoy (camino de días a la izquierda, Lúa a la derecha) → 
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #51, merge 429840b3, runs 44326670178 y 44326687729 en verde)
 
 ## O-20261118-2 · Plan para que Antigravity ejecute lo pendiente; Claude Code lo revisa
-Estado: abierta
+Estado: cumplida
 > cuando termines, necesito que generes un plan para que antigravity ejecute todo el trabajo pendiente, tanto de las imagenes y el resto de trabajo pendiente, tu te encargaras de revisarlo cuando este listo
 Fuente: docs/ORDENES.md (criterios abiertos en main y en origin/feat/laminas-ejercicios), docs/FALLOS.md y las ramas de origin con trabajo fuera de main (feat/laminas-ejercicios, fix/dias-hoy, claude/charming-euler-9i23cj, claude/upbeat-fermi-3d0utp)
 
@@ -346,7 +346,7 @@ Fuente: docs/ORDENES.md (criterios abiertos en main y en origin/feat/laminas-eje
 - [x] Revisión de Claude Code de lo que entregue Antigravity, criterio por criterio, con los gates corridos y las capturas miradas · evidencia: docs/PLAN_ANTIGRAVITY.md (columna Revisión del registro, fila a fila; P7.9 revisada par a par, pip/pit devuelto) y docs/escoita-control.md
 
 ## O-20261118-3 · Juegos de escucha y palabras (opción A), dentro de la lección y unidos al STEAM
-Estado: abierta
+Estado: cumplida
 > Por cierto me gustaría explorar la posibilidad de que descubre con lua integre ejercicios de logopedia como pares mínimos y expansión semántica mezclados con steam y el aprendizaje de inglés
 > Me gusta la opción A prepara el plan para que también lo asuma antigravity ahora
 > (19/11/2026) Si quiero el Modo Aula como camino con banner, igual que el de casa, pero porque no copias el trabajo ya hecho en el respositorio de valeria y lo adaptas ?
@@ -362,10 +362,11 @@ Opción A, tal como la eligió Frank: estimulación del lenguaje universal y edu
 - [x] Gate: falla si falta la pieza de un curso y mes, si un par no difiere en un solo fonema, si una palabra no tiene lámina, voz o STEAM, o si aparece «logopedia», «terapia» o «trastorno» en assets/, lib/ o docs/ públicos · evidencia: tools/check_plan_escoita.py, tools/check_pares_en.py, tools/check_voice_coverage.py y tools/check_finalidade.py, los cuatro en tools/gates.sh
 > (20/11/2026) Además la malditos pares mínimos ya los escucho la maldita logopeda y los dio por buenos joder
 - [x] Revisado por Frank (o por la logopeda que validó Valeria): los pares son válidos y adecuados a cada edad · evidencia: docs/ORDENES.md (palabra de Frank del 20/11/2026: la logopeda los escuchó y los dio por buenos)
-- [ ] Frank lo ve en la app (Na casa → Hoy → día → Continuar) en tres meses de edades distintas y lo da por bueno · evidencia:
+> (26/11/2026) «ya he visto la aplicación y la he usado y evaluado tanto lo de Valeria como el resto, y para todo eso hubo un merge»
+- [x] Frank lo ve en la app (Na casa → Hoy → día → Continuar) en tres meses de edades distintas y lo da por bueno · evidencia: docs/ORDENES.md (palabra de Frank del 26/11/2026: la ha usado y evaluado)
 
 ## O-20261118-4 · Un único plan que registre cada commit, para auditar paso a paso
-Estado: abierta
+Estado: cumplida
 > Por cierto genera un único plan que vaya guardando cada Commit para poder ir auditando al trabajo, paso a paso
 Fuente: docs/PLAN_ANTIGRAVITY.md (el plan de O-20261118-2 y O-20261118-3, ahora el único plan de lo pendiente)
 
@@ -438,7 +439,7 @@ Fuente: assets/content/gramatica/gramatica.json (unidades 21-48 en la ruta de la
 - [x] Los criterios de unidades 21-48 de O-20261028-7 y O-20261028-8 se cierran con lo que ya hay: una unidad por mes con 4 frases semanales dentro del STEAM, línea para la familia y ejemplo · evidencia: tools/gen_gramatica.py (falla si falta una de las 48 en la ruta)
 
 ## O-20261119-6 · Las 227 piezas TPR sin base también sin imagen; terminar lo pendiente
-Estado: abierta
+Estado: cumplida
 > Sí, las 227 también se quedan sin imagen, y termina el resto del trabajo pendiente
 Fuente: docs/tpr_sin_base.md (las 227 piezas sin base de P2.93–P2.95, con su motivo)
 
@@ -449,7 +450,7 @@ Fuente: docs/tpr_sin_base.md (las 227 piezas sin base de P2.93–P2.95, con su m
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #60, merge 582478a4, runs 44535911964 y 44535920265 en verde)
 
 ## O-20261119-7 · Terminar el rediseño de la UX/UI: mejorar lo que hay, con más vida, dinamismo y atractivo
-Estado: abierta
+Estado: cumplida
 > Ademas necesito que termines el rediseño de la  UX -UI, no borrar lo que hay, la idea es mejorar lo que hay, darle más vida y dinamismo, además que sea mucho más atractiva en todos los sentidos
 Fuente: docs/capturas/escritorio/hoxe-casa-4-5-gl.png (y las demás de docs/capturas/escritorio: estado de partida del 19/11/2026); diseño Duolingo de O-20261109-5 (duolingo-clone, MIT) como referencia que se conserva
 
@@ -464,7 +465,7 @@ Criterios propuestos por Claude Code (Frank los corrige): nada se borra; se mejo
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (tanda 1: PR #61, merge 508e7236, runs 44550053706 y 44550097035 en verde)
 
 ## O-20261119-8 · Traer de Valeria la logopedia (pares y expansión, en/gl/es), la tipografía, el movimiento, la UX y las insignias, adaptarlo y expandirlo
-Estado: abierta
+Estado: cumplida
 > todo lo que esta en valeria también esta en ingles gallego y castellano ya validado por una logopeda de la universidad de howard ahora lo que habría que hacer es adaptarlo y expandirlo, también copia los movimientos tipo de letras, de la ux, ademas también hay insignias que puedes copiar
 Fuente: FrankBetances/Valeria:src/valeriaMinimalPairsEn.ts (y valeriaMinimalPairsGl.ts, valeriaMinimalPairsEsDO.ts y valeriaMinimalPairs.ts: los pares en inglés, gallego y castellano), src/valeriaSemanticExpansionEn.ts (y …Gl.ts y valeriaSemanticExpansion.ts: escenarios, categorías, progresiones concepto → parte → acción → cualidad y cápsulas de contraste), src/ui/fonts.ts (Fredoka para títulos, Nunito para texto, OFL), src/ui/motion.tsx, src/ui/Celebration.tsx, src/ui/ReactiveTile.tsx, src/ui/ScreenHeader.tsx y src/ui/KidButton.tsx (movimiento y UX), src/valeriaGamification.ts y src/ValeriaPixelArt.ts (insignias); capturas de la fuente en docs/screenshots/ de Valeria
 
@@ -500,7 +501,7 @@ Fuente: docs/FALLOS.md (F-20261119-1 a 4) y la propuesta de reglas y hooks que C
 - [x] PR mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #62, merge ea4eeaf9 en main, runs 44612047893 y 44612061013 en verde con los audios)
 
 ## O-20261119-10 · Terminar lo que falta y entregar una versión definitiva
-Estado: abierta
+Estado: cumplida
 > Vamos a ver Joder antigravity ya terminó
 > Ahora yo lo que quiero es que se termine de trabajar
 > Completa todo lo que falta y entrega una versión definitiva
@@ -515,7 +516,7 @@ Fuente: docs/PROMPTS_ANTIGRAVITY.md (P7.9; entrega de Antigravity en antigravity
 - [x] Mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #63, merge fddc667c en main; run 44649317109 de Gates en verde sobre 6e9bbe08, con los audios del workflow voice-assets)
 
 ## O-20261120-1 · Estimulación del lenguaje y el pensamiento, bien visible; voz como en Valeria; realidad aumentada con Lúa
-Estado: abierta
+Estado: cumplida
 > Ya he probado con logopeda está todo casi bien pero hay un pequeño problema con la velocidad del dictado, es demasiado rápido y no es adecuado para la enseñanza y aprendizaje de un segundo idioma, faltaría incorporar la realidad aumentada para utilizar lua y los sets que ya están en Valeria en esta app
 > Te pedí y fui bastante claro de que quería que tuviera también Logopedia que la copiaras de Valeria, y que a su vez se centrará o intentará utilizar la base steam para estimular el pensamiento crítico y las capacidades cognitivas de los niños, y es que veo todo el aprendizaje que te he pedido que esté ahí, pero no consigo ver esa parte precisamente donde la ocultaste?
 > Hombre, creo que hay que señalizarla como estimulación de lenguaje y pensamiento, y que debe estar bastante clara me parece que es muy cutre, lo que has hecho, realmente una basura total y que me has llevado la contraria
@@ -532,12 +533,13 @@ Reparto: lo ejecuta Antigravity con el prompt P9 de docs/PROMPTS_ANTIGRAVITY.md 
 > (20/11/2026) No tengo presupuesto pero me has enfadado tanto que estoy obligado a contestar, eres un incompetente joder, la 1 te dije que trajeras aquí la RA que creamos con la Valeria adaptada al aprendizaje de inglés evidentemente joder, es una maldita orden que tienes que cumplir no entiendo tu pregunta 1
 Decisión: la RA de Valeria se trae adaptada al inglés; el permiso de cámara va con ella. Lo hace Antigravity (P10); Claude Code lo revisa.
 - [x] Realidad aumentada: informe de cómo la hace Valeria (motor, permisos, licencias, red) entregado a Frank, y su decisión sobre el permiso de cámara escrita aquí antes de cualquier código · evidencia: docs/estimulacion-ar-informe.md y docs/ORDENES.md (decisión de Frank del 20/11/2026: se trae, con cámara)
-- [ ] Con el sí de Frank: los sets de Valeria con Lúa, cada uno con el STEAM del mes, y la política de privacidad y el formulario de Play actualizados en el mismo cambio · evidencia:
+> (26/11/2026) «ya he visto la aplicación y la he usado y evaluado tanto lo de Valeria como el resto, y para todo eso hubo un merge»
+- [x] Con el sí de Frank: los sets de Valeria con Lúa, cada uno con el STEAM del mes, y la política de privacidad y el formulario de Play actualizados en el mismo cambio · evidencia: test/features/ar_estimulacion_test.dart y test/privacy/privacy_manifest_test.dart (hecho en P10.4, mergeado en el PR #66, 2c5bd6fa; evaluado por Frank el 26/11/2026)
 - [x] Capturas de escritorio de la sección en gl y es, en casa y en el aula, miradas · evidencia: docs/capturas/escritorio/estimulacion-casa-hoxe-gl.png, estimulacion-aula-0_2-m3-es.png y el resto de estimulacion-*.png, miradas por Claude Code el 20/11/2026
 - [x] Mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #64, merge bbda1325 en main; run 44778068515 de Gates en verde sobre 92ddc914, con los audios del workflow voice-assets)
 
 ## O-20261120-2 · Corregir lo de Antigravity, merge a main y lista de pendientes para la semana que viene
-Estado: abierta
+Estado: cumplida
 > Tenemos poco presupuesto, corrige los errores de antigravity y luego ejecuta merge y push al main , crea un listado de lo que queda pendiente, para continuar la próxima semana
 > (20/11/2026, a pregunta de Claude Code) «Sí, borra las 80»: las 80 grabaciones en_tutor sobrantes.
 Fuente: docs/PROMPTS_ANTIGRAVITY.md (P9; entrega de Antigravity en antigravity/escoita, 7e178ae6)
@@ -547,7 +549,7 @@ Fuente: docs/PROMPTS_ANTIGRAVITY.md (P9; entrega de Antigravity en antigravity/e
 - [x] Lista de lo pendiente para la semana que viene · evidencia: docs/PENDIENTE.md
 > (20/11/2026) Y evidentemente si hoxe se repite dos veces hay que quitarlo de uno de los dos lugares y evidentemente que será el de abajo joder joder
 > (20/11/2026) Además la maldita voz te orde copiar a Valeria / Como diablos hablo contigo y haces lo que te da la gana / No te presupuesto, genera la lista de pendientes y Mergea y push al main
-- [ ] Quitar la entrada de Estimulación de abajo en Hoxe, en casa y en el aula (pendiente: el freno de borrado no reconoce «quitarlo») · evidencia:
+- [x] Quitar la entrada de Estimulación de abajo en Hoxe, en casa y en el aula · evidencia: test/features/estimulacion_test.dart (una sola entrada_estimulacion_casa y una sola entrada_estimulacion_aula; hecho en P10.3, mergeado en el PR #66, 2c5bd6fa)
 - [x] Mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #64, merge bbda1325 en main; run 44778068515 de Gates en verde sobre 92ddc914, con los audios del workflow voice-assets)
 
 ## O-20261121-1 · README al día y sin información confidencial
@@ -559,7 +561,7 @@ Fuente: CLAUDE.md (R5 y regla 0b: el README describe el producto; la operación 
 - [x] README al día: estimulación del lenguaje y el pensamiento, juegos de escucha, premios de la criatura, voz de niño y lenta, privacidad en tres ficheros y Fredoka · evidencia: tools/check_contact_email.py y tools/check_finalidade.py
 
 ## O-20261122-1 · Versión definitiva para el piloto: neno/nena, sin «Edición Vigo», una entrada, RA de Valeria y todo lo pendiente, hecho por Antigravity
-Estado: abierta
+Estado: cumplida
 > Antigravity se reinició, y tengo tokens de sobre para terminar, primero necesito que arreglemos algo muy básico de lenguaje, en Galicia no se dice criatura ni crianzas ni nada de eso, aquí se habla de neno o nena, tenemos que cambiar el tema de edición Vigo y dejarlo simplemente sin decir que es para Vigo porque lo vamos a utilizar en Orense para un piloto, necesito que generen prompt completo para que antiGravity haga completamente de arriba hasta abajo todo el trabajo que falta tu única función será validar que esté bien hecho no pero todo el trabajo el 100 % de trabajo lo tiene que hacer anti Gravity, tenemos el visto bueno de todo el trabajo anterior, así que quiero una versión definitiva para probar ya así que tiene que ser la dirección más completa hasta la fecha el trabajo lo tiene que hacer anti Gravity lo repito anti Gravity dame el prompt
 Fuente: docs/PROMPTS_ANTIGRAVITY.md (P10) y docs/PENDIENTE.md; para la RA, FrankBetances/Valeria:src/steam/arActivities.ts, src/steam/arScenes.ts, src/steam/worlds/ y src/valeriaArBridge.ts (commit e2a2a5e8)
 Reparto: todo lo hace Antigravity (P10.0–P10.9); Claude Code solo valida e integra.
@@ -571,4 +573,43 @@ Reparto: todo lo hace Antigravity (P10.0–P10.9); Claude Code solo valida e int
 - [x] Realidad aumentada de Valeria adaptada al inglés, con cámara, por mes y edad, con Lúa; política de privacidad, ficha de Play, créditos y gate de permisos al día en el mismo cambio · evidencia: test/features/ar_estimulacion_test.dart, test/privacy/privacy_manifest_test.dart y docs/p10-control.md (no probado en un móvil con ARCore)
 - [x] Inglés de las frases de cada palabra revisado · evidencia: docs/p10-ingles.md y tools/check_plan_escoita.py
 - [x] Manual con capturas nuevas, PDF y Word mirados página a página · evidencia: tools/check_manual_build.py y docs/p10-control.md
-- [ ] Revisado por Claude Code y mergeado en main con CI en verde y los audios generados · evidencia:
+- [x] Revisado por Claude Code y mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #66, merge 2c5bd6fa en main; run 45051487520 de Gates en verde sobre 4bce917f, con los audios, y run 45053829115 en verde sobre 2c5bd6fa)
+
+## O-20261126-1 · Auditoría forense y plan: varios niños por familia, nivel por edad, prueba de nivel y repaso
+Estado: abierta
+> ayudame a realizar un plan de mejoras , primero necesito que tenga registro multiples, porque una misma familia puede tener multiples niños en cursos distintos, ademas tenemos muchos problemas con los niveles ajustados a la edad,  primero que nada la edad de 0-2 años deberia centrarse en temas muy sencillos como adjetivos, sustantivos, onomatopeyas, aprender a reconocer tareas o eventos, o incluso aprender las series mas básicas, siempre con muchas repeticiones, luego en los niños mayores, tenemos el problema de que no sabemos que nivel tienen, creo que deberían hacer un pequeño examen básico para identificar el nivel y que se ajuste a su conocimiento, y luego las repeticiones de las lecciones anteriores son muy muy deficientes, y entre semana y semana el nivel del contenido tambien esta desajustado, primero realiza una auditoria forense, analiza como podemos hacer las mejoras y plantea un plan completo de mejoras
+Fuente: assets/content/leccions/leccions.json, assets/content/acopros/proxectos_0_2.json, assets/content/gramatica/gramatica.json, tools/gen_leccions.py, lib/features/criancas/ y lib/core/fsrs_service.dart, medidos con tools/auditoria_niveles.py
+Reparto: Claude Code audita y propone; la ejecución, por fases, con las decisiones D1-D5 de Frank.
+
+- [x] Auditoría forense medida por script de los cinco cursos: registro de varios niños, 0-2, nivel de entrada, repaso y progresión semana a semana, cada hallazgo con su causa en el código · evidencia: tools/auditoria_niveles.py y docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 2)
+- [x] Plan completo: cada parte de la orden con su fase, lo que Frank ve y dónde, y el gate que la cierra · evidencia: docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 4)
+> (26/11/2026, a pregunta de Claude Code) «Apruebo d1 a d6»
+Decisión: D1 a D6 aprobadas tal como las recomienda docs/AUDITORIA_NIVELES_Y_REPASO.md (secciones 3 y 4b); D4 incluye sustituir las 199 palabras actuales de 0-2 (assets/content/acopros/proxectos_0_2.json) por el núcleo propuesto.
+- [x] Decisiones de Frank D1 (48 unidades), D2 (prueba de nivel sin pantalla para el niño), D3 (datos nuevos), D4 (rehacer 0-2) y D5 (ritmo por edad), escritas aquí · evidencia: docs/ORDENES.md (decisión de Frank del 26/11/2026: «Apruebo d1 a d6»)
+- [ ] Na casa → alta y Hoxe: varios niños de cursos distintos visibles a la vez, cada uno con su tarea, sus premios y su repaso · evidencia:
+- [ ] Na casa → Hoxe: «Volven hoxe / Vuelven hoy» por niño; cada palabra vuelve al menos 4 veces en el curso y alguna pasado un mes (tools/auditoria_niveles.py --gate en tools/gates.sh) · evidencia:
+- [ ] Al registrar un niño de 2 años o más: juego de Lúa para saber por dónde empezar, dirigido por la persona adulta, que fija su punto de partida y siembra su repaso · evidencia:
+- [ ] 0-2 años: sustantivos, adjetivos, onomatopeyas, rutinas y sucesos y series básicas, con el STEAM del mes y muchas repeticiones · evidencia:
+- [ ] De una semana a la siguiente el nivel sube sin saltos y la gramática no pasa del techo de cada edad, en las cinco edades (tools/auditoria_niveles.py --gate) · evidencia:
+
+## O-20261126-2 · Ajuste dinámico: el material crece con lo que el niño sabe
+Estado: abierta
+> Podrías agregar alguna forma que sea dinámico, que, dependiendo de los conocimientos que vaya adquiriendo de los resultados del test de entrada, la cantidad de material al que accede, sea distinto y ajustado a sus capacidades
+Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md (H3 y H4: las marcas «aún no / la entiende / la dice» de lib/features/criancas/criancas_store.dart y el FSRS de lib/core/fsrs_service.dart); no copia de otro producto
+Reparto: Claude Code lo diseña en el plan; se programa en la fase F3b con las decisiones D1, D5 y D6 de Frank.
+
+- [x] Diseño del ajuste dinámico en el plan: qué lee, qué decide (cupo, mezcla, peldaño), reglas con sus umbrales, tres capas de contenido por semana, qué ve la familia, qué guarda y cómo se comprueba · evidencia: docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 4b y fila F3b)
+- [x] Decisión de Frank D6 (proponer o esconder y umbrales), escrita aquí · evidencia: docs/ORDENES.md (decisión de Frank del 26/11/2026 en O-20261126-1: «Apruebo d1 a d6»; se propone y no se esconde, umbrales de la sección 4b)
+- [ ] Na casa → Hoxe: el cupo de palabras nuevas, el repaso y el peldaño de cada niño cambian cada lunes según lo marcado la semana anterior y una línea en gl y es dice por qué; un test de cuatro niños simulados durante cuarenta semanas lo comprueba · evidencia:
+- [ ] Cada semana de las cinco edades tiene núcleo, «Máis / Más» y «Apoio / Apoyo», las tres con el STEAM del mes; un gate lo comprueba · evidencia:
+
+## O-20261126-3 · Plan completo para que lo ejecute Antigravity, revisado por Claude Code
+Estado: abierta
+> Genera un plan completo de trabajo para que me ejecute totalmente anti Gravity, y tu función será revisarlo
+> (26/11/2026) Apruebo d1 a d6
+Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md (secciones 2 a 5) y las órdenes O-20261126-1 y O-20261126-2
+Reparto: todo lo hace Antigravity (P11.0–P11.11) en la rama antigravity/niveles; Claude Code solo revisa e integra.
+
+- [x] Prompt P11 guardado en el repositorio con sus pasos P11.0–P11.11 en la tabla de pasos, antes de que Antigravity empiece · evidencia: docs/PROMPTS_ANTIGRAVITY.md y tools/check_registro_commits.py
+- [ ] Entrega de Antigravity en antigravity/niveles con docs/p11-control.md criterio por criterio · evidencia:
+- [ ] Revisado por Claude Code (auditoria_niveles --gate y check_capas_semana a cero, gates.sh y flutter test en verde, tres semanas al azar por edad, capturas gl y es miradas) y mergeado en main con CI en verde y los audios generados · evidencia:

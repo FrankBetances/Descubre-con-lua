@@ -129,3 +129,13 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: Claude Code añadió las frases del modelo y las del banco de Valeria con la regla de siempre (frase = velocidad normal, 1.0), sin copiar de Valeria la voz de niño (1.05) ni la frase lenta (1.6) con «oír despacio». La logopeda que probó la app dijo que el inglés iba demasiado rápido. Lo hizo Claude Code.
 - Causa raíz: se copió el contenido de Valeria sin copiar cómo lo locuta.
 - Guarda: tools/check_voz_lenta.py (falla si una frase inglesa para el niño no tiene su versión lenta)
+
+## F-20261126-1 · Sin repaso real y con la gramática subiendo a ritmo de adulto
+- Qué pasó: Frank señaló que el nivel no se ajusta a la edad, que las repeticiones de lecciones anteriores son muy deficientes y que el nivel salta de una semana a otra. Medido: 0 semanas de repaso de 200, ninguna palabra vuelve pasado un mes, 199 palabras distintas en 0-2 con una sola que vuelve otro mes, y 3-6 años trabajando B1 a C1. Lo hizo Claude Code (tools/gen_leccions.py, commits de «P11: progresión real por curso», y la ruta de los 48 puntos, 86d0cfe4 y dd6c87b7).
+- Causa raíz: el generador solo hace repaso si una semana no trae palabras nuevas (`repaso = not novas`) y «Ya las conoce» toma las últimas 8 piezas; los 48 puntos se repartieron uno por mes sin techo por edad; ningún gate medía vueltas, desfase, longitud de la frase ni nivel por edad.
+- Guarda: tools/auditoria_niveles.py (con `--gate` falla si una palabra vuelve menos de 4 veces, si ninguna vuelve pasado un mes, si no hay semanas de repaso, si la frase pasa del techo de la edad o salta más de 2 palabras entre semanas, o si la gramática pasa del techo MCER de la edad; entra en tools/gates.sh en la fase que corrige cada umbral, porque hoy tumbaría CI)
+
+## F-20261126-2 · Claude Code dio por pendientes cuatro criterios que Frank ya había visto y estaban mergeados
+- Qué pasó: Claude Code le dijo a Frank que faltaban, entre otros, el merge de P10, los sets de Valeria, quitar la entrada de Estimulación de abajo y que Frank lo viera en la app. Todo estaba en main desde el PR #66 (2c5bd6fa) y Frank lo había usado y evaluado. Además, siete órdenes con todos sus criterios cumplidos seguían como «abierta». Lo hizo Claude Code.
+- Causa raíz: Claude Code repitió la lista de criterios abiertos de docs/ORDENES.md sin cruzarla con la historia de main; la evidencia del merge #66 la había escrito otra sesión de Claude Code en la rama claude/upbeat-fermi-3d0utp, que nunca se mergeó, y ningún gate comparaba ORDENES.md con los merges.
+- Guarda: tools/check_ordenes_mergeadas.py (falla si una orden cuyo bloque de pasos ya tiene «Merge pull request #N: P<n>» en la historia sigue con su criterio de merge abierto; dentro de tools/gates.sh)
