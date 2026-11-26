@@ -631,8 +631,8 @@ Reparto: lo hace Antigravity dentro de P11.0–P11.11; Claude Code revisa.
 
 - [x] Corrección final con el alta de una sola vez y M1-M5 guardada en el repositorio y en main · evidencia: docs/PROMPTS_ANTIGRAVITY.md (sección «P11 · Corrección final») y tools/check_prompt_vigente.py
 > Abierto (Claude Code, 26/11/2026): M1-M5 están programadas con sus tests; faltan sus capturas en gl y es (P11.10).
-> Abierto (Claude Code, 26/11/2026): las 25 capturas p11-*.png de docs/capturas/escritorio están hechas, pero la mayoría en una sola lengua; faltan sus parejas en gl o es.
-- [ ] M1 marcar en diez segundos, M2 rutinas de casa, M3 reto de hermanos, M4 cuántas veces la ha oído y M5 tarjeta para la escuela, en la app en gl y es, cada una con su test y su captura · evidencia:
+> Cerrado el 26/11/2026 (antes: abierto (Claude Code, 26/11/2026): las 25 capturas p11-*.png de docs/capturas/escritorio están hechas, pero la mayoría en una sola lengua; faltan sus parejas en gl o es.)
+- [x] M1 marcar en diez segundos, M2 rutinas de casa, M3 reto de hermanos, M4 cuántas veces la ha oído y M5 tarjeta para la escuela, en la app en gl y es, cada una con su test y su captura · evidencia: test/capturas_test.dart (capturas p11-marcar, p11-lua-pregunta, p11-reto-irmans, p11-volven-hoxe y p11-tarxeta-escola en gl y es) y docs/manual-casos-de-uso.html
 
 ## O-20261126-5 · Claude Code termina P11 y lo mergea en main
 Estado: abierta
@@ -664,3 +664,25 @@ Fuente: docs/PROMPTS_ANTIGRAVITY.md (las dos secciones «vigente» de P11 y las 
 
 - [x] Un solo prompt vigente para Antigravity, entero, con todo lo anterior dentro · evidencia: docs/PROMPTS_ANTIGRAVITY.md (sección «P11 · Prompt completo final») y tools/check_prompt_unico.py
 - [x] Una guarda que falla si vuelve a haber más de un prompt vigente o uno incompleto, y la regla escrita en CLAUDE.md · evidencia: tools/check_prompt_unico.py (en rojo con el fichero de antes, que tenía dos vigentes) y CLAUDE.md (R-PROMPT-ÚNICO)
+
+## O-20261126-7 · Nada pendiente y el manual rehecho completo
+Estado: abierta
+> O quiero nada pendiente
+> No quiero nada pendiente / Y el manual donde está ? / Hay que rehacerlo completo
+Fuente: docs/manual-casos-de-uso.html (y su PDF y Word, de docs/build-pdf.js y docs/build-docx.py), test/capturas_test.dart y la app de main tras el PR #71
+> (26/11/2026) «Termina ahora de hacerlo todo no quiero excusas» / «Es un manual íntegro nuevo re hecho y maquetado de nuevo completo sin errores»
+Reparto: Claude Code.
+
+- [x] Manual de casos de uso rehecho entero sobre la app de hoy: cada pantalla de Na casa y del Modo Aula por su camino, con P11 (varios niños, alta con prueba, Volven hoxe, ajuste semanal y capas, reto de hermanos, tarjeta para la escuela, 0-2 rehecho), en gl y es · evidencia: docs/manual-casos-de-uso.html (rehecho de cero: 14 capítulos, maqueta nueva, 38 pantallas en gl y es) y tools/check_manual_pantallas.py
+- [x] Todas las capturas regeneradas (flutter test --tags capturas --update-goldens test/capturas_test.dart), cada pantalla nueva con la suya en gl y es · evidencia: test/capturas_test.dart (130 capturas regeneradas en verde, con las 8 pantallas nuevas de P11 en gl y es) y tools/check_manual_pantallas.py
+- [x] PDF y Word reconstruidos y mirados o medidos página a página, sin nada fuera de la hoja · evidencia: tools/check_manual_build.py (PDF de 38 páginas, todas miradas en hojas de contacto y medidas por script sin nada fuera de la hoja; Word con las 76 capturas)
+- [ ] Ningún pull request abierto ni criterio pendiente en docs/ORDENES.md que dependa de Claude Code · evidencia:
+
+## O-20261126-8 · A una pregunta de Frank se responde siempre, primero
+Estado: cumplida
+> Cuando hago una pregunta se responde siempre
+> Siempre se responde cuando yo Frank preguntó
+> Por qué no se ha terminado ya
+Fuente: CLAUDE.md (R-FRANK, reglas con freno)
+
+- [x] La regla escrita en CLAUDE.md y el fallo en docs/FALLOS.md con su guarda · evidencia: CLAUDE.md (R-RESPONDER) y docs/FALLOS.md (F-20261126-8)

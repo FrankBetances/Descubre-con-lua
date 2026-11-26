@@ -57,6 +57,10 @@ import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.da
 import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
+import 'package:descubre_con_lua/features/docentes/widgets/hoxe_na_aula.dart';
+import 'package:descubre_con_lua/features/criancas/tarxeta_escola_screen.dart';
+import 'package:descubre_con_lua/features/criancas/proba_entrada_screen.dart';
+import 'package:descubre_con_lua/features/criancas/marcar_palabras_screen.dart';
 import 'package:descubre_con_lua/features/familias/widgets/learn_duolingo.dart';
 import 'package:descubre_con_lua/features/leccions/widgets/proxecto_0_2.dart';
 import 'package:descubre_con_lua/features/leccions/views/calendario_de_leccions_screen.dart';
@@ -1434,6 +1438,145 @@ void main() {
           arBridge: const _CapturasArBridge(),
         ),
         tamano: const Size(412, 1200),
+        tema: AppTheme.temaFamilias,
+      );
+    });
+
+    // O-20261126-7: las pantallas de P11, para el manual, en gl y es.
+    CriancasStore tresNenos() => CriancasStore.enMemoria(const [
+          Crianza(id: 'c1', nome: 'Uxía', idade: 1, curso: 'curso_0_2'),
+          Crianza(id: 'c2', nome: 'Antón', idade: 3, curso: 'curso_3_4'),
+          Crianza(id: 'c3', nome: 'Noa', idade: 5, curso: 'curso_4_5'),
+        ]);
+    Widget portalCon(CriancasStore s) => PortalFamiliasScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          currentLanguage: lang,
+          onToggleLanguage: () {},
+          calendario: CalendarioStore(overrideDirectory: tmp.path),
+          criancas: s,
+          agora: venres,
+        );
+    Future<void> irA(WidgetTester tester, Key k) async {
+      final f = find.byKey(k);
+      if (f.evaluate().isNotEmpty) {
+        await tester.ensureVisible(f.first);
+        await tester.pumpAndSettle();
+      }
+    }
+
+    testWidgets('p11 · hoxe con tres nenos · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      final s = tresNenos();
+      await s.escoller('c2');
+      await capturar(tester, 'p11-hoxe-nenos-$l', portalCon(s),
+          tema: AppTheme.temaFamilias);
+    });
+
+    testWidgets('p11 · capa da semana · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      final s = tresNenos();
+      await s.escoller('c2');
+      await capturar(tester, 'p11-capa-$l', portalCon(s),
+          tema: AppTheme.temaFamilias, antesDeRetratar: (t) async {
+        final f = find.byWidgetPredicate((w) =>
+            w.key is ValueKey &&
+            '${(w.key as ValueKey).value}'.startsWith('capa_semanal_') &&
+            !'${(w.key as ValueKey).value}'.contains('audio') &&
+            !'${(w.key as ValueKey).value}'.contains('peza'));
+        if (f.evaluate().isNotEmpty) {
+          await t.ensureVisible(f.first);
+          await t.pumpAndSettle();
+        }
+      });
+    });
+
+    testWidgets('p11 · volven hoxe · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      final s = tresNenos();
+      await s.escoller('c2');
+      // Palabras marcadas hace tres semanas: hoy le toca volver a alguna.
+      final antes = venres.subtract(const Duration(days: 21));
+      final lecs = await tester.runAsync(Leccions.cargar);
+      final tocaAntes = DiaQueToca.para(agora: antes);
+      final lecAntes = lecs!
+          .da('curso_3_4', tocaAntes.dia.mesCalendario, tocaAntes.dia.semana)!
+          .$2;
+      for (final pz in lecAntes.novas.take(4)) {
+        await s.observar(
+          'c2',
+          CriancasStore.semana(
+              'curso_3_4', tocaAntes.dia.mesCalendario, tocaAntes.dia.semana),
+          pz.en,
+          Observacion.entende,
+          agora: antes,
+        );
+      }
+      await capturar(tester, 'p11-volven-hoxe-$l', portalCon(s),
+          tema: AppTheme.temaFamilias,
+          antesDeRetratar: (t) => irA(t, const Key('volven_hoxe_card')));
+    });
+
+    testWidgets('p11 · reto de irmáns · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      final s = tresNenos();
+      await s.escoller('c2');
+      await capturar(tester, 'p11-reto-irmans-$l', portalCon(s),
+          tema: AppTheme.temaFamilias,
+          antesDeRetratar: (t) => irA(t, const Key('reto_irmans_card')));
+    });
+
+    testWidgets('p11 · proba de entrada · $l', (tester) async {
+      final s = tresNenos();
+      await capturar(
+        tester,
+        'p11-proba-entrada-$l',
+        ProbaEntradaScreen(
+          store: s,
+          crianza: s.criancas[2],
+          language: lang,
+          audioService: MockOfflineAudioService(),
+          agora: venres,
+        ),
+        tema: AppTheme.temaFamilias,
+      );
+    });
+
+    for (final domingo in [false, true]) {
+      testWidgets(
+          'p11 · ${domingo ? 'lúa pregunta' : 'marcar en dez segundos'} · $l',
+          (tester) async {
+        final s = tresNenos();
+        final leccions = await tester.runAsync(Leccions.cargar);
+        final toca = DiaQueToca.para(agora: venres);
+        final lec = leccions!
+            .da('curso_3_4', toca.dia.mesCalendario, toca.dia.semana)!
+            .$2;
+        await capturar(
+          tester,
+          '${domingo ? 'p11-lua-pregunta' : 'p11-marcar'}-$l',
+          MarcarEnDezSegundosScreen(
+            store: s,
+            crianza: s.criancas[1],
+            semana: CriancasStore.semana(
+                'curso_3_4', toca.dia.mesCalendario, toca.dia.semana),
+            palabras: lec.novas.take(3).toList(),
+            language: lang,
+            audioService: MockOfflineAudioService(),
+            agora: venres,
+            eDomingo: domingo,
+          ),
+          tema: AppTheme.temaFamilias,
+        );
+      });
+    }
+
+    testWidgets('p11 · tarxeta para a escola · $l', (tester) async {
+      final s = tresNenos();
+      await capturar(
+        tester,
+        'p11-tarxeta-escola-$l',
+        TarxetaEscolaScreen(store: s, crianza: s.criancas[2], language: lang),
         tema: AppTheme.temaFamilias,
       );
     });

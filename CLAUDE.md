@@ -13,6 +13,8 @@ Las dictó Frank el 19/11/2026: «es obligatorio en todos los sentidos siempre h
 
 6. **R-PROMPT-ÚNICO.** Para Antigravity hay un solo prompt, entero, y se le da a Frank copiado tal cual de la única sección «vigente» de `docs/PROMPTS_ANTIGRAVITY.md`. Prohibido darle trozos, correcciones, líneas sueltas o «pega esto además»: si algo cambia, se reescribe el prompt entero, se guarda como el nuevo vigente y se da entero. La dictó Frank el 26/11/2026: «me des todo completo, que no me des nada trozo y me digas cómo hay que pegar». Freno: `tools/check_prompt_unico.py` (en `tools/gates.sh`) falla si hay más de un prompt vigente o si el vigente no está entero (F-20261126-7).
 
+7. **R-RESPONDER.** Cuando Frank pregunta, la respuesta empieza por contestar a su pregunta, con texto y sin herramientas antes; el trabajo va después. Una pregunta no se contesta con una tanda de comandos ni se deja sin respuesta mientras se trabaja. La dictó Frank el 26/11/2026: «Cuando hago una pregunta se responde siempre» y «Siempre se responde cuando yo Frank preguntó» (F-20261126-8). El freno automático sería un hook en `.claude/hooks/`, que solo puede escribir Frank.
+
 Blindaje: `.claude/hooks/blindaje.py` impide a Claude Code escribir en `.claude/` (hooks, settings, estado). Los frenos solo los cambia Frank.
 
 ## R∞ · REGLA SUPREMA · LA ORDEN LITERAL, SUS CRITERIOS ESCRITOS ANTES Y PROHIBIDO SIMULAR
