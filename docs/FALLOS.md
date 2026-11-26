@@ -185,3 +185,8 @@ Formato de cada entrada (una por fallo):
 - Causa raíz: el freno solo reconoce tres palabras («sigue», «continúa», «adelante») y no las órdenes de hacer, y toma una frase de queja por una orden de parar. Claude Code no puede tocar la carpeta de hooks (blindaje) y no le dio a Frank en el primer mensaje la salida más corta.
 - Guarda: CLAUDE.md (R-STOP: con el freno puesto, la primera respuesta da a Frank en una línea la palabra que lo levanta, y cada orden de hacer de Frank se apunta y se ejecuta en cuanto se levanta). El arreglo del hook (no poner la marca con «no hagas nada» dentro de una frase y levantarla con una orden de hacer) solo lo puede escribir Frank en la carpeta de hooks.
 
+## F-20261126-12 · Ante sus fallos, Claude Code no dejó ninguna mejora que frenara sola
+- Qué pasó: tras dejar main en rojo (F-20261126-10), Claude Code arregló el contenido y dejó como guarda un script que solo sirve si él se acuerda de correrlo. Frank: «estás obligado a dar mejoras […] no veo ninguna». Lo hizo Claude Code.
+- Causa raíz: la guarda dependía de la memoria de Claude Code, que es justo lo que falló; nada frenaba solo un push con lo generado desfasado, y el CI tardaba veinticinco minutos en decirlo.
+- Guarda: tools/git-hooks/pre-push (rechaza el push si algo generado está desfasado; se activa con git config core.hooksPath tools/git-hooks), tools/generadores_al_dia.sh (primer paso de .github/workflows/ci.yml: el rojo sale en un minuto) y tools/regenerar_todo.sh (una orden lo regenera todo en orden)
+
