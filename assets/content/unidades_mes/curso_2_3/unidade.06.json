@@ -144,7 +144,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Bite!"
+          "en": "Bite!",
+          "gl": "trabar, dar unha trabada",
+          "es": "morder, dar un mordisco"
         },
         "queFacer": {
           "gl": "Di «Bite!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",

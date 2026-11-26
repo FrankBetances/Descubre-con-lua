@@ -290,12 +290,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Arriba",
+         "es": "Arriba",
          "xesto": {
           "gl": "Eleva as mans do bebé cara arriba.",
           "es": "Eleva las manos del bebé hacia arriba."
          },
-         "gl": "Arriba",
-         "es": "Arriba",
          "lamina": "pal_up"
         },
         {
@@ -305,12 +305,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Abaixo",
+         "es": "Abajo",
          "xesto": {
           "gl": "Baixa as mans e apóiaas nos seus muslos.",
           "es": "Baja las manos y apóyalas en sus muslos."
          },
-         "gl": "Abaixo",
-         "es": "Abajo",
          "lamina": "pal_down"
         },
         {
@@ -773,12 +773,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Arriba",
+         "es": "Arriba",
          "xesto": {
           "gl": "Eleva as mans do bebé cara arriba.",
           "es": "Eleva las manos del bebé hacia arriba."
          },
-         "gl": "Arriba",
-         "es": "Arriba",
          "lamina": "pal_up"
         },
         {
@@ -788,12 +788,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Abaixo",
+         "es": "Abajo",
          "xesto": {
           "gl": "Baixa as mans e apóiaas nos seus muslos.",
           "es": "Baja las manos y apóyalas en sus muslos."
          },
-         "gl": "Abaixo",
-         "es": "Abajo",
          "lamina": "pal_down"
         },
         {
@@ -831,12 +831,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "aplaudir, dar palmas",
+         "es": "aplaudir, dar palmas",
          "xesto": {
           "gl": "Guía dúas palmadas lentas.",
           "es": "Guía dos palmadas lentas."
          },
-         "gl": "aplaudir, dar palmas",
-         "es": "aplaudir, dar palmas",
          "lamina": "pal_clap"
         },
         {
@@ -861,12 +861,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "salpicar, bater na auga",
+         "es": "chapotear, salpicar",
          "xesto": {
           "gl": "Bater na auga coas mans abertas.",
           "es": "Chapotear en el agua con las manos abiertas."
          },
-         "gl": "salpicar, bater na auga",
-         "es": "chapotear, salpicar",
          "lamina": "charco"
         },
         {
@@ -1332,12 +1332,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Arriba",
+         "es": "Arriba",
          "xesto": {
           "gl": "Eleva as mans do bebé cara arriba.",
           "es": "Eleva las manos del bebé hacia arriba."
          },
-         "gl": "Arriba",
-         "es": "Arriba",
          "lamina": "pal_up"
         },
         {
@@ -1347,12 +1347,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Abaixo",
+         "es": "Abajo",
          "xesto": {
           "gl": "Baixa as mans e apóiaas nos seus muslos.",
           "es": "Baja las manos y apóyalas en sus muslos."
          },
-         "gl": "Abaixo",
-         "es": "Abajo",
          "lamina": "pal_down"
         },
         {
@@ -1388,12 +1388,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "aplaudir, dar palmas",
+         "es": "aplaudir, dar palmas",
          "xesto": {
           "gl": "Guía dúas palmadas lentas.",
           "es": "Guía dos palmadas lentas."
          },
-         "gl": "aplaudir, dar palmas",
-         "es": "aplaudir, dar palmas",
          "lamina": "pal_clap"
         },
         {
@@ -1418,12 +1418,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "salpicar, bater na auga",
+         "es": "chapotear, salpicar",
          "xesto": {
           "gl": "Bater na auga coas mans abertas.",
           "es": "Chapotear en el agua con las manos abiertas."
          },
-         "gl": "salpicar, bater na auga",
-         "es": "chapotear, salpicar",
          "lamina": "charco"
         },
         {
@@ -1928,12 +1928,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "aplaudir, dar palmas",
+         "es": "aplaudir, dar palmas",
          "xesto": {
           "gl": "Guía dúas palmadas lentas.",
           "es": "Guía dos palmadas lentas."
          },
-         "gl": "aplaudir, dar palmas",
-         "es": "aplaudir, dar palmas",
          "lamina": "pal_clap"
         },
         {
@@ -1958,12 +1958,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "salpicar, bater na auga",
+         "es": "chapotear, salpicar",
          "xesto": {
           "gl": "Bater na auga coas mans abertas.",
           "es": "Chapotear en el agua con las manos abiertas."
          },
-         "gl": "salpicar, bater na auga",
-         "es": "chapotear, salpicar",
          "lamina": "charco"
         },
         {
@@ -2478,12 +2478,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Arriba",
+         "es": "Arriba",
          "xesto": {
           "gl": "Eleva as mans do bebé cara arriba.",
           "es": "Eleva las manos del bebé hacia arriba."
          },
-         "gl": "Arriba",
-         "es": "Arriba",
          "lamina": "pal_up"
         },
         {
@@ -2493,12 +2493,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Abaixo",
+         "es": "Abajo",
          "xesto": {
           "gl": "Baixa as mans e apóiaas nos seus muslos.",
           "es": "Baja las manos y apóyalas en sus muslos."
          },
-         "gl": "Abaixo",
-         "es": "Abajo",
          "lamina": "pal_down"
         },
         {
@@ -2588,12 +2588,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Cabeza",
+         "es": "Cabeza",
          "xesto": {
           "gl": "Roza suavemente a coroniña.",
           "es": "Roza suavemente la coronilla."
          },
-         "gl": "Cabeza",
-         "es": "Cabeza",
          "lamina": "cabeza"
         },
         {
@@ -2618,12 +2618,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "parar",
+         "es": "parar",
          "xesto": {
           "gl": "Quedar quieto de golpe, coas mans no alto.",
           "es": "Quedarse quieto de golpe, con las manos en alto."
          },
-         "gl": "parar",
-         "es": "parar",
          "lamina": "pal_stop"
         },
         {
@@ -3089,12 +3089,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "aplaudir, dar palmas",
+         "es": "aplaudir, dar palmas",
          "xesto": {
           "gl": "Guía dúas palmadas lentas.",
           "es": "Guía dos palmadas lentas."
          },
-         "gl": "aplaudir, dar palmas",
-         "es": "aplaudir, dar palmas",
          "lamina": "pal_clap"
         },
         {
@@ -3119,12 +3119,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "salpicar, bater na auga",
+         "es": "chapotear, salpicar",
          "xesto": {
           "gl": "Bater na auga coas mans abertas.",
           "es": "Chapotear en el agua con las manos abiertas."
          },
-         "gl": "salpicar, bater na auga",
-         "es": "chapotear, salpicar",
          "lamina": "charco"
         },
         {
@@ -3160,12 +3160,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Cabeza",
+         "es": "Cabeza",
          "xesto": {
           "gl": "Roza suavemente a coroniña.",
           "es": "Roza suavemente la coronilla."
          },
-         "gl": "Cabeza",
-         "es": "Cabeza",
          "lamina": "cabeza"
         },
         {
@@ -3190,12 +3190,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "parar",
+         "es": "parar",
          "xesto": {
           "gl": "Quedar quieto de golpe, coas mans no alto.",
           "es": "Quedarse quieto de golpe, con las manos en alto."
          },
-         "gl": "parar",
-         "es": "parar",
          "lamina": "pal_stop"
         },
         {
@@ -3222,12 +3222,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Dedos dos pés",
+         "es": "Dedos de los pies",
          "xesto": {
           "gl": "Cóxegas lixeiras nos dedos dos pés.",
           "es": "Leve cosquilleo en los dedos de los pies."
          },
-         "gl": "Dedos dos pés",
-         "es": "Dedos de los pies",
          "lamina": "pes"
         },
         {
@@ -3252,12 +3252,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "peixe",
+         "es": "pez",
          "xesto": {
           "gl": "Nadar cos brazos estirados, imitando o camiño dun peixe.",
           "es": "Nadar con los brazos estirados, imitando el recorrido de un pez."
          },
-         "gl": "peixe",
-         "es": "pez",
          "lamina": "pal_fish"
         },
         {
@@ -3764,12 +3764,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Cabeza",
+         "es": "Cabeza",
          "xesto": {
           "gl": "Roza suavemente a coroniña.",
           "es": "Roza suavemente la coronilla."
          },
-         "gl": "Cabeza",
-         "es": "Cabeza",
          "lamina": "cabeza"
         },
         {
@@ -3794,12 +3794,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "parar",
+         "es": "parar",
          "xesto": {
           "gl": "Quedar quieto de golpe, coas mans no alto.",
           "es": "Quedarse quieto de golpe, con las manos en alto."
          },
-         "gl": "parar",
-         "es": "parar",
          "lamina": "pal_stop"
         },
         {
@@ -3824,12 +3824,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Dedos dos pés",
+         "es": "Dedos de los pies",
          "xesto": {
           "gl": "Cóxegas lixeiras nos dedos dos pés.",
           "es": "Leve cosquilleo en los dedos de los pies."
          },
-         "gl": "Dedos dos pés",
-         "es": "Dedos de los pies",
          "lamina": "pes"
         },
         {
@@ -3854,12 +3854,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "peixe",
+         "es": "pez",
          "xesto": {
           "gl": "Nadar cos brazos estirados, imitando o camiño dun peixe.",
           "es": "Nadar con los brazos estirados, imitando el recorrido de un pez."
          },
-         "gl": "peixe",
-         "es": "pez",
          "lamina": "pal_fish"
         },
         {
@@ -4376,12 +4376,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Dedos dos pés",
+         "es": "Dedos de los pies",
          "xesto": {
           "gl": "Cóxegas lixeiras nos dedos dos pés.",
           "es": "Leve cosquilleo en los dedos de los pies."
          },
-         "gl": "Dedos dos pés",
-         "es": "Dedos de los pies",
          "lamina": "pes"
         },
         {
@@ -4406,12 +4406,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "peixe",
+         "es": "pez",
          "xesto": {
           "gl": "Nadar cos brazos estirados, imitando o camiño dun peixe.",
           "es": "Nadar con los brazos estirados, imitando el recorrido de un pez."
          },
-         "gl": "peixe",
-         "es": "pez",
          "lamina": "pal_fish"
         },
         {
@@ -5016,12 +5016,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Arriba",
+         "es": "Arriba",
          "xesto": {
           "gl": "Eleva as mans do bebé cara arriba.",
           "es": "Eleva las manos del bebé hacia arriba."
          },
-         "gl": "Arriba",
-         "es": "Arriba",
          "lamina": "pal_up"
         },
         {
@@ -5031,12 +5031,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Abaixo",
+         "es": "Abajo",
          "xesto": {
           "gl": "Baixa as mans e apóiaas nos seus muslos.",
           "es": "Baja las manos y apóyalas en sus muslos."
          },
-         "gl": "Abaixo",
-         "es": "Abajo",
          "lamina": "pal_down"
         },
         {
@@ -5072,12 +5072,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Cabeza",
+         "es": "Cabeza",
          "xesto": {
           "gl": "Roza suavemente a coroniña.",
           "es": "Roza suavemente la coronilla."
          },
-         "gl": "Cabeza",
-         "es": "Cabeza",
          "lamina": "cabeza"
         },
         {
@@ -5102,12 +5102,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "parar",
+         "es": "parar",
          "xesto": {
           "gl": "Quedar quieto de golpe, coas mans no alto.",
           "es": "Quedarse quieto de golpe, con las manos en alto."
          },
-         "gl": "parar",
-         "es": "parar",
          "lamina": "pal_stop"
         },
         {
@@ -5643,12 +5643,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "aplaudir, dar palmas",
+         "es": "aplaudir, dar palmas",
          "xesto": {
           "gl": "Guía dúas palmadas lentas.",
           "es": "Guía dos palmadas lentas."
          },
-         "gl": "aplaudir, dar palmas",
-         "es": "aplaudir, dar palmas",
          "lamina": "pal_clap"
         },
         {
@@ -5673,12 +5673,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "salpicar, bater na auga",
+         "es": "chapotear, salpicar",
          "xesto": {
           "gl": "Bater na auga coas mans abertas.",
           "es": "Chapotear en el agua con las manos abiertas."
          },
-         "gl": "salpicar, bater na auga",
-         "es": "chapotear, salpicar",
          "lamina": "charco"
         },
         {
@@ -5703,12 +5703,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Dedos dos pés",
+         "es": "Dedos de los pies",
          "xesto": {
           "gl": "Cóxegas lixeiras nos dedos dos pés.",
           "es": "Leve cosquilleo en los dedos de los pies."
          },
-         "gl": "Dedos dos pés",
-         "es": "Dedos de los pies",
          "lamina": "pes"
         },
         {
@@ -5733,12 +5733,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "peixe",
+         "es": "pez",
          "xesto": {
           "gl": "Nadar cos brazos estirados, imitando o camiño dun peixe.",
           "es": "Nadar con los brazos estirados, imitando el recorrido de un pez."
          },
-         "gl": "peixe",
-         "es": "pez",
          "lamina": "pal_fish"
         },
         {
@@ -7507,12 +7507,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Cabeza",
+         "es": "Cabeza",
          "xesto": {
           "gl": "Roza suavemente a coroniña.",
           "es": "Roza suavemente la coronilla."
          },
-         "gl": "Cabeza",
-         "es": "Cabeza",
          "lamina": "cabeza"
         },
         {
@@ -7537,12 +7537,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "parar",
+         "es": "parar",
          "xesto": {
           "gl": "Quedar quieto de golpe, coas mans no alto.",
           "es": "Quedarse quieto de golpe, con las manos en alto."
          },
-         "gl": "parar",
-         "es": "parar",
          "lamina": "pal_stop"
         },
         {
@@ -7700,12 +7700,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "grande",
+         "es": "grande",
          "xesto": {
           "gl": "Estirar os brazos facendo un círculo grande co corpo.",
           "es": "Estirar los brazos haciendo un círculo grande con el cuerpo."
          },
-         "gl": "grande",
-         "es": "grande",
          "lamina": "pal_big"
         }
        ],
@@ -8146,12 +8146,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Dedos dos pés",
+         "es": "Dedos de los pies",
          "xesto": {
           "gl": "Cóxegas lixeiras nos dedos dos pés.",
           "es": "Leve cosquilleo en los dedos de los pies."
          },
-         "gl": "Dedos dos pés",
-         "es": "Dedos de los pies",
          "lamina": "pes"
         },
         {
@@ -8176,12 +8176,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "peixe",
+         "es": "pez",
          "xesto": {
           "gl": "Nadar cos brazos estirados, imitando o camiño dun peixe.",
           "es": "Nadar con los brazos estirados, imitando el recorrido de un pez."
          },
-         "gl": "peixe",
-         "es": "pez",
          "lamina": "pal_fish"
         },
         {
@@ -8292,12 +8292,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "grande",
+         "es": "grande",
          "xesto": {
           "gl": "Estirar os brazos facendo un círculo grande co corpo.",
           "es": "Estirar los brazos haciendo un círculo grande con el cuerpo."
          },
-         "gl": "grande",
-         "es": "grande",
          "lamina": "pal_big"
         }
        ],
@@ -8339,12 +8339,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "pequeno",
+         "es": "pequeño",
          "xesto": {
           "gl": "Encollerse no chan coma unha bóla.",
           "es": "Encogerse en el suelo como una bola."
          },
-         "gl": "pequeno",
-         "es": "pequeño",
          "lamina": "pal_small"
         }
        ],
@@ -8905,12 +8905,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "grande",
+         "es": "grande",
          "xesto": {
           "gl": "Estirar os brazos facendo un círculo grande co corpo.",
           "es": "Estirar los brazos haciendo un círculo grande con el cuerpo."
          },
-         "gl": "grande",
-         "es": "grande",
          "lamina": "pal_big"
         },
         {
@@ -8950,12 +8950,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "pequeno",
+         "es": "pequeño",
          "xesto": {
           "gl": "Encollerse no chan coma unha bóla.",
           "es": "Encogerse en el suelo como una bola."
          },
-         "gl": "pequeno",
-         "es": "pequeño",
          "lamina": "pal_small"
         }
        ],
@@ -9491,12 +9491,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "pequeno",
+         "es": "pequeño",
          "xesto": {
           "gl": "Encollerse no chan coma unha bóla.",
           "es": "Encogerse en el suelo como una bola."
          },
-         "gl": "pequeno",
-         "es": "pequeño",
          "lamina": "pal_small"
         },
         {
@@ -10080,12 +10080,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Arriba",
+         "es": "Arriba",
          "xesto": {
           "gl": "Eleva as mans do bebé cara arriba.",
           "es": "Eleva las manos del bebé hacia arriba."
          },
-         "gl": "Arriba",
-         "es": "Arriba",
          "lamina": "pal_up"
         },
         {
@@ -10095,12 +10095,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Abaixo",
+         "es": "Abajo",
          "xesto": {
           "gl": "Baixa as mans e apóiaas nos seus muslos.",
           "es": "Baja las manos y apóyalas en sus muslos."
          },
-         "gl": "Abaixo",
-         "es": "Abajo",
          "lamina": "pal_down"
         },
         {
@@ -10207,12 +10207,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "grande",
+         "es": "grande",
          "xesto": {
           "gl": "Estirar os brazos facendo un círculo grande co corpo.",
           "es": "Estirar los brazos haciendo un círculo grande con el cuerpo."
          },
-         "gl": "grande",
-         "es": "grande",
          "lamina": "pal_big"
         },
         {
@@ -10758,12 +10758,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "aplaudir, dar palmas",
+         "es": "aplaudir, dar palmas",
          "xesto": {
           "gl": "Guía dúas palmadas lentas.",
           "es": "Guía dos palmadas lentas."
          },
-         "gl": "aplaudir, dar palmas",
-         "es": "aplaudir, dar palmas",
          "lamina": "pal_clap"
         },
         {
@@ -10788,12 +10788,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "salpicar, bater na auga",
+         "es": "chapotear, salpicar",
          "xesto": {
           "gl": "Bater na auga coas mans abertas.",
           "es": "Chapotear en el agua con las manos abiertas."
          },
-         "gl": "salpicar, bater na auga",
-         "es": "chapotear, salpicar",
          "lamina": "charco"
         },
         {
@@ -10889,12 +10889,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "pequeno",
+         "es": "pequeño",
          "xesto": {
           "gl": "Encollerse no chan coma unha bóla.",
           "es": "Encogerse en el suelo como una bola."
          },
-         "gl": "pequeno",
-         "es": "pequeño",
          "lamina": "pal_small"
         },
         {
@@ -11700,12 +11700,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "comer",
+         "es": "comer",
          "xesto": {
           "gl": "Levar as mans á boca imitando comer con culler.",
           "es": "Llevarse las manos a la boca imitando comer con cuchara."
          },
-         "gl": "comer",
-         "es": "comer",
          "lamina": "pal_eat"
         },
         {
@@ -12204,12 +12204,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "trabar, dar unha trabada",
+         "es": "morder, dar un mordisco",
          "xesto": {
           "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
           "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
          },
-         "gl": "trabar, dar unha trabada",
-         "es": "morder, dar un mordisco",
          "lamina": "pal_bite"
         }
        ],
@@ -12277,12 +12277,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "comer",
+         "es": "comer",
          "xesto": {
           "gl": "Levar as mans á boca imitando comer con culler.",
           "es": "Llevarse las manos a la boca imitando comer con cuchara."
          },
-         "gl": "comer",
-         "es": "comer",
          "lamina": "pal_eat"
         },
         {
@@ -12797,12 +12797,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Cabeza",
+         "es": "Cabeza",
          "xesto": {
           "gl": "Roza suavemente a coroniña.",
           "es": "Roza suavemente la coronilla."
          },
-         "gl": "Cabeza",
-         "es": "Cabeza",
          "lamina": "cabeza"
         },
         {
@@ -12827,12 +12827,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "parar",
+         "es": "parar",
          "xesto": {
           "gl": "Quedar quieto de golpe, coas mans no alto.",
           "es": "Quedarse quieto de golpe, con las manos en alto."
          },
-         "gl": "parar",
-         "es": "parar",
          "lamina": "pal_stop"
         },
         {
@@ -12887,12 +12887,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "grande",
+         "es": "grande",
          "xesto": {
           "gl": "Estirar os brazos facendo un círculo grande co corpo.",
           "es": "Estirar los brazos haciendo un círculo grande con el cuerpo."
          },
-         "gl": "grande",
-         "es": "grande",
          "lamina": "pal_big"
         },
         {
@@ -12958,12 +12958,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "comer",
+         "es": "comer",
          "xesto": {
           "gl": "Levar as mans á boca imitando comer con culler.",
           "es": "Llevarse las manos a la boca imitando comer con cuchara."
          },
-         "gl": "comer",
-         "es": "comer",
          "lamina": "pal_eat"
         },
         {
@@ -13003,12 +13003,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "trabar, dar unha trabada",
+         "es": "morder, dar un mordisco",
          "xesto": {
           "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
           "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
          },
-         "gl": "trabar, dar unha trabada",
-         "es": "morder, dar un mordisco",
          "lamina": "pal_bite"
         }
        ],
@@ -13050,12 +13050,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "morno, quentiño",
+         "es": "templado, calentito",
          "xesto": {
           "gl": "Abrazarse o peito, coma quen está quentiño.",
           "es": "Abrazarse el pecho, como quien está calentito."
          },
-         "gl": "morno, quentiño",
-         "es": "templado, calentito",
          "lamina": "quente"
         }
        ],
@@ -13496,12 +13496,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Dedos dos pés",
+         "es": "Dedos de los pies",
          "xesto": {
           "gl": "Cóxegas lixeiras nos dedos dos pés.",
           "es": "Leve cosquilleo en los dedos de los pies."
          },
-         "gl": "Dedos dos pés",
-         "es": "Dedos de los pies",
          "lamina": "pes"
         },
         {
@@ -13526,12 +13526,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "peixe",
+         "es": "pez",
          "xesto": {
           "gl": "Nadar cos brazos estirados, imitando o camiño dun peixe.",
           "es": "Nadar con los brazos estirados, imitando el recorrido de un pez."
          },
-         "gl": "peixe",
-         "es": "pez",
          "lamina": "pal_fish"
         },
         {
@@ -13586,12 +13586,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "pequeno",
+         "es": "pequeño",
          "xesto": {
           "gl": "Encollerse no chan coma unha bóla.",
           "es": "Encogerse en el suelo como una bola."
          },
-         "gl": "pequeno",
-         "es": "pequeño",
          "lamina": "pal_small"
         },
         {
@@ -13657,12 +13657,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "trabar, dar unha trabada",
+         "es": "morder, dar un mordisco",
          "xesto": {
           "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
           "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
          },
-         "gl": "trabar, dar unha trabada",
-         "es": "morder, dar un mordisco",
          "lamina": "pal_bite"
         },
         {
@@ -13702,12 +13702,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "morno, quentiño",
+         "es": "templado, calentito",
          "xesto": {
           "gl": "Abrazarse o peito, coma quen está quentiño.",
           "es": "Abrazarse el pecho, como quien está calentito."
          },
-         "gl": "morno, quentiño",
-         "es": "templado, calentito",
          "lamina": "quente"
         }
        ],
@@ -13734,12 +13734,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Frío, fría",
+         "es": "Frío, fría",
          "xesto": {
           "gl": "Fregar os brazos coas mans, coma quen ten frío.",
           "es": "Frotarse los brazos con las manos, como quien tiene frío."
          },
-         "gl": "Frío, fría",
-         "es": "Frío, fría",
          "lamina": "pal_cold"
         },
         {
@@ -14285,12 +14285,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "comer",
+         "es": "comer",
          "xesto": {
           "gl": "Levar as mans á boca imitando comer con culler.",
           "es": "Llevarse las manos a la boca imitando comer con cuchara."
          },
-         "gl": "comer",
-         "es": "comer",
          "lamina": "pal_eat"
         },
         {
@@ -14360,12 +14360,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "morno, quentiño",
+         "es": "templado, calentito",
          "xesto": {
           "gl": "Abrazarse o peito, coma quen está quentiño.",
           "es": "Abrazarse el pecho, como quien está calentito."
          },
-         "gl": "morno, quentiño",
-         "es": "templado, calentito",
          "lamina": "quente"
         },
         {
@@ -14390,12 +14390,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Frío, fría",
+         "es": "Frío, fría",
          "xesto": {
           "gl": "Fregar os brazos coas mans, coma quen ten frío.",
           "es": "Frotarse los brazos con las manos, como quien tiene frío."
          },
-         "gl": "Frío, fría",
-         "es": "Frío, fría",
          "lamina": "pal_cold"
         },
         {
@@ -14898,12 +14898,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "trabar, dar unha trabada",
+         "es": "morder, dar un mordisco",
          "xesto": {
           "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
           "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
          },
-         "gl": "trabar, dar unha trabada",
-         "es": "morder, dar un mordisco",
          "lamina": "pal_bite"
         }
        ],
@@ -14931,12 +14931,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Frío, fría",
+         "es": "Frío, fría",
          "xesto": {
           "gl": "Fregar os brazos coas mans, coma quen ten frío.",
           "es": "Frotarse los brazos con las manos, como quien tiene frío."
          },
-         "gl": "Frío, fría",
-         "es": "Frío, fría",
          "lamina": "pal_cold"
         },
         {
@@ -15662,12 +15662,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "morno, quentiño",
+         "es": "templado, calentito",
          "xesto": {
           "gl": "Abrazarse o peito, coma quen está quentiño.",
           "es": "Abrazarse el pecho, como quien está calentito."
          },
-         "gl": "morno, quentiño",
-         "es": "templado, calentito",
          "lamina": "quente"
         },
         {
@@ -15754,12 +15754,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "lavar",
+         "es": "lavar",
          "xesto": {
           "gl": "Fregar as palmas das mans facendo círculos sen parar.",
           "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
          },
-         "gl": "lavar",
-         "es": "lavar",
          "lamina": "pal_wash"
         },
         {
@@ -16337,12 +16337,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Frío, fría",
+         "es": "Frío, fría",
          "xesto": {
           "gl": "Fregar os brazos coas mans, coma quen ten frío.",
           "es": "Frotarse los brazos con las manos, como quien tiene frío."
          },
-         "gl": "Frío, fría",
-         "es": "Frío, fría",
          "lamina": "pal_cold"
         },
         {
@@ -16397,12 +16397,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "lavar",
+         "es": "lavar",
          "xesto": {
           "gl": "Fregar as palmas das mans facendo círculos sen parar.",
           "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
          },
-         "gl": "lavar",
-         "es": "lavar",
          "lamina": "pal_wash"
         },
         {
@@ -16938,12 +16938,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "comer",
+         "es": "comer",
          "xesto": {
           "gl": "Levar as mans á boca imitando comer con culler.",
           "es": "Llevarse las manos a la boca imitando comer con cuchara."
          },
-         "gl": "comer",
-         "es": "comer",
          "lamina": "pal_eat"
         },
         {
@@ -17058,12 +17058,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "lavar",
+         "es": "lavar",
          "xesto": {
           "gl": "Fregar as palmas das mans facendo círculos sen parar.",
           "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
          },
-         "gl": "lavar",
-         "es": "lavar",
          "lamina": "pal_wash"
         },
         {
@@ -17610,12 +17610,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "trabar, dar unha trabada",
+         "es": "morder, dar un mordisco",
          "xesto": {
           "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
           "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
          },
-         "gl": "trabar, dar unha trabada",
-         "es": "morder, dar un mordisco",
          "lamina": "pal_bite"
         }
        ],
@@ -17627,12 +17627,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "fregar, frotar",
+         "es": "frotar",
          "xesto": {
           "gl": "Pasar os dedos polos brazos ou polas pernas fregando.",
           "es": "Pasar los dedos por los brazos o por las piernas frotando."
          },
-         "gl": "fregar, frotar",
-         "es": "frotar",
          "lamina": "pal_rub"
         }
        ],
@@ -18235,12 +18235,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "grande",
+         "es": "grande",
          "xesto": {
           "gl": "Estirar os brazos facendo un círculo grande co corpo.",
           "es": "Estirar los brazos haciendo un círculo grande con el cuerpo."
          },
-         "gl": "grande",
-         "es": "grande",
          "lamina": "pal_big"
         },
         {
@@ -18280,12 +18280,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "morno, quentiño",
+         "es": "templado, calentito",
          "xesto": {
           "gl": "Abrazarse o peito, coma quen está quentiño.",
           "es": "Abrazarse el pecho, como quien está calentito."
          },
-         "gl": "morno, quentiño",
-         "es": "templado, calentito",
          "lamina": "quente"
         },
         {
@@ -18325,12 +18325,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "lavar",
+         "es": "lavar",
          "xesto": {
           "gl": "Fregar as palmas das mans facendo círculos sen parar.",
           "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
          },
-         "gl": "lavar",
-         "es": "lavar",
          "lamina": "pal_wash"
         },
         {
@@ -18396,12 +18396,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "fregar, frotar",
+         "es": "frotar",
          "xesto": {
           "gl": "Pasar os dedos polos brazos ou polas pernas fregando.",
           "es": "Pasar los dedos por los brazos o por las piernas frotando."
          },
-         "gl": "fregar, frotar",
-         "es": "frotar",
          "lamina": "pal_rub"
         }
        ],
@@ -18443,12 +18443,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "suave, brando",
+         "es": "suave, blando",
          "xesto": {
           "gl": "Tocar as meixelas suavemente.",
           "es": "Tocarse las mejillas suavemente."
          },
-         "gl": "suave, brando",
-         "es": "suave, blando",
          "lamina": "pal_soft"
         }
        ],
@@ -18919,12 +18919,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "pequeno",
+         "es": "pequeño",
          "xesto": {
           "gl": "Encollerse no chan coma unha bóla.",
           "es": "Encogerse en el suelo como una bola."
          },
-         "gl": "pequeno",
-         "es": "pequeño",
          "lamina": "pal_small"
         },
         {
@@ -18949,12 +18949,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Frío, fría",
+         "es": "Frío, fría",
          "xesto": {
           "gl": "Fregar os brazos coas mans, coma quen ten frío.",
           "es": "Frotarse los brazos con las manos, como quien tiene frío."
          },
-         "gl": "Frío, fría",
-         "es": "Frío, fría",
          "lamina": "pal_cold"
         },
         {
@@ -19020,12 +19020,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "fregar, frotar",
+         "es": "frotar",
          "xesto": {
           "gl": "Pasar os dedos polos brazos ou polas pernas fregando.",
           "es": "Pasar los dedos por los brazos o por las piernas frotando."
          },
-         "gl": "fregar, frotar",
-         "es": "frotar",
          "lamina": "pal_rub"
         },
         {
@@ -19065,12 +19065,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "suave, brando",
+         "es": "suave, blando",
          "xesto": {
           "gl": "Tocar as meixelas suavemente.",
           "es": "Tocarse las mejillas suavemente."
          },
-         "gl": "suave, brando",
-         "es": "suave, blando",
          "lamina": "pal_soft"
         }
        ],
@@ -19719,12 +19719,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "suave, brando",
+         "es": "suave, blando",
          "xesto": {
           "gl": "Tocar as meixelas suavemente.",
           "es": "Tocarse las mejillas suavemente."
          },
-         "gl": "suave, brando",
-         "es": "suave, blando",
          "lamina": "pal_soft"
         },
         {
@@ -20257,12 +20257,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "fregar, frotar",
+         "es": "frotar",
          "xesto": {
           "gl": "Pasar os dedos polos brazos ou polas pernas fregando.",
           "es": "Pasar los dedos por los brazos o por las piernas frotando."
          },
-         "gl": "fregar, frotar",
-         "es": "frotar",
          "lamina": "pal_rub"
         }
        ],
@@ -20980,12 +20980,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "lavar",
+         "es": "lavar",
          "xesto": {
           "gl": "Fregar as palmas das mans facendo círculos sen parar.",
           "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
          },
-         "gl": "lavar",
-         "es": "lavar",
          "lamina": "pal_wash"
         },
         {
@@ -21040,12 +21040,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "suave, brando",
+         "es": "suave, blando",
          "xesto": {
           "gl": "Tocar as meixelas suavemente.",
           "es": "Tocarse las mejillas suavemente."
          },
-         "gl": "suave, brando",
-         "es": "suave, blando",
          "lamina": "pal_soft"
         },
         {
@@ -21143,12 +21143,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "gato",
+         "es": "gato",
          "xesto": {
           "gl": "Poñerse a catro patas e arquear o lombo coma un gato.",
           "es": "Ponerse a cuatro patas y arquear el lomo como un gato."
          },
-         "gl": "gato",
-         "es": "gato",
          "lamina": "pal_cat"
         }
        ],
@@ -21774,12 +21774,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "gato",
+         "es": "gato",
          "xesto": {
           "gl": "Poñerse a catro patas e arquear o lombo coma un gato.",
           "es": "Ponerse a cuatro patas y arquear el lomo como un gato."
          },
-         "gl": "gato",
-         "es": "gato",
          "lamina": "pal_cat"
         }
        ],
@@ -21821,12 +21821,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "correr",
+         "es": "correr",
          "xesto": {
           "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
           "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
          },
-         "gl": "correr",
-         "es": "correr",
          "lamina": "pal_run"
         }
        ],
@@ -22267,12 +22267,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "comer",
+         "es": "comer",
          "xesto": {
           "gl": "Levar as mans á boca imitando comer con culler.",
           "es": "Llevarse las manos a la boca imitando comer con cuchara."
          },
-         "gl": "comer",
-         "es": "comer",
          "lamina": "pal_eat"
         },
         {
@@ -22439,12 +22439,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "gato",
+         "es": "gato",
          "xesto": {
           "gl": "Poñerse a catro patas e arquear o lombo coma un gato.",
           "es": "Ponerse a cuatro patas y arquear el lomo como un gato."
          },
-         "gl": "gato",
-         "es": "gato",
          "lamina": "pal_cat"
         },
         {
@@ -22484,12 +22484,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "correr",
+         "es": "correr",
          "xesto": {
           "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
           "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
          },
-         "gl": "correr",
-         "es": "correr",
          "lamina": "pal_run"
         }
        ],
@@ -22516,12 +22516,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "durmir",
+         "es": "dormir",
          "xesto": {
           "gl": "Apoiar a cabeza nas mans xuntas, pechar os ollos e respirar fondo de mentira.",
           "es": "Apoyar la cabeza en las manos juntas, cerrar los ojos y respirar hondo de mentira."
          },
-         "gl": "durmir",
-         "es": "dormir",
          "lamina": "pal_sleep"
         },
         {
@@ -22977,12 +22977,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "trabar, dar unha trabada",
+         "es": "morder, dar un mordisco",
          "xesto": {
           "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
           "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
          },
-         "gl": "trabar, dar unha trabada",
-         "es": "morder, dar un mordisco",
          "lamina": "pal_bite"
         },
         {
@@ -22992,12 +22992,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "fregar, frotar",
+         "es": "frotar",
          "xesto": {
           "gl": "Pasar os dedos polos brazos ou polas pernas fregando.",
           "es": "Pasar los dedos por los brazos o por las piernas frotando."
          },
-         "gl": "fregar, frotar",
-         "es": "frotar",
          "lamina": "pal_rub"
         }
        ],
@@ -23040,12 +23040,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "correr",
+         "es": "correr",
          "xesto": {
           "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
           "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
          },
-         "gl": "correr",
-         "es": "correr",
          "lamina": "pal_run"
         },
         {
@@ -23070,12 +23070,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "durmir",
+         "es": "dormir",
          "xesto": {
           "gl": "Apoiar a cabeza nas mans xuntas, pechar os ollos e respirar fondo de mentira.",
           "es": "Apoyar la cabeza en las manos juntas, cerrar los ojos y respirar hondo de mentira."
          },
-         "gl": "durmir",
-         "es": "dormir",
          "lamina": "pal_sleep"
         },
         {
@@ -23655,12 +23655,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "morno, quentiño",
+         "es": "templado, calentito",
          "xesto": {
           "gl": "Abrazarse o peito, coma quen está quentiño.",
           "es": "Abrazarse el pecho, como quien está calentito."
          },
-         "gl": "morno, quentiño",
-         "es": "templado, calentito",
          "lamina": "quente"
         },
         {
@@ -23700,12 +23700,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "suave, brando",
+         "es": "suave, blando",
          "xesto": {
           "gl": "Tocar as meixelas suavemente.",
           "es": "Tocarse las mejillas suavemente."
          },
-         "gl": "suave, brando",
-         "es": "suave, blando",
          "lamina": "pal_soft"
         },
         {
@@ -23756,12 +23756,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "gato",
+         "es": "gato",
          "xesto": {
           "gl": "Poñerse a catro patas e arquear o lombo coma un gato.",
           "es": "Ponerse a cuatro patas y arquear el lomo como un gato."
          },
-         "gl": "gato",
-         "es": "gato",
          "lamina": "pal_cat"
         },
         {
@@ -23786,12 +23786,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "durmir",
+         "es": "dormir",
          "xesto": {
           "gl": "Apoiar a cabeza nas mans xuntas, pechar os ollos e respirar fondo de mentira.",
           "es": "Apoyar la cabeza en las manos juntas, cerrar los ojos y respirar hondo de mentira."
          },
-         "gl": "durmir",
-         "es": "dormir",
          "lamina": "pal_sleep"
         },
         {
@@ -24314,12 +24314,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "Frío, fría",
+         "es": "Frío, fría",
          "xesto": {
           "gl": "Fregar os brazos coas mans, coma quen ten frío.",
           "es": "Frotarse los brazos con las manos, como quien tiene frío."
          },
-         "gl": "Frío, fría",
-         "es": "Frío, fría",
          "lamina": "pal_cold"
         },
         {
@@ -24419,12 +24419,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "correr",
+         "es": "correr",
          "xesto": {
           "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
           "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
          },
-         "gl": "correr",
-         "es": "correr",
          "lamina": "pal_run"
         },
         {
@@ -25069,12 +25069,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "durmir",
+         "es": "dormir",
          "xesto": {
           "gl": "Apoiar a cabeza nas mans xuntas, pechar os ollos e respirar fondo de mentira.",
           "es": "Apoyar la cabeza en las manos juntas, cerrar los ojos y respirar hondo de mentira."
          },
-         "gl": "durmir",
-         "es": "dormir",
          "lamina": "pal_sleep"
         },
         {
@@ -25213,12 +25213,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "ir, adiante",
+         "es": "ir, adelante",
          "xesto": {
           "gl": "Botar a andar con forza, movendo os brazos.",
           "es": "Echar a andar con fuerza, moviendo los brazos."
          },
-         "gl": "ir, adiante",
-         "es": "ir, adelante",
          "lamina": "pal_go"
         },
         {
@@ -25767,12 +25767,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "gato",
+         "es": "gato",
          "xesto": {
           "gl": "Poñerse a catro patas e arquear o lombo coma un gato.",
           "es": "Ponerse a cuatro patas y arquear el lomo como un gato."
          },
-         "gl": "gato",
-         "es": "gato",
          "lamina": "pal_cat"
         },
         {
@@ -25812,12 +25812,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "correr",
+         "es": "correr",
          "xesto": {
           "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
           "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
          },
-         "gl": "correr",
-         "es": "correr",
          "lamina": "pal_run"
         },
         {
@@ -25842,12 +25842,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "durmir",
+         "es": "dormir",
          "xesto": {
           "gl": "Apoiar a cabeza nas mans xuntas, pechar os ollos e respirar fondo de mentira.",
           "es": "Apoyar la cabeza en las manos juntas, cerrar los ojos y respirar hondo de mentira."
          },
-         "gl": "durmir",
-         "es": "dormir",
          "lamina": "pal_sleep"
         },
         {
@@ -25951,12 +25951,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "ir, adiante",
+         "es": "ir, adelante",
          "xesto": {
           "gl": "Botar a andar con forza, movendo os brazos.",
           "es": "Echar a andar con fuerza, moviendo los brazos."
          },
-         "gl": "ir, adiante",
-         "es": "ir, adelante",
          "lamina": "pal_go"
         },
         {
@@ -26544,12 +26544,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "lavar",
+         "es": "lavar",
          "xesto": {
           "gl": "Fregar as palmas das mans facendo círculos sen parar.",
           "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
          },
-         "gl": "lavar",
-         "es": "lavar",
          "lamina": "pal_wash"
         },
         {
@@ -26656,12 +26656,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "fregar, frotar",
+         "es": "frotar",
          "xesto": {
           "gl": "Pasar os dedos polos brazos ou polas pernas fregando.",
           "es": "Pasar los dedos por los brazos o por las piernas frotando."
          },
-         "gl": "fregar, frotar",
-         "es": "frotar",
          "lamina": "pal_rub"
         },
         {
@@ -26701,12 +26701,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "suave, brando",
+         "es": "suave, blando",
          "xesto": {
           "gl": "Tocar as meixelas suavemente.",
           "es": "Tocarse las mejillas suavemente."
          },
-         "gl": "suave, brando",
-         "es": "suave, blando",
          "lamina": "pal_soft"
         },
         {
@@ -26847,12 +26847,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "gato",
+         "es": "gato",
          "xesto": {
           "gl": "Poñerse a catro patas e arquear o lombo coma un gato.",
           "es": "Ponerse a cuatro patas y arquear el lomo como un gato."
          },
-         "gl": "gato",
-         "es": "gato",
          "lamina": "pal_cat"
         },
         {
@@ -26892,12 +26892,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "correr",
+         "es": "correr",
          "xesto": {
           "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
           "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
          },
-         "gl": "correr",
-         "es": "correr",
          "lamina": "pal_run"
         },
         {
@@ -26922,12 +26922,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "durmir",
+         "es": "dormir",
          "xesto": {
           "gl": "Apoiar a cabeza nas mans xuntas, pechar os ollos e respirar fondo de mentira.",
           "es": "Apoyar la cabeza en las manos juntas, cerrar los ojos y respirar hondo de mentira."
          },
-         "gl": "durmir",
-         "es": "dormir",
          "lamina": "pal_sleep"
         },
         {
@@ -27064,12 +27064,12 @@
           "gl": "Orde: unha acción",
           "es": "Orden: una acción"
          },
+         "gl": "ir, adiante",
+         "es": "ir, adelante",
          "xesto": {
           "gl": "Botar a andar con forza, movendo os brazos.",
           "es": "Echar a andar con fuerza, moviendo los brazos."
          },
-         "gl": "ir, adiante",
-         "es": "ir, adelante",
          "lamina": "pal_go"
         },
         {
@@ -105132,7 +105132,7 @@
          },
          "en": "In the morning, shadows will stretch.",
          "gl": "Pola mañá a sombra estirarase.",
-         "es": "Por la mañana se estirará."
+         "es": "Por la mañana se estira la sombra."
         },
         {
          "dia": {

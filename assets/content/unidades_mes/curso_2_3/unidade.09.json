@@ -142,7 +142,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Run!"
+          "en": "Run!",
+          "gl": "correr",
+          "es": "correr"
         },
         "queFacer": {
           "gl": "Di «Run!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",

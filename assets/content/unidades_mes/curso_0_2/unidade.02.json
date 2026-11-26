@@ -145,7 +145,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Stop!"
+          "en": "Stop!",
+          "gl": "parar",
+          "es": "parar"
         },
         "queFacer": {
           "gl": "Di «Stop!» e fai o xesto sobre o seu corpo, amodo, mentres o miras aos ollos.",

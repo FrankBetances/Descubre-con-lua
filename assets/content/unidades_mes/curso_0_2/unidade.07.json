@@ -131,7 +131,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Wash!"
+          "en": "Wash!",
+          "gl": "lavar",
+          "es": "lavar"
         },
         "queFacer": {
           "gl": "Di «Wash!» e fai o xesto sobre o seu corpo, amodo, mentres o miras aos ollos.",

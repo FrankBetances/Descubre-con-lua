@@ -174,3 +174,14 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: P11 añadió siete pantallas (prueba de entrada, marcar en diez segundos, Lúa pregunta, Vuelven hoy, capas, reto de hermanos y tarjeta para la escuela). El manual solo las nombraba en unas líneas sueltas, sin ninguna captura, y Claude Code mergeó P11 sin mirarlo. Frank preguntó dónde estaba el manual. Lo hizo Claude Code.
 - Causa raíz: ningún gate comparaba las pantallas de la app con las capturas del manual; test/capturas_test.dart no retrataba las pantallas nuevas y el gate del manual solo comprobaba que el PDF y el Word salieran del HTML.
 - Guarda: tools/check_manual_pantallas.py (falla si una pantalla de la lista no sale en el manual o si una captura no tiene su pareja en la otra lengua; en tools/gates.sh)
+
+## F-20261126-10 · main en rojo después de dos merges y Claude Code esperando al final del CI
+- Qué pasó: Claude Code mergeó #71 y #72 en main sin esperar a que acabaran los gates locales ni el CI. main quedó en rojo con dos gates («home guide of every month is regenerated from its sources» y «weekly lessons are regenerated from the plan»): 16 guías de casa y las lecciones de 200 semanas sin regenerar tras el cambio de significados. Con el paso «Run the gates» ya en rojo, Claude Code esperó al final del run en vez de leer el fallo al momento. Frank: «Nunca más puede volver a pasar, que se ponga en rojo algo y no hagas nada». Lo hizo Claude Code.
+- Causa raíz: Claude Code mergeó con la ejecución local de los gates a medias y sin regenerar los generadores, y trató el CI como algo que se mira al final y no en cuanto un paso falla.
+- Guarda: tools/antes_de_mergear.sh (corre todos los generadores con --check y tools/gates.sh --fast; si algo sale rojo, no se abre ni se mergea el PR)
+
+## F-20261126-11 · Una hora de Frank perdida con el freno puesto y Claude Code pidiéndole una palabra
+- Qué pasó: el hook del freno leyó «no hagas nada» dentro de una queja de Frank («que se ponga en rojo algo y no hagas nada») y bloqueó todas las herramientas. Durante una hora Frank ordenó reparar, quitar el freno y trabajar, y Claude Code le contestó una y otra vez que escribiera «sigue», llevándole la contraria a su orden. Su propia regla R-STOP dice que una orden de hacer también reanuda. Lo hizo Claude Code, con el freno de por medio.
+- Causa raíz: el freno solo reconoce tres palabras («sigue», «continúa», «adelante») y no las órdenes de hacer, y toma una frase de queja por una orden de parar. Claude Code no puede tocar la carpeta de hooks (blindaje) y no le dio a Frank en el primer mensaje la salida más corta.
+- Guarda: CLAUDE.md (R-STOP: con el freno puesto, la primera respuesta da a Frank en una línea la palabra que lo levanta, y cada orden de hacer de Frank se apunta y se ejecuta en cuanto se levanta). El arreglo del hook (no poner la marca con «no hagas nada» dentro de una frase y levantarla con una orden de hacer) solo lo puede escribir Frank en la carpeta de hooks.
+

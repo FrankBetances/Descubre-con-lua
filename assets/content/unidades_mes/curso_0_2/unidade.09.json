@@ -140,7 +140,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Run!"
+          "en": "Run!",
+          "gl": "correr",
+          "es": "correr"
         },
         "queFacer": {
           "gl": "Di «Run!» e fai o xesto sobre o seu corpo, amodo, mentres o miras aos ollos.",
