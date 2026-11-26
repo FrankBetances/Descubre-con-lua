@@ -139,7 +139,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Wash!"
+          "en": "Wash!",
+          "gl": "lavar",
+          "es": "lavar"
         },
         "queFacer": {
           "gl": "Di «Wash!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",

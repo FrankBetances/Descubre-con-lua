@@ -144,7 +144,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Eat!"
+          "en": "Eat!",
+          "gl": "comer",
+          "es": "comer"
         },
         "queFacer": {
           "gl": "Di «Eat!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",

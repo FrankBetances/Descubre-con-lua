@@ -133,7 +133,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Clap!"
+          "en": "Clap!",
+          "gl": "aplaudir, dar palmas",
+          "es": "aplaudir, dar palmas"
         },
         "queFacer": {
           "gl": "Di «Clap!» e fai o xesto sobre o seu corpo, amodo, mentres o miras aos ollos.",

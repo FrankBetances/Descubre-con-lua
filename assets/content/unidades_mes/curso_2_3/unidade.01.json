@@ -147,7 +147,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Splash!"
+          "en": "Splash!",
+          "gl": "salpicar, bater na auga",
+          "es": "chapotear, salpicar"
         },
         "queFacer": {
           "gl": "Di «Splash!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",

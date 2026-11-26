@@ -136,7 +136,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Rub!"
+          "en": "Rub!",
+          "gl": "fregar, frotar",
+          "es": "frotar"
         },
         "queFacer": {
           "gl": "Di «Rub!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",

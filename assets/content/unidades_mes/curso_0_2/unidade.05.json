@@ -137,7 +137,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Eat!"
+          "en": "Eat!",
+          "gl": "comer",
+          "es": "comer"
         },
         "queFacer": {
           "gl": "Di «Eat!» e fai o xesto sobre o seu corpo, amodo, mentres o miras aos ollos.",

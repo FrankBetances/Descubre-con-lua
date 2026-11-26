@@ -142,7 +142,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Stop!"
+          "en": "Stop!",
+          "gl": "parar",
+          "es": "parar"
         },
         "queFacer": {
           "gl": "Di «Stop!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
