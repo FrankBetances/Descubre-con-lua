@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """F-20261126-2: ninguna orden ya mergeada sigue diciendo que falta el merge.
 
-Una orden de docs/ORDENES.md cuya línea «Reparto:» nombra pasos (P10.0–P10.9)
-no puede tener abierto un criterio «mergeado en main» si la historia ya tiene
-un merge cuyo mensaje nombra ese bloque («Merge pull request #66: P10, …»).
-Pasó el 26/11/2026: la evidencia del merge #66 se quedó en una rama sin
-mergear, ORDENES.md siguió diciendo que faltaba y Claude Code se lo repitió a
-Frank como pendiente.
+Una orden de docs/ORDENES.md cuya línea «Reparto:» nombra un bloque de pasos
+(«P10.0–P10.9») no puede tener abierto un criterio «mergeado en main» si la
+historia de HEAD ya tiene el commit del ÚLTIMO paso del bloque («P10.9: …»):
+ese commit solo llega a main con la entrega mergeada. Pasó el 26/11/2026: la
+evidencia del merge #66 se quedó en una rama sin mergear, ORDENES.md siguió
+diciendo que faltaba y Claude Code se lo repitió a Frank como pendiente.
 
-Mira los merges que haya en la historia; si no hay ninguno (clon de un solo
-commit), lo dice y sale con 0.
+No mira títulos de merge: un PR de Claude Code que solo guarda el prompt de un
+bloque («P11, …») no es la entrega del bloque.
 """
 import re
 import subprocess
@@ -19,20 +19,19 @@ from pathlib import Path
 ORDENES = Path("docs/ORDENES.md")
 
 
-def merges() -> str | None:
-    r = subprocess.run(["git", "log", "--merges", "--format=%s%n%b", "HEAD"],
+def asuntos() -> set[str] | None:
+    r = subprocess.run(["git", "log", "--no-merges", "--format=%s", "HEAD"],
                        capture_output=True, text=True)
-    if r.returncode != 0:
+    if r.returncode != 0 or not r.stdout.strip():
         return None
-    # Con la historia que haya: en un clon superficial se ven los merges
-    # recientes, que son los que pueden estar atrasados en ORDENES.md.
-    return r.stdout if r.stdout.strip() else None
+    return {m.group(1) for s in r.stdout.splitlines()
+            if (m := re.match(r"(P\d+\.\d+):", s))}
 
 
 def main() -> int:
-    historia = merges()
-    if historia is None:
-        print("SALTADO: no hay merges en la historia de este clon.")
+    hechos = asuntos()
+    if hechos is None:
+        print("SALTADO: sin historia en este clon.")
         return 0
     fallos = []
     for bloque in re.split(r"^## (?=O-\d{8}-\d+)", ORDENES.read_text(encoding="utf-8"),
@@ -41,17 +40,21 @@ def main() -> int:
         reparto = re.search(r"^Reparto:(.*)$", bloque, re.M)
         if not reparto:
             continue
-        pasos = set(re.findall(r"\b(P\d+)\.\d+", reparto.group(1)))
         abertos = [l for l in bloque.splitlines()
                    if l.startswith("- [ ]") and "mergeado en main" in l]
-        for p in sorted(pasos):
-            if abertos and re.search(rf"Merge pull request #\d+: {p}\b", historia):
-                fallos.append(f"{nome}: el bloque {p} ya está mergeado y el "
+        if not abertos:
+            continue
+        ultimo: dict[str, int] = {}
+        for b, n in re.findall(r"\b(P\d+)\.(\d+)", reparto.group(1)):
+            ultimo[b] = max(ultimo.get(b, -1), int(n))
+        for b, n in sorted(ultimo.items()):
+            if f"{b}.{n}" in hechos:
+                fallos.append(f"{nome}: {b}.{n} ya está en la historia y el "
                               f"criterio de merge sigue abierto")
     if fallos:
         print("FALLO (órdenes atrasadas):\n  " + "\n  ".join(fallos))
         return 1
-    print("OK: ninguna orden mergeada tiene abierto su criterio de merge.")
+    print("OK: ninguna orden con su bloque entregado tiene abierto el merge.")
     return 0
 
 
