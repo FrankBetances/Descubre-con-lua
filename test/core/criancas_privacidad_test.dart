@@ -74,6 +74,12 @@ void main() {
       semente: const {'map': Observacion.di},
       agora: DateTime(2026, 10, 6, 21, 52),
     );
+    await s.rexistrarAxusteSemanal(
+      a.id,
+      mesCalendario: 10,
+      semana: 3,
+      agora: DateTime(2026, 10, 12, 9),
+    );
 
     // O-20261109-3: el juego del niño con Lúa (XP, racha, insignias, armario).
     final c = CatalogoLua.lido!;
@@ -91,8 +97,15 @@ void main() {
         File('${dir.path}/${CriancasStore.nomeFicheiro}').readAsStringSync();
     final j = json.decode(raw) as Map<String, dynamic>;
 
-    expect(j.keys.toSet(),
-        {'criancas', 'activa', 'observacions', 'xogo', 'repaso', 'escoitas'});
+    expect(j.keys.toSet(), {
+      'criancas',
+      'activa',
+      'observacions',
+      'xogo',
+      'repaso',
+      'escoitas',
+      'axustes',
+    });
     for (final g in (j['xogo'] as Map).values) {
       expect((g as Map).keys.toSet().difference(XogoLua.claves), isEmpty);
       // Las dos fechas del juego, en día y sin hora.
@@ -114,6 +127,9 @@ void main() {
       'peldano',
       'probaCompletada',
       'probaRespostas',
+      'cupo',
+      'semanasBaixas',
+      'semanasDiAlto',
     };
     final semana = RegExp(r'^curso_\d_\d/\d{1,2}/[1-5]$');
     for (final c in j['criancas'] as List) {
@@ -146,6 +162,19 @@ void main() {
       }
       if (m['probaRespostas'] != null) {
         expect(m['probaRespostas'], isA<List>());
+      }
+      if (m['cupo'] != null) {
+        expect(m['cupo'], inInclusiveRange(1, 7));
+      }
+    }
+    const clavesAxuste = {'taxa', 'capa', 'cupo', 'peldano', 'consolidando'};
+    final axustes = j['axustes'] as Map;
+    expect(axustes[a.id], isNotEmpty);
+    for (final porNeno in axustes.values) {
+      for (final e in (porNeno as Map).entries) {
+        expect(semana.hasMatch(e.key as String), isTrue);
+        final m = e.value as Map;
+        expect(m.keys.toSet().difference(clavesAxuste), isEmpty);
       }
     }
     for (final porNeno in (j['observacions'] as Map).values) {

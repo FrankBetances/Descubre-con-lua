@@ -4,9 +4,11 @@ import '../../core/audio/offline_audio_service.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/navigation/ruta_lua.dart';
 import '../../core/theme/app_theme.dart';
+import '../../data/models/leccion_model.dart';
 import '../familias/nomes_familias.dart';
 import 'criancas_store.dart';
 import 'rexistro_crianza_screen.dart';
+import 'tarxeta_escola_screen.dart';
 
 /// Los niños de la casa, para todo el Portal Familias. El chip de arriba
 /// ([SelectorIdade]) lo lee: con él dice «Uxía · 2-3 anos» y abre
@@ -33,7 +35,8 @@ class CrianzaDaCasa extends InheritedNotifier<CriancasStore> {
       context.dependOnInheritedWidgetOfExactType<CrianzaDaCasa>();
 }
 
-/// La hoja del chip: los resultados del niño, los demás niños y editar/borrar.
+/// La hoja del chip: los resultados del niño, la tarjeta para la escuela (M5),
+/// los demás niños y editar/borrar.
 ///
 /// P11.1: la lista de cursos sale de esta hoja; el curso solo se cambia dentro
 /// de «Editar a …», con confirmación.
@@ -161,7 +164,15 @@ Future<void> abrirFollaCrianza(
                 ),
                 onPressed: () => Navigator.of(ctx).pop('resultados'),
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 10),
+              fila(
+                key: const Key('crianza_tarxeta_escola'),
+                icono: Icons.badge_rounded,
+                texto:
+                    isGl ? 'Tarxeta para a escola' : 'Tarjeta para la escuela',
+                onTap: () => Navigator.of(ctx).pop('tarxeta_escola'),
+              ),
+              const SizedBox(height: 8),
               seccion(isGl ? 'NENOS DA CASA' : 'NIÑOS DE LA CASA'),
               const SizedBox(height: 8),
               for (final c in store.criancas)
@@ -224,6 +235,33 @@ Future<void> abrirFollaCrianza(
       await store.escoller(id);
     case ['resultados']:
       casa.abrirResultados(context);
+    case ['tarxeta_escola']:
+      final lec = Leccions.lidas;
+      final laminas = <String, String>{};
+      if (lec != null) {
+        for (final lista in lec.unidades.values) {
+          for (final u in lista) {
+            for (final l in u.leccions) {
+              for (final p in [...l.novas, ...l.repasa]) {
+                if (p.lamina != null) {
+                  laminas[CriancasStore.claveRepaso(p.en)] = p.lamina!;
+                }
+              }
+            }
+          }
+        }
+      }
+      await Navigator.of(context).push(
+        RutaLua(
+          de: context,
+          builder: (_) => TarxetaEscolaScreen(
+            store: store,
+            crianza: activa,
+            language: language,
+            laminasPorPalabra: laminas,
+          ),
+        ),
+      );
     case ['engadir']:
       await rexistro();
     case ['editar']:

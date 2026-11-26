@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../../core/fsrs_service.dart';
 import '../../core/storage/local_store.dart';
 import '../../data/models/fsrs_card_model.dart';
+import 'axuste_semanal.dart';
 import 'xogo_lua.dart';
 
 /// Un niño o niña de la casa, tal como lo registra la persona adulta.
@@ -49,6 +50,13 @@ class Crianza {
   /// Respuestas guardadas si la prueba de entrada se interrumpió a mitad (0..2).
   final List<int> probaRespostas;
 
+  /// Cupo semanal de palabras nuevas (P11.4), opcional (null = base del curso).
+  final int? cupo;
+
+  /// Semanas seguidas por debajo del 30 % de comprensión y de >=80 % dicho (P11.4).
+  final int semanasBaixas;
+  final int semanasDiAlto;
+
   static const List<String> rutinasValidas = [
     'bano',
     'comida',
@@ -73,6 +81,9 @@ class Crianza {
     this.peldano = 1,
     this.probaCompletada = true,
     this.probaRespostas = const [],
+    this.cupo,
+    this.semanasBaixas = 0,
+    this.semanasDiAlto = 0,
   });
 
   /// Años cumplidos en [agora] a partir de [mesNacemento] y [anoNacemento] si
@@ -109,6 +120,9 @@ class Crianza {
     int? peldano,
     bool? probaCompletada,
     List<int>? probaRespostas,
+    int? cupo,
+    int? semanasBaixas,
+    int? semanasDiAlto,
   }) =>
       Crianza(
         id: id,
@@ -125,6 +139,9 @@ class Crianza {
         peldano: (peldano ?? this.peldano).clamp(1, 6),
         probaCompletada: probaCompletada ?? this.probaCompletada,
         probaRespostas: probaRespostas ?? this.probaRespostas,
+        cupo: cupo ?? this.cupo,
+        semanasBaixas: semanasBaixas ?? this.semanasBaixas,
+        semanasDiAlto: semanasDiAlto ?? this.semanasDiAlto,
       );
 
   Map<String, dynamic> toJson() => {
@@ -142,6 +159,9 @@ class Crianza {
         if (peldano != 1) 'peldano': peldano,
         if (!probaCompletada) 'probaCompletada': false,
         if (probaRespostas.isNotEmpty) 'probaRespostas': probaRespostas,
+        if (cupo != null) 'cupo': cupo,
+        if (semanasBaixas > 0) 'semanasBaixas': semanasBaixas,
+        if (semanasDiAlto > 0) 'semanasDiAlto': semanasDiAlto,
       };
 
   static List<String> normalizarRutinas(Iterable<String> orixe) {
@@ -178,6 +198,9 @@ class Crianza {
               if (x is int && x >= 0 && x <= 2) x,
           ]
         : const <int>[];
+    final cupo = j['cupo'] is int ? j['cupo'] as int : null;
+    final baixas = j['semanasBaixas'] is int ? j['semanasBaixas'] as int : 0;
+    final diAlto = j['semanasDiAlto'] is int ? j['semanasDiAlto'] as int : 0;
     if (id.isEmpty || nome.isEmpty || curso.isEmpty) return null;
     return Crianza(
       id: id,
@@ -194,6 +217,9 @@ class Crianza {
       peldano: pel.clamp(1, 6),
       probaCompletada: comp,
       probaRespostas: List.unmodifiable(respRaw),
+      cupo: cupo,
+      semanasBaixas: baixas < 0 ? 0 : baixas,
+      semanasDiAlto: diAlto < 0 ? 0 : diAlto,
     );
   }
 }
@@ -275,6 +301,9 @@ class CriancasStore extends ChangeNotifier {
   /// niño → palabra normalizada → número de veces que la ha oído/marcado (M4).
   final Map<String, Map<String, int>> _escoitas = {};
 
+  /// niño → semana (`curso/mes/semana`) → estado semanal P11.4 (sin fecha).
+  final Map<String, Map<String, RexistroAxusteSemanal>> _axustes = {};
+
   bool _cargado = false;
   bool get cargado => _cargado;
 
@@ -305,6 +334,7 @@ class CriancasStore extends ChangeNotifier {
     _repaso.clear();
     _repasoSeguinteId.clear();
     _escoitas.clear();
+    _axustes.clear();
     if (j != null) {
       if (j['xogo'] case final Map x) {
         for (final e in x.entries) {
@@ -362,6 +392,18 @@ class CriancasStore extends ChangeNotifier {
           };
         }
       }
+      final ax = j['axustes'];
+      if (ax is Map) {
+        for (final porNeno in ax.entries) {
+          if (porNeno.value is! Map) continue;
+          final sems = <String, RexistroAxusteSemanal>{};
+          for (final e in (porNeno.value as Map).entries) {
+            final reg = RexistroAxusteSemanal.fromJson(e.value);
+            if (reg != null) sems[e.key.toString()] = reg;
+          }
+          _axustes[porNeno.key.toString()] = sems;
+        }
+      }
     }
     _cargado = true;
     notifyListeners();
@@ -394,6 +436,14 @@ class CriancasStore extends ChangeNotifier {
             if (_criancas.any((c) => c.id == e.key) && e.value.isNotEmpty)
               e.key: e.value,
         },
+        if (_axustes.values.any((m) => m.isNotEmpty))
+          'axustes': {
+            for (final e in _axustes.entries)
+              if (_criancas.any((c) => c.id == e.key) && e.value.isNotEmpty)
+                e.key: {
+                  for (final s in e.value.entries) s.key: s.value.toJson(),
+                },
+          },
       };
 
   Future<void> _gardar() async {
@@ -565,6 +615,7 @@ class CriancasStore extends ChangeNotifier {
     _repaso.remove(id);
     _repasoSeguinteId.remove(id);
     _escoitas.remove(id);
+    _axustes.remove(id);
     if (_activa == id) _activa = _criancas.isEmpty ? null : _criancas.first.id;
     await _gardar();
   }
@@ -573,6 +624,120 @@ class CriancasStore extends ChangeNotifier {
       '$curso/$mes/$semana';
 
   static const List<int> _mesesCurso = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
+
+  /// Semana escolar anterior dentro de [curso] (`curso/mes/semana`), o `null`
+  /// si está en la semana 1 de septiembre.
+  static String? semanaAnterior(String curso, int mes, int sem) {
+    final idxMes = _mesesCurso.indexOf(mes);
+    if (idxMes < 0) return null;
+    if (sem > 1) return semana(curso, mes, sem - 1);
+    if (idxMes == 0) return null;
+    return semana(curso, _mesesCurso[idxMes - 1], 4);
+  }
+
+  /// Palabras distintas marcadas como «la dice» para [id] (M5).
+  List<String> palabrasDitas(String id) {
+    final mapa = _obs[id];
+    if (mapa == null || mapa.isEmpty) return const [];
+    final vistas = <String>{};
+    final out = <String>[];
+    for (final s in mapa.values) {
+      for (final p in s.entries) {
+        if (p.value == 2 && vistas.add(claveRepaso(p.key))) {
+          out.add(p.key);
+        }
+      }
+    }
+    return List.unmodifiable(out);
+  }
+
+  Map<String, Observacion> marcasDaSemana(String id, String semanaKey) {
+    final m = _obs[id]?[semanaKey];
+    if (m == null || m.isEmpty) return const {};
+    return {
+      for (final e in m.entries)
+        e.key: e.value == 2 ? Observacion.di : Observacion.entende,
+    };
+  }
+
+  RexistroAxusteSemanal? axusteSemanalDe(String id, String semanaKey) =>
+      _axustes[id]?[semanaKey];
+
+  ResultadoAxusteSemanal calcularAxustePara(
+    String id, {
+    required int mesCalendario,
+    required int semana,
+    DateTime? agora,
+  }) {
+    final c = _criancas.where((x) => x.id == id).firstOrNull;
+    if (c == null) {
+      return const ResultadoAxusteSemanal(
+        cupoNovas: 3,
+        pesoRepaso: 0.5,
+        peldano: 1,
+        capa: CapaSemana.nucleo,
+        taxaEntende: 0.0,
+        taxaDi: 0.0,
+        consolidando: false,
+        senMarcas: true,
+        explicacionGl: '',
+        explicacionEs: '',
+        novasSemanasBaixas: 0,
+        novasSemanasDiAlto: 0,
+      );
+    }
+    final prevKey = semanaAnterior(c.curso, mesCalendario, semana);
+    final marcasPrev = prevKey == null
+        ? const <String, Observacion>{}
+        : marcasDaSemana(id, prevKey);
+    final topes = AxusteSemanal.topesDe(c.curso);
+    return AxusteSemanal.calcular(
+      nome: c.nome,
+      curso: c.curso,
+      peldanoActual: c.peldano,
+      cupoActual: c.cupo ?? topes.base,
+      marcasSemanaAnterior: marcasPrev,
+      escoitasPorPalabra: _escoitas[id] ?? const {},
+      semanasBaixasSeguidas: c.semanasBaixas,
+      semanasDiAltoSeguidas: c.semanasDiAlto,
+      vencidas: tarxetasVencidas(id, agora: agora).length,
+    );
+  }
+
+  /// Recalcula y persiste en `criancas.json` el ajuste semanal del lunes (P11.4).
+  Future<ResultadoAxusteSemanal?> rexistrarAxusteSemanal(
+    String id, {
+    required int mesCalendario,
+    required int semana,
+    DateTime? agora,
+    bool forzarRecalculo = false,
+  }) async {
+    final i = _criancas.indexWhere((x) => x.id == id);
+    if (i < 0) return null;
+    final c = _criancas[i];
+    final key = CriancasStore.semana(c.curso, mesCalendario, semana);
+    final res = calcularAxustePara(
+      id,
+      mesCalendario: mesCalendario,
+      semana: semana,
+      agora: agora,
+    );
+    final previa = _axustes[id]?[key];
+    if (previa != null && !forzarRecalculo) {
+      return res;
+    }
+    _axustes.putIfAbsent(id, () => {})[key] = res.rexistro;
+    _criancas[i] = c.copyWith(
+      cupo: res.cupoNovas > 0
+          ? res.cupoNovas
+          : (c.cupo ?? AxusteSemanal.topesDe(c.curso).min),
+      peldano: res.peldano,
+      semanasBaixas: res.novasSemanasBaixas,
+      semanasDiAlto: res.novasSemanasDiAlto,
+    );
+    await _gardar();
+    return res;
+  }
 
   /// Índice 0..39 dentro del curso escolar a partir de `'curso_x_y/mes/semana'`.
   static int indiceSemanaCurso(String? semanaKey) {

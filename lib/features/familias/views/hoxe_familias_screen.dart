@@ -888,6 +888,26 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                               ),
                       ),
                     ],
+                    if (neno != null && casa != null)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: Text(
+                          casa.store
+                              .calcularAxustePara(
+                                neno.id,
+                                mesCalendario: _toca.dia.mesCalendario,
+                                semana: _toca.dia.semana,
+                                agora: agora,
+                              )
+                              .explicacion(lang),
+                          key: const Key('axuste_semanal_explicacion'),
+                          style: const TextStyle(
+                            fontSize: 14,
+                            color: AppTheme.textSecondary,
+                            height: 1.3,
+                          ),
+                        ),
+                      ),
                     const SizedBox(height: 16),
                   ],
                 );
