@@ -164,3 +164,13 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: después de dar un prompt para Antigravity, Claude Code le dio a Frank correcciones y líneas sueltas «para pegar antes» o «añadir al final», y dejó dos secciones «vigente» en docs/PROMPTS_ANTIGRAVITY.md. Frank ya había pedido varias veces un único prompt completo. Lo hizo Claude Code.
 - Causa raíz: cada cambio se resolvía con un parche para pegar en vez de reescribir el prompt entero, y ningún gate miraba cuántos prompts vigentes había ni si estaban enteros.
 - Guarda: tools/check_prompt_unico.py (falla si hay más de una sección vigente o si la vigente es una corrección o le faltan reglas, paso 0, cierre o informe final; en tools/gates.sh) y CLAUDE.md (R-PROMPT-ÚNICO)
+
+## F-20261126-8 · Claude Code contestó a una pregunta de Frank con comandos en vez de con la respuesta
+- Qué pasó: Frank preguntó «Y el manual donde está?» y «Por qué no está hecho el manual?». Claude Code se puso a ejecutar comandos sin contestar primero, y después preguntó «¿Empiezo?» en vez de hacer lo que ya estaba pedido. Frank tuvo que cortarlo tres veces. Lo hizo Claude Code.
+- Causa raíz: Claude Code trató la pregunta como una orden de trabajo y la orden como una pregunta; ningún freno distinguía una pregunta de Frank.
+- Guarda: CLAUDE.md (R-RESPONDER, en las reglas con freno). El freno automático, un hook que bloquee herramientas cuando Frank pregunta, solo lo puede escribir Frank en la carpeta de hooks.
+
+## F-20261126-9 · P11 llegó a main sin que el manual enseñara sus pantallas
+- Qué pasó: P11 añadió siete pantallas (prueba de entrada, marcar en diez segundos, Lúa pregunta, Vuelven hoy, capas, reto de hermanos y tarjeta para la escuela). El manual solo las nombraba en unas líneas sueltas, sin ninguna captura, y Claude Code mergeó P11 sin mirarlo. Frank preguntó dónde estaba el manual. Lo hizo Claude Code.
+- Causa raíz: ningún gate comparaba las pantallas de la app con las capturas del manual; test/capturas_test.dart no retrataba las pantallas nuevas y el gate del manual solo comprobaba que el PDF y el Word salieran del HTML.
+- Guarda: tools/check_manual_pantallas.py (falla si una pantalla de la lista no sale en el manual o si una captura no tiene su pareja en la otra lengua; en tools/gates.sh)

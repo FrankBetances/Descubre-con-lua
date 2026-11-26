@@ -144,6 +144,8 @@ run_gate "age vocabulary substitutions are applied" python3 tools/vocab_idade.py
 run_gate "done criteria are not left open" python3 tools/check_ordenes_abertas.py
 # F-20261126-7: un solo prompt vigente para Antigravity, entero.
 run_gate "one complete current prompt for Antigravity" python3 tools/check_prompt_unico.py
+# F-20261126-9: el manual enseña cada pantalla, en gallego y castellano.
+run_gate "the manual shows every screen in gl and es" python3 tools/check_manual_pantallas.py
 # La gramática del curso (Frank, 28/10/2026): los 20 puntos de A1-A2 en las
 # cinco edades, sin bajar de una edad a la siguiente.
 run_gate "course grammar covers A1-A2 across the five ages" \
