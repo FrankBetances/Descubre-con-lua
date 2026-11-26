@@ -581,7 +581,9 @@ Reparto: Claude Code audita y propone; la ejecución, por fases, con las decisio
 
 - [x] Auditoría forense medida por script de los cinco cursos: registro de varios niños, 0-2, nivel de entrada, repaso y progresión semana a semana, cada hallazgo con su causa en el código · evidencia: tools/auditoria_niveles.py y docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 2)
 - [x] Plan completo: cada parte de la orden con su fase, lo que Frank ve y dónde, y el gate que la cierra · evidencia: docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 4)
-- [ ] Decisiones de Frank D1 (48 unidades), D2 (prueba de nivel sin pantalla para el niño), D3 (datos nuevos), D4 (rehacer 0-2) y D5 (ritmo por edad), escritas aquí · evidencia:
+> (26/11/2026, a pregunta de Claude Code) «Apruebo d1 a d6»
+Decisión: D1 a D6 aprobadas tal como las recomienda docs/AUDITORIA_NIVELES_Y_REPASO.md (secciones 3 y 4b); D4 incluye sustituir las 199 palabras actuales de 0-2 (assets/content/acopros/proxectos_0_2.json) por el núcleo propuesto.
+- [x] Decisiones de Frank D1 (48 unidades), D2 (prueba de nivel sin pantalla para el niño), D3 (datos nuevos), D4 (rehacer 0-2) y D5 (ritmo por edad), escritas aquí · evidencia: docs/ORDENES.md (decisión de Frank del 26/11/2026: «Apruebo d1 a d6»)
 - [ ] Na casa → alta y Hoxe: varios niños de cursos distintos visibles a la vez, cada uno con su tarea, sus premios y su repaso · evidencia:
 - [ ] Na casa → Hoxe: «Volven hoxe / Vuelven hoy» por niño; cada palabra vuelve al menos 4 veces en el curso y alguna pasado un mes (tools/auditoria_niveles.py --gate en tools/gates.sh) · evidencia:
 - [ ] Al registrar un niño de 2 años o más: juego de Lúa para saber por dónde empezar, dirigido por la persona adulta, que fija su punto de partida y siembra su repaso · evidencia:
@@ -595,6 +597,17 @@ Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md (H3 y H4: las marcas «aún no / la e
 Reparto: Claude Code lo diseña en el plan; se programa en la fase F3b con las decisiones D1, D5 y D6 de Frank.
 
 - [x] Diseño del ajuste dinámico en el plan: qué lee, qué decide (cupo, mezcla, peldaño), reglas con sus umbrales, tres capas de contenido por semana, qué ve la familia, qué guarda y cómo se comprueba · evidencia: docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 4b y fila F3b)
-- [ ] Decisión de Frank D6 (proponer o esconder y umbrales), escrita aquí · evidencia:
+- [x] Decisión de Frank D6 (proponer o esconder y umbrales), escrita aquí · evidencia: docs/ORDENES.md (decisión de Frank del 26/11/2026 en O-20261126-1: «Apruebo d1 a d6»; se propone y no se esconde, umbrales de la sección 4b)
 - [ ] Na casa → Hoxe: el cupo de palabras nuevas, el repaso y el peldaño de cada niño cambian cada lunes según lo marcado la semana anterior y una línea en gl y es dice por qué; un test de cuatro niños simulados durante cuarenta semanas lo comprueba · evidencia:
 - [ ] Cada semana de las cinco edades tiene núcleo, «Máis / Más» y «Apoio / Apoyo», las tres con el STEAM del mes; un gate lo comprueba · evidencia:
+
+## O-20261126-3 · Plan completo para que lo ejecute Antigravity, revisado por Claude Code
+Estado: abierta
+> Genera un plan completo de trabajo para que me ejecute totalmente anti Gravity, y tu función será revisarlo
+> (26/11/2026) Apruebo d1 a d6
+Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md (secciones 2 a 5) y las órdenes O-20261126-1 y O-20261126-2
+Reparto: todo lo hace Antigravity (P11.0–P11.11) en la rama antigravity/niveles; Claude Code solo revisa e integra.
+
+- [x] Prompt P11 guardado en el repositorio con sus pasos P11.0–P11.11 en la tabla de pasos, antes de que Antigravity empiece · evidencia: docs/PROMPTS_ANTIGRAVITY.md y tools/check_registro_commits.py
+- [ ] Entrega de Antigravity en antigravity/niveles con docs/p11-control.md criterio por criterio · evidencia:
+- [ ] Revisado por Claude Code (auditoria_niveles --gate y check_capas_semana a cero, gates.sh y flutter test en verde, tres semanas al azar por edad, capturas gl y es miradas) y mergeado en main con CI en verde y los audios generados · evidencia:

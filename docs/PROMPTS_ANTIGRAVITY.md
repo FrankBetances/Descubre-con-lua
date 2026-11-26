@@ -501,3 +501,83 @@ quedan: 0; referencias a Vigo como destino que quedan: 0; escenas de RA: N de 40
 Claude Code lo valida y lo mergea a main.
 ```
 
+
+## P11 · Niveles por edad, varios niños, prueba de entrada, repaso y ajuste dinámico (26/11/2026)
+
+Los pasos P11.0–P11.11 ya están en la tabla de pasos (los añadió Claude Code al guardar este prompt);
+Antigravity no los vuelve a añadir. D1-D6 aprobadas por Frank el 26/11/2026 (O-20261126-1).
+
+```text
+TRABAJO INTEGRAL DE ANTIGRAVITY · P11 · NIVELES POR EDAD, VARIOS NIÑOS, PRUEBA DE ENTRADA, REPASO Y AJUSTE DINÁMICO
+
+Eres Antigravity y trabajas en FrankBetances/Descubre-con-lua: app Android en Flutter, solo educativa, con Juega con Lúa (la docente, en la asamblea) y Na casa / Academy (las familias), en gallego y castellano, para estimular el inglés. Tú haces el 100 % del trabajo; Claude Code solo revisa e integra. No mergeas nada en main.
+
+DECISIONES DE FRANK (26/11/2026, «Apruebo d1 a d6»): D1 a D6 aprobadas tal como las recomienda docs/AUDITORIA_NIVELES_Y_REPASO.md, secciones 3 y 4b. D4 incluye sustituir las 199 palabras actuales de 0-2. Lo que el plan propone es ahora la orden; no lo cambias por tu criterio.
+
+P11.0 · ANTES DE TOCAR NADA
+Lee enteros CLAUDE.md, docs/AUDITORIA_NIVELES_Y_REPASO.md (secciones 2, 3, 4 y 4b) y las órdenes O-20261126-1, O-20261126-2 y O-20261126-3 de docs/ORDENES.md. Crea la rama antigravity/niveles desde main. Haz git status y git log --oneline -5; si hay cambios sin commit que no son tuyos, para y díselo a Frank. Corre python3 tools/auditoria_niveles.py y copia la salida en docs/p11-control.md como punto de partida (hoy marca 30 incumplimientos).
+
+REGLAS QUE NO SE NEGOCIAN (CLAUDE.md)
+1. Prohibido borrar, quitar, vaciar o sustituir nada que Frank no haya pedido con palabras en ORDENES.md. Lo autorizado: las 199 palabras de 0-2 (D4) y la asignación de los 48 puntos por mes (D1); los 48 puntos siguen todos en la app.
+2. R-STEAM: cada palabra, frase, capa, ítem de la prueba y cuento nuevo nombra el STEAM de su mes y qué parte del experimento trabaja.
+3. Prohibido rellenar (R∞.3): no se repite, se estira ni se copia entre cursos para que cuadre una cifra. Si falta material, se escribe en docs/p11-control.md y se sigue con lo demás.
+4. El niño no usa la pantalla: la app propone a la persona adulta y la persona adulta marca lo que ve.
+5. Nada sanitario: nunca «examen», «diagnóstico», «evaluación», «trastorno», «retraso» ni «puntuación». tools/check_finalidade.py en verde.
+6. Ningún dato sale del móvil, sin permiso INTERNET. Todo campo nuevo de criancas.json en día o en semana del curso, nunca con hora. En el mismo commit: docs/privacy.html, docs/play-seguridad-datos.md, README.md y test/core/criancas_privacidad_test.dart.
+7. Léxico de Galicia: neno/nena, niño/niña; nunca «criatura» ni «crianza» visibles; nunca «Edición Vigo».
+8. Sin emoji; sin licencias NC ni ND.
+9. Texto con audio que cambia: corpus de voz exportado en el mismo commit (tools/export_voice_corpus.py); frases inglesas para el niño con voz child y versión lenta (tools/check_voz_lenta.py).
+10. Cada commit empieza por «P11.n:» y añade su fila al Registro de commits de docs/PLAN_ANTIGRAVITY.md (la última fila lleva «este»; el commit siguiente la cambia por el SHA). tools/check_registro_commits.py en OK antes de cada push.
+11. Antes de cada push: tools/gates.sh y flutter test completos en local. Si algo va a fallar, no se empuja.
+12. Cada informe empieza por lo que falta. Lo que no has visto en la app se dice con estas palabras: «esto no lo he verificado».
+
+P11.1 · FAMILIA CON VARIOS NIÑOS (F1)
+Na casa → alta: al guardar el primer niño, «Hai outro neno ou nena na casa? / ¿Hay otro niño o niña en casa?», y deja registrar más sin salir. Na casa → Hoxe: arriba, una fila con cada niño de la casa (su Lúa, su nombre y su curso) y debajo de cada uno, en una línea, lo que le toca hoy; un toque cambia el niño activo y Hoxe, Calendario y Explorar pasan a su curso. La lista de cursos sale de la hoja del chip: el curso solo se cambia dentro de «Editar a …», con confirmación. Premios, observaciones y repaso, siempre del niño activo. Se guarda mes y año de nacimiento, sin día (D3); en septiembre la app propone pasar al curso siguiente y la persona adulta confirma.
+Ficheros: lib/features/criancas/, lib/features/familias/portal_familias_screen.dart y lib/features/familias/views/hoxe_familias_screen.dart.
+Comprobación: widget test con tres niños (0-2, 3-4 y 5-6) que cambia entre ellos y comprueba el curso de Hoxe, Calendario y Explorar; test de que la hoja ya no cambia el curso de un toque; capturas de escritorio en gl y es de la fila de niños.
+
+P11.2 · REPASO POR NIÑO (F2)
+En casa, una tarjeta FSRS por palabra y por niño, en criancas.json, reutilizando lib/core/fsrs_service.dart (no se duplica). Las marcas alimentan la tarjeta: «la dice» = Good, «la entiende» = Hard, «aún no» = Again. En Hoxe, el bloque «Volven hoxe / Vuelven hoy»: de 2 a 4 palabras vencidas de cualquier semana anterior del niño, con lámina, audio y gesto; con más de 6 vencidas, ese día no entran palabras nuevas.
+En tools/gen_leccions.py, la causa raíz: «repaso = not novas» (línea 524) y «xaSabe» con las últimas 8 piezas (línea 634). Las palabras vuelven a la semana 1, 2, 4, 8 y 16 de haber salido, así que el aula, sin niños registrados, también tiene repaso espaciado; la semana 4 de cada mes trae como mucho una palabra nueva. Regenera leccions.json y todo lo que derive de él.
+Comprobación: tests de siembra y vencimiento por niño y test de privacidad actualizado; en la salida de python3 tools/auditoria_niveles.py, los umbrales de vueltas (al menos 4), de desfase (alguna pasado un mes) y de semanas de repaso, a cero incumplimientos en las cinco edades.
+
+P11.3 · PRUEBA DE ENTRADA (F3)
+Contenido nuevo en assets/content/nivel/proba_entrada.json, en gl, es y en, con lámina y audio. Por curso, seis peldaños: comprender una orden con gesto; señalar un objeto; distinguir un contraste (grande/pequeño, mojado/seco…); decir la palabra; decir dos palabras juntas; decir una frase corta. Tres ítems por peldaño, todos con palabras y objetos del STEAM de su curso, escritos a mano.
+Pantalla «Xogo de Lúa para saber por onde empezar / Juego de Lúa para saber por dónde empezar», que se ofrece al registrar un niño de 2 años o más y desde su ficha. Le dice a la persona adulta qué pedir, con objetos de casa o con la lámina impresa, y ella marca «aínda non / entende / dío» («aún no / la entiende / la dice»). De 5 a 8 minutos; se puede saltar.
+Regla: se para tras tres fallos seguidos; el peldaño es el último con dos aciertos de tres. El resultado fija el punto de partida y siembra el repaso: lo que entiende o dice entra como conocido.
+Comprobación: test del árbol de decisión con cinco trayectorias, check_finalidade en verde y capturas de escritorio en gl y es.
+
+P11.4 · AJUSTE DINÁMICO (F3b)
+Motor puro en Dart, sin widgets, en lib/features/criancas/axuste_semanal.dart, con la tabla de la sección 4b del plan tal cual. Cada lunes decide el cupo de palabras nuevas, la mezcla de repaso y nuevo, el peldaño y la capa («núcleo», «Máis / Más» o «Apoio / Apoyo»). Topes de palabras nuevas por semana: 0-2 de 1 a 3; 2-3 de 2 a 4; 3-4 de 2 a 5; 4-5 de 3 a 6; 5-6 de 3 a 7. Si la familia no marca nada, el niño no sube ni baja. En Hoxe, una línea en gl y es con el porqué, sin porcentajes: «Esta semana, catro palabras novas: Uxía xa di catro das cinco da semana pasada.» Explorar sigue enseñándolo todo a la persona adulta (D6).
+Comprobación: test que simula 40 semanas con cuatro niños (rápido, medio, lento y sin marcas): los topes se respetan, el niño sin marcas no se mueve, el lento llega a la semana de consolidar y nadie pasa el techo de su edad.
+
+P11.5 · ESCALERA DE LOS 48 PUNTOS (D1)
+Los 48 puntos dejan de ir uno por mes y pasan a ser peldaños por dominio, con techo por edad: 0-2 sin gramática; 2-3 con fórmulas fijas de los puntos 1-9; 3-4 con los puntos A1 como fórmulas; 4-5 con A1 y una selección de A2; 5-6 hasta A2. B1-C1 pasan a la guía de la persona adulta, con su ejemplo. Los 48 siguen todos en la app. En tools/gen_gramatica.py, el gate de «la columna no baja» se cambia por el del techo por edad. Ninguna frase para el niño vuelve a ser como «If we had used boots, we would have stayed clean.» en 4-5 años.
+
+P11.6 · 0-2 AÑOS REHECHO (F4, D4)
+Sustituye las 199 palabras de assets/content/acopros/proxectos_0_2.json por un núcleo de unas 60 piezas en cinco familias:
+- sustantivos de su mundo: cuerpo, comida, familia, animales;
+- adjetivos de contraste: big/small, hot/cold, wet/dry;
+- onomatopeyas, siempre unidas a su objeto («Baa» con «Lamb»);
+- rutinas y sucesos: «Bath time», «All done», «Bye-bye», «Night night»;
+- series básicas: «one, two, three», grande-pequeño-grande, arriba-abajo-arriba.
+De dos a tres piezas nuevas por semana; frases de tres palabras como mucho; cada pieza vuelve muchos meses y nombra el STEAM del mes y la parte que trabaja («Wet» y «Dry» en «Mollado e seco»). Cada semana en sus tres capas. Se genera con tools/gen_acopros_0_2.py; láminas nuevas con su gate (check_laminas.py) y voz para cada pieza. La frecuencia no se decide con el corpus adulto de 4000 palabras (la auditoría explica por qué); si usas otra referencia de habla dirigida a niños pequeños, comprueba antes su licencia y anótala en docs/p11-control.md.
+
+P11.7 · 2-3 A 5-6 RECALIBRADOS (F5)
+Cada semana de las cuatro edades, con núcleo, «Máis / Más» y «Apoio / Apoyo», las tres con el STEAM del mes. Frase máxima de 4, 5, 6 y 7 palabras; nunca más de dos palabras de diferencia con la frase de la semana anterior; gramática dentro del techo de la edad; la semana 1 sin «ya las conoce» de un curso que el niño no ha hecho (eso lo decide la prueba de entrada). Se regeneran los cuentos que cambien de palabras (check_contos_palabras.py), las láminas y el corpus de voz.
+
+P11.8 · GATES EN CI
+Nuevo tools/check_capas_semana.py: falla si una semana de las cinco edades no tiene sus tres capas o si alguna no nombra el STEAM del mes. python3 tools/auditoria_niveles.py --gate y check_capas_semana.py entran en tools/gates.sh solo cuando den cero en local; si alguno no llega a cero, no lo conectes y escribe en docs/p11-control.md cuál falta y por qué.
+
+P11.9 · LAS CAPAS DEL CAMBIO
+Al día: corpus de voz (python3 tools/export_voice_corpus.py --check), láminas, manual de casos de uso con capturas nuevas y PDF y Word mirados página a página (tools/check_manual_build.py), catálogo por edades regenerado, política de privacidad y ficha de Play con lo que ahora se guarda, y README sin información interna (lo interno va a STATUS.md).
+
+P11.10 · CAPTURAS Y CONTROL
+Con el procedimiento de escritorio de la regla 1d de CLAUDE.md (Xvfb 460×1000 y navegación por clic), capturas en gl y es de: la fila de niños; «Volven hoxe»; la prueba de entrada de principio a fin; la línea del ajuste semanal; 0-2 en tres meses; una semana de 4-5 en sus tres capas. Mira cada captura antes de darla por buena. En docs/p11-control.md, una tabla con cada criterio de O-20261126-1, O-20261126-2 y O-20261126-3, su evidencia (test, gate o captura) y lo que no se ha visto en un aparato.
+
+P11.11 · CIERRE
+Actualiza docs/PENDIENTE.md y empuja antigravity/niveles, sin pull request a main y sin merge. El informe final empieza por «De la orden falta: …», criterio por criterio y con números («de 200 semanas, con tres capas 200»).
+
+LO QUE REVISARÁ CLAUDE CODE
+auditoria_niveles.py --gate y check_capas_semana.py a cero; gates.sh y flutter test en verde; nada borrado fuera de lo que autorizan D1 y D4; tres semanas al azar por edad (STEAM, longitud de las frases y repaso); la prueba de entrada y la fila de niños abiertas en la app de escritorio en gl y es; la privacidad declarada igual a lo que se guarda; ninguna palabra clínica en pantalla.
+```
