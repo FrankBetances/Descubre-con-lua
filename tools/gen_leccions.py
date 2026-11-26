@@ -780,6 +780,24 @@ def main():
         _mapa_vi = json.loads((C / "laminas" / "palabras_laminas.json").read_text(encoding="utf-8"))["pezas"]
         for u_obj in unidades:
             VI.sustituir_leccions(curso, u_obj["leccions"], _mapa_vi)
+        leccions_post = [l for u_obj in unidades for l in u_obj["leccions"]]
+        if ultimas_do_curso and leccions_post:
+            vistos_s1 = {norm(p["en"]) for p in (leccions_post[0].get("xaSabe") or []) if p.get("en")}
+            extras = [dict(p) for p in ultimas_do_curso if norm(p["en"]) not in vistos_s1]
+            leccions_post[0]["xaSabe"] = extras + (leccions_post[0].get("xaSabe") or [])
+        intro_post = {}
+        peza_post = {}
+        for i_p, l_p in enumerate(leccions_post):
+            for p_p in l_p.get("novas") or []:
+                if p_p.get("en"):
+                    k_p = norm(p_p["en"])
+                    intro_post.setdefault(k_p, i_p)
+                    peza_post[k_p] = dict(p_p)
+        novas_tardias = [
+            dict(peza_post[nk])
+            for nk, j in intro_post.items()
+            if len(leccions_post) - 1 - j < 16
+        ]
         ruts_m2 = (
             ("bano", "No baño", "En el baño", "mentres botas a auga", "mientras echas el agua"),
             ("comida", "Na comida", "En la comida", "ao sentar á mesa", "al sentar a la mesa"),
@@ -877,7 +895,7 @@ def main():
 
         saida["cursos"][curso] = {"unidades": unidades, "calendario": calendario}
         ensinado_antes |= ensinado
-        ultimas_do_curso = []
+        ultimas_do_curso = novas_tardias
     # O-20261111-2: cada pieza enseñada, con su lámina (tools/gen_laminas_palabras.py).
     mapa_laminas = json.loads((Path(__file__).resolve().parent.parent / "assets/content/laminas/palabras_laminas.json").read_text(encoding="utf-8"))["pezas"] \
         if (Path(__file__).resolve().parent.parent / "assets/content/laminas/palabras_laminas.json").exists() else {}

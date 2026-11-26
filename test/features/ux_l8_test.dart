@@ -14,6 +14,7 @@ import 'package:descubre_con_lua/data/models/asamblea_segundo_ciclo_model.dart';
 import 'package:descubre_con_lua/data/models/como_funciona_o_conto_model.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
 import 'package:descubre_con_lua/data/models/ponte_ao_dia_model.dart';
+import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/ponte_ao_dia_screen.dart';
@@ -321,6 +322,9 @@ void main() {
           onToggleLanguage: () {},
           premios: p.premios,
           calendario: p.store,
+          criancas: CriancasStore.enMemoria(const [
+            Crianza(id: 'u1', nome: 'Uxía', idade: 1, curso: 'curso_0_2'),
+          ]),
           agora: Pasarela.agora,
         ),
       ));
@@ -329,8 +333,18 @@ void main() {
 
     Future<void> idade(WidgetTester tester, String curso) async {
       await tester.tap(find.byKey(const ValueKey('selector_idade')).first);
-      await tester.pumpAndSettle();
-      await tester.tap(find.byKey(ValueKey('idade_$curso')));
+      await Pasarela.asentar(tester);
+      await tester.tap(find.byKey(const Key('crianza_editar')));
+      await Pasarela.asentar(tester);
+      await tester.ensureVisible(
+        find.byKey(ValueKey('rexistro_curso_$curso')),
+      );
+      await tester.tap(find.byKey(ValueKey('rexistro_curso_$curso')));
+      await tester.pump();
+      await tester.ensureVisible(find.byKey(const Key('rexistro_gardar')));
+      await tester.tap(find.byKey(const Key('rexistro_gardar')));
+      await Pasarela.asentar(tester);
+      await tester.tap(find.byKey(const Key('rexistro_confirmar_curso_si')));
       await Pasarela.asentar(tester);
     }
 

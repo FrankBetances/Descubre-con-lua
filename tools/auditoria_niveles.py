@@ -39,6 +39,7 @@ def semanas(curso: dict) -> list[tuple[dict, dict]]:
 
 def auditar_leccions(fallos: list[str]) -> None:
     d = json.loads((C / "leccions" / "leccions.json").read_text())
+    pendientes_siguiente: set[str] = set()
     for cid, cv in d["cursos"].items():
         ws = semanas(cv)
         intro: dict[str, int] = {}
@@ -69,13 +70,23 @@ def auditar_leccions(fallos: list[str]) -> None:
         grandes = [s for s in saltos if s > MAX_SALTO]
         niveles = [(u.get("gramatica") or {}).get("nivel") for u in cv["unidades"]]
         puntos = [(u.get("gramatica") or {}).get("n") for u in cv["unidades"]]
-        pocas = [w for w in intro if vueltas[w] < MIN_VUELTAS]
+        con_margen = {w for w, j in intro.items() if (len(ws) - 1 - j) >= 16}
+        pocas = [w for w in con_margen if vueltas[w] < MIN_VUELTAS]
         lejos = sum(1 for x in desfases if x > 4)
+        sem1_xa = {
+            (p.get("en") or "").lower()
+            for p in (ws[0][1].get("xaSabe") or [])
+            if p.get("en")
+        }
+        faltan_tardias = sorted(pendientes_siguiente - sem1_xa)
 
         print(f"\n== {cid} · {len(ws)} semanas")
         print(f"  palabras nuevas distintas: {len(intro)} · tipos: {dict(tipos)}")
         print(f"  semanas de repaso: {repaso_semanas} de {len(ws)}")
-        print(f"  vuelven menos de {MIN_VUELTAS} veces: {len(pocas)} de {len(intro)}")
+        print(
+            f"  vuelven menos de {MIN_VUELTAS} veces (>=16 sem. por delante): "
+            f"{len(pocas)} de {len(con_margen)}"
+        )
         if desfases:
             print(f"  vuelven tras >4 semanas: {lejos} de {len(desfases)} "
                   f"(máximo {max(desfases)} semanas)")
@@ -95,10 +106,15 @@ def auditar_leccions(fallos: list[str]) -> None:
             fallos.append(f"{cid}: {len(grandes)} saltos de dificultad entre semanas")
         if pocas:
             fallos.append(f"{cid}: {len(pocas)} palabras vuelven menos de {MIN_VUELTAS} veces")
+        if faltan_tardias:
+            fallos.append(
+                f"{cid}: faltan {len(faltan_tardias)} palabras tardías del curso anterior en semana 1 xaSabe"
+            )
         if desfases and lejos == 0:
             fallos.append(f"{cid}: ninguna palabra vuelve pasado un mes")
         if repaso_semanas == 0:
             fallos.append(f"{cid}: ninguna semana de repaso")
+        pendientes_siguiente = {w for w, j in intro.items() if (len(ws) - 1 - j) < 16}
 
 
 def auditar_0_2(fallos: list[str]) -> None:

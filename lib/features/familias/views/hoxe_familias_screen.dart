@@ -12,6 +12,7 @@ import '../../../core/brand/lua_pixel.dart';
 import '../../criancas/xogo_lua.dart' show CatalogoLua;
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
+import '../../../core/localization/significados.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
@@ -645,6 +646,16 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 final (u, lec) = da;
                 final neno = casa?.store.activa;
                 final xogo = neno == null ? null : casa!.store.xogo(neno.id);
+                final ax = (neno != null && casa != null)
+                    ? casa.store.calcularAxustePara(
+                        neno.id,
+                        mesCalendario: _toca.dia.mesCalendario,
+                        semana: _toca.dia.semana,
+                        agora: agora,
+                      )
+                    : null;
+                final cupo = ax?.cupoNovas;
+                final novasDoNeno = lec.novasConCupo(cupo);
                 final semanaKey = CriancasStore.semana(
                   widget.cursoId,
                   _toca.dia.mesCalendario,
@@ -692,10 +703,11 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                       store: casa?.store,
                       crianza: neno,
                       agora: widget.agora,
+                      cupo: cupo,
                     );
                 void abrir(int i) => i > actual ? avisar(i) : abrirLeccion(i);
                 final excluidas = {
-                  for (final p in lec.novas) CriancasStore.claveRepaso(p.en),
+                  for (final p in novasDoNeno) CriancasStore.claveRepaso(p.en),
                 };
                 final vencidas = (neno != null && casa != null)
                     ? casa.store.tarxetasVencidas(
@@ -716,7 +728,7 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     : 0;
                 final vistosDomingo = <String>{};
                 final palabrasDomingo = [
-                  for (final p in [...lec.novas, ...lec.repasa])
+                  for (final p in [...novasDoNeno, ...lec.repasa])
                     if (vistosDomingo.add(CriancasStore.claveRepaso(p.en))) p,
                 ].take(3).toList(growable: false);
                 return Column(
@@ -900,15 +912,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                               ),
                       ),
                     ],
-                    if (neno != null && casa != null) ...[
+                    if (neno != null && casa != null && ax != null) ...[
                       Builder(
                         builder: (context) {
-                          final ax = casa.store.calcularAxustePara(
-                            neno.id,
-                            mesCalendario: _toca.dia.mesCalendario,
-                            semana: _toca.dia.semana,
-                            agora: agora,
-                          );
                           final capaKey = ax.capa.name;
                           final Map<String, CapaSemanal> capasSem =
                               neno.curso == 'curso_0_2'
@@ -919,6 +925,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                                   : lec.capas;
                           final capaObj =
                               capasSem[capaKey] ?? capasSem['nucleo'];
+                          final capaUsada = capasSem.containsKey(capaKey)
+                              ? capaKey
+                              : 'nucleo';
                           final ruts = capaObj?.rutinas ?? const {};
                           final irmansPar = _parellaIrmans(casa.store.criancas);
                           final pezaIrmans = irmansPar == null
@@ -944,6 +953,15 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                                   ),
                                 ),
                               ),
+                              if (capaObj != null) ...[
+                                const SizedBox(height: 10),
+                                _CapaSemanalCard(
+                                  capaKey: capaUsada,
+                                  capaObj: capaObj,
+                                  language: lang,
+                                  audioService: widget.audioService,
+                                ),
+                              ],
                               if (ruts.isNotEmpty) ...[
                                 const SizedBox(height: 10),
                                 _RutinasFogarCard(
@@ -981,58 +999,89 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
             ),
             // P11: debajo, la lección de la semana entera, para consultar
             // (salvo si hay más de 6 palabras vencidas, que ese día no entran nuevas).
-            if (!_haiMoitasVencidas(context, _leccions)) ...[
-              const SizedBox(height: 10),
-              LeccionDaSemanaCargada(
-                cursoId: widget.cursoId,
-                mesCalendario: _toca.dia.mesCalendario,
-                semana: _toca.dia.semana,
-                dia: _toca.dia.dia,
-                language: lang,
-                audioService: widget.audioService,
-              ),
-            ],
-            // O-20261109-3: Lúa de Valeria, con los premios del niño.
-            if (CrianzaDaCasa.maybeOf(context) case final casa?)
-              if (casa.store.activa case final neno?) ...[
+            if (CrianzaDaCasa.maybeOf(context) case final casaAtiva?)
+              if (casaAtiva.store.activa case final nenoAtivo?) ...[
+                if (!_haiMoitasVencidas(context, _leccions)) ...[
+                  const SizedBox(height: 10),
+                  LeccionDaSemanaCargada(
+                    cursoId: widget.cursoId,
+                    mesCalendario: _toca.dia.mesCalendario,
+                    semana: _toca.dia.semana,
+                    dia: _toca.dia.dia,
+                    cupo: casaAtiva.store
+                        .calcularAxustePara(
+                          nenoAtivo.id,
+                          mesCalendario: _toca.dia.mesCalendario,
+                          semana: _toca.dia.semana,
+                          agora: widget.agora ?? DateTime.now(),
+                        )
+                        .cupoNovas,
+                    language: lang,
+                    audioService: widget.audioService,
+                  ),
+                ],
+                // O-20261109-3: Lúa de Valeria, con los premios del niño.
                 const SizedBox(height: 16),
                 FutureBuilder<Leccions?>(
                   future: Leccions.cargar().then<Leccions?>(
                     (l) => l,
                     onError: (_) => null,
                   ),
-                  builder: (context, snap) => TarxetaLua(
-                    key: ValueKey('tarxeta_lua_${neno.id}'),
-                    store: casa.store,
-                    crianza: neno,
-                    language: lang,
-                    agora: widget.agora,
-                    semana: CriancasStore.semana(
-                      neno.curso,
-                      _toca.dia.mesCalendario,
-                      _toca.dia.semana,
-                    ),
-                    palabrasDaSemana: neno.curso == 'curso_0_2'
-                        ? [
-                            for (final w in Proxectos02.lidos
-                                    ?.doMes(_toca.dia.mesCalendario)
-                                    ?.daSemana(_toca.dia.semana) ??
-                                const <PalabraProxecto>[])
-                              w.en,
-                          ]
-                        : [
-                            for (final p in snap.data
-                                    ?.da(
-                                      neno.curso,
-                                      _toca.dia.mesCalendario,
-                                      _toca.dia.semana,
-                                    )
-                                    ?.$2
-                                    .novas ??
-                                const <PezaDaLeccion>[])
-                              if (p.en.isNotEmpty) p.en,
-                          ],
-                  ),
+                  builder: (context, snap) {
+                    final cupoLua = casaAtiva.store
+                        .calcularAxustePara(
+                          nenoAtivo.id,
+                          mesCalendario: _toca.dia.mesCalendario,
+                          semana: _toca.dia.semana,
+                          agora: widget.agora ?? DateTime.now(),
+                        )
+                        .cupoNovas;
+                    return TarxetaLua(
+                      key: ValueKey('tarxeta_lua_${nenoAtivo.id}'),
+                      store: casaAtiva.store,
+                      crianza: nenoAtivo,
+                      language: lang,
+                      agora: widget.agora,
+                      semana: CriancasStore.semana(
+                        nenoAtivo.curso,
+                        _toca.dia.mesCalendario,
+                        _toca.dia.semana,
+                      ),
+                      palabrasDaSemana: nenoAtivo.curso == 'curso_0_2'
+                          ? [
+                              for (final w in Proxectos02.lidos
+                                      ?.doMes(_toca.dia.mesCalendario)
+                                      ?.daSemanaConCupo(
+                                        _toca.dia.semana,
+                                        cupoLua,
+                                      ) ??
+                                  const <PalabraProxecto>[])
+                                w.en,
+                            ]
+                          : [
+                              for (final p in snap.data
+                                      ?.da(
+                                        nenoAtivo.curso,
+                                        _toca.dia.mesCalendario,
+                                        _toca.dia.semana,
+                                      )
+                                      ?.$2
+                                      .novasConCupo(cupoLua) ??
+                                  const <PezaDaLeccion>[])
+                                if (p.en.isNotEmpty) p.en,
+                            ],
+                    );
+                  },
+                ),
+              ] else if (!_haiMoitasVencidas(context, _leccions)) ...[
+                const SizedBox(height: 10),
+                LeccionDaSemanaCargada(
+                  cursoId: widget.cursoId,
+                  mesCalendario: _toca.dia.mesCalendario,
+                  semana: _toca.dia.semana,
+                  dia: _toca.dia.dia,
+                  language: lang,
+                  audioService: widget.audioService,
                 ),
               ],
             const SizedBox(height: 16),
@@ -1306,8 +1355,16 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
     if (casa == null || neno == null) return false;
     final par =
         lec?.da(widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+    final cupo = casa.store
+        .calcularAxustePara(
+          neno.id,
+          mesCalendario: _toca.dia.mesCalendario,
+          semana: _toca.dia.semana,
+          agora: widget.agora ?? DateTime.now(),
+        )
+        .cupoNovas;
     final excluidas = {
-      for (final p in par?.$2.novas ?? const <PezaDaLeccion>[])
+      for (final p in par?.$2.novasConCupo(cupo) ?? const <PezaDaLeccion>[])
         CriancasStore.claveRepaso(p.en),
     };
     return casa.store.haiMoitasVencidas(
@@ -2061,9 +2118,191 @@ class _LuaPreguntaCard extends StatelessWidget {
   }
 }
 
+class _CapaSemanalCard extends StatelessWidget {
+  const _CapaSemanalCard({
+    required this.capaKey,
+    required this.capaObj,
+    required this.language,
+    this.audioService,
+  });
+
+  final String capaKey;
+  final CapaSemanal capaObj;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final acento = context.acento;
+    final etiquetaCapa = switch (capaKey) {
+      'mais' => isGl ? 'Capa · Máis' : 'Capa · Más',
+      'apoio' => isGl ? 'Capa · Apoio' : 'Capa · Apoyo',
+      _ => 'Capa · Núcleo',
+    };
+    final sigCapa = capaObj.en.isEmpty ? null : Significados.de(capaObj.en);
+    return Container(
+      key: ValueKey('capa_semanal_$capaKey'),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(
+                  color: acento.withValues(alpha: 0.10),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: acento.withValues(alpha: 0.35)),
+                ),
+                child: Text(
+                  etiquetaCapa,
+                  key: ValueKey('capa_semanal_titulo_$capaKey'),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
+                    color: AppTheme.textPrimary,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          if (capaObj.texto.resolve(language).isNotEmpty) ...[
+            const SizedBox(height: 8),
+            Text(
+              capaObj.texto.resolve(language),
+              key: ValueKey('capa_semanal_texto_$capaKey'),
+              style: const TextStyle(
+                fontSize: 15,
+                color: AppTheme.textPrimary,
+                height: 1.35,
+              ),
+            ),
+          ],
+          if (capaObj.en.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            BotonEscuchar(
+              key: ValueKey('capa_semanal_audio_$capaKey'),
+              audioService: audioService,
+              texto: capaObj.en,
+              language: AppLanguage.en,
+              interfaz: language,
+              style: estiloIngles(capaObj.en, paraNeno: true),
+              conVozLenta: true,
+              comoChip: true,
+              colorChip: acento,
+              descripcion: capaObj.en,
+              significado: sigCapa,
+            ),
+            if (sigCapa case final sc?)
+              if (sc.resolve(language).isNotEmpty) ...[
+                const SizedBox(height: 4),
+                Text(
+                  sc.resolve(language),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    color: AppTheme.textSecondary,
+                    height: 1.3,
+                  ),
+                ),
+              ],
+          ],
+          if (capaObj.pezas.isNotEmpty) ...[
+            const SizedBox(height: 10),
+            for (var i = 0; i < capaObj.pezas.length; i++) ...[
+              if (i > 0) const SizedBox(height: 8),
+              Builder(
+                builder: (context) {
+                  final p = capaObj.pezas[i];
+                  final sig = p.significado ?? Significados.de(p.en);
+                  final sigTxt = sig?.resolve(language) ?? '';
+                  final xestoTxt = p.xesto?.resolve(language) ?? '';
+                  return Container(
+                    key: ValueKey('capa_peza_${capaKey}_${p.en}'),
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: AppTheme.pageBg,
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: AppTheme.border),
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        if (p.lamina case final lam?)
+                          if (lam.isNotEmpty) ...[
+                            LaminaPalabra(
+                              clave: lam,
+                              significado: sigTxt.isNotEmpty ? sigTxt : p.en,
+                              lang: language,
+                              ancho: 60,
+                            ),
+                            const SizedBox(width: 10),
+                          ],
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              BotonEscuchar(
+                                audioService: audioService,
+                                texto: p.en,
+                                language: AppLanguage.en,
+                                interfaz: language,
+                                style: estiloIngles(p.en, paraNeno: true),
+                                conVozLenta: true,
+                                comoChip: true,
+                                colorChip: acento,
+                                descripcion: p.en,
+                                significado: sig,
+                              ),
+                              if (sigTxt.isNotEmpty) ...[
+                                const SizedBox(height: 4),
+                                Text(
+                                  sigTxt,
+                                  style: const TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: AppTheme.textPrimary,
+                                    height: 1.3,
+                                  ),
+                                ),
+                              ],
+                              if (xestoTxt.isNotEmpty) ...[
+                                const SizedBox(height: 2),
+                                Text(
+                                  xestoTxt,
+                                  style: const TextStyle(
+                                    fontSize: 14,
+                                    color: AppTheme.textSecondary,
+                                    height: 1.3,
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ],
+          ],
+        ],
+      ),
+    );
+  }
+}
+
 (Crianza, Crianza)? _parellaIrmans(List<Crianza> criancas) {
   if (criancas.length < 2) return null;
-  final orde = CatalogoRetoIrmans.ordeCursos;
+  const orde = CatalogoRetoIrmans.ordeCursos;
   final ordenadas = [...criancas]
     ..sort((a, b) => orde.indexOf(a.curso).compareTo(orde.indexOf(b.curso)));
   final menor = ordenadas.first;
@@ -2171,7 +2410,7 @@ class _RutinasFogarCard extends StatelessWidget {
                       Text(
                         r.xesto.resolve(language),
                         style: const TextStyle(
-                          fontSize: 13,
+                          fontSize: 14,
                           color: AppTheme.textSecondary,
                           height: 1.3,
                         ),

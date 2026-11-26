@@ -20,7 +20,7 @@ void main() {
       .length;
 
   test(
-      'os 10 proxectos: núcleo dunhas 60 pezas en 5 familias, <=3 palabras, sen to be e con capas STEAM',
+      'os 10 proxectos: unhas 20 palabras, dous elementos como moito, sen to be',
       () {
     final ps = Proxectos02.lidos!.proxectos;
     expect(ps, hasLength(10));

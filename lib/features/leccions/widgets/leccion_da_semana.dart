@@ -931,9 +931,11 @@ class LeccionDaSemanaCargada extends StatefulWidget {
   final OfflineAudioService? audioService;
   final bool enAula;
   final int? dia;
+  final int? cupo;
 
   const LeccionDaSemanaCargada({
     this.dia,
+    this.cupo,
     super.key,
     required this.cursoId,
     required this.mesCalendario,
@@ -977,6 +979,7 @@ class _LeccionDaSemanaCargadaState extends State<LeccionDaSemanaCargada> {
             mesCalendario: widget.mesCalendario,
             semana: widget.semana,
             dia: widget.dia,
+            cupo: widget.cupo,
             language: widget.language,
             audioService: widget.audioService,
           );
@@ -1089,6 +1092,7 @@ class LeccionFamilia extends StatefulWidget {
   final int mesCalendario;
   final int semana;
   final int? dia;
+  final int? cupo;
   final AppLanguage language;
   final OfflineAudioService? audioService;
 
@@ -1100,6 +1104,7 @@ class LeccionFamilia extends StatefulWidget {
     required this.semana,
     required this.language,
     this.dia,
+    this.cupo,
     this.audioService,
   });
 
@@ -1150,6 +1155,7 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
         semana: widget.semana,
         language: widget.language,
         audioService: widget.audioService,
+        cupo: widget.cupo,
       );
     }
     final lang = widget.language;
@@ -1161,8 +1167,8 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
     final unidades = g.unidades[widget.cursoId] ?? const [];
     final iU = unidades.indexWhere((u) => u.id == unidade.id);
     final grupo = LeccionDaSemana.grupos[widget.cursoId]?.resolve(lang) ?? '';
-    final pezas =
-        leccion.repaso ? [...leccion.novas, ...leccion.repasa] : leccion.novas;
+    final novas = leccion.novasConCupo(widget.cupo);
+    final pezas = leccion.repaso ? [...novas, ...leccion.repasa] : novas;
     final acento = context.acento;
     final hoxeN = (widget.dia ?? 1).clamp(1, 5);
     final nDia = _diaElixido ?? hoxeN;

@@ -546,11 +546,17 @@ class PasoLeccion {
 }
 
 /// Los pasos del día: qué se hace, cada palabra nueva con su voz y la frase.
-List<PasoLeccion> pasosDoDia(Leccion l, int dia, AppLanguage lang) {
+List<PasoLeccion> pasosDoDia(
+  Leccion l,
+  int dia,
+  AppLanguage lang, {
+  int? cupo,
+}) {
   final isGl = lang == AppLanguage.gl;
   final d =
       l.dias.isEmpty ? null : l.dias[(dia - 1).clamp(0, l.dias.length - 1)];
-  final pezas = l.repaso ? [...l.novas, ...l.repasa] : l.novas;
+  final novas = l.novasConCupo(cupo);
+  final pezas = l.repaso ? [...novas, ...l.repasa] : novas;
   // O-20261111-2: la lámina de la escena solo va en el paso del reto (el día
   // cuyo inglés es la frase del reto). Los demás días enseñan los dibujos de
   // las palabras de la semana, que son las que ese paso nombra.
@@ -591,10 +597,15 @@ List<PasoLeccion> pasosDoDia(Leccion l, int dia, AppLanguage lang) {
 
 /// Los pasos de 0-2 (ACOPROS): las cinco palabras de la semana con su gesto,
 /// la canción y la rima tradicional. Sin frase de gramática.
-List<PasoLeccion> pasosDoProxecto(Proxecto02 p, int semana, AppLanguage lang) {
+List<PasoLeccion> pasosDoProxecto(
+  Proxecto02 p,
+  int semana,
+  AppLanguage lang, {
+  int? cupo,
+}) {
   final isGl = lang == AppLanguage.gl;
   return [
-    for (final w in p.daSemana(semana))
+    for (final w in p.daSemanaConCupo(semana, cupo))
       PasoLeccion(
         titulo: isGl ? 'Escoita e fai o xesto' : 'Escucha y haz el gesto',
         texto: w.xesto.resolve(lang),
@@ -1178,6 +1189,7 @@ void abrirLeccionDuolingo(
   CriancasStore? store,
   Crianza? crianza,
   DateTime? agora,
+  int? cupo,
 }) {
   final proxecto =
       cursoId == 'curso_0_2' ? Proxectos02.lidos?.doMes(mesCalendario) : null;
@@ -1186,17 +1198,17 @@ void abrirLeccionDuolingo(
       de: context,
       builder: (_) => LeccionDuolingoScreen(
         pasos: proxecto != null
-            ? pasosDoProxecto(proxecto, semanaN, language)
-            : pasosDoDia(leccion, dia, language),
+            ? pasosDoProxecto(proxecto, semanaN, language, cupo: cupo)
+            : pasosDoDia(leccion, dia, language, cupo: cupo),
         language: language,
         audioService: audioService,
         store: store,
         crianza: crianza,
         semana: semana,
         palabrasDaSemana: proxecto != null
-            ? [for (final w in proxecto.daSemana(semanaN)) w.en]
+            ? [for (final w in proxecto.daSemanaConCupo(semanaN, cupo)) w.en]
             : [
-                for (final p in leccion.novas)
+                for (final p in leccion.novasConCupo(cupo))
                   if (p.en.isNotEmpty) p.en,
               ],
         agora: agora,

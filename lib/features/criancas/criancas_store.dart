@@ -207,7 +207,7 @@ class Crianza {
       nome: nome,
       idade: idade.clamp(0, 6),
       curso: curso,
-      mesNacemento: mes == null ? null : mes.clamp(1, 12),
+      mesNacemento: mes?.clamp(1, 12),
       anoNacemento: ano,
       promocionVistaAno: prom,
       rutinas: normalizarRutinas(rRaw),

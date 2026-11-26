@@ -136,6 +136,8 @@ run_gate "sibling challenges are regenerated (M3)" \
   python3 tools/gen_reto_irmans.py --check
 run_gate "every week in 5 ages has 3 STEAM layers, 6 unique M2 routines and sibling challenges" \
   python3 tools/check_capas_semana.py
+run_gate "levels, review returns and age ceilings pass audit" \
+  python3 tools/auditoria_niveles.py --gate
 # O-20261126-5 (punto 6): ninguna sustitución de vocabulario por edad sin aplicar.
 run_gate "age vocabulary substitutions are applied" python3 tools/vocab_idade.py --check
 # La gramática del curso (Frank, 28/10/2026): los 20 puntos de A1-A2 en las
