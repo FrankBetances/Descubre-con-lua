@@ -652,6 +652,7 @@ Decisión: las 72 palabras raras de PENDENTES_FRANK se cambian también; la pala
 - [x] Vocabulario de 2-3 a 5-6 sin palabras ajenas a la edad; gate de lista · evidencia: tools/vocab_idade.py (131 sustituciones en lección, banco TPR y cuento; --check en tools/gates.sh) y tools/planificador_5_palabras.py (las que vuelven de otra edad, marcadas «volve»)
 - [ ] Umbral de vueltas corregido y auditoria_niveles.py --gate en tools/gates.sh a cero · evidencia:
 > (26/11/2026) «Cuando termines Mergea y push al main»
+> (26/11/2026, a pregunta de Claude Code) «sí, borra las 740» (grabaciones sobrantes, 8,4 MB)
 - [ ] gates.sh y flutter test completos en verde, mergeado en main con CI en verde y los audios generados · evidencia:
 
 ## O-20261126-6 · Un único prompt completo para Antigravity, sin trozos
