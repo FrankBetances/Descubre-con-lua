@@ -50,6 +50,61 @@ el binario en vez de la configuración.
 `versionCode` sale del número de run del workflow, porque Play exige que cada
 subida lleve uno mayor que el anterior; `pubspec.yaml` lo deja fijo en 1.
 
+## Comprobación técnica, construcción y estructura (movido desde el README en P11.9)
+
+### Gates y comprobación local
+
+```bash
+flutter pub get
+tools/gates.sh --fast   # formato, análisis, tests y gates de contenido
+tools/gates.sh          # además compila el APK release y audita sus permisos
+```
+
+CI ejecuta ese mismo script (`.github/workflows/ci.yml`). La lista completa de gates vive en `tools/gates.sh` (incluye `check_capas_semana.py`, `gen_reto_irmans.py --check`, `gen_gramatica.py --check`, `gen_acopros_0_2.py --check`, `gen_leccions.py --check`, `export_voice_corpus.py --check`, `check_voz_lenta.py`, `check_finalidade.py`, `check_lexico_galicia.py`, `check_no_emoji.py`, `check_manual_build.py`, `check_legal_urls.py --offline`, `dart format`, `flutter analyze`, `flutter test` y la auditoría de permisos del APK con `aapt2`). `python3 tools/auditoria_niveles.py --gate` complementa la auditoría de progresión y niveles por edad.
+
+### Tubería de voz y verificación de privacidad
+
+```bash
+python3 tools/export_voice_corpus.py       # corpus desde assets/content -> voice-corpus.json (41.549 locuciones)
+python3 tools/generate_voice_assets.py --lang gl
+python3 tools/check_voice_coverage.py      # ¿falta alguna grabación?
+```
+
+El almacenamiento local privado (`premios.json`, `progreso.json`, `criancas.json`) está vigilado por `test/features/premios_test.dart`, `test/core/progreso_privacidad_test.dart` y `test/core/criancas_privacidad_test.dart`, la comprobación de permisos binarios sobre el APK compilado con `aapt2` y la comprobación diaria de URLs legales en `.github/workflows/legal-urls.yml`.
+
+### Manual, catálogo y capturas
+
+```bash
+python3 tools/gen_catalogo.py                   # → docs/catalogo-por-idades.html
+CHROMIUM_PATH=<chrome> node docs/build-catalogo.js  # → docs/Descubre-con-Lua-Material-por-edades.pdf
+flutter test --tags capturas --update-goldens test/capturas_test.dart
+CHROMIUM_PATH=<chrome> node docs/build-pdf.js   # → docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf
+python3 docs/build-docx.py                      # → docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx
+python3 tools/check_manual_build.py             # ¿alguno se quedó atrás?
+```
+
+Ver [`docs/capturas/README.md`](docs/capturas/README.md) para el detalle de regeneración de capturas del manual y capturas reales de escritorio (`Xvfb 460×1000` en `docs/capturas/escritorio/`).
+
+### Estructura del repositorio
+
+```text
+lib/core/       tema, idiomas, audio (servicio, reproductor nativo, ids de voz), repaso FSRS
+lib/data/       modelos, cargador, repositorio, validador de contenido
+lib/features/   juega/ (aula, asamblea de 4 fases, canciones con pulso, formación docente)
+                academy/ (familias) · calendario/ (escola·fogar, 0-6 anos)
+                familias/ (hoxe, explorar, rutinas, reto) · criancas/ (ficha, proba_entrada, axuste_semanal, reto_irmans)
+                leccions/ (calendario de leccións, gramática por teitos, proxecto 0-2)
+                english/ (palabras, repaso, escoita, colocacións, fonemas)
+                estimulacion/ (estimulación del lenguaje y el pensamiento + RA)
+                premios/ (insignias y medallas) · bienvenida/ · creditos/
+assets/content/ unidades del mes, cápsulas, asambleas, canciones, acopros 0-2, leccións con 3 capas e 6 rutinas, nivel/ (proba_entrada.json, reto_irmans.json), bilingües
+assets/voice/   grabaciones neuronales (generadas en CI)
+assets/brand/   rejilla de píxeles de Lúa, láminas vectoriales, insignias y logos
+docs/capturas/  imágenes del manual y capturas de escritorio Linux
+tools/          gates, generadores de currículo y tubería de voz
+LICENSE.md      condiciones de uso: familias gratis, instituciones con licencia
+```
+
 ## Plan docente · registro de módulos
 
 El plan está en `docs/PLAN_MEJORA_INTEGRAL.md` y la arquitectura de destino en
