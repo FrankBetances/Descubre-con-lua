@@ -572,3 +572,18 @@ Reparto: todo lo hace Antigravity (P10.0–P10.9); Claude Code solo valida e int
 - [x] Inglés de las frases de cada palabra revisado · evidencia: docs/p10-ingles.md y tools/check_plan_escoita.py
 - [x] Manual con capturas nuevas, PDF y Word mirados página a página · evidencia: tools/check_manual_build.py y docs/p10-control.md
 - [ ] Revisado por Claude Code y mergeado en main con CI en verde y los audios generados · evidencia:
+
+## O-20261126-1 · Auditoría forense y plan: varios niños por familia, nivel por edad, prueba de nivel y repaso
+Estado: abierta
+> ayudame a realizar un plan de mejoras , primero necesito que tenga registro multiples, porque una misma familia puede tener multiples niños en cursos distintos, ademas tenemos muchos problemas con los niveles ajustados a la edad,  primero que nada la edad de 0-2 años deberia centrarse en temas muy sencillos como adjetivos, sustantivos, onomatopeyas, aprender a reconocer tareas o eventos, o incluso aprender las series mas básicas, siempre con muchas repeticiones, luego en los niños mayores, tenemos el problema de que no sabemos que nivel tienen, creo que deberían hacer un pequeño examen básico para identificar el nivel y que se ajuste a su conocimiento, y luego las repeticiones de las lecciones anteriores son muy muy deficientes, y entre semana y semana el nivel del contenido tambien esta desajustado, primero realiza una auditoria forense, analiza como podemos hacer las mejoras y plantea un plan completo de mejoras
+Fuente: assets/content/leccions/leccions.json, assets/content/acopros/proxectos_0_2.json, assets/content/gramatica/gramatica.json, tools/gen_leccions.py, lib/features/criancas/ y lib/core/fsrs_service.dart, medidos con tools/auditoria_niveles.py
+Reparto: Claude Code audita y propone; la ejecución, por fases, con las decisiones D1-D5 de Frank.
+
+- [x] Auditoría forense medida por script de los cinco cursos: registro de varios niños, 0-2, nivel de entrada, repaso y progresión semana a semana, cada hallazgo con su causa en el código · evidencia: tools/auditoria_niveles.py y docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 2)
+- [x] Plan completo: cada parte de la orden con su fase, lo que Frank ve y dónde, y el gate que la cierra · evidencia: docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 4)
+- [ ] Decisiones de Frank D1 (48 unidades), D2 (prueba de nivel sin pantalla para el niño), D3 (datos nuevos), D4 (rehacer 0-2) y D5 (ritmo por edad), escritas aquí · evidencia:
+- [ ] Na casa → alta y Hoxe: varios niños de cursos distintos visibles a la vez, cada uno con su tarea, sus premios y su repaso · evidencia:
+- [ ] Na casa → Hoxe: «Volven hoxe / Vuelven hoy» por niño; cada palabra vuelve al menos 4 veces en el curso y alguna pasado un mes (tools/auditoria_niveles.py --gate en tools/gates.sh) · evidencia:
+- [ ] Al registrar un niño de 2 años o más: juego de Lúa para saber por dónde empezar, dirigido por la persona adulta, que fija su punto de partida y siembra su repaso · evidencia:
+- [ ] 0-2 años: sustantivos, adjetivos, onomatopeyas, rutinas y sucesos y series básicas, con el STEAM del mes y muchas repeticiones · evidencia:
+- [ ] De una semana a la siguiente el nivel sube sin saltos y la gramática no pasa del techo de cada edad, en las cinco edades (tools/auditoria_niveles.py --gate) · evidencia:
