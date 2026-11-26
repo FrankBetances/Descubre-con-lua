@@ -604,7 +604,7 @@ Reparto: Claude Code lo diseña en el plan; se programa en la fase F3b con las d
 - [x] Diseño del ajuste dinámico en el plan: qué lee, qué decide (cupo, mezcla, peldaño), reglas con sus umbrales, tres capas de contenido por semana, qué ve la familia, qué guarda y cómo se comprueba · evidencia: docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 4b y fila F3b)
 - [x] Decisión de Frank D6 (proponer o esconder y umbrales), escrita aquí · evidencia: docs/ORDENES.md (decisión de Frank del 26/11/2026 en O-20261126-1: «Apruebo d1 a d6»; se propone y no se esconde, umbrales de la sección 4b)
 - [ ] Na casa → Hoxe: el cupo de palabras nuevas, el repaso y el peldaño de cada niño cambian cada lunes según lo marcado la semana anterior y una línea en gl y es dice por qué; un test de cuatro niños simulados durante cuarenta semanas lo comprueba · evidencia:
-- [ ] Cada semana de las cinco edades tiene núcleo, «Máis / Más» y «Apoio / Apoyo», las tres con el STEAM del mes; un gate lo comprueba · evidencia:
+- [x] Cada semana de las cinco edades tiene núcleo, «Máis / Más» y «Apoio / Apoyo», las tres con el STEAM del mes; un gate lo comprueba · evidencia: tools/check_capas_semana.py (200 semanas, las tres capas con su STEAM y sus piezas)
 
 ## O-20261126-3 · Plan completo para que lo ejecute Antigravity, revisado por Claude Code
 Estado: abierta
@@ -633,7 +633,7 @@ Reparto: lo hace Antigravity dentro de P11.0–P11.11; Claude Code revisa.
 ## O-20261126-5 · Claude Code termina P11 y lo mergea en main
 Estado: abierta
 > Haz tú lo que falta y mergea en main
-Fuente: rama antigravity/niveles (52397432) y la revisión de Claude Code del 26/11/2026 (cupo sin aplicar, capas de plantilla, vocabulario de 2-6 sin recalibrar, umbral de vueltas, 3 tests rojos, P11.10 y P11.11)
+Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md y docs/PROMPTS_ANTIGRAVITY.md (P11), sobre la rama antigravity/niveles (52397432) revisada por Claude Code el 26/11/2026
 Reparto: Claude Code, en claude/intelligent-mayer-e3iriy sobre antigravity/niveles.
 > (26/11/2026) Vamos a ver, yo quiero que hagas ahora lo más pesado, el cinco y el seis, Cuando termines de la más pesado, vas a parar y volvemos a empezar con el trabajo con anti Gravity
 Decisión: Claude Code hace solo el 5 (capas «Más» y «Apoyo» escritas) y el 6 (vocabulario de 2-3 a 5-6 por edad) y para; lo demás vuelve a Antigravity.
@@ -641,7 +641,8 @@ Decisión: Claude Code hace solo el 5 (capas «Más» y «Apoyo» escritas) y el
 - [ ] Los tests que fallaban (significados_test, ux_l6_test gl y es) en verde sin saltar ninguno · evidencia:
 - [ ] El cupo de cada niño cambia el número de palabras nuevas que ve en Hoxe; test con dos cupos distintos · evidencia:
 - [ ] Hoxe enseña el contenido de la capa elegida (piezas, frase y voz) · evidencia:
-- [ ] Capas «Máis / Más» y «Apoio / Apoyo» escritas, sin plantilla, en las 200 semanas; gate que falla con texto de plantilla · evidencia:
+- [x] Capas «Máis / Más» y «Apoio / Apoyo» escritas, sin plantilla, en las 200 semanas; gate que falla con texto de plantilla · evidencia: tools/check_capas_semana.py (0 fallos en las 200 semanas; falla con las capas de plantilla de 52397432) y tools/gen_leccions.py
+> (26/11/2026, Claude Code) 58 sustituciones hechas (55 órdenes largas y 3 palabras) en lección, banco TPR y cuento; 72 palabras raras pendientes de Frank porque su sustituta sencilla ya es nueva en otra edad y el modelo de 4.000 palabras no deja repetirla (tools/vocab_idade.py, PENDENTES_FRANK).
 - [ ] Vocabulario de 2-3 a 5-6 sin palabras ajenas a la edad; gate de lista · evidencia:
 - [ ] Umbral de vueltas corregido y auditoria_niveles.py --gate en tools/gates.sh a cero · evidencia:
 - [ ] gates.sh y flutter test completos en verde, mergeado en main con CI en verde y los audios generados · evidencia:
