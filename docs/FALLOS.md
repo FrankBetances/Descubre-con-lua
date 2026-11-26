@@ -154,3 +154,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: Frank pidió el prompt completo con las mejoras M1-M5. Claude Code se lo dio en el chat y dijo que lo guardaría y mergearía «cuando digas sigue», aunque Frank ya había ordenado tenerlo todo; Frank tuvo que volver a pedirlo con Antigravity trabajando. Lo hizo Claude Code.
 - Causa raíz: Claude Code aplicó la entrega de texto (R-ENTREGA, sin herramientas en ese turno) como si dejar el repositorio a medias fuera aceptable, en vez de guardarlo en el turno siguiente sin pedir permiso para algo ya ordenado.
 - Guarda: tools/check_prompt_vigente.py (falla si docs/ORDENES.md da por aprobadas mejoras M<n> y ninguna sección «vigente» de docs/PROMPTS_ANTIGRAVITY.md las nombra; dentro de tools/gates.sh)
+
+## F-20261126-6 · Claude Code le dio a Frank una cuenta de pendientes con criterios ya hechos
+- Qué pasó: Claude Code le dijo a Frank que faltaban 15 criterios. Cuatro estaban hechos por Antigravity en la rama, con sus tests en verde (varios niños, alta con la prueba dentro, 0-2 y nivel sin saltos), y la tabla docs/p11-control.md ya los daba por hechos. Frank respondió que era falso. Lo hizo Claude Code.
+- Causa raíz: Claude Code repitió la cuenta del aviso automático, que lee los «- [ ]» de docs/ORDENES.md, sin pasar a ORDENES lo que ya había comprobado en la rama ni decir de cada criterio abierto qué le faltaba.
+- Guarda: tools/check_ordenes_abertas.py (falla si un criterio con evidencia en una tabla de control sigue abierto en docs/ORDENES.md sin una línea «> Abierto (…)» que diga qué falta; dentro de tools/gates.sh)

@@ -138,6 +138,8 @@ run_gate "every week in 5 ages has 3 STEAM layers, 6 unique M2 routines and sibl
   python3 tools/check_capas_semana.py
 # O-20261126-5 (punto 6): ninguna sustitución de vocabulario por edad sin aplicar.
 run_gate "age vocabulary substitutions are applied" python3 tools/vocab_idade.py --check
+# F-20261126-6: un criterio con evidencia en la tabla de control no sigue abierto sin motivo.
+run_gate "done criteria are not left open" python3 tools/check_ordenes_abertas.py
 # La gramática del curso (Frank, 28/10/2026): los 20 puntos de A1-A2 en las
 # cinco edades, sin bajar de una edad a la siguiente.
 run_gate "course grammar covers A1-A2 across the five ages" \
