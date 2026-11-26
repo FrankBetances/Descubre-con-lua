@@ -587,3 +587,14 @@ Reparto: Claude Code audita y propone; la ejecución, por fases, con las decisio
 - [ ] Al registrar un niño de 2 años o más: juego de Lúa para saber por dónde empezar, dirigido por la persona adulta, que fija su punto de partida y siembra su repaso · evidencia:
 - [ ] 0-2 años: sustantivos, adjetivos, onomatopeyas, rutinas y sucesos y series básicas, con el STEAM del mes y muchas repeticiones · evidencia:
 - [ ] De una semana a la siguiente el nivel sube sin saltos y la gramática no pasa del techo de cada edad, en las cinco edades (tools/auditoria_niveles.py --gate) · evidencia:
+
+## O-20261126-2 · Ajuste dinámico: el material crece con lo que el niño sabe
+Estado: abierta
+> Podrías agregar alguna forma que sea dinámico, que, dependiendo de los conocimientos que vaya adquiriendo de los resultados del test de entrada, la cantidad de material al que accede, sea distinto y ajustado a sus capacidades
+Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md (H3 y H4: las marcas «aún no / la entiende / la dice» de lib/features/criancas/criancas_store.dart y el FSRS de lib/core/fsrs_service.dart); no copia de otro producto
+Reparto: Claude Code lo diseña en el plan; se programa en la fase F3b con las decisiones D1, D5 y D6 de Frank.
+
+- [x] Diseño del ajuste dinámico en el plan: qué lee, qué decide (cupo, mezcla, peldaño), reglas con sus umbrales, tres capas de contenido por semana, qué ve la familia, qué guarda y cómo se comprueba · evidencia: docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 4b y fila F3b)
+- [ ] Decisión de Frank D6 (proponer o esconder y umbrales), escrita aquí · evidencia:
+- [ ] Na casa → Hoxe: el cupo de palabras nuevas, el repaso y el peldaño de cada niño cambian cada lunes según lo marcado la semana anterior y una línea en gl y es dice por qué; un test de cuatro niños simulados durante cuarenta semanas lo comprueba · evidencia:
+- [ ] Cada semana de las cinco edades tiene núcleo, «Máis / Más» y «Apoio / Apoyo», las tres con el STEAM del mes; un gate lo comprueba · evidencia:

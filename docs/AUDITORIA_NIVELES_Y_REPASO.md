@@ -1,6 +1,7 @@
 # Auditoría y plan · varios niños por familia, nivel por edad y repaso
 
-Orden O-20261126-1 de Frank (26/11/2026), copiada literal en `docs/ORDENES.md`.
+Órdenes O-20261126-1 y O-20261126-2 de Frank (26/11/2026), copiadas literal en
+`docs/ORDENES.md`.
 Este documento no cambia nada de la app: mide, explica la causa y propone. Lo que
 sale de él se ejecuta solo con las decisiones de Frank de la sección 3.
 
@@ -162,6 +163,14 @@ app: palabras nuevas por semana 2-3 en 0-2, 3 en 2-3, 3-4 en 3-4, 4 en 4-5 y
 4-5 en 5-6, y frase máxima de 3, 4, 5, 6 y 7 palabras. Son cifras de partida,
 no datos de un estudio.
 
+**D6 · Ajuste dinámico (O-20261126-2).** Dos preguntas. Primera: si el
+material que no toca se esconde o solo se deja de proponer. Recomiendo lo
+segundo: Hoxe propone lo justo para ese niño, y Explorar sigue enseñándolo todo
+a la persona adulta, que a veces tiene dos hijos o quiere adelantarse. Esconder
+contenido a quien paga por él genera quejas y no aporta nada al niño. Segunda:
+los umbrales de la sección 4b. Son mi propuesta; conviene que la logopeda los
+revise antes de programarlos.
+
 ## 4. Plan por fases
 
 Cada fase acaba en algo que Frank ve en la app, por su camino, en gallego y en
@@ -174,16 +183,90 @@ la fase que corrige cada uno, no antes, porque hoy tumbaría CI.
 | F1 · Familia con varios niños | Na casa: al dar de alta, «¿Hay otro neno na casa?». En Hoxe, arriba, una fila con cada niño (Lúa y su nombre) y la tarea de hoy de cada uno; un toque cambia de niño. El curso solo se cambia dentro de «Editar». Premios por niño | D3 (si se guarda la fecha) | widget test con tres niños en tres cursos y capturas gl/es |
 | F2 · Repaso por niño | En Hoxe, «Volven hoxe / Vuelven hoy»: 2 a 4 palabras de cualquier semana anterior, elegidas por el FSRS de ese niño. «La dice» alarga el intervalo, «la entiende» lo mantiene, «aún no» lo acorta. En el aula, donde no hay niños, vuelven a 1, 2, 4, 8 y 16 semanas fijas | D3 | `auditoria_niveles.py --gate`: cada palabra vuelve al menos 4 veces y alguna pasado un mes; test de la tarjeta por niño |
 | F3 · Prueba de nivel | Al registrar un niño de 2 años o más, y cuando se quiera desde su ficha: «Xogo de Lúa para saber por onde empezar». Peldaños de comprensión de órdenes, señalar, contraste, decir la palabra y decir una frase corta, con palabras del STEAM de su curso. Para tras tres fallos seguidos; el peldaño es el último con dos de tres. Siembra el repaso con lo que ya sabe | D1, D2, D3 | test del árbol de decisión y de la siembra |
+| F3b · Ajuste dinámico | Na casa → Hoxe: cada lunes, cuántas palabras nuevas tiene el niño, cuánto repaso y en qué peldaño está cambian según lo que la familia marcó la semana anterior; una línea dice por qué («Esta semana 4 palabras novas: Uxía xa di 4 das 5 da anterior»). Ver 4b | F2, F3, D1, D5, D6 | test con cuatro niños simulados (rápido, medio, lento y sin marcas) y gate de capas por semana |
 | F4 · 0-2 rehecho | Na casa, 0-2: dos o tres piezas nuevas por semana de las cinco familias de D4, frases de tres palabras como mucho, y lo de semanas anteriores volviendo cada día | D4, D5 | `--gate` en 0-2 |
 | F5 · 2-3 a 5-6 recalibrados | Cada semana un poco más que la anterior, sin saltos; la gramática dentro del techo de su edad y avanzando por peldaño | D1, D5 | `--gate` en las cuatro edades |
 | F6 · Capas | Audio gl, es y en de cada frase cambiada, imprimible, manual con capturas nuevas, privacidad y ficha de Play si cambian los datos; mergeado en `main` con CI en verde | todas | `tools/gates.sh`, `check_voice_coverage.py`, `check_manual_build.py` |
 
 Orden que recomiendo: F1 y F2 primero, porque arreglan dos de las quejas sin
-tocar contenido ya aprobado; F3 en cuanto estén D1 a D3; F4 y F5 después.
+tocar contenido ya aprobado; F3 en cuanto estén D1 a D3; F3b justo después,
+porque sin la prueba y el repaso por niño no tiene de dónde leer; F4 y F5
+después, ya escritas en las tres capas de 4b.
 
 Coste, dicho antes (R00). F4 y F5 rehacen frases con voz: cientos de audios
 nuevos en tres idiomas que genera el workflow de voz. F1 y F2 son código y no
 generan audio.
+
+## 4b. Ajuste dinámico: el material crece con lo que el niño ya sabe
+
+Pedido por Frank el 26/11/2026 (O-20261126-2). Todo es **[propuesta]**.
+
+**Qué decide.** Tres mandos por niño, que se recalculan cada lunes, sin red y
+con reglas fijas que se pueden explicar a la familia (nada de inteligencia
+artificial): el **cupo** de palabras nuevas de la semana, la **mezcla** de
+nuevo y repaso de cada día, y el **peldaño** de la escalera de D1, que fija la
+longitud de la frase y la gramática.
+
+**De qué lee.** Del punto de partida que dio la prueba de entrada (F3), de lo
+que la persona adulta marcó la semana anterior («aún no», «la entiende», «la
+dice»), de las tarjetas de repaso de ese niño que vencen esta semana (F2) y de
+cuántos días se hizo el juego. Las marcas ya existen hoy (H3); la prueba y el
+repaso por niño son F3 y F2.
+
+**Reglas de partida.** La tasa de la semana es la parte de las palabras nuevas
+que el niño entiende o dice.
+
+| Lo que pasó la semana anterior | Qué cambia esta semana |
+| --- | --- |
+| Entiende el 80 % o más y dice el 50 % o más | Una palabra nueva más, hasta el máximo de su edad, y se abre la capa «Máis / Más» |
+| Entiende entre el 50 % y el 79 % | Igual que la semana anterior |
+| Entiende menos del 50 % | Una palabra nueva menos, hasta el mínimo de su edad, se usa la capa «Apoio / Apoyo» y el repaso gana peso |
+| Menos del 30 % tres semanas seguidas | Semana de consolidar: ninguna palabra nueva, todo repaso; el peldaño baja uno |
+| Dice el 80 % de las piezas del peldaño dos semanas seguidas | Sube un peldaño, sin pasar del techo de su edad (D1) |
+| Más de 6 tarjetas de repaso vencidas | Ese día no entran palabras nuevas, para no pasar de cinco minutos |
+| La familia no marcó nada | No sube ni baja: sigue el ritmo base de su edad. Nunca se inventa un avance |
+
+Cupo de palabras nuevas por semana, mínimo y máximo: 0-2 de 1 a 3; 2-3 de 2 a
+4; 3-4 de 2 a 5; 4-5 de 3 a 6; 5-6 de 3 a 7. Arrancan en la cifra de D5 o en la
+que diga la prueba de entrada.
+
+**Qué exige al contenido.** Para que haya material distinto según el niño, cada
+semana tiene que estar escrita en tres capas, y las tres nombran el STEAM del
+mes y la parte que trabajan (R-STEAM). El **núcleo** lo ve todo niño de esa
+edad. **Máis / Más** es para el que va rápido: dos o tres piezas más del mismo
+experimento y una frase del peldaño siguiente. **Apoio / Apoyo** es para el que
+va despacio: la misma idea con una frase más corta y una palabra ya conocida.
+Escribirlo es trabajo nuevo, no se rellena repitiendo lo que hay (R∞.3).
+Además, cada pieza lleva su peldaño y su longitud, y así el motor elige sin
+mirar el texto.
+
+**Qué ve la familia.** En Hoxe, una línea con el porqué del cambio de la semana,
+en gallego y en castellano, sin notas ni porcentajes: «Esta semana, catro
+palabras novas: Uxía xa di catro das cinco da semana pasada». En la ficha del
+niño, su peldaño y cómo ha ido cambiando. En el aula no cambia nada: no hay
+niños registrados y la docente sigue el núcleo.
+
+**Qué no hace.** No etiqueta ni compara al niño con otros, no diagnostica, no
+lleva lenguaje clínico (lo vigila `tools/check_finalidade.py`) y no le quita
+nada a la persona adulta: todo el material sigue en Explorar.
+
+**Qué guarda de nuevo** (forma parte de D3). En `criancas.json`, por niño, el
+peldaño, el cupo y, por semana del curso (`curso/mes/semana`, sin fecha ni
+hora), la tasa y la capa usada. Obliga a actualizar en el mismo cambio la
+política de privacidad, el formulario de Play y
+`test/core/criancas_privacidad_test.dart`.
+
+**Cómo se comprueba.** Un test que hace pasar cuarenta semanas a cuatro niños
+simulados (uno rápido, uno medio, uno lento y uno sin marcas) y comprueba que
+el cupo y el peldaño se quedan dentro de los límites de su edad, que el niño
+sin marcas no se mueve y que el lento llega a la semana de consolidar. Un gate
+de contenido que falla si una semana no tiene sus tres capas o si alguna no
+nombra el STEAM del mes.
+
+**Riesgo principal.** Si la familia marca a la ligera, el motor sube demasiado
+rápido. Por eso para subir de peldaño hacen falta dos semanas seguidas, el
+repaso devuelve las palabras que se marcaron como sabidas y, si después no
+salen, la regla del 50 % vuelve a frenar.
 
 ## 5. Riesgos
 
