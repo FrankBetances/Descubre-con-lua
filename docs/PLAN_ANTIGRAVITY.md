@@ -165,6 +165,7 @@ commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
 | P8.43 | Claude Code: mejoras que frenan solas (pre-push, CI de un minuto, regenerar_todo) | 8 | no |
 | P8.44 | Claude Code: un único build con una sola copia de cada artefacto | 8 | no |
 | P8.45 | Claude Code: gate de evidencia honesta (F-20261126-13) | 8 | no |
+| P8.46 | Claude Code: cierre de O-20261126-3, -5, -7 y -9 con el run 617 en verde | 8 | no |
 | P8.21 | Claude Code: evidencia del merge del PR #64 | 8 | no |
 | P8.20 | Claude Code: «Oír despacio» sin desbordar con letra grande | 8 | no |
 | P8.19 | Claude Code: lista de pendientes al día y merge de P9 | 8 | no |
@@ -513,4 +514,5 @@ Base: `6be3d38b`
 | P8.42 | 46e3d2a2 | 2026-11-26 | main otra vez en verde: guía de casa de 16 unidades y lecciones de 200 semanas regeneradas; guarda antes_de_mergear.sh; fallos F-20261126-10 y -11 | gen_hogar --check, gen_leccions --check, check_fallos | assets/content/leccions/leccions.json, assets/content/unidades_mes, tools/antes_de_mergear.sh, docs/FALLOS.md, CLAUDE.md, docs/PLAN_ANTIGRAVITY.md | |
 | P8.43 | 4e47b4d7 | 2026-11-26 | Mejoras que frenan solas: hook pre-push, paso de CI de un minuto y regenerar_todo; fallo F-20261126-12 | generadores_al_dia.sh en verde, regenerar_todo sin cambios, check_fallos | tools/git-hooks/pre-push, tools/generadores_al_dia.sh, tools/regenerar_todo.sh, .github/workflows/ci.yml, docs/FALLOS.md, docs/PLAN_ANTIGRAVITY.md | |
 | P8.44 | 2a4daa4d | 2026-11-26 | Un único build: una sola copia de cada artefacto (KEEP_ARTIFACTS_PER_NAME a 1) y la orden O-20261126-9 | check_ordenes, check_registro_commits | .github/workflows/ci.yml, docs/ORDENES.md, docs/PLAN_ANTIGRAVITY.md | |
-| P8.45 | este | 2026-11-26 | Gate check_evidencia_honesta y fallo F-20261126-13 (dar por listo lo que no lo estaba e intentar cerrar criterios sin hacerlos) | check_evidencia_honesta (rojo con el cierre engañoso, verde con ORDENES de hoy), check_fallos | tools/check_evidencia_honesta.py, tools/gates.sh, docs/FALLOS.md, docs/PLAN_ANTIGRAVITY.md | |
+| P8.45 | 84c2f7d3 | 2026-11-26 | Gate check_evidencia_honesta y fallo F-20261126-13 (dar por listo lo que no lo estaba e intentar cerrar criterios sin hacerlos) | check_evidencia_honesta (rojo con el cierre engañoso, verde con ORDENES de hoy), check_fallos | tools/check_evidencia_honesta.py, tools/gates.sh, docs/FALLOS.md, docs/PLAN_ANTIGRAVITY.md | |
+| P8.46 | este | 2026-11-26 | Cerradas O-20261126-3, -5, -7 y -9 con el run 617 de main en verde, la revisión de 15 semanas al azar y una sola copia de cada artefacto | check_ordenes, check_ordenes_mergeadas, check_evidencia_honesta, check_ordenes_abertas | docs/ORDENES.md, docs/PLAN_ANTIGRAVITY.md | |
