@@ -1464,8 +1464,8 @@ Con lámina: 3515. Sin lámina por decisión de Frank: 824. **Sin lámina todav�
 | Healthy snack | Merenda saudable | Merienda saludable | Enseñar una fruta | `pal_healthy_snack` | composta | Plato de merienda saludable con manzana fresca y zanahoria. |
 | healthy | san | sano | — | `pal_healthy` | composta | Verdura y fruta sana acompañadas de corazón saludable. |
 | Heaped | Amoreado | Amontonado | Hacer un montón de arena | `pal_heaped` | nova | Cuenco colmado con un montón muy alto por encima del borde. |
-| Hear loud rice with me. | Oio o arroz forte comigo. | Oye el arroz fuerte conmigo. | — | `pal_loud` | reutilizada | Frase do STEAM do mes representada pola lámina de «loud» (pal_loud). |
 | Hear that soft sound! | Oes ese son suave? | ¡Oye ese sonido suave! | — | `pal_soft` | reutilizada | Frase do STEAM do mes representada pola lámina de «soft» (pal_soft). |
+| Hear the loud rice with me. | Oio o arroz forte comigo. | Oye el arroz fuerte conmigo. | — | `pal_loud` | reutilizada | A mesma frase que «hear loud rice with me», corrixida en inglés (O-20261126-5). |
 | Hearing | Oído | Oído | Señalar las orejas | `pal_hearing` | nova | Oreja recibiendo ondas de sonido señalada para representar el sentido del oído. |
 | Heart shape | Forma de corazón | Forma de corazón | Hacer un corazón con las manos | `pal_heart_shape` | nova | Manos dibujando con cuidado la forma de un corazón rojo. |
 | Heart | Corazón | Corazón | Poner la mano en el corazón y sentir el latido | `pal_heart` | composta | Corazón latiendo y niño sintiendo el pulso con la mano sobre el pecho. |
@@ -1695,12 +1695,12 @@ Con lámina: 3515. Sin lámina por decisión de Frank: 824. **Sin lámina todav�
 | In and out | Dentro e fóra | Dentro y fuera | Meter y sacar el juguete de la caja | `pal_in_and_out` | nova | Pelota entrando y saliendo de una caja abierta con doble flecha. |
 | In autumn we mix warm colours. | No outono mesturamos cores cálidas. | En otoño mezclamos colores cálidos. | — | `pal_autumn` | reutilizada | Frase do STEAM do mes representada pola lámina de «autumn» (pal_autumn). |
 | In autumn, count cat legs! | No outono conta patas de gato! | ¡En otoño cuenta patas de gato! | — | `pal_autumn` | reutilizada | Frase do STEAM do mes representada pola lámina de «autumn» (pal_autumn). |
-| In morning, shadow will stretch. | Pola mañá a sombra estirarase. | Por la mañana se estirará. | — | `pal_morning` | reutilizada | Frase do STEAM do mes representada pola lámina de «morning» (pal_morning). |
 | In my arms | Nos meus brazos | En mis brazos | Coger al bebé en brazos | `pal_in_my_arms` | composta | Persona sosteniendo suavemente al bebé en sus brazos. |
 | In order | En orde | En orden | Poner tres cosas en fila | `pal_in_order` | nova | Tres cubos ordenados en fila creciente de tamaño. |
 | In the barn | Na corte | En el establo | Entrar agachados en un establo imaginario | `pal_in_the_barn` | nova | Establo rojo de granja con las puertas abiertas y heno dentro. |
 | In the basket | No cesto | En la cesta | Meter castañas imaginarias en la cesta de los brazos | `pal_in_the_basket` | nova | Bellotas entrando dentro de una cesta de mimbre. |
 | In the bath | No baño | En el baño | Meter un pie y luego el otro en una bañera imaginaria | `pal_in_the_bath` | composta | Bañera blanca llena de espuma donde se entra levantando un pie. |
+| In the morning, shadows will stretch. | Pola mañá a sombra estirarase. | Por la mañana se estirará. | — | `pal_morning` | reutilizada | A mesma frase que «in morning, shadow will stretch», corrixida en inglés (O-20261126-5). |
 | In the nest | No niño | En el nido | Hacer un nido con las manos | `pal_in_the_nest` | nova | Tres huevos azules reposando dentro de un nido de ramitas. |
 | In the past, people travelled by boat | Antes, a xente viaxaba en barco | Antes, la gente viajaba en barco | Remar sentados | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | In the pot | Na pota | En la olla | Echar dentro de la olla imaginaria lo que cogimos | `pal_in_the_pot` | nova | Ingredientes cayendo dentro de una olla de cocina. |
@@ -1735,7 +1735,6 @@ Con lámina: 3515. Sin lámina por decisión de Frank: 824. **Sin lámina todav�
 | It goes here | Vai aquí | Va aquí | Dejar el juguete en su sitio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | It is dark, so use torch! | Está escuro, así que usa lanterna! | ¡Está oscuro, así que usa linterna! | — | `pal_dark` | reutilizada | Frase do STEAM do mes representada pola lámina de «dark» (pal_dark). |
 | It is fair to share | É xusto compartir | Es justo compartir | — | `pal_it_is_fair_to_share` | composta | Reparto justo de la fruta entre dos compañeros. |
-| It is going to hide hat! | Vai tapar o gorro! | ¡Va a tapar el gorro! | — | `pal_hide` | reutilizada | Frase do STEAM do mes representada pola lámina de «hide» (pal_hide). |
 | It is raining hard | Chove con forza | Llueve con fuerza | — | `pal_raining_hard` | composta | Dos nubes descargando mucha lluvia intensa con grandes gotas sobre charco. |
 | It is water. | É auga. | Es agua. | — | `auga` | reutilizada | Vaso con agua clara. |
 | It melts because it's warm | Derrétese porque vai calor | Se derrite porque hace calor | Bajar el cuerpo despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
@@ -1743,6 +1742,7 @@ Con lámina: 3515. Sin lámina por decisión de Frank: 824. **Sin lámina todav�
 | It's a deal! | Trato feito! | ¡Trato hecho! | Darse la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | It's a draw! | Empate! | ¡Empate! | Juntar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | It's a star! | É unha estrela! | ¡Es una estrella! | Abrirse como una estrella | `pal_it_s_a_star` | nova | Niño abriendo brazos y piernas en forma de gran estrella dorada. |
+| It's going to hide the hat! | Vai tapar o gorro! | ¡Va a tapar el gorro! | — | `pal_hide` | reutilizada | A mesma frase que «it is going to hide hat», corrixida en inglés (O-20261126-5). |
 | It's hot! | Que calor! | ¡Qué calor! | Abanicarse con la mano y soplar | `pal_it_s_hot` | composta | Sol intenso dando mucho calor mientras la mano abanica la cara. |
 | It's pouring! | Chove moito! | ¡Llueve mucho! | Bajar los brazos rápido | `pal_it_s_pouring` | nova | Nube oscura descargando lluvia torrencial sobre un charco. |
 | It's raining | Chove | Llueve | Mover los dedos de arriba abajo | `pal_it_s_raining` | nova | Nube oscura dejando caer lluvia abundante sobre un charco en el suelo. |
@@ -4056,7 +4056,6 @@ Con lámina: 3515. Sin lámina por decisión de Frank: 824. **Sin lámina todav�
 | Waves | Ondas | Olas | Subir y bajar las manos como olas | `pal_waves` | composta | Varias olas azules levantándose en el mar. |
 | Wavy | Ondulado, ondulada | Ondulado, ondulada | Dibujar líneas onduladas en el aire | `pal_wavy` | nova | Tres líneas curvas onduladas paralelas cruzando el lienzo. |
 | Wavy-edged | De bordo ondulado | De borde ondulado | Dibujar ondas con el dedo | `pal_wavy_edged` | nova | Hoja de borde ondulado con sus ondas destacadas en amarillo. |
-| We are going to check sun. | Imos mirar o sol. | Vamos a mirar el sol. | — | `pal_sun` | reutilizada | Frase do STEAM do mes representada pola lámina de «sun» (pal_sun). |
 | We are opening the folded paper. | Estamos abrindo o papel dobrado. | Estamos abriendo el papel doblado. | — | `pal_fold` | reutilizada | Frase do STEAM do mes representada pola lámina de «fold» (pal_fold). |
 | We are painting one paper side. | Estamos pintando un lado do papel. | Estamos pintando un lado del papel. | — | `pal_pal_paint` | reutilizada | Frase do STEAM do mes representada pola lámina de «paint» (pal_pal_paint). |
 | We can both be right | Podemos ter razón os dous | Podemos tener razón los dos | Darse la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
@@ -4077,6 +4076,7 @@ Con lámina: 3515. Sin lámina por decisión de Frank: 824. **Sin lámina todav�
 | We walk on the path so the plants can grow | Camiñamos polo camiño para que medren as plantas | Caminamos por el camino para que crezcan las plantas | Caminar por la línea | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | We walk together. | Camiñamos xuntos. | Caminamos juntos. | — | `pal_walk` | reutilizada | Frase do STEAM do mes representada pola lámina de «walk» (pal_walk). |
 | We watch and answer every question. | Miramos e contestamos cada pregunta. | Miramos y contestamos cada pregunta. | — | `pal_watch` | reutilizada | Frase do STEAM do mes representada pola lámina de «watch» (pal_watch). |
+| We're going to see the sun. | Imos mirar o sol. | Vamos a mirar el sol. | — | `pal_sun` | reutilizada | A mesma frase que «we are going to check sun», corrixida en inglés (O-20261126-5). |
 | Wear boots, keep them clean. | Pon botas, mantenas limpas. | Ponte botas, mantenlas limpias. | — | `pal_wear` | reutilizada | Frase do STEAM do mes representada pola lámina de «wear» (pal_wear). |
 | Wear | Levar posto | Llevar puesto | Señala o coge lo que nombras: llevar puesto. | `pal_wear` | composta | Niño poniéndose una prenda amarilla con flecha clara. |
 | Weather chart | Táboa do tempo | Tabla del tiempo | Pegar el símbolo de la lluvia | `pal_weather_chart` | nova | Tablero meteorológico con columnas de sol, nube y lluvia. |

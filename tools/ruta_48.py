@@ -244,15 +244,15 @@ RUTA = {
         ]),
         4: (15, [
             ("Listen to the rain tube!", "Escoita o tubo de chuvia!", "¡Escucha el tubo de lluvia!"),
-            ("Hear loud rice with me.", "Oio o arroz forte comigo.", "Oye el arroz fuerte conmigo."),
+            ("Hear the loud rice with me.", "Oio o arroz forte comigo.", "Oye el arroz fuerte conmigo."),
             ("Shake the storm for us!", "Axita a tormenta para nós!", "¡Agita la tormenta para nosotros!"),
             ("Wait for thunder with them!", "Agarda o trono con eles!", "¡Espera el trueno con ellos!"),
         ]),
         5: (17, [
-            ("We are going to check sun.", "Imos mirar o sol.", "Vamos a mirar el sol."),
+            ("We're going to see the sun.", "Imos mirar o sol.", "Vamos a mirar el sol."),
             ("Our shadow will grow long.", "A nosa sombra medrará.", "Nuestra sombra crecerá."),
-            ("In morning, shadow will stretch.", "Pola mañá a sombra estirarase.", "Por la mañana se estirará."),
-            ("It is going to hide hat!", "Vai tapar o gorro!", "¡Va a tapar el gorro!"),
+            ("In the morning, shadows will stretch.", "Pola mañá a sombra estirarase.", "Por la mañana se estirará."),
+            ("It's going to hide the hat!", "Vai tapar o gorro!", "¡Va a tapar el gorro!"),
         ]),
         6: (19, [
             ("Look out into the sky!", "Mira cara ao ceo!", "¡Mira hacia el cielo!"),

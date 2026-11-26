@@ -13592,6 +13592,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "hear the loud rice with me": {
+   "clave": "pal_loud",
+   "orixe": "reutilizada",
+   "porque": "A mesma frase que «hear loud rice with me», corrixida en inglés (O-20261126-5).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_loud.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hearing": {
    "clave": "pal_hearing",
    "orixe": "nova",
@@ -15752,6 +15762,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "in the morning, shadows will stretch": {
+   "clave": "pal_morning",
+   "orixe": "reutilizada",
+   "porque": "A mesma frase que «in morning, shadow will stretch», corrixida en inglés (O-20261126-5).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_morning.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "in the morning, the ball rolls": {
    "clave": "pal_in_the_morning_the_ball_rolls",
    "orixe": "composta",
@@ -16149,6 +16169,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#it_s_a_star",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "it's going to hide the hat": {
+   "clave": "pal_hide",
+   "orixe": "reutilizada",
+   "porque": "A mesma frase que «it is going to hide hat», corrixida en inglés (O-20261126-5).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hide.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -38134,6 +38164,16 @@
    "asset": "tools/gen_laminas_2_3.py#we_were_squeezing_the_bread",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "we're going to see the sun": {
+   "clave": "pal_sun",
+   "orixe": "reutilizada",
+   "porque": "A mesma frase que «we are going to check sun», corrixida en inglés (O-20261126-5).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_sun.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "wear": {

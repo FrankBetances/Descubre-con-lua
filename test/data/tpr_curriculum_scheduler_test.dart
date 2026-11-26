@@ -155,9 +155,15 @@ void main() {
       }
     });
 
-    test('ninguna palabra es nueva dos veces en las 4.000 del trayecto', () {
+    // O-20261126-5 (Frank, 26/11/2026: «Todo está aprobado»): una palabra
+    // sencilla de una edad anterior puede volver como repaso si lo dice
+    // «volve»; ninguna otra es nueva dos veces.
+    test(
+        'ninguna palabra es nueva dos veces en las 4.000 del trayecto, '
+        'salvo las que vuelven de una edad anterior', () {
       final vistas = <String, String>{};
       final idsVistos = <String>{};
+      var volven = 0;
       for (final curso in programa.cursos) {
         for (final m in curso.meses) {
           for (final s in m.semanas) {
@@ -166,16 +172,23 @@ void main() {
                   .toLowerCase()
                   .replaceAll(RegExp(r'[^a-z0-9]+'), ' ')
                   .trim();
-              expect(vistas.containsKey(clave), isFalse,
-                  reason: '«${p.en}» ya estaba en ${vistas[clave]}');
+              expect(idsVistos.add(p.id), isTrue, reason: 'id ${p.id}');
+              if (vistas.containsKey(clave)) {
+                expect(p.volve, isNotNull,
+                    reason: '«${p.en}» ya estaba en ${vistas[clave]}');
+                expect(vistas[clave]!.startsWith(p.volve!), isTrue,
+                    reason: '«${p.en}» vuelve de ${p.volve}, pero estaba en '
+                        '${vistas[clave]}');
+                volven++;
+                continue;
+              }
               vistas[clave] =
                   '${curso.id}, mes ${m.mesCalendario}, semana ${s.semana}';
-              expect(idsVistos.add(p.id), isTrue, reason: 'id ${p.id}');
             }
           }
         }
       }
-      expect(vistas, hasLength(4000));
+      expect(vistas.length + volven, 4000);
     });
 
     test('cada palabra tiene significado y gesto en gallego y castellano', () {

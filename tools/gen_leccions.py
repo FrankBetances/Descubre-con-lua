@@ -853,10 +853,26 @@ def main():
                 n_u, w_l = (int(v) for v in l_obj["id"].split(".")[1:3])
                 xa = {norm(x["en"]) for k in ("novas", "xaSabe", "repasa") for x in l_obj.get(k) or []}
                 texto_c = CONTO_TEXTO.get(l_obj["id"], "")
-                banco_w = [x for x in bsem.get(curso, {}).get((n_u, w_l), [])
-                           if norm(x["en"]) not in xa and x.get("gl") and x.get("es")
-                           and _mapa_vi.get(x["en"].lower().strip(" .!?"))]
-                banco_w.sort(key=lambda x: sen_puntos(x["en"]) not in texto_c)
+                # R-STEAM: primero las palabras del mes que nombran algo del
+                # experimento (salen en sus órdenes o en las frases STEAM del
+                # mes); luego, las del cuento de la semana.
+                st_id = (u_obj.get("steam") or {}).get("id", "")
+                ex_st = next((e for e in steam_exp if e["id"] == st_id), {})
+                txt_st = " ".join([o.get("en", "") for o in ex_st.get("ordes") or []]
+                                  + [(l_.get("fraseGramatica") or {}).get("en", "") for l_ in u_obj["leccions"]]).lower()
+                pal_st = set(re.findall(r"[a-z']+", txt_st)) - {"the", "a", "an", "and", "is", "it", "we", "to", "my", "your", "with", "in", "on", "of", "for", "you", "i", "are", "be", "this", "that"}
+                def _do_steam(x):
+                    return bool(set(re.findall(r"[a-z']+", x["en"].lower())) & pal_st)
+                mes_w = [x for w_ in range(1, 5) for x in bsem.get(curso, {}).get((n_u, w_), [])]
+                vistos_w, banco_w = set(), []
+                for x in bsem.get(curso, {}).get((n_u, w_l), []) + mes_w:
+                    k_ = norm(x["en"])
+                    if k_ in xa or k_ in vistos_w or not (x.get("gl") and x.get("es")) \
+                            or not _mapa_vi.get(x["en"].lower().strip(" .!?")):
+                        continue
+                    vistos_w.add(k_)
+                    banco_w.append(x)
+                banco_w.sort(key=lambda x: (not _do_steam(x), sen_puntos(x["en"]) not in texto_c))
                 mais_pz = [_pz(x) for x in banco_w[:3]]
                 seg = proxima_frase.get(l_obj["id"]) or (l_obj.get("fraseGramatica") or {})
                 fr_mais = seg.get("en") or fg_en
@@ -876,10 +892,10 @@ def main():
                         "rutinas": _ruts_capa("núcleo", "núcleo", foco_en),
                     },
                     "mais": {
-                        "gl": (f"«{st_gl}», semana {sem_index}, para quen xa as di: engade {_lista(mais_pz, ' e ')}, que saen no conto, "
+                        "gl": (f"«{st_gl}», semana {sem_index}, para quen xa as di: engade {_lista(mais_pz, ' e ')}, {'do mesmo experimento' if all(_do_steam(x) for x in banco_w[:3]) else 'deste mes'}, "
                                f"e proba a frase do paso seguinte, «{fr_mais}»." if mais_pz else
                                f"«{st_gl}», semana {sem_index}, para quen xa as di: proba a frase do paso seguinte, «{fr_mais}»."),
-                        "es": (f"«{st_es}», semana {sem_index}, para quien ya las dice: añade {_lista(mais_pz, ' y ')}, que salen en el cuento, "
+                        "es": (f"«{st_es}», semana {sem_index}, para quien ya las dice: añade {_lista(mais_pz, ' y ')}, {'del mismo experimento' if all(_do_steam(x) for x in banco_w[:3]) else 'de este mes'}, "
                                f"y prueba la frase del paso siguiente, «{fr_mais}»." if mais_pz else
                                f"«{st_es}», semana {sem_index}, para quien ya las dice: prueba la frase del paso siguiente, «{fr_mais}»."),
                         "en": fr_mais,
